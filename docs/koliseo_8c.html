@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.3.8</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.3.9</span>
    </div>
   </td>
  </tr>
@@ -119,6 +119,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a05f7ee7bb456ac08f49971fcb7f4521a" id="r_a05f7ee7bb456ac08f49971fcb7f4521a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8c.html#a05f7ee7bb456ac08f49971fcb7f4521a">kls_new_traced</a> (ptrdiff_t size, const char *output_path)</td></tr>
 <tr class="memdesc:a05f7ee7bb456ac08f49971fcb7f4521a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a ptrdiff_t size and a filepath for the trace output file, and returns a pointer to the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
 <tr class="separator:a05f7ee7bb456ac08f49971fcb7f4521a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5d48e2f5fc5787cf604bf2d59f44b71" id="r_aa5d48e2f5fc5787cf604bf2d59f44b71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8c.html#aa5d48e2f5fc5787cf604bf2d59f44b71">kls_new_dbg</a> (ptrdiff_t size)</td></tr>
+<tr class="memdesc:aa5d48e2f5fc5787cf604bf2d59f44b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a ptrdiff_t size and returns a pointer to the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
+<tr class="separator:aa5d48e2f5fc5787cf604bf2d59f44b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113561a1ae3c2208b0092324a5583508" id="r_a113561a1ae3c2208b0092324a5583508"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8c.html#a113561a1ae3c2208b0092324a5583508">kls_new_traced_AR_KLS</a> (ptrdiff_t size, const char *output_path, ptrdiff_t reglist_kls_size)</td></tr>
 <tr class="memdesc:a113561a1ae3c2208b0092324a5583508"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a ptrdiff_t size and a filepath for the trace output file, and the needed parameters for a successful init of the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
 <tr class="separator:a113561a1ae3c2208b0092324a5583508"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -237,6 +240,7 @@ Functions</h2></td></tr>
 <tr class="memitem:af2798ce44c4ab84e0b2975b9a37f2758" id="r_af2798ce44c4ab84e0b2975b9a37f2758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">kls_usageReport</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="separator:af2798ce44c4ab84e0b2975b9a37f2758"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae09cbd15b9f4e1567e7cce8d5e6ebd4b" id="r_ae09cbd15b9f4e1567e7cce8d5e6ebd4b"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">kls_type_usage</a> (int type, <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
+<tr class="memdesc:ae09cbd15b9f4e1567e7cce8d5e6ebd4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">This definition controls the inclusion of gulp functions.  <br /></td></tr>
 <tr class="separator:ae09cbd15b9f4e1567e7cce8d5e6ebd4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
@@ -1041,6 +1045,38 @@ Variables</h2></td></tr>
 <a class="el" href="koliseo_8c.html#a096fe71a94eba899ef11a62c92270f55" title="Takes a ptrdiff_t size and allocates the backing memory for a Koliseo.">kls_new()</a> </dd>
 <dd>
 <a class="el" href="koliseo_8c.html#a156ad26697b7ab49d198424f68d322f2" title="Updates the KLS_Conf for the passed Koliseo pointer.">kls_set_conf()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa5d48e2f5fc5787cf604bf2d59f44b71" name="aa5d48e2f5fc5787cf604bf2d59f44b71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5d48e2f5fc5787cf604bf2d59f44b71">&#9670;&#160;</a></span>kls_new_dbg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structKoliseo.html">Koliseo</a> * kls_new_dbg </td>
+          <td>(</td>
+          <td class="paramtype">ptrdiff_t&#160;</td>
+          <td class="paramname"><em>size</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a ptrdiff_t size and returns a pointer to the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
+<p>Calls <a class="el" href="koliseo_8c.html#afd7acaf74c6bea6cd014592eab3cd956" title="Takes a ptrdiff_t size and a KLS_Conf to configure the new Koliseo.">kls_new_conf()</a> to initialise the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> with the proper config for a debug <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> (printing to stderr). </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">size</td><td>The size for <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A pointer to the initialised <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> struct, with wanted config. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> </dd>
+<dd>
+<a class="el" href="structKLS__Conf.html" title="Defines flags for Koliseo.">KLS_Conf</a> </dd>
+<dd>
+<a class="el" href="koliseo_8c.html#afd7acaf74c6bea6cd014592eab3cd956" title="Takes a ptrdiff_t size and a KLS_Conf to configure the new Koliseo.">kls_new_conf()</a> </dd></dl>
 
 </div>
 </div>
@@ -2087,6 +2123,8 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>This definition controls the inclusion of gulp functions. </p>
 
 </div>
 </div>
