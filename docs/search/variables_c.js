@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['size_0',['size',['../structKLS__Region.html#ab8d108df478616e4a5acf6d47b981ab1',1,'KLS_Region::size'],['../structKoliseo.html#a13f8dc50b0dc50f8e3141f2dade67423',1,'Koliseo::size']]],
-  ['stats_1',['stats',['../structKoliseo.html#ad7100c107b391e2292d58c2f57e91296',1,'Koliseo']]]
+  ['reglist_5fkls_0',['reglist_kls',['../structKoliseo.html#a2066d9f109327042a777cc367c314e85',1,'Koliseo::reglist_kls'],['../structKoliseo__Temp.html#ab2af20a8464779149f0c147c78dfc050',1,'Koliseo_Temp::reglist_kls']]],
+  ['regs_1',['regs',['../structKoliseo.html#a72b4d809ae263dbfa397fb930b59a792',1,'Koliseo']]]
 ];

@@ -92,6 +92,7 @@ $(function() {
 <code>#include &lt;string.h&gt;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
+<code>#include &quot;ncurses.h&quot;</code><br />
 </div>
 <p><a href="koliseo_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -184,6 +185,8 @@ Macros</h2></td></tr>
 <tr class="separator:ad895151f722be9339428b1c4b66d73a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae134c06428211366532fae9251672200" id="r_ae134c06428211366532fae9251672200"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#ae134c06428211366532fae9251672200">KLS_PUSH_STRUCT</a>(kls,  type)&#160;&#160;&#160;(type*)<a class="el" href="koliseo_8h.html#ad895151f722be9339428b1c4b66d73a8">KLS_PUSH_ARRAY</a>((kls), (type))</td></tr>
 <tr class="separator:ae134c06428211366532fae9251672200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a102d6352def540f3b8b6c4bf3d9da687" id="r_a102d6352def540f3b8b6c4bf3d9da687"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a102d6352def540f3b8b6c4bf3d9da687">KOLISEO_CURSES_H_</a></td></tr>
+<tr class="separator:a102d6352def540f3b8b6c4bf3d9da687"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26a573995756211124787b9767838915" id="r_a26a573995756211124787b9767838915"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a26a573995756211124787b9767838915">KLS_PUSH_T</a>(kls_temp,  type,  count)&#160;&#160;&#160;(type*)<a class="el" href="koliseo_8c.html#a80da35d5b6b68fcdc5ee8caa7b256df1">kls_temp_push_zero_AR</a>(kls_temp, sizeof(type), _Alignof(type), count)</td></tr>
 <tr class="separator:a26a573995756211124787b9767838915"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5aec540678bdf8da613e0840d1ca839a" id="r_a5aec540678bdf8da613e0840d1ca839a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a5aec540678bdf8da613e0840d1ca839a">KLS_PUSH_T_NAMED</a>(kls_temp,  type,  count,  name,  desc)&#160;&#160;&#160;(type*)<a class="el" href="koliseo_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a>(kls_temp, sizeof(type), _Alignof(type), count, name, desc)</td></tr>
@@ -206,6 +209,18 @@ Macros</h2></td></tr>
 <tr class="separator:a12ecc42ac3dcee685e7b77a22da511ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a99dd4b20b34003b7d25b96b5dc56eccd" id="r_a99dd4b20b34003b7d25b96b5dc56eccd"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a99dd4b20b34003b7d25b96b5dc56eccd">KLS_DIFF</a>(kls,  kls_list1,  kls_list2)&#160;&#160;&#160;<a class="el" href="koliseo_8c.html#a5e4fa85ec7f72d086f43ef01c0fea928">kls_diff</a>(kls,kls_list1,kls_list2)</td></tr>
 <tr class="separator:a99dd4b20b34003b7d25b96b5dc56eccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ae9e7bcd942f38306d04ab6b7953efb" id="r_a1ae9e7bcd942f38306d04ab6b7953efb"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a1ae9e7bcd942f38306d04ab6b7953efb">KOLISEO_GULP_H_</a></td></tr>
+<tr class="separator:a1ae9e7bcd942f38306d04ab6b7953efb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2710c7271de297b1d89e1ae230dba2" id="r_a1c2710c7271de297b1d89e1ae230dba2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a1c2710c7271de297b1d89e1ae230dba2">ONEGB_DEC_INT</a>&#160;&#160;&#160;1073741824</td></tr>
+<tr class="separator:a1c2710c7271de297b1d89e1ae230dba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307698142f4e3dd6d1ef417a538bed2d" id="r_a307698142f4e3dd6d1ef417a538bed2d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a307698142f4e3dd6d1ef417a538bed2d">GULP_MAX_FILE_SIZE</a>&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a1c2710c7271de297b1d89e1ae230dba2">ONEGB_DEC_INT</a></td></tr>
+<tr class="separator:a307698142f4e3dd6d1ef417a538bed2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b9819d096de2d35e104d8f2cc448a36" id="r_a9b9819d096de2d35e104d8f2cc448a36"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a9b9819d096de2d35e104d8f2cc448a36">Gulp_Res_Fmt</a>&#160;&#160;&#160;&quot;%s&quot;</td></tr>
+<tr class="separator:a9b9819d096de2d35e104d8f2cc448a36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26e014ab8a97ec4feab6321669bd5c6" id="r_aa26e014ab8a97ec4feab6321669bd5c6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#aa26e014ab8a97ec4feab6321669bd5c6">Gulp_Res_Arg</a>(gr)&#160;&#160;&#160;(<a class="el" href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a>((gr)))</td></tr>
+<tr class="separator:aa26e014ab8a97ec4feab6321669bd5c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d949243ec6d5c5281e4c0e4c2e6930" id="r_aa1d949243ec6d5c5281e4c0e4c2e6930"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#aa1d949243ec6d5c5281e4c0e4c2e6930">KLS_GULP_FILE</a>(kls,  filepath)&#160;&#160;&#160;<a class="el" href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a>((kls),(filepath), <a class="el" href="koliseo_8h.html#a307698142f4e3dd6d1ef417a538bed2d">GULP_MAX_FILE_SIZE</a>)</td></tr>
+<tr class="separator:aa1d949243ec6d5c5281e4c0e4c2e6930"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
@@ -240,6 +255,8 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a2aaae73179475290686055db92fdc0af" id="r_a2aaae73179475290686055db92fdc0af"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a2aaae73179475290686055db92fdc0af">Koliseo_Temp</a></td></tr>
 <tr class="memdesc:a2aaae73179475290686055db92fdc0af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a savestate for a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
 <tr class="separator:a2aaae73179475290686055db92fdc0af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dd9c77ab5b6162e3bad0ecd5f4ac9b8" id="r_a4dd9c77ab5b6162e3bad0ecd5f4ac9b8"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a4dd9c77ab5b6162e3bad0ecd5f4ac9b8">Gulp_Res</a></td></tr>
+<tr class="separator:a4dd9c77ab5b6162e3bad0ecd5f4ac9b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
@@ -254,6 +271,18 @@ Enumerations</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aac5013719d2f05aa932ccf924db41e89"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a type index for Regions.  <a href="koliseo_8h.html#aac5013719d2f05aa932ccf924db41e89">More...</a><br /></td></tr>
 <tr class="separator:aac5013719d2f05aa932ccf924db41e89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3fddfff0b37679e8b38c0b932cc5dc6" id="r_ae3fddfff0b37679e8b38c0b932cc5dc6"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a> { <br />
+&#160;&#160;<a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6af6fb3eaee523871921c45d0d5f7817df">GULP_FILE_OK</a> =0
+, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6adc78a49ce5860019d50d08769efda619">GULP_FILE_NOT_EXIST</a>
+, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6adfe6271bf021e1e22b1283ee440f0ce4">GULP_FILE_TOO_LARGE</a>
+, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6af7257946e4a5bc96dcdda51c8ae531c4">GULP_FILE_READ_ERROR</a>
+, <br />
+&#160;&#160;<a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6ac01fb048dd5e2675e04137f071bd4717">GULP_FILE_CONTAINS_NULLCHAR</a>
+, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6a993dc3f9c67979601e2e6a163f283726">GULP_FILE_KLS_NULL</a>
+, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6a6326ade2feb045641b374c716dbdb5b3">TOT_GULP_RES</a>
+<br />
+ }</td></tr>
+<tr class="separator:ae3fddfff0b37679e8b38c0b932cc5dc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -326,6 +355,18 @@ Functions</h2></td></tr>
 <tr class="memitem:aeeb31d4d6d367fbfe49a4099edb03742" id="r_aeeb31d4d6d367fbfe49a4099edb03742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#aeeb31d4d6d367fbfe49a4099edb03742">kls_formatSize</a> (ptrdiff_t size, char *outputBuffer, size_t bufferSize)</td></tr>
 <tr class="memdesc:aeeb31d4d6d367fbfe49a4099edb03742"><td class="mdescLeft">&#160;</td><td class="mdescRight">This definition controls the inclusion of ncurses functions.  <br /></td></tr>
 <tr class="separator:aeeb31d4d6d367fbfe49a4099edb03742"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6241fb4afaeb038b638c79d42b1740f3" id="r_a6241fb4afaeb038b638c79d42b1740f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a6241fb4afaeb038b638c79d42b1740f3">kls_show_toWin</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, WINDOW *win)</td></tr>
+<tr class="memdesc:a6241fb4afaeb038b638c79d42b1740f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints fields and eventually KLS_Region_List from the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, to the passed WINDOW pointer.  <br /></td></tr>
+<tr class="separator:a6241fb4afaeb038b638c79d42b1740f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adffdab1397952e80a18505e5dc437b5c" id="r_adffdab1397952e80a18505e5dc437b5c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#adffdab1397952e80a18505e5dc437b5c">kls_showList_toWin</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, WINDOW *win)</td></tr>
+<tr class="memdesc:adffdab1397952e80a18505e5dc437b5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a slideshow of KLS_Region_List from passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, to the passed WINDOW pointer.  <br /></td></tr>
+<tr class="separator:adffdab1397952e80a18505e5dc437b5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf2f7555efaaa31b04a22270c40e2221" id="r_aaf2f7555efaaa31b04a22270c40e2221"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#aaf2f7555efaaa31b04a22270c40e2221">kls_temp_show_toWin</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, WINDOW *win)</td></tr>
+<tr class="memdesc:aaf2f7555efaaa31b04a22270c40e2221"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer and prints fields and eventually KLS_Region_List from the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, to the passed WINDOW pointer.  <br /></td></tr>
+<tr class="separator:aaf2f7555efaaa31b04a22270c40e2221"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adea11280906a1ff9060cef74625a619a" id="r_adea11280906a1ff9060cef74625a619a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#adea11280906a1ff9060cef74625a619a">kls_temp_showList_toWin</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, WINDOW *win)</td></tr>
+<tr class="memdesc:adea11280906a1ff9060cef74625a619a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays a slideshow of KLS_Region_List from passed <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, to the passed WINDOW pointer.  <br /></td></tr>
+<tr class="separator:adea11280906a1ff9060cef74625a619a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f917da26d318e5702dbdc550c01fa1c" id="r_a0f917da26d318e5702dbdc550c01fa1c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a0f917da26d318e5702dbdc550c01fa1c">kls_temp_start</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memdesc:a0f917da26d318e5702dbdc550c01fa1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a new savestate for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, by initialising its <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer and returning it.  <br /></td></tr>
 <tr class="separator:a0f917da26d318e5702dbdc550c01fa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -407,6 +448,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a5603f62fd7d2c0ad8efc100370b76271" id="r_a5603f62fd7d2c0ad8efc100370b76271"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a5603f62fd7d2c0ad8efc100370b76271">kls_type_usage</a> (int, <a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
 <tr class="memdesc:a5603f62fd7d2c0ad8efc100370b76271"><td class="mdescLeft">&#160;</td><td class="mdescRight">This definition controls the inclusion of gulp functions.  <br /></td></tr>
 <tr class="separator:a5603f62fd7d2c0ad8efc100370b76271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e5720700fe1070f586a637e0d950d7" id="r_a24e5720700fe1070f586a637e0d950d7"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a> (<a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a> g)</td></tr>
+<tr class="separator:a24e5720700fe1070f586a637e0d950d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479a99fb7176087e1dd82dee92cfbcf3" id="r_a479a99fb7176087e1dd82dee92cfbcf3"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a479a99fb7176087e1dd82dee92cfbcf3">kls_gulp_file_sized</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, const char *filepath, <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a> *err, size_t max_size)</td></tr>
+<tr class="separator:a479a99fb7176087e1dd82dee92cfbcf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a541127eb786413201b4fcaeb7f406e78" id="r_a541127eb786413201b4fcaeb7f406e78"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, const char *filepath, size_t max_size)</td></tr>
+<tr class="separator:a541127eb786413201b4fcaeb7f406e78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -419,8 +466,56 @@ Variables</h2></td></tr>
 <tr class="memitem:aec5986274ac99c5864a0f4e061d07fa9" id="r_aec5986274ac99c5864a0f4e061d07fa9"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#aec5986274ac99c5864a0f4e061d07fa9">kls_title</a> [<a class="el" href="koliseo_8h.html#a7e4b047109cb5742c82bd705cbebc222">KLS_TITLEROWS</a>+1]</td></tr>
 <tr class="memdesc:aec5986274ac99c5864a0f4e061d07fa9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains title banner.  <br /></td></tr>
 <tr class="separator:aec5986274ac99c5864a0f4e061d07fa9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9b765015c795e8d487098f1429fb8c2" id="r_af9b765015c795e8d487098f1429fb8c2"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="koliseo_8h.html#af9b765015c795e8d487098f1429fb8c2">gulp_res_names</a> [<a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6a6326ade2feb045641b374c716dbdb5b3">TOT_GULP_RES</a>+1]</td></tr>
+<tr class="separator:af9b765015c795e8d487098f1429fb8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a307698142f4e3dd6d1ef417a538bed2d" name="a307698142f4e3dd6d1ef417a538bed2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307698142f4e3dd6d1ef417a538bed2d">&#9670;&#160;</a></span>GULP_MAX_FILE_SIZE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define GULP_MAX_FILE_SIZE&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a1c2710c7271de297b1d89e1ae230dba2">ONEGB_DEC_INT</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa26e014ab8a97ec4feab6321669bd5c6" name="aa26e014ab8a97ec4feab6321669bd5c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa26e014ab8a97ec4feab6321669bd5c6">&#9670;&#160;</a></span>Gulp_Res_Arg</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Gulp_Res_Arg</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">gr</td><td>)</td>
+          <td>&#160;&#160;&#160;(<a class="el" href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a>((gr)))</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b9819d096de2d35e104d8f2cc448a36" name="a9b9819d096de2d35e104d8f2cc448a36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b9819d096de2d35e104d8f2cc448a36">&#9670;&#160;</a></span>Gulp_Res_Fmt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define Gulp_Res_Fmt&#160;&#160;&#160;&quot;%s&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a9c69e1b8d6a5ee1ef3c616628da08999" name="a9c69e1b8d6a5ee1ef3c616628da08999"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9c69e1b8d6a5ee1ef3c616628da08999">&#9670;&#160;</a></span>KLS_Arg</h2>
 
@@ -594,6 +689,34 @@ Variables</h2></td></tr>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td>&#160;&#160;&#160;<a class="el" href="koliseo_8c.html#af3e5424e5b3ea8ac242a9753edbb2c1c">kls_emptyList</a>()</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa1d949243ec6d5c5281e4c0e4c2e6930" name="aa1d949243ec6d5c5281e4c0e4c2e6930"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1d949243ec6d5c5281e4c0e4c2e6930">&#9670;&#160;</a></span>KLS_GULP_FILE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KLS_GULP_FILE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">kls, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">filepath&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a>((kls),(filepath), <a class="el" href="koliseo_8h.html#a307698142f4e3dd6d1ef417a538bed2d">GULP_MAX_FILE_SIZE</a>)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1298,7 +1421,63 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a102d6352def540f3b8b6c4bf3d9da687" name="a102d6352def540f3b8b6c4bf3d9da687"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a102d6352def540f3b8b6c4bf3d9da687">&#9670;&#160;</a></span>KOLISEO_CURSES_H_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KOLISEO_CURSES_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1ae9e7bcd942f38306d04ab6b7953efb" name="a1ae9e7bcd942f38306d04ab6b7953efb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ae9e7bcd942f38306d04ab6b7953efb">&#9670;&#160;</a></span>KOLISEO_GULP_H_</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KOLISEO_GULP_H_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c2710c7271de297b1d89e1ae230dba2" name="a1c2710c7271de297b1d89e1ae230dba2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2710c7271de297b1d89e1ae230dba2">&#9670;&#160;</a></span>ONEGB_DEC_INT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ONEGB_DEC_INT&#160;&#160;&#160;1073741824</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
+<a id="a4dd9c77ab5b6162e3bad0ecd5f4ac9b8" name="a4dd9c77ab5b6162e3bad0ecd5f4ac9b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dd9c77ab5b6162e3bad0ecd5f4ac9b8">&#9670;&#160;</a></span>Gulp_Res</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef enum <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a> <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="adea41df5978a7b15e9629100aba9c208" name="adea41df5978a7b15e9629100aba9c208"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adea41df5978a7b15e9629100aba9c208">&#9670;&#160;</a></span>KLS_Conf</h2>
 
@@ -1500,6 +1679,29 @@ Variables</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="ae3fddfff0b37679e8b38c0b932cc5dc6" name="ae3fddfff0b37679e8b38c0b932cc5dc6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3fddfff0b37679e8b38c0b932cc5dc6">&#9670;&#160;</a></span>Gulp_Res</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6af6fb3eaee523871921c45d0d5f7817df" name="ae3fddfff0b37679e8b38c0b932cc5dc6af6fb3eaee523871921c45d0d5f7817df"></a>GULP_FILE_OK&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6adc78a49ce5860019d50d08769efda619" name="ae3fddfff0b37679e8b38c0b932cc5dc6adc78a49ce5860019d50d08769efda619"></a>GULP_FILE_NOT_EXIST&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6adfe6271bf021e1e22b1283ee440f0ce4" name="ae3fddfff0b37679e8b38c0b932cc5dc6adfe6271bf021e1e22b1283ee440f0ce4"></a>GULP_FILE_TOO_LARGE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6af7257946e4a5bc96dcdda51c8ae531c4" name="ae3fddfff0b37679e8b38c0b932cc5dc6af7257946e4a5bc96dcdda51c8ae531c4"></a>GULP_FILE_READ_ERROR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6ac01fb048dd5e2675e04137f071bd4717" name="ae3fddfff0b37679e8b38c0b932cc5dc6ac01fb048dd5e2675e04137f071bd4717"></a>GULP_FILE_CONTAINS_NULLCHAR&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6a993dc3f9c67979601e2e6a163f283726" name="ae3fddfff0b37679e8b38c0b932cc5dc6a993dc3f9c67979601e2e6a163f283726"></a>GULP_FILE_KLS_NULL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae3fddfff0b37679e8b38c0b932cc5dc6a6326ade2feb045641b374c716dbdb5b3" name="ae3fddfff0b37679e8b38c0b932cc5dc6a6326ade2feb045641b374c716dbdb5b3"></a>TOT_GULP_RES&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <a id="aac5013719d2f05aa932ccf924db41e89" name="aac5013719d2f05aa932ccf924db41e89"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aac5013719d2f05aa932ccf924db41e89">&#9670;&#160;</a></span>KLS_Region_Type</h2>
 
@@ -1942,6 +2144,46 @@ Variables</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A ptrdiff_t value for current position. </dd></dl>
+
+</div>
+</div>
+<a id="a479a99fb7176087e1dd82dee92cfbcf3" name="a479a99fb7176087e1dd82dee92cfbcf3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479a99fb7176087e1dd82dee92cfbcf3">&#9670;&#160;</a></span>kls_gulp_file_sized()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * kls_gulp_file_sized </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td>
+          <td class="paramname"><em>kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a> *&#160;</td>
+          <td class="paramname"><em>err</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -2844,6 +3086,43 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a6241fb4afaeb038b638c79d42b1740f3" name="a6241fb4afaeb038b638c79d42b1740f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6241fb4afaeb038b638c79d42b1740f3">&#9670;&#160;</a></span>kls_show_toWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kls_show_toWin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td>
+          <td class="paramname"><em>kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Prints fields and eventually KLS_Region_List from the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, to the passed WINDOW pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
+    <tr><td class="paramname">win</td><td>The Window at hand. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="adddadeabb9004e9d91b1b405ac90a6b8" name="adddadeabb9004e9d91b1b405ac90a6b8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adddadeabb9004e9d91b1b405ac90a6b8">&#9670;&#160;</a></span>kls_showList()</h2>
 
@@ -2887,6 +3166,43 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="adffdab1397952e80a18505e5dc437b5c" name="adffdab1397952e80a18505e5dc437b5c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adffdab1397952e80a18505e5dc437b5c">&#9670;&#160;</a></span>kls_showList_toWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kls_showList_toWin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td>
+          <td class="paramname"><em>kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays a slideshow of KLS_Region_List from passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, to the passed WINDOW pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
+    <tr><td class="paramname">win</td><td>The Window at hand. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -3228,6 +3544,80 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf2f7555efaaa31b04a22270c40e2221" name="aaf2f7555efaaa31b04a22270c40e2221"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf2f7555efaaa31b04a22270c40e2221">&#9670;&#160;</a></span>kls_temp_show_toWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kls_temp_show_toWin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *&#160;</td>
+          <td class="paramname"><em>t_kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer and prints fields and eventually KLS_Region_List from the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, to the passed WINDOW pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_kls</td><td>The <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> at hand. </td></tr>
+    <tr><td class="paramname">win</td><td>The Window at hand. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="adea11280906a1ff9060cef74625a619a" name="adea11280906a1ff9060cef74625a619a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adea11280906a1ff9060cef74625a619a">&#9670;&#160;</a></span>kls_temp_showList_toWin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void kls_temp_showList_toWin </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *&#160;</td>
+          <td class="paramname"><em>t_kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">WINDOW *&#160;</td>
+          <td class="paramname"><em>win</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Displays a slideshow of KLS_Region_List from passed <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, to the passed WINDOW pointer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_kls</td><td>The <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> at hand. </td></tr>
+    <tr><td class="paramname">win</td><td>The Window at hand. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a0f917da26d318e5702dbdc550c01fa1c" name="a0f917da26d318e5702dbdc550c01fa1c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0f917da26d318e5702dbdc550c01fa1c">&#9670;&#160;</a></span>kls_temp_start()</h2>
 
@@ -3484,6 +3874,24 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a24e5720700fe1070f586a637e0d950d7" name="a24e5720700fe1070f586a637e0d950d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24e5720700fe1070f586a637e0d950d7">&#9670;&#160;</a></span>string_from_Gulp_Res()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char * string_from_Gulp_Res </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6">Gulp_Res</a>&#160;</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3e2a527e3824a8cc0538803937801e58" name="a3e2a527e3824a8cc0538803937801e58"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3e2a527e3824a8cc0538803937801e58">&#9670;&#160;</a></span>string_koliseo_version()</h2>
 
@@ -3505,7 +3913,63 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a541127eb786413201b4fcaeb7f406e78" name="a541127eb786413201b4fcaeb7f406e78"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a541127eb786413201b4fcaeb7f406e78">&#9670;&#160;</a></span>try_kls_gulp_file()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * try_kls_gulp_file </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td>
+          <td class="paramname"><em>kls</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>filepath</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>max_size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="af9b765015c795e8d487098f1429fb8c2" name="af9b765015c795e8d487098f1429fb8c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9b765015c795e8d487098f1429fb8c2">&#9670;&#160;</a></span>gulp_res_names</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const char* gulp_res_names[<a class="el" href="koliseo_8h.html#ae3fddfff0b37679e8b38c0b932cc5dc6a6326ade2feb045641b374c716dbdb5b3">TOT_GULP_RES</a>+1]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">extern</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac393b3f5c144d78f0b63a71a6f8d14a4" name="ac393b3f5c144d78f0b63a71a6f8d14a4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac393b3f5c144d78f0b63a71a6f8d14a4">&#9670;&#160;</a></span>KLS_DEFAULT_CONF</h2>
 
