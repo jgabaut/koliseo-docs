@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['avg_5fregion_5fsize_0',['avg_region_size',['../structKLS__Stats.html#adf1b3a81728476ce5d23e8bfd4a0ed60',1,'KLS_Stats']]]
+  ['gulp_5fres_5fnames_0',['gulp_res_names',['../koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2',1,'koliseo.c']]]
 ];
