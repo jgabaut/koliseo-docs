@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['has_5ftemp_0',['has_temp',['../structKoliseo.html#abd536361b9980957d1a3e64fd56dc85c',1,'Koliseo']]]
+  ['gulp_5fres_5fnames_0',['gulp_res_names',['../koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2',1,'koliseo.c']]]
 ];

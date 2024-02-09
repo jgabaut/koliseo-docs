@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['index_20page_0',['Koliseo index page',['../index.html',1,'']]]
+  ['koliseo_0',['koliseo',['../index.html',1,'']]]
 ];
