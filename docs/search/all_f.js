@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['table_20of_20contents_0',['Table of Contents',['../index.html#autotoc_md2',1,'']]],
-  ['thing_20a_20name_20witt_20a_1',['What is this thing? &lt;a name = &quot;witt&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md3',1,'']]],
-  ['this_20thing_20a_20name_20witt_20a_2',['What is this thing? &lt;a name = &quot;witt&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md3',1,'']]],
-  ['todo_20a_3',['Todo &lt;a name = &quot;todo&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md11',1,'']]],
-  ['todo_20a_20name_20todo_20a_4',['Todo &lt;a name = &quot;todo&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md11',1,'']]],
-  ['try_5fkls_5fgulp_5ffile_5',['try_kls_gulp_file',['../koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78',1,'koliseo.c']]],
-  ['try_5fkls_5fgulp_5ffile_5fto_5fkstr_6',['try_kls_gulp_file_to_kstr',['../koliseo_8c.html#a514ca7b57a5ccb88a62559e8dedee184',1,'koliseo.c']]]
+  ['simple_20arena_20allocator_0',['A C library for a simple arena allocator.',['../index.html#autotoc_md1',1,'']]],
+  ['string_5ffrom_5fgulp_5fres_1',['string_from_Gulp_Res',['../koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7',1,'koliseo.c']]],
+  ['string_5fkoliseo_5fversion_2',['string_koliseo_version',['../koliseo_8c.html#a3e2a527e3824a8cc0538803937801e58',1,'koliseo.c']]],
+  ['support_20a_3',['Supported platforms &lt;a name = &quot;support&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md17',1,'']]],
+  ['supported_20platforms_20a_20name_20support_20a_4',['Supported platforms &lt;a name = &quot;support&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md17',1,'']]]
 ];

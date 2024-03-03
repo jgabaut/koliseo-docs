@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.0</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.1</span>
    </div>
   </td>
  </tr>
@@ -102,6 +102,16 @@ Table of Contents</h1>
 <ul>
 <li>What is this thing?<ul>
 <li>Basic example</li>
+<li>Extra features<ul>
+<li>Region</li>
+<li>Curses</li>
+<li>Debug</li>
+<li>Gulp</li>
+<li>Title banner</li>
+<li>Experimental</li>
+<li>How to use extras</li>
+</ul>
+</li>
 <li>Documentation</li>
 <li>Prerequisites</li>
 <li>Configuration</li>
@@ -114,18 +124,8 @@ Table of Contents</h1>
 </ul>
 <h1><a class="anchor" id="autotoc_md3"></a>
 What is this thing? <a class="anchor" id="witt"></a></h1>
-<p>This is a C library for an arena allocator, whose arenas are named Koliseo. It offers a basic API to perform initalisation, push/pop, reset and free of a Koliseo.</p>
-<p>It also has:</p><ul>
-<li>A tagging system to type/name your references and have them in a list<ul>
-<li>The list can be stored either in an inner Koliseo or using the global allocator)</li>
-</ul>
-</li>
-<li>A couple utility functions to:<ul>
-<li>Help you estimate relative memory usage by some particular type of object, may prove useful in some scenarios.</li>
-<li>Memory-map a file (always the best idea, right?) to a C string, by providing the filepath.</li>
-</ul>
-</li>
-</ul>
+<p>This is a C library for an arena allocator, whose arenas are named <code>Koliseo</code>. It offers a basic API to perform initalisation, push (request arena memory), reset and free of a <code>Koliseo</code>.</p>
+<p>If you compile it without defining any special macros, you will get the basic functionality.</p>
 <h1><a class="anchor" id="autotoc_md4"></a>
 Basic example <a class="anchor" id="basic_example"></a></h1>
 <p>This is a basic usage example, initialising a Koliseo and then pushing an example pointer. You can build it by running:</p>
@@ -140,7 +140,7 @@ Basic example <a class="anchor" id="basic_example"></a></h1>
 <div class="line"><span class="keywordtype">int</span> main(<span class="keywordtype">void</span>)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">//Init the arena</span></div>
-<div class="line">    Koliseo* kls = <a class="code hl_function" href="koliseo_8c.html#a096fe71a94eba899ef11a62c92270f55">kls_new</a>(KLS_DEFAULT_SIZE);</div>
+<div class="line">    Koliseo* kls = kls_new(KLS_DEFAULT_SIZE);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Use the arena (see demo for Koliseo_Temp usage)</span></div>
 <div class="line">    Example* e = KLS_PUSH(kls, Example);</div>
@@ -153,15 +153,76 @@ Basic example <a class="anchor" id="basic_example"></a></h1>
 <div class="line">    <a class="code hl_function" href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a>(kls);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="akoliseo_8c_html_a096fe71a94eba899ef11a62c92270f55"><div class="ttname"><a href="koliseo_8c.html#a096fe71a94eba899ef11a62c92270f55">kls_new</a></div><div class="ttdeci">Koliseo * kls_new(ptrdiff_t size)</div><div class="ttdoc">Takes a ptrdiff_t size and allocates the backing memory for a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:285</div></div>
-<div class="ttc" id="akoliseo_8c_html_a1c53c3bf4e68e080f4e9dceef56139f2"><div class="ttname"><a href="koliseo_8c.html#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1933</div></div>
-<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2418</div></div>
-</div><!-- fragment --><h1><a class="anchor" id="autotoc_md5"></a>
+<div class="ttc" id="akoliseo_8c_html_a1c53c3bf4e68e080f4e9dceef56139f2"><div class="ttname"><a href="koliseo_8c.html#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1969</div></div>
+<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2460</div></div>
+</div><!-- fragment --><p>After including the <code><a class="el" href="koliseo_8h.html">koliseo.h</a></code> header:</p>
+<ul>
+<li>To initialise a default arena: <div class="fragment"><div class="line">Koliseo* kls_new(<span class="keywordtype">size_t</span>)</div>
+</div><!-- fragment --></li>
+<li>To request memory for a specific type: <div class="fragment"><div class="line">Type* KLS_PUSH(Koliseo* kls, Type)</div>
+</div><!-- fragment --></li>
+<li>For C strings, you can use: <div class="fragment"><div class="line"><span class="keywordtype">char</span>* KLS_PUSH_STR(Koliseo* kls, <span class="keywordtype">char</span>* cstring)</div>
+</div><!-- fragment --></li>
+<li>Also, a couple unsafe utility macros (not recommended to use, for now): <div class="fragment"><div class="line"><span class="keywordtype">char</span>* KLS_STRDUP(Koliseo* kls, <span class="keywordtype">char</span>* source, <span class="keywordtype">char</span>* dest)</div>
+</div><!-- fragment --></li>
+<li>To free the arena: <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a>(Koliseo* kls)</div>
+</div><!-- fragment --></li>
+</ul>
+<p>For more documentation on the available functions, see this section.</p>
+<h1><a class="anchor" id="autotoc_md5"></a>
+Extra features <a class="anchor" id="extra_features"></a></h1>
+<p>By default, extended functionalities are not included in the build, with each feature needing a preprocessor macro to be defined before including the library header. You can find hints on configuration here, or the list of macros here.</p>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Region <a class="anchor" id="extra_region"></a></h2>
+<p>A ready-to-go index for every allocation you make.</p><ul>
+<li>It uses an intrusive linked list and (at the moment) has quite the memory overhead, due to hosting a couple static string buffers for the tags, so it may not be suited for all usecases.</li>
+<li>Offers extended API with tagging arguments, to type/name your references</li>
+<li>For now, two allocations backends can be chosen for the list, it can be stored:<ul>
+<li>In an inner Koliseo (this puts an extra limit to the total number of single allocations)</li>
+<li>Using the global allocator (from malloc)</li>
+</ul>
+</li>
+<li>Extra utility functions<ul>
+<li>Help you estimate relative memory usage by some particular type of object. May prove useful in some scenarios.</li>
+</ul>
+</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Curses <a class="anchor" id="extra_curses"></a></h2>
+<p>Utility functions that extend ncurses API to provide debug info.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Core debug <a class="anchor" id="extra_debug"></a></h2>
+<p>Extra debug for core calls, may be too verbose for some applications.</p>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Gulp <a class="anchor" id="extra_gulp"></a></h2>
+<p>Utility to memory-map a file (always the best idea, right?) to a C string, by providing the filepath.</p><ul>
+<li>Also includes a minimal string-view API, in case you want to work on the file contents differently.</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md10"></a>
+Title banner <a class="anchor" id="extra_title"></a></h2>
+<p>Include an ASCII art string to be printed as a title banner.</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Experimental <a class="anchor" id="extra_exper"></a></h2>
+<p>Include some experimental (NOT WELL TESTED. USE WITH CAUTION) functions.</p>
+<p>In particular, enables the dreaded <code>pop</code> operation and its functions.</p>
+<h2><a class="anchor" id="autotoc_md12"></a>
+How to enable extra features<a class="anchor" id="extra_howto"></a></h2>
+<p>To aid in building with extra features, see this section.</p>
+<p>The preprocessor macros to enable them manually are:</p>
+<ul>
+<li>Region: <code>KOLISEO_HAS_REGION</code></li>
+<li>Curses: <code>KOLISEO_HAS_CURSES</code></li>
+<li>Debug: <code>KLS_DEBUG_CORE</code></li>
+<li>Gulp: <code>KOLISEO_HAS_GULP</code></li>
+<li>Title banner: <code>KOLISEO_HAS_TITLE</code></li>
+<li>Experimental: <code>KOLISEO_HAS_EXPER</code></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Documentation <a class="anchor" id="docs"></a></h1>
 <p>HTML docs are available at <a href="https://jgabaut.github.io/koliseo-docs/index.html">this Github Pages link</a>.</p>
 <p>You can also get the ready pdf version of the docs from the latest release.</p>
 <p>If you have <code>doxygen</code> you can generate the HTML yourself, or even the pdf if you have <code>doxygen-latex</code> or equivalents.</p>
-<h1><a class="anchor" id="autotoc_md6"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Prerequisites <a class="anchor" id="prerequisites"></a></h1>
 <p>To build the <code>demo</code> binary, you need:</p><ul>
 <li><code>automake</code> and <code>autoconf</code> to generate the needed <code>Makefile</code></li>
@@ -170,51 +231,64 @@ Prerequisites <a class="anchor" id="prerequisites"></a></h1>
 </ul>
 <p>To bootstrap and use the <code>./anvil</code> tool to build all amboso-supported tags for <code>demo</code>, you also need either:</p>
 <ul>
-<li><code>bash &gt;4.x</code> if you want to use <code>amboso</code></li>
+<li><code>bash &gt;4.x, gawk</code> if you want to use <code>amboso</code></li>
 <li><code>rustc</code> if you want to use <code>invil</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md7"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Configuration <a class="anchor" id="config"></a></h1>
 <p>To prepare the files needed by <code>autotools</code>, run:</p>
 <div class="fragment"><div class="line">aclocal</div>
 <div class="line">autoconf</div>
 <div class="line">automake --add-missing</div>
-<div class="line">./configure # Optionally, with --enable-debug=yes or --host</div>
+<div class="line">./configure # Optionally, with --enable-debug or --host</div>
 <div class="line">make</div>
 </div><!-- fragment --><p>You will get a <code>./configure</code> script, which you can use to enable debug mode or other features.</p>
 <ul>
 <li>Run <code>./configure --host x86-64-w64-mingw32</code> to setup the <code>Makefile</code> appropriately for a <code>x86_64-w64-mingw32</code> build.</li>
-<li>Run <code>./configure --enable-debug=yes</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKLS_DEBUG_CORE</code> flag.<ul>
+<li>Run <code>./configure --enable-debug</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKLS_DEBUG_CORE</code> flag.<ul>
 <li>By default, enabling debug this way also adds <code>-DKLS_SETCONF_DEBUG</code> to the demo build. This preproc guard lets you really debug kls initialisation, by printing logs from inside <code>kls_set_conf()</code>.</li>
 </ul>
 </li>
-<li>Run <code>./configure --enable-curses=yes</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_CURSES</code> flag.</li>
-<li>Run <code>./configure --enable-gulp=yes</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_GULP</code> flag.</li>
+<li>Run <code>./configure --enable-region</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_REGION</code> flag.</li>
+<li>Run <code>./configure --enable-curses</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_CURSES</code> flag.</li>
+<li>Run <code>./configure --enable-gulp</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_GULP</code> flag.</li>
+<li>Run <code>./configure --enable-title</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_TITLE</code> flag.</li>
+<li>Run <code>./configure --enable-exper</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_EXPER</code> flag.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md8"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Building <a class="anchor" id="building"></a></h1>
 <p>To build both the <code>libkoliseo.so</code> lib and <code>demo</code> binary, run:</p><ul>
 <li><code>./configure</code>, which should generate the <code>Makefile</code>. See Configuration section.</li>
 <li><code>make</code>, to build all target</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md9"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Supported platforms <a class="anchor" id="support"></a></h1>
 <p>ATM the code should build for:</p><ul>
 <li><code>x86_64-Linux</code></li>
-<li><code>x86_64-w64-mingw32</code> to target <code>Windows</code>, but ATM there is no guarantee it works as intended there.<ul>
-<li>This build does not have a <code>.dll</code> target yet.</li>
+<li><code>darwin-arm64</code></li>
+<li><code>x86_64-w64-mingw32</code> to target <code>Windows</code>.<ul>
+<li>This build, while mostly identical to <code>Linux</code>/<code>macOS</code>, is less tested.</li>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md10"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Credits <a class="anchor" id="credits"></a></h1>
 <p>Thanks to <a href="https://www.reddit.com/user/skeeto/">skeeto</a> for showing me the original base implementation.</p>
 <p>Thanks to <a href="https://www.instagram.com/mako_x_tattoo/">Mako</a> for the repo banner.</p>
 <p>Thanks to <a href="https://github.com/tsoding">Tsoding</a> for its creative string view library (<a href="https://github.com/tsoding/sv">repo</a>), which indeed does things so simply you mostly can't do anything different.</p>
-<h1><a class="anchor" id="autotoc_md11"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Todo <a class="anchor" id="todo"></a></h1>
 <ul>
-<li>Break up internal extensions to the core functionality </li>
+<li>Break up internal extensions to the core functionality<ul>
+<li>Maybe move the guarded code into separate headers?</li>
+</ul>
+</li>
+<li>Model <code>KLS_Temp_Conf</code> to still be included without <code>Region</code> feature</li>
+<li>At the moment, the arena can't grown its own underlying buffer.<ul>
+<li>Add backwards-compatible logic to enable growable arenas.</li>
+</ul>
+</li>
+<li>Clean up the <code>Windows</code> part of the includes, to have minimal definitions from <code>windows.h</code>. </li>
 </ul>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>

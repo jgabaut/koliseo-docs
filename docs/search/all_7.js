@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['int_5fkoliseo_5fversion_0',['int_koliseo_version',['../koliseo_8c.html#a9eeb3d2e01af58d985f9b7adb1790ff5',1,'koliseo.c']]],
-  ['is_20this_20thing_20a_20name_20witt_20a_1',['What is this thing? &lt;a name = &quot;witt&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md3',1,'']]]
+  ['how_20to_20enable_20extra_20features_20a_20name_20extra_5fhowto_20a_0',['How to enable extra features&lt;a name = &quot;extra_howto&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md12',1,'']]]
 ];
