@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.2</span>
    </div>
   </td>
  </tr>
@@ -146,7 +146,7 @@ $(function(){initNavTree('koliseo_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#define KLS_MAJOR 0 </span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#define KLS_MINOR 4 </span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define KLS_PATCH 1 </span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#define KLS_PATCH 2 </span></div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="keyword">typedef</span> <span class="keywordtype">void</span>*(kls_alloc_func)(<span class="keywordtype">size_t</span>); </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#define STRINGIFY_2(x) #x</span></div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
@@ -278,7 +278,7 @@ $(function(){initNavTree('koliseo_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
 <div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> KOLISEO_API_VERSION_INT =</div>
 <div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    (KLS_MAJOR * 1000000 + KLS_MINOR * 10000 + KLS_PATCH * 100);</div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> KOLISEO_API_VERSION_STRING[] = <span class="stringliteral">&quot;0.4.1&quot;</span>; </div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span><span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span> KOLISEO_API_VERSION_STRING[] = <span class="stringliteral">&quot;0.4.2&quot;</span>; </div>
 <div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="keyword">const</span> <span class="keywordtype">char</span> *<a class="code hl_function" href="koliseo_8c.html#a3e2a527e3824a8cc0538803937801e58">string_koliseo_version</a>(<span class="keywordtype">void</span>);</div>
 <div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
 <div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="koliseo_8c.html#a9eeb3d2e01af58d985f9b7adb1790ff5">int_koliseo_version</a>(<span class="keywordtype">void</span>);</div>
@@ -445,11 +445,11 @@ $(function(){initNavTree('koliseo_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00514" name="l00514"></a><span class="lineno">  514</span><span class="preprocessor">#ifndef KOLISEO_CURSES_H_</span></div>
 <div class="line"><a id="l00515" name="l00515"></a><span class="lineno">  515</span><span class="preprocessor">#define KOLISEO_CURSES_H_</span></div>
 <div class="line"><a id="l00516" name="l00516"></a><span class="lineno">  516</span> </div>
-<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="preprocessor">#ifndef WINDOWS_BUILD</span></div>
+<div class="line"><a id="l00517" name="l00517"></a><span class="lineno">  517</span><span class="preprocessor">#ifndef _WIN32</span></div>
 <div class="line"><a id="l00518" name="l00518"></a><span class="lineno">  518</span><span class="preprocessor">#include &quot;ncurses.h&quot;</span></div>
 <div class="line"><a id="l00519" name="l00519"></a><span class="lineno">  519</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00520" name="l00520"></a><span class="lineno">  520</span><span class="preprocessor">#include &lt;ncursesw/ncurses.h&gt;</span></div>
-<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="preprocessor">#endif              </span><span class="comment">//WINDOWS_BUILD</span></div>
+<div class="line"><a id="l00521" name="l00521"></a><span class="lineno">  521</span><span class="preprocessor">#endif  </span><span class="comment">//    _WIN32</span></div>
 <div class="line"><a id="l00522" name="l00522"></a><span class="lineno">  522</span> </div>
 <div class="line"><a id="l00523" name="l00523"></a><span class="lineno">  523</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a6241fb4afaeb038b638c79d42b1740f3">kls_show_toWin</a>(Koliseo * kls, WINDOW * win);</div>
 <div class="line"><a id="l00524" name="l00524"></a><span class="lineno">  524</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#aaf2f7555efaaa31b04a22270c40e2221">kls_temp_show_toWin</a>(Koliseo_Temp * t_kls, WINDOW * win);</div>
@@ -484,7 +484,7 @@ $(function(){initNavTree('koliseo_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00563" name="l00563"></a><span class="lineno">  563</span><span class="preprocessor">#ifdef KOLISEO_HAS_REGION</span></div>
 <div class="line"><a id="l00564" name="l00564"></a><span class="lineno">  564</span><span class="preprocessor">#define KLS_PUSH_ARR_T_NAMED(kls_temp, type, count, name, desc) (type*)kls_temp_push_zero_named((kls_temp), sizeof(type), _Alignof(type), (count), (name), (desc))</span></div>
 <div class="line"><a id="l00565" name="l00565"></a><span class="lineno">  565</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">#define KLS_PUSH_ARR_T_NAMED(kls_temp, type, count, name, desc) KLS_PUSH_ARR_T((kls_temp),(type),(count))</span></div>
+<div class="line"><a id="l00566" name="l00566"></a><span class="lineno">  566</span><span class="preprocessor">#define KLS_PUSH_ARR_T_NAMED(kls_temp, type, count, name, desc) KLS_PUSH_ARR_T((kls_temp),type,(count))</span></div>
 <div class="line"><a id="l00567" name="l00567"></a><span class="lineno">  567</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_REGION</span></div>
 <div class="line"><a id="l00568" name="l00568"></a><span class="lineno">  568</span> </div>
 <div class="line"><a id="l00572" name="l00572"></a><span class="lineno">  572</span><span class="preprocessor">#define KLS_PUSH_STR_T_NAMED(kls_temp, cstr, name, desc) KLS_PUSH_ARR_T_NAMED((kls_temp), char, strlen((cstr)), (name), (desc))</span></div>
@@ -509,266 +509,787 @@ $(function(){initNavTree('koliseo_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00614" name="l00614"></a><span class="lineno">  614</span> </div>
 <div class="line"><a id="l00615" name="l00615"></a><span class="lineno">  615</span><span class="preprocessor">#ifdef KOLISEO_HAS_REGION</span></div>
 <div class="line"><a id="l00616" name="l00616"></a><span class="lineno">  616</span> </div>
-<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#af3e5424e5b3ea8ac242a9753edbb2c1c">kls_emptyList</a>(<span class="keywordtype">void</span>);</div>
-<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor">#define KLS_GETLIST() kls_emptyList()</span></div>
-<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#abb64f7d5a213d02a6ace43fd8dff9820">kls_empty</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>KLS_list_element <a class="code hl_function" href="koliseo_8c.html#a2cf7922b308d4ccaf0a434ffc0b3de3f">kls_head</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#abcb094a3e0731106aeb5c658cb8a0e81">kls_tail</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a36076454ce5983cfb9a6419bff42d893">kls_cons</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00617" name="l00617"></a><span class="lineno">  617</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00618" name="l00618"></a><span class="lineno">  618</span><span class="preprocessor">#define KLS_RL_GETLIST() kls_rl_emptyList()</span></div>
+<div class="line"><a id="l00619" name="l00619"></a><span class="lineno">  619</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a41c0a83764c4936bc38d84bc90068f52">kls_rl_empty</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00620" name="l00620"></a><span class="lineno">  620</span>KLS_list_element <a class="code hl_function" href="koliseo_8c.html#a2ff10e13d78e8e9a5336f1c6c708c99e">kls_rl_head</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00621" name="l00621"></a><span class="lineno">  621</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#ac1a3188af539376f66992219a02d80a6">kls_rl_tail</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00622" name="l00622"></a><span class="lineno">  622</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a0f9cb51b4ab8e2b629c4a2684cb75eb9">kls_rl_cons</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
 <div class="line"><a id="l00623" name="l00623"></a><span class="lineno">  623</span><span class="preprocessor">#ifdef KOLISEO_HAS_EXPER</span></div>
-<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>KLS_region_list_item* <a class="code hl_function" href="koliseo_8c.html#ac798fbfd687c962fa1fbe4a69e136b7e">kls_list_pop</a>(Koliseo *kls);</div>
+<div class="line"><a id="l00624" name="l00624"></a><span class="lineno">  624</span>KLS_region_list_item* kls_rl_list_pop(Koliseo *kls);</div>
 <div class="line"><a id="l00625" name="l00625"></a><span class="lineno">  625</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_EXPER</span></div>
-<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a8ee4951b01430e9335b774137a271285">kls_t_cons</a>(Koliseo_Temp *, KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00626" name="l00626"></a><span class="lineno">  626</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a019f9844759b44e4ccc9cd0f72bcff5a">kls_rl_t_cons</a>(Koliseo_Temp *, KLS_list_element, KLS_Region_List);</div>
 <div class="line"><a id="l00627" name="l00627"></a><span class="lineno">  627</span><span class="preprocessor">#ifdef KOLISEO_HAS_EXPER</span></div>
-<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>KLS_region_list_item* <a class="code hl_function" href="koliseo_8c.html#ad7fdc11860b92d5c573c4e62b5b948a2">kls_t_list_pop</a>(Koliseo_Temp *t_kls);</div>
+<div class="line"><a id="l00628" name="l00628"></a><span class="lineno">  628</span>KLS_region_list_item* kls_rl_t_list_pop(Koliseo_Temp *t_kls);</div>
 <div class="line"><a id="l00629" name="l00629"></a><span class="lineno">  629</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_EXPER</span></div>
 <div class="line"><a id="l00630" name="l00630"></a><span class="lineno">  630</span> </div>
-<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#af2b5dd7f79fd5b55b70319ea6b1239f5">kls_freeList</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor">#define KLS_FREELIST(kls_list) kls_freeList(kls_list)</span></div>
-<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a0c7bf1c05a78b24a3c0607c14891536f">kls_showList</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a76a4c4b8a0c3fa0ca394cd5184ad15ad">kls_showList_toFile</a>(KLS_Region_List, FILE * fp);</div>
-<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="preprocessor">#define KLS_ECHOLIST(kls_list) kls_showList(kls_list)</span></div>
-<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="preprocessor">#define KLS_PRINTLIST(kls_list,file) kls_showList_toFile(kls_list,file)</span></div>
-<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a6f29f975b823e5a4592316df909d236c">kls_member</a>(KLS_list_element, KLS_Region_List);</div>
-<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="keywordtype">int</span> <a class="code hl_function" href="koliseo_8c.html#a6738b2d02bfa82f3efdbf5e1222294df">kls_length</a>(KLS_Region_List);</div>
-<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a368af43c624af78ca2f139ca19bbca5e">kls_append</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
-<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#aa24534efae8c57574b6f2a435de9d282">kls_reverse</a>(Koliseo *, KLS_Region_List);</div>
-<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a9dbd4a76b3ed5a53afe94a14ebf14e12">kls_copy</a>(Koliseo *, KLS_Region_List);</div>
-<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#aaf98c70d7601028ef7bb2ab3defef996">kls_delete</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
-<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span> </div>
-<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#ab7955d51598f7c9d927cd52a80ebc33a">kls_insord</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
-<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span><span class="preprocessor">#define KLS_PUSHLIST(kls,reg,kls_list) kls_insord(kls,reg,kls_list)</span></div>
-<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#aa14183c538e1836764b875c3cbd28f45">kls_insord_p</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
-<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="preprocessor">#define KLS_PUSHLIST_P(kls,reg,kls_list) kls_insord_p(kls,reg,kls_list)</span></div>
-<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#af97405810de9feb36124dc62fb00c4ad">kls_mergeList</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
-<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#afe4889a17d9aefb70d5f045eb82360d8">kls_intersect</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
-<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a5e4fa85ec7f72d086f43ef01c0fea928">kls_diff</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
-<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span> </div>
-<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span><span class="preprocessor">#define KLS_DIFF(kls,kls_list1,kls_list2) kls_diff(kls,kls_list1,kls_list2)</span></div>
-<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a1f83d151c2715a8ab37d46520bf7bf10">kls_isLess</a>(KLS_list_element, KLS_list_element);</div>
-<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a473984a6aa9831f15a1969bc524fc3b4">kls_isEqual</a>(KLS_list_element, KLS_list_element);</div>
-<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="keywordtype">double</span> <a class="code hl_function" href="koliseo_8c.html#ada4540ede2edda81d2b1ef56acb92319">kls_usageShare</a>(KLS_list_element, Koliseo *);</div>
-<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#a856591504e70b81f6b1162482fe0a613">kls_regionSize</a>(KLS_list_element);</div>
-<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b">kls_avg_regionSize</a>(Koliseo *);</div>
-<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a97b2a46868a9874e6d67b59a556ee22a">kls_usageReport_toFile</a>(Koliseo *, FILE *);</div>
-<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">kls_usageReport</a>(Koliseo *);</div>
-<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">kls_type_usage</a>(<span class="keywordtype">int</span>, Koliseo *);</div>
-<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span> </div>
-<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_REGION</span></div>
+<div class="line"><a id="l00631" name="l00631"></a><span class="lineno">  631</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00632" name="l00632"></a><span class="lineno">  632</span><span class="preprocessor">#define KLS_RL_FREELIST(kls_list) kls_rl_freeList(kls_list)</span></div>
+<div class="line"><a id="l00633" name="l00633"></a><span class="lineno">  633</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00634" name="l00634"></a><span class="lineno">  634</span><span class="preprocessor">#define kls_showList(list) kls_rl_showList((list))</span></div>
+<div class="line"><a id="l00635" name="l00635"></a><span class="lineno">  635</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a>(KLS_Region_List, FILE * fp);</div>
+<div class="line"><a id="l00636" name="l00636"></a><span class="lineno">  636</span><span class="preprocessor">#define kls_showList_toFile(list, fp) kls_rl_showList_toFile((list), (fp))</span></div>
+<div class="line"><a id="l00637" name="l00637"></a><span class="lineno">  637</span><span class="preprocessor">#define KLS_RL_ECHOLIST(kls_list) kls_rl_showList(kls_list)</span></div>
+<div class="line"><a id="l00638" name="l00638"></a><span class="lineno">  638</span><span class="preprocessor">#define KLS_RL_PRINTLIST(kls_list,file) kls_rl_showList_toFile(kls_list,file)</span></div>
+<div class="line"><a id="l00639" name="l00639"></a><span class="lineno">  639</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a33d65f4baaaa762b0dd73bce06b53b1f">kls_rl_member</a>(KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00640" name="l00640"></a><span class="lineno">  640</span><span class="keywordtype">int</span> <a class="code hl_function" href="koliseo_8c.html#a8b82a7cf4fedeb6c14d2683bec8d0aa9">kls_rl_length</a>(KLS_Region_List);</div>
+<div class="line"><a id="l00641" name="l00641"></a><span class="lineno">  641</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#ac1f2c485bbc68e064fad6cbbd65b2b5b">kls_rl_append</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
+<div class="line"><a id="l00642" name="l00642"></a><span class="lineno">  642</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a984b6947109dcfaa73961e8718ed8edd">kls_rl_reverse</a>(Koliseo *, KLS_Region_List);</div>
+<div class="line"><a id="l00643" name="l00643"></a><span class="lineno">  643</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a97c2f39163b8712000a7675344669af9">kls_rl_copy</a>(Koliseo *, KLS_Region_List);</div>
+<div class="line"><a id="l00644" name="l00644"></a><span class="lineno">  644</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#aadf0cfebeef7cae605ef30d41d37aed1">kls_rl_delete</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00645" name="l00645"></a><span class="lineno">  645</span> </div>
+<div class="line"><a id="l00646" name="l00646"></a><span class="lineno">  646</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00647" name="l00647"></a><span class="lineno">  647</span><span class="preprocessor">#define KLS_RL_PUSHLIST(kls,reg,kls_list) kls_rl_insord(kls,reg,kls_list)</span></div>
+<div class="line"><a id="l00648" name="l00648"></a><span class="lineno">  648</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a>(Koliseo *, KLS_list_element, KLS_Region_List);</div>
+<div class="line"><a id="l00649" name="l00649"></a><span class="lineno">  649</span><span class="preprocessor">#define KLS_RL_PUSHLIST_P(kls,reg,kls_list) kls_rl_insord_p(kls,reg,kls_list)</span></div>
+<div class="line"><a id="l00650" name="l00650"></a><span class="lineno">  650</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#acd2de978c4d886ae3e336206ca93b83a">kls_rl_mergeList</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
+<div class="line"><a id="l00651" name="l00651"></a><span class="lineno">  651</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#ad5da77ca10acaed3fb6d9f60a0e0464f">kls_rl_intersect</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
+<div class="line"><a id="l00652" name="l00652"></a><span class="lineno">  652</span>KLS_Region_List <a class="code hl_function" href="koliseo_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a>(Koliseo *, KLS_Region_List, KLS_Region_List);</div>
+<div class="line"><a id="l00653" name="l00653"></a><span class="lineno">  653</span> </div>
+<div class="line"><a id="l00654" name="l00654"></a><span class="lineno">  654</span><span class="preprocessor">#define KLS_RL_DIFF(kls,kls_list1,kls_list2) kls_rl_diff(kls,kls_list1,kls_list2)</span></div>
+<div class="line"><a id="l00655" name="l00655"></a><span class="lineno">  655</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a385090d903ca931a35ffc4984429658c">kls_rl_isLess</a>(KLS_list_element, KLS_list_element);</div>
+<div class="line"><a id="l00656" name="l00656"></a><span class="lineno">  656</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#aaea0e443817878224b6c539d2b96ec2d">kls_rl_isEqual</a>(KLS_list_element, KLS_list_element);</div>
+<div class="line"><a id="l00657" name="l00657"></a><span class="lineno">  657</span><span class="keywordtype">double</span> <a class="code hl_function" href="koliseo_8c.html#ada4540ede2edda81d2b1ef56acb92319">kls_usageShare</a>(KLS_list_element, Koliseo *);</div>
+<div class="line"><a id="l00658" name="l00658"></a><span class="lineno">  658</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#a856591504e70b81f6b1162482fe0a613">kls_regionSize</a>(KLS_list_element);</div>
+<div class="line"><a id="l00659" name="l00659"></a><span class="lineno">  659</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b">kls_avg_regionSize</a>(Koliseo *);</div>
+<div class="line"><a id="l00660" name="l00660"></a><span class="lineno">  660</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a97b2a46868a9874e6d67b59a556ee22a">kls_usageReport_toFile</a>(Koliseo *, FILE *);</div>
+<div class="line"><a id="l00661" name="l00661"></a><span class="lineno">  661</span><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">kls_usageReport</a>(Koliseo *);</div>
+<div class="line"><a id="l00662" name="l00662"></a><span class="lineno">  662</span>ptrdiff_t <a class="code hl_function" href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">kls_type_usage</a>(<span class="keywordtype">int</span>, Koliseo *);</div>
 <div class="line"><a id="l00663" name="l00663"></a><span class="lineno">  663</span> </div>
-<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">#ifdef KOLISEO_HAS_GULP </span></div>
-<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">#ifndef KOLISEO_GULP_H_</span></div>
-<div class="line"><a id="l00667" name="l00667"></a><span class="lineno">  667</span><span class="preprocessor">#define KOLISEO_GULP_H_</span></div>
-<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span> </div>
-<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">#include &quot;ctype.h&quot;</span> <span class="comment">// Needed for isspace()...</span></div>
+<div class="line"><a id="l00664" name="l00664"></a><span class="lineno">  664</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_REGION</span></div>
+<div class="line"><a id="l00665" name="l00665"></a><span class="lineno">  665</span> </div>
+<div class="line"><a id="l00666" name="l00666"></a><span class="lineno">  666</span><span class="preprocessor">#ifdef KOLISEO_HAS_GULP </span></div>
+<div class="line"><a id="l00668" name="l00668"></a><span class="lineno">  668</span><span class="preprocessor">#ifndef KOLISEO_GULP_H_</span></div>
+<div class="line"><a id="l00669" name="l00669"></a><span class="lineno">  669</span><span class="preprocessor">#define KOLISEO_GULP_H_</span></div>
 <div class="line"><a id="l00670" name="l00670"></a><span class="lineno">  670</span> </div>
-<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="keyword">typedef</span> <span class="keyword">struct </span>Kstr {</div>
-<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* data;</div>
-<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span>    <span class="keywordtype">size_t</span> len;</div>
-<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>} Kstr;</div>
-<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span> </div>
-<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>Kstr <a class="code hl_function" href="koliseo_8c.html#afee4e3065b54ccfe5f427b4d034fd8fc">kstr_new</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str, <span class="keywordtype">size_t</span> len);</div>
-<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a6efc4c9e0fd57fe6aeef21e0ec46c89b">kstr_from_c_lit</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* c_lit);</div>
-<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#afb2e4bd37a00fb1f581ef98db5d22ed3">kstr_eq</a>(Kstr left, Kstr right);</div>
-<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a45b06662991ceb95d49807b5fd3a4256">kstr_eq_ignorecase</a>(Kstr left, Kstr right);</div>
-<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a929874fb0ad49f77f42fda08101f3eb7">kstr_cut_l</a>(Kstr *k, <span class="keywordtype">size_t</span> n);</div>
-<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a6598f8ffe493aefa8e7a1f68bcf94700">kstr_cut_r</a>(Kstr *k, <span class="keywordtype">size_t</span> n);</div>
-<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a3f87e56b1b69a3e24815361fffe5b7a1">kstr_trim_left</a>(Kstr kstr);</div>
-<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a4feb8cbdebde6a83692071c5f44cb278">kstr_trim_right</a>(Kstr kstr);</div>
-<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ad5597e5527897ae9895bd6df60befc12">kstr_trim</a>(Kstr kstr);</div>
-<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#af9663a58619f894053f11d95446f0fd0">kstr_indexof</a>(Kstr k, <span class="keywordtype">char</span> c, <span class="keywordtype">int</span>* idx);</div>
-<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ab106be0da82fb996a22ca9cb6d4e049f">kstr_token</a>(Kstr* k, <span class="keywordtype">char</span> delim);</div>
-<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a3c9323dd3154ef59ec9493bfbee05a55">kstr_try_token</a>(Kstr* k, <span class="keywordtype">char</span> delim, Kstr* part);</div>
-<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ae13fd9686702bbce52ee6499aa3d2e80">kstr_token_kstr</a>(Kstr* k, Kstr delim);</div>
-<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span> </div>
-<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span><span class="preprocessor">#define KSTR(c_lit) kstr_new(c_lit, sizeof(c_lit) - 1)</span></div>
-<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span><span class="preprocessor">#define KSTR_NULL kstr_new(NULL, 0)</span></div>
-<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span> </div>
-<div class="line"><a id="l00696" name="l00696"></a><span class="lineno">  696</span><span class="preprocessor">#define Kstr_Fmt &quot;%.*s&quot;</span></div>
-<div class="line"><a id="l00700" name="l00700"></a><span class="lineno">  700</span><span class="preprocessor">#define Kstr_Arg(kstr) (int) (kstr.len), (kstr.data)</span></div>
-<div class="line"><a id="l00701" name="l00701"></a><span class="lineno">  701</span> </div>
-<div class="line"><a id="l00709" name="l00709"></a><span class="lineno">  709</span><span class="preprocessor">#define ONEGB_DEC_INT 1073741824</span></div>
-<div class="line"><a id="l00710" name="l00710"></a><span class="lineno">  710</span> </div>
-<div class="line"><a id="l00715" name="l00715"></a><span class="lineno">  715</span><span class="preprocessor">#define GULP_MAX_FILE_SIZE ONEGB_DEC_INT</span></div>
-<div class="line"><a id="l00716" name="l00716"></a><span class="lineno">  716</span> </div>
-<div class="line"><a id="l00721" name="l00721"></a><span class="lineno">  721</span><span class="keyword">typedef</span> <span class="keyword">enum</span> Gulp_Res {</div>
-<div class="line"><a id="l00722" name="l00722"></a><span class="lineno">  722</span>    GULP_FILE_OK=0,</div>
-<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span>    GULP_FILE_NOT_EXIST,</div>
-<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    GULP_FILE_TOO_LARGE,</div>
-<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    GULP_FILE_READ_ERROR,</div>
-<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    GULP_FILE_CONTAINS_NULLCHAR,</div>
-<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    GULP_FILE_KLS_NULL,</div>
-<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    TOT_GULP_RES</div>
-<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>} Gulp_Res;</div>
-<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span> </div>
-<div class="line"><a id="l00734" name="l00734"></a><span class="lineno">  734</span><span class="preprocessor">#define Gulp_Res_Fmt &quot;%s&quot;</span></div>
-<div class="line"><a id="l00738" name="l00738"></a><span class="lineno">  738</span><span class="preprocessor">#define Gulp_Res_Arg(gr) (string_from_Gulp_Res((gr)))</span></div>
-<div class="line"><a id="l00739" name="l00739"></a><span class="lineno">  739</span> </div>
-<div class="line"><a id="l00744" name="l00744"></a><span class="lineno">  744</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2">gulp_res_names</a>[TOT_GULP_RES+1];</div>
-<div class="line"><a id="l00745" name="l00745"></a><span class="lineno">  745</span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a>(Gulp_Res g);</div>
-<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span> </div>
-<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="comment">//static char * kls_read_file(Koliseo* kls, const char * f_name, Gulp_Res * err, size_t * f_size, ...);</span></div>
-<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span><span class="keywordtype">char</span> * <a class="code hl_function" href="koliseo_8c.html#a479a99fb7176087e1dd82dee92cfbcf3">kls_gulp_file_sized</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, Gulp_Res * err, <span class="keywordtype">size_t</span> max_size);</div>
-<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="keywordtype">char</span> * <a class="code hl_function" href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, <span class="keywordtype">size_t</span> max_size);</div>
-<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="preprocessor">#define KLS_GULP_FILE(kls, filepath) try_kls_gulp_file((kls),(filepath), GULP_MAX_FILE_SIZE)</span></div>
-<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="comment">//Kstr * kls_read_file_to_kstr(Koliseo* kls, const char * f_name, Gulp_Res * err, size_t * f_size, ...);</span></div>
-<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span>Kstr * <a class="code hl_function" href="koliseo_8c.html#a2b06f80d832f2122fd22267d2ccb269b">kls_gulp_file_sized_to_kstr</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, Gulp_Res * err, <span class="keywordtype">size_t</span> max_size, <span class="keywordtype">bool</span> allow_nullchar);</div>
-<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span>Kstr * <a class="code hl_function" href="koliseo_8c.html#a514ca7b57a5ccb88a62559e8dedee184">try_kls_gulp_file_to_kstr</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, <span class="keywordtype">size_t</span> max_size, <span class="keywordtype">bool</span> allow_nullchar);</div>
-<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span><span class="preprocessor">#define KLS_GULP_FILE_KSTR(kls, filepath) try_kls_gulp_file_to_kstr((kls),(filepath), GULP_MAX_FILE_SIZE, false)</span></div>
-<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span> </div>
-<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">#endif              </span><span class="comment">//KOLISEO_GULP_H_</span></div>
+<div class="line"><a id="l00671" name="l00671"></a><span class="lineno">  671</span><span class="preprocessor">#include &quot;ctype.h&quot;</span> <span class="comment">// Needed for isspace()...</span></div>
+<div class="line"><a id="l00672" name="l00672"></a><span class="lineno">  672</span> </div>
+<div class="line"><a id="l00673" name="l00673"></a><span class="lineno">  673</span><span class="keyword">typedef</span> <span class="keyword">struct </span>Kstr {</div>
+<div class="line"><a id="l00674" name="l00674"></a><span class="lineno">  674</span>    <span class="keyword">const</span> <span class="keywordtype">char</span>* data;</div>
+<div class="line"><a id="l00675" name="l00675"></a><span class="lineno">  675</span>    <span class="keywordtype">size_t</span> len;</div>
+<div class="line"><a id="l00676" name="l00676"></a><span class="lineno">  676</span>} Kstr;</div>
+<div class="line"><a id="l00677" name="l00677"></a><span class="lineno">  677</span> </div>
+<div class="line"><a id="l00678" name="l00678"></a><span class="lineno">  678</span>Kstr <a class="code hl_function" href="koliseo_8c.html#afee4e3065b54ccfe5f427b4d034fd8fc">kstr_new</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* str, <span class="keywordtype">size_t</span> len);</div>
+<div class="line"><a id="l00679" name="l00679"></a><span class="lineno">  679</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a6efc4c9e0fd57fe6aeef21e0ec46c89b">kstr_from_c_lit</a>(<span class="keyword">const</span> <span class="keywordtype">char</span>* c_lit);</div>
+<div class="line"><a id="l00680" name="l00680"></a><span class="lineno">  680</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#afb2e4bd37a00fb1f581ef98db5d22ed3">kstr_eq</a>(Kstr left, Kstr right);</div>
+<div class="line"><a id="l00681" name="l00681"></a><span class="lineno">  681</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a45b06662991ceb95d49807b5fd3a4256">kstr_eq_ignorecase</a>(Kstr left, Kstr right);</div>
+<div class="line"><a id="l00682" name="l00682"></a><span class="lineno">  682</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a929874fb0ad49f77f42fda08101f3eb7">kstr_cut_l</a>(Kstr *k, <span class="keywordtype">size_t</span> n);</div>
+<div class="line"><a id="l00683" name="l00683"></a><span class="lineno">  683</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a6598f8ffe493aefa8e7a1f68bcf94700">kstr_cut_r</a>(Kstr *k, <span class="keywordtype">size_t</span> n);</div>
+<div class="line"><a id="l00684" name="l00684"></a><span class="lineno">  684</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a3f87e56b1b69a3e24815361fffe5b7a1">kstr_trim_left</a>(Kstr kstr);</div>
+<div class="line"><a id="l00685" name="l00685"></a><span class="lineno">  685</span>Kstr <a class="code hl_function" href="koliseo_8c.html#a4feb8cbdebde6a83692071c5f44cb278">kstr_trim_right</a>(Kstr kstr);</div>
+<div class="line"><a id="l00686" name="l00686"></a><span class="lineno">  686</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ad5597e5527897ae9895bd6df60befc12">kstr_trim</a>(Kstr kstr);</div>
+<div class="line"><a id="l00687" name="l00687"></a><span class="lineno">  687</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#af9663a58619f894053f11d95446f0fd0">kstr_indexof</a>(Kstr k, <span class="keywordtype">char</span> c, <span class="keywordtype">int</span>* idx);</div>
+<div class="line"><a id="l00688" name="l00688"></a><span class="lineno">  688</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ab106be0da82fb996a22ca9cb6d4e049f">kstr_token</a>(Kstr* k, <span class="keywordtype">char</span> delim);</div>
+<div class="line"><a id="l00689" name="l00689"></a><span class="lineno">  689</span><span class="keywordtype">bool</span> <a class="code hl_function" href="koliseo_8c.html#a3c9323dd3154ef59ec9493bfbee05a55">kstr_try_token</a>(Kstr* k, <span class="keywordtype">char</span> delim, Kstr* part);</div>
+<div class="line"><a id="l00690" name="l00690"></a><span class="lineno">  690</span>Kstr <a class="code hl_function" href="koliseo_8c.html#ae13fd9686702bbce52ee6499aa3d2e80">kstr_token_kstr</a>(Kstr* k, Kstr delim);</div>
+<div class="line"><a id="l00691" name="l00691"></a><span class="lineno">  691</span> </div>
+<div class="line"><a id="l00692" name="l00692"></a><span class="lineno">  692</span><span class="preprocessor">#define KSTR(c_lit) kstr_new(c_lit, sizeof(c_lit) - 1)</span></div>
+<div class="line"><a id="l00693" name="l00693"></a><span class="lineno">  693</span><span class="preprocessor">#define KSTR_NULL kstr_new(NULL, 0)</span></div>
+<div class="line"><a id="l00694" name="l00694"></a><span class="lineno">  694</span> </div>
+<div class="line"><a id="l00698" name="l00698"></a><span class="lineno">  698</span><span class="preprocessor">#define Kstr_Fmt &quot;%.*s&quot;</span></div>
+<div class="line"><a id="l00702" name="l00702"></a><span class="lineno">  702</span><span class="preprocessor">#define Kstr_Arg(kstr) (int) (kstr.len), (kstr.data)</span></div>
+<div class="line"><a id="l00703" name="l00703"></a><span class="lineno">  703</span> </div>
+<div class="line"><a id="l00711" name="l00711"></a><span class="lineno">  711</span><span class="preprocessor">#define ONEGB_DEC_INT 1073741824</span></div>
+<div class="line"><a id="l00712" name="l00712"></a><span class="lineno">  712</span> </div>
+<div class="line"><a id="l00717" name="l00717"></a><span class="lineno">  717</span><span class="preprocessor">#define GULP_MAX_FILE_SIZE ONEGB_DEC_INT</span></div>
+<div class="line"><a id="l00718" name="l00718"></a><span class="lineno">  718</span> </div>
+<div class="line"><a id="l00723" name="l00723"></a><span class="lineno">  723</span><span class="keyword">typedef</span> <span class="keyword">enum</span> Gulp_Res {</div>
+<div class="line"><a id="l00724" name="l00724"></a><span class="lineno">  724</span>    GULP_FILE_OK=0,</div>
+<div class="line"><a id="l00725" name="l00725"></a><span class="lineno">  725</span>    GULP_FILE_NOT_EXIST,</div>
+<div class="line"><a id="l00726" name="l00726"></a><span class="lineno">  726</span>    GULP_FILE_TOO_LARGE,</div>
+<div class="line"><a id="l00727" name="l00727"></a><span class="lineno">  727</span>    GULP_FILE_READ_ERROR,</div>
+<div class="line"><a id="l00728" name="l00728"></a><span class="lineno">  728</span>    GULP_FILE_CONTAINS_NULLCHAR,</div>
+<div class="line"><a id="l00729" name="l00729"></a><span class="lineno">  729</span>    GULP_FILE_KLS_NULL,</div>
+<div class="line"><a id="l00730" name="l00730"></a><span class="lineno">  730</span>    TOT_GULP_RES</div>
+<div class="line"><a id="l00731" name="l00731"></a><span class="lineno">  731</span>} Gulp_Res;</div>
+<div class="line"><a id="l00732" name="l00732"></a><span class="lineno">  732</span> </div>
+<div class="line"><a id="l00736" name="l00736"></a><span class="lineno">  736</span><span class="preprocessor">#define Gulp_Res_Fmt &quot;%s&quot;</span></div>
+<div class="line"><a id="l00740" name="l00740"></a><span class="lineno">  740</span><span class="preprocessor">#define Gulp_Res_Arg(gr) (string_from_Gulp_Res((gr)))</span></div>
+<div class="line"><a id="l00741" name="l00741"></a><span class="lineno">  741</span> </div>
+<div class="line"><a id="l00746" name="l00746"></a><span class="lineno">  746</span><span class="keyword">extern</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_variable" href="koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2">gulp_res_names</a>[TOT_GULP_RES+1];</div>
+<div class="line"><a id="l00747" name="l00747"></a><span class="lineno">  747</span><span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a>(Gulp_Res g);</div>
+<div class="line"><a id="l00748" name="l00748"></a><span class="lineno">  748</span> </div>
+<div class="line"><a id="l00749" name="l00749"></a><span class="lineno">  749</span><span class="comment">//static char * kls_read_file(Koliseo* kls, const char * f_name, Gulp_Res * err, size_t * f_size, ...);</span></div>
+<div class="line"><a id="l00750" name="l00750"></a><span class="lineno">  750</span><span class="keywordtype">char</span> * <a class="code hl_function" href="koliseo_8c.html#a479a99fb7176087e1dd82dee92cfbcf3">kls_gulp_file_sized</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, Gulp_Res * err, <span class="keywordtype">size_t</span> max_size);</div>
+<div class="line"><a id="l00751" name="l00751"></a><span class="lineno">  751</span><span class="keywordtype">char</span> * <a class="code hl_function" href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, <span class="keywordtype">size_t</span> max_size);</div>
+<div class="line"><a id="l00752" name="l00752"></a><span class="lineno">  752</span><span class="preprocessor">#define KLS_GULP_FILE(kls, filepath) try_kls_gulp_file((kls),(filepath), GULP_MAX_FILE_SIZE)</span></div>
+<div class="line"><a id="l00753" name="l00753"></a><span class="lineno">  753</span><span class="comment">//Kstr * kls_read_file_to_kstr(Koliseo* kls, const char * f_name, Gulp_Res * err, size_t * f_size, ...);</span></div>
+<div class="line"><a id="l00754" name="l00754"></a><span class="lineno">  754</span>Kstr * <a class="code hl_function" href="koliseo_8c.html#a2b06f80d832f2122fd22267d2ccb269b">kls_gulp_file_sized_to_kstr</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, Gulp_Res * err, <span class="keywordtype">size_t</span> max_size, <span class="keywordtype">bool</span> allow_nullchar);</div>
+<div class="line"><a id="l00755" name="l00755"></a><span class="lineno">  755</span>Kstr * <a class="code hl_function" href="koliseo_8c.html#a514ca7b57a5ccb88a62559e8dedee184">try_kls_gulp_file_to_kstr</a>(Koliseo* kls, <span class="keyword">const</span> <span class="keywordtype">char</span> * filepath, <span class="keywordtype">size_t</span> max_size, <span class="keywordtype">bool</span> allow_nullchar);</div>
+<div class="line"><a id="l00756" name="l00756"></a><span class="lineno">  756</span><span class="preprocessor">#define KLS_GULP_FILE_KSTR(kls, filepath) try_kls_gulp_file_to_kstr((kls),(filepath), GULP_MAX_FILE_SIZE, false)</span></div>
 <div class="line"><a id="l00757" name="l00757"></a><span class="lineno">  757</span> </div>
-<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">#endif              </span><span class="comment">//KOLISEO_HAS_GULP</span></div>
+<div class="line"><a id="l00758" name="l00758"></a><span class="lineno">  758</span><span class="preprocessor">#endif              </span><span class="comment">//KOLISEO_GULP_H_</span></div>
 <div class="line"><a id="l00759" name="l00759"></a><span class="lineno">  759</span> </div>
-<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">#ifdef KOLISEO_HAS_EXPER</span></div>
+<div class="line"><a id="l00760" name="l00760"></a><span class="lineno">  760</span><span class="preprocessor">#endif              </span><span class="comment">//KOLISEO_HAS_GULP</span></div>
 <div class="line"><a id="l00761" name="l00761"></a><span class="lineno">  761</span> </div>
-<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a>(Koliseo * kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
-<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a4d24b942c47cdc2bbf36806de9a479c7">kls_pop_AR</a>(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
-<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span> </div>
-<div class="line"><a id="l00769" name="l00769"></a><span class="lineno">  769</span><span class="preprocessor">#define KLS_POP_ARR(kls, type, count) (type*)kls_pop_AR((kls), sizeof(type), _Alignof(type), (count))</span></div>
-<div class="line"><a id="l00770" name="l00770"></a><span class="lineno">  770</span> </div>
-<div class="line"><a id="l00775" name="l00775"></a><span class="lineno">  775</span><span class="preprocessor">#define KLS_POP_STR(kls, cstr) KLS_POP_ARR((kls), char, strlen((cstr)))</span></div>
-<div class="line"><a id="l00776" name="l00776"></a><span class="lineno">  776</span> </div>
-<div class="line"><a id="l00781" name="l00781"></a><span class="lineno">  781</span><span class="preprocessor">#define KLS_POP(kls, type) KLS_POP_ARR((kls), type, 1)</span></div>
-<div class="line"><a id="l00782" name="l00782"></a><span class="lineno">  782</span> </div>
-<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a>(Koliseo_Temp * t_kls, ptrdiff_t size, ptrdiff_t align,</div>
-<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span>                   ptrdiff_t count);</div>
-<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a4afabc2738f61fd3e733cfb2f6bf2153">kls_temp_pop_AR</a>(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
-<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span> </div>
-<div class="line"><a id="l00791" name="l00791"></a><span class="lineno">  791</span><span class="preprocessor">#define KLS_POP_ARR_T(kls_temp, type, count) (type*)kls_temp_pop_AR((kls_temp), sizeof(type), _Alignof(type), (count))</span></div>
-<div class="line"><a id="l00792" name="l00792"></a><span class="lineno">  792</span> </div>
-<div class="line"><a id="l00797" name="l00797"></a><span class="lineno">  797</span><span class="preprocessor">#define KLS_POP_STR_T(kls_temp, cstr) KLS_POP_ARR_T((kls_temp), char, strlen((cstr)))</span></div>
-<div class="line"><a id="l00798" name="l00798"></a><span class="lineno">  798</span> </div>
-<div class="line"><a id="l00803" name="l00803"></a><span class="lineno">  803</span><span class="preprocessor">#define KLS_POP_T(kls_temp, type) KLS_POP_ARR_T((kls_temp), type, 1)</span></div>
-<div class="line"><a id="l00804" name="l00804"></a><span class="lineno">  804</span> </div>
-<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a>(Koliseo* kls, <span class="keywordtype">char</span>* source);</div>
-<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span><span class="keywordtype">char</span>** <a class="code hl_function" href="koliseo_8c.html#a3793b52bdc9cbb531589bfde3ef79417">kls_strdup_arr</a>(Koliseo* kls, <span class="keywordtype">size_t</span> count, <span class="keywordtype">char</span>** source);</div>
-<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span> </div>
-<div class="line"><a id="l00815" name="l00815"></a><span class="lineno">  815</span><span class="preprocessor">#define __KLS_STRCPY(dest, source) do {\</span></div>
-<div class="line"><a id="l00816" name="l00816"></a><span class="lineno">  816</span><span class="preprocessor">    strcpy((dest), (source));\</span></div>
-<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span><span class="preprocessor">} while (0)</span></div>
-<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span> </div>
-<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span><span class="comment"> * Macro to dupe a C string to a passed Koliseo, returns a pointer to the allocated string.</span></div>
-<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="comment"> * Unsafe, do not use.</span></div>
-<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="comment"> * @see kls_strdup()</span></div>
-<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="preprocessor">#define KLS_STRDUP(kls, source) kls_strdup((kls), (source))</span></div>
-<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span> </div>
-<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a>(Koliseo_Temp* t_kls, <span class="keywordtype">char</span>* source);</div>
-<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span><span class="keywordtype">char</span>** <a class="code hl_function" href="koliseo_8c.html#a808a13ec7b75f9ebfda2a15547139639">kls_t_strdup_arr</a>(Koliseo_Temp* t_kls, <span class="keywordtype">size_t</span> count, <span class="keywordtype">char</span>** source);</div>
-<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span> </div>
-<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="comment">/*</span></div>
-<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span><span class="comment"> * Macro to dupe a C string to a passed Koliseo_Temp, returns a pointer to the allocated string.</span></div>
-<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="comment"> * Unsafe, do not use.</span></div>
-<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="comment"> * @see kls_t_strdup()</span></div>
-<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="comment"> */</span></div>
-<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="preprocessor">#define KLS_STRDUP_T(t_kls, source) kls_t_strdup((t_kls), (source))</span></div>
-<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span> </div>
-<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_EXPER</span></div>
+<div class="line"><a id="l00762" name="l00762"></a><span class="lineno">  762</span><span class="preprocessor">#ifdef KOLISEO_HAS_EXPER</span></div>
+<div class="line"><a id="l00763" name="l00763"></a><span class="lineno">  763</span> </div>
+<div class="line"><a id="l00764" name="l00764"></a><span class="lineno">  764</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a>(Koliseo * kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
+<div class="line"><a id="l00765" name="l00765"></a><span class="lineno">  765</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a4d24b942c47cdc2bbf36806de9a479c7">kls_pop_AR</a>(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
+<div class="line"><a id="l00766" name="l00766"></a><span class="lineno">  766</span> </div>
+<div class="line"><a id="l00771" name="l00771"></a><span class="lineno">  771</span><span class="preprocessor">#define KLS_POP_ARR(kls, type, count) (type*)kls_pop_AR((kls), sizeof(type), _Alignof(type), (count))</span></div>
+<div class="line"><a id="l00772" name="l00772"></a><span class="lineno">  772</span> </div>
+<div class="line"><a id="l00777" name="l00777"></a><span class="lineno">  777</span><span class="preprocessor">#define KLS_POP_STR(kls, cstr) KLS_POP_ARR((kls), char, strlen((cstr)))</span></div>
+<div class="line"><a id="l00778" name="l00778"></a><span class="lineno">  778</span> </div>
+<div class="line"><a id="l00783" name="l00783"></a><span class="lineno">  783</span><span class="preprocessor">#define KLS_POP(kls, type) KLS_POP_ARR((kls), type, 1)</span></div>
+<div class="line"><a id="l00784" name="l00784"></a><span class="lineno">  784</span> </div>
+<div class="line"><a id="l00785" name="l00785"></a><span class="lineno">  785</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a>(Koliseo_Temp * t_kls, ptrdiff_t size, ptrdiff_t align,</div>
+<div class="line"><a id="l00786" name="l00786"></a><span class="lineno">  786</span>                   ptrdiff_t count);</div>
+<div class="line"><a id="l00787" name="l00787"></a><span class="lineno">  787</span><span class="keywordtype">void</span> *<a class="code hl_function" href="koliseo_8c.html#a4afabc2738f61fd3e733cfb2f6bf2153">kls_temp_pop_AR</a>(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count);</div>
+<div class="line"><a id="l00788" name="l00788"></a><span class="lineno">  788</span> </div>
+<div class="line"><a id="l00793" name="l00793"></a><span class="lineno">  793</span><span class="preprocessor">#define KLS_POP_ARR_T(kls_temp, type, count) (type*)kls_temp_pop_AR((kls_temp), sizeof(type), _Alignof(type), (count))</span></div>
+<div class="line"><a id="l00794" name="l00794"></a><span class="lineno">  794</span> </div>
+<div class="line"><a id="l00799" name="l00799"></a><span class="lineno">  799</span><span class="preprocessor">#define KLS_POP_STR_T(kls_temp, cstr) KLS_POP_ARR_T((kls_temp), char, strlen((cstr)))</span></div>
+<div class="line"><a id="l00800" name="l00800"></a><span class="lineno">  800</span> </div>
+<div class="line"><a id="l00805" name="l00805"></a><span class="lineno">  805</span><span class="preprocessor">#define KLS_POP_T(kls_temp, type) KLS_POP_ARR_T((kls_temp), type, 1)</span></div>
+<div class="line"><a id="l00806" name="l00806"></a><span class="lineno">  806</span> </div>
+<div class="line"><a id="l00807" name="l00807"></a><span class="lineno">  807</span><span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a>(Koliseo* kls, <span class="keywordtype">char</span>* source);</div>
+<div class="line"><a id="l00808" name="l00808"></a><span class="lineno">  808</span><span class="keywordtype">char</span>** <a class="code hl_function" href="koliseo_8c.html#a3793b52bdc9cbb531589bfde3ef79417">kls_strdup_arr</a>(Koliseo* kls, <span class="keywordtype">size_t</span> count, <span class="keywordtype">char</span>** source);</div>
+<div class="line"><a id="l00809" name="l00809"></a><span class="lineno">  809</span> </div>
+<div class="line"><a id="l00817" name="l00817"></a><span class="lineno">  817</span><span class="preprocessor">#define __KLS_STRCPY(dest, source) do {\</span></div>
+<div class="line"><a id="l00818" name="l00818"></a><span class="lineno">  818</span><span class="preprocessor">    strcpy((dest), (source));\</span></div>
+<div class="line"><a id="l00819" name="l00819"></a><span class="lineno">  819</span><span class="preprocessor">} while (0)</span></div>
+<div class="line"><a id="l00820" name="l00820"></a><span class="lineno">  820</span> </div>
+<div class="line"><a id="l00821" name="l00821"></a><span class="lineno">  821</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00822" name="l00822"></a><span class="lineno">  822</span><span class="comment"> * Macro to dupe a C string to a passed Koliseo, returns a pointer to the allocated string.</span></div>
+<div class="line"><a id="l00823" name="l00823"></a><span class="lineno">  823</span><span class="comment"> * Unsafe, do not use.</span></div>
+<div class="line"><a id="l00824" name="l00824"></a><span class="lineno">  824</span><span class="comment"> * @see kls_strdup()</span></div>
+<div class="line"><a id="l00825" name="l00825"></a><span class="lineno">  825</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00826" name="l00826"></a><span class="lineno">  826</span><span class="preprocessor">#define KLS_STRDUP(kls, source) kls_strdup((kls), (source))</span></div>
+<div class="line"><a id="l00827" name="l00827"></a><span class="lineno">  827</span> </div>
+<div class="line"><a id="l00828" name="l00828"></a><span class="lineno">  828</span><span class="keywordtype">char</span>* <a class="code hl_function" href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a>(Koliseo_Temp* t_kls, <span class="keywordtype">char</span>* source);</div>
+<div class="line"><a id="l00829" name="l00829"></a><span class="lineno">  829</span><span class="keywordtype">char</span>** <a class="code hl_function" href="koliseo_8c.html#a808a13ec7b75f9ebfda2a15547139639">kls_t_strdup_arr</a>(Koliseo_Temp* t_kls, <span class="keywordtype">size_t</span> count, <span class="keywordtype">char</span>** source);</div>
+<div class="line"><a id="l00830" name="l00830"></a><span class="lineno">  830</span> </div>
+<div class="line"><a id="l00831" name="l00831"></a><span class="lineno">  831</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00832" name="l00832"></a><span class="lineno">  832</span><span class="comment"> * Macro to dupe a C string to a passed Koliseo_Temp, returns a pointer to the allocated string.</span></div>
+<div class="line"><a id="l00833" name="l00833"></a><span class="lineno">  833</span><span class="comment"> * Unsafe, do not use.</span></div>
+<div class="line"><a id="l00834" name="l00834"></a><span class="lineno">  834</span><span class="comment"> * @see kls_t_strdup()</span></div>
+<div class="line"><a id="l00835" name="l00835"></a><span class="lineno">  835</span><span class="comment"> */</span></div>
+<div class="line"><a id="l00836" name="l00836"></a><span class="lineno">  836</span><span class="preprocessor">#define KLS_STRDUP_T(t_kls, source) kls_t_strdup((t_kls), (source))</span></div>
 <div class="line"><a id="l00837" name="l00837"></a><span class="lineno">  837</span> </div>
-<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span><span class="preprocessor">#error &quot;This code requires C11 or later.\n    _Alignof() is not available&quot;</span></div>
-<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="preprocessor">#endif </span><span class="comment">// __STDC_VERSION__ &amp;&amp; __STDC_VERSION__ &gt;= 201112L //We need C11</span></div>
-<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span> </div>
-<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span><span class="preprocessor">#endif </span><span class="comment">//KOLISEO_H_</span></div>
+<div class="line"><a id="l00838" name="l00838"></a><span class="lineno">  838</span><span class="preprocessor">#endif </span><span class="comment">// KOLISEO_HAS_EXPER</span></div>
+<div class="line"><a id="l00839" name="l00839"></a><span class="lineno">  839</span> </div>
+<div class="line"><a id="l00840" name="l00840"></a><span class="lineno">  840</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l00841" name="l00841"></a><span class="lineno">  841</span><span class="preprocessor">#error &quot;This code requires C11 or later.\n    _Alignof() is not available&quot;</span></div>
+<div class="line"><a id="l00842" name="l00842"></a><span class="lineno">  842</span><span class="preprocessor">#endif </span><span class="comment">// __STDC_VERSION__ &amp;&amp; __STDC_VERSION__ &gt;= 201112L //We need C11</span></div>
+<div class="line"><a id="l00843" name="l00843"></a><span class="lineno">  843</span> </div>
+<div class="line"><a id="l00844" name="l00844"></a><span class="lineno">  844</span><span class="preprocessor">#endif </span><span class="comment">//KOLISEO_H_</span></div>
+<div class="line"><a id="l00845" name="l00845"></a><span class="lineno">  845</span> </div>
+<div class="line"><a id="l00846" name="l00846"></a><span class="lineno">  846</span><span class="preprocessor">#ifdef LIST_T </span><span class="comment">//This ensures the library never causes any trouble if this macro was not defined.</span></div>
+<div class="line"><a id="l00847" name="l00847"></a><span class="lineno">  847</span><span class="comment">// jgabaut @ github.com/jgabaut</span></div>
+<div class="line"><a id="l00848" name="l00848"></a><span class="lineno">  848</span><span class="comment">// SPDX-License-Identifier: GPL-3.0-only</span></div>
+<div class="line"><a id="l00849" name="l00849"></a><span class="lineno">  849</span><span class="comment">/*</span></div>
+<div class="line"><a id="l00850" name="l00850"></a><span class="lineno">  850</span><span class="comment">    Copyright (C) 2023-2024  jgabaut</span></div>
+<div class="line"><a id="l00851" name="l00851"></a><span class="lineno">  851</span><span class="comment"></span> </div>
+<div class="line"><a id="l00852" name="l00852"></a><span class="lineno">  852</span><span class="comment">    This program is free software: you can redistribute it and/or modify</span></div>
+<div class="line"><a id="l00853" name="l00853"></a><span class="lineno">  853</span><span class="comment">    it under the terms of the GNU General Public License as published by</span></div>
+<div class="line"><a id="l00854" name="l00854"></a><span class="lineno">  854</span><span class="comment">    the Free Software Foundation, version 3 of the License.</span></div>
+<div class="line"><a id="l00855" name="l00855"></a><span class="lineno">  855</span><span class="comment"></span> </div>
+<div class="line"><a id="l00856" name="l00856"></a><span class="lineno">  856</span><span class="comment">    This program is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a id="l00857" name="l00857"></a><span class="lineno">  857</span><span class="comment">    but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a id="l00858" name="l00858"></a><span class="lineno">  858</span><span class="comment">    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the</span></div>
+<div class="line"><a id="l00859" name="l00859"></a><span class="lineno">  859</span><span class="comment">    GNU General Public License for more details.</span></div>
+<div class="line"><a id="l00860" name="l00860"></a><span class="lineno">  860</span><span class="comment"></span> </div>
+<div class="line"><a id="l00861" name="l00861"></a><span class="lineno">  861</span><span class="comment">    You should have received a copy of the GNU General Public License</span></div>
+<div class="line"><a id="l00862" name="l00862"></a><span class="lineno">  862</span><span class="comment">    along with this program.  If not, see &lt;https://www.gnu.org/licenses/&gt;.</span></div>
+<div class="line"><a id="l00863" name="l00863"></a><span class="lineno">  863</span><span class="comment">*/</span></div>
+<div class="line"><a id="l00864" name="l00864"></a><span class="lineno">  864</span><span class="comment">// list.h</span></div>
+<div class="line"><a id="l00865" name="l00865"></a><span class="lineno">  865</span><span class="comment">// This is a template for a linked list, inspired by the dynamic array example in https://www.davidpriver.com/ctemplates.html#template-headers.</span></div>
+<div class="line"><a id="l00866" name="l00866"></a><span class="lineno">  866</span><span class="comment">// Include this header multiple times to implement a</span></div>
+<div class="line"><a id="l00867" name="l00867"></a><span class="lineno">  867</span><span class="comment">// simplistic linked list.  Before inclusion define at</span></div>
+<div class="line"><a id="l00868" name="l00868"></a><span class="lineno">  868</span><span class="comment">// least DLIST_T to the type the linked list can hold.</span></div>
+<div class="line"><a id="l00869" name="l00869"></a><span class="lineno">  869</span><span class="comment">// See DLIST_NAME, DLIST_PREFIX and DLIST_LINKAGE for</span></div>
+<div class="line"><a id="l00870" name="l00870"></a><span class="lineno">  870</span><span class="comment">// other customization points.</span></div>
+<div class="line"><a id="l00871" name="l00871"></a><span class="lineno">  871</span><span class="comment">//</span></div>
+<div class="line"><a id="l00872" name="l00872"></a><span class="lineno">  872</span><span class="comment">// If you define DLIST_DECLS_ONLY, only the declarations</span></div>
+<div class="line"><a id="l00873" name="l00873"></a><span class="lineno">  873</span><span class="comment">// of the type and its function will be declared.</span></div>
+<div class="line"><a id="l00874" name="l00874"></a><span class="lineno">  874</span><span class="comment">//</span></div>
+<div class="line"><a id="l00875" name="l00875"></a><span class="lineno">  875</span><span class="comment">// Functions ending with _gl use malloc() for the nodes.</span></div>
+<div class="line"><a id="l00876" name="l00876"></a><span class="lineno">  876</span><span class="comment">// Functions ending with _kls expect a Koliseo arg to use for allocating nodes.</span></div>
+<div class="line"><a id="l00877" name="l00877"></a><span class="lineno">  877</span><span class="comment">//</span></div>
+<div class="line"><a id="l00878" name="l00878"></a><span class="lineno">  878</span> </div>
+<div class="line"><a id="l00879" name="l00879"></a><span class="lineno">  879</span><span class="preprocessor">#ifndef LIST_HEADER_H</span></div>
+<div class="line"><a id="l00880" name="l00880"></a><span class="lineno">  880</span><span class="preprocessor">#define LIST_HEADER_H</span></div>
+<div class="line"><a id="l00881" name="l00881"></a><span class="lineno">  881</span><span class="comment">// Inline functions, #defines and includes that will be</span></div>
+<div class="line"><a id="l00882" name="l00882"></a><span class="lineno">  882</span><span class="comment">// needed for all instantiations can go up here.</span></div>
+<div class="line"><a id="l00883" name="l00883"></a><span class="lineno">  883</span><span class="preprocessor">#include &lt;stdbool.h&gt;</span> <span class="comment">// bool</span></div>
+<div class="line"><a id="l00884" name="l00884"></a><span class="lineno">  884</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span> <span class="comment">// malloc, size_t</span></div>
+<div class="line"><a id="l00885" name="l00885"></a><span class="lineno">  885</span> </div>
+<div class="line"><a id="l00886" name="l00886"></a><span class="lineno">  886</span><span class="preprocessor">#define LIST_IMPL(word) LIST_COMB1(LIST_PREFIX,word)</span></div>
+<div class="line"><a id="l00887" name="l00887"></a><span class="lineno">  887</span><span class="preprocessor">#define LIST_COMB1(pre, word) LIST_COMB2(pre, word)</span></div>
+<div class="line"><a id="l00888" name="l00888"></a><span class="lineno">  888</span><span class="preprocessor">#define LIST_COMB2(pre, word) pre##word</span></div>
+<div class="line"><a id="l00889" name="l00889"></a><span class="lineno">  889</span> </div>
+<div class="line"><a id="l00890" name="l00890"></a><span class="lineno">  890</span><span class="preprocessor">#define LIST_HEADER_VERSION &quot;0.1.0&quot;</span></div>
+<div class="line"><a id="l00891" name="l00891"></a><span class="lineno">  891</span> </div>
+<div class="line"><a id="l00892" name="l00892"></a><span class="lineno">  892</span><span class="preprocessor">#endif </span><span class="comment">// LIST_HEADER_H</span></div>
+<div class="line"><a id="l00893" name="l00893"></a><span class="lineno">  893</span> </div>
+<div class="line"><a id="l00894" name="l00894"></a><span class="lineno">  894</span><span class="comment">// NOTE: this section is *not* guarded as it is intended</span></div>
+<div class="line"><a id="l00895" name="l00895"></a><span class="lineno">  895</span><span class="comment">// to be included multiple times.</span></div>
+<div class="line"><a id="l00896" name="l00896"></a><span class="lineno">  896</span> </div>
+<div class="line"><a id="l00897" name="l00897"></a><span class="lineno">  897</span><span class="preprocessor">#ifndef LIST_T</span></div>
+<div class="line"><a id="l00898" name="l00898"></a><span class="lineno">  898</span><span class="preprocessor">#error &quot;LIST_T must be defined&quot;</span></div>
+<div class="line"><a id="l00899" name="l00899"></a><span class="lineno">  899</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00900" name="l00900"></a><span class="lineno">  900</span> </div>
+<div class="line"><a id="l00901" name="l00901"></a><span class="lineno">  901</span><span class="comment">// The name of the data type to be generated.</span></div>
+<div class="line"><a id="l00902" name="l00902"></a><span class="lineno">  902</span><span class="comment">// If not given, will expand to something like</span></div>
+<div class="line"><a id="l00903" name="l00903"></a><span class="lineno">  903</span><span class="comment">// `list_int` for an `int`.</span></div>
+<div class="line"><a id="l00904" name="l00904"></a><span class="lineno">  904</span><span class="preprocessor">#ifndef LIST_NAME</span></div>
+<div class="line"><a id="l00905" name="l00905"></a><span class="lineno">  905</span><span class="preprocessor">#define LIST_NAME LIST_COMB1(LIST_COMB1(list,_), LIST_T)</span></div>
+<div class="line"><a id="l00906" name="l00906"></a><span class="lineno">  906</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00907" name="l00907"></a><span class="lineno">  907</span> </div>
+<div class="line"><a id="l00908" name="l00908"></a><span class="lineno">  908</span><span class="comment">// Prefix for generated functions.</span></div>
+<div class="line"><a id="l00909" name="l00909"></a><span class="lineno">  909</span><span class="preprocessor">#ifndef LIST_PREFIX</span></div>
+<div class="line"><a id="l00910" name="l00910"></a><span class="lineno">  910</span><span class="preprocessor">#define LIST_PREFIX LIST_COMB1(LIST_NAME, _)</span></div>
+<div class="line"><a id="l00911" name="l00911"></a><span class="lineno">  911</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00912" name="l00912"></a><span class="lineno">  912</span> </div>
+<div class="line"><a id="l00913" name="l00913"></a><span class="lineno">  913</span><span class="comment">// Customize the linkage of the function.</span></div>
+<div class="line"><a id="l00914" name="l00914"></a><span class="lineno">  914</span><span class="preprocessor">#ifndef LIST_LINKAGE</span></div>
+<div class="line"><a id="l00915" name="l00915"></a><span class="lineno">  915</span><span class="preprocessor">#define LIST_LINKAGE static inline</span></div>
+<div class="line"><a id="l00916" name="l00916"></a><span class="lineno">  916</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00917" name="l00917"></a><span class="lineno">  917</span> </div>
+<div class="line"><a id="l00918" name="l00918"></a><span class="lineno">  918</span><span class="comment">// Suffix for generated list item struct.</span></div>
+<div class="line"><a id="l00919" name="l00919"></a><span class="lineno">  919</span><span class="preprocessor">#ifndef LIST_I_SUFFIX</span></div>
+<div class="line"><a id="l00920" name="l00920"></a><span class="lineno">  920</span><span class="preprocessor">#define LIST_I_SUFFIX item</span></div>
+<div class="line"><a id="l00921" name="l00921"></a><span class="lineno">  921</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00922" name="l00922"></a><span class="lineno">  922</span> </div>
+<div class="line"><a id="l00923" name="l00923"></a><span class="lineno">  923</span><span class="comment">// The name of the item data type to be generated.</span></div>
+<div class="line"><a id="l00924" name="l00924"></a><span class="lineno">  924</span><span class="preprocessor">#ifndef LIST_ITEM_NAME</span></div>
+<div class="line"><a id="l00925" name="l00925"></a><span class="lineno">  925</span><span class="preprocessor">#define LIST_ITEM_NAME LIST_COMB1(LIST_COMB1(LIST_T,_), LIST_I_SUFFIX)</span></div>
+<div class="line"><a id="l00926" name="l00926"></a><span class="lineno">  926</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00927" name="l00927"></a><span class="lineno">  927</span> </div>
+<div class="line"><a id="l00928" name="l00928"></a><span class="lineno">  928</span><span class="keyword">typedef</span> <span class="keyword">struct </span>LIST_ITEM_NAME LIST_ITEM_NAME;</div>
+<div class="line"><a id="l00929" name="l00929"></a><span class="lineno">  929</span><span class="keyword">struct </span>LIST_ITEM_NAME {</div>
+<div class="line"><a id="l00930" name="l00930"></a><span class="lineno">  930</span>    LIST_T* value;</div>
+<div class="line"><a id="l00931" name="l00931"></a><span class="lineno">  931</span>    <span class="keyword">struct </span>LIST_ITEM_NAME* next;</div>
+<div class="line"><a id="l00932" name="l00932"></a><span class="lineno">  932</span>};</div>
+<div class="line"><a id="l00933" name="l00933"></a><span class="lineno">  933</span><span class="keyword">typedef</span> LIST_ITEM_NAME* LIST_NAME;</div>
+<div class="line"><a id="l00934" name="l00934"></a><span class="lineno">  934</span> </div>
+<div class="line"><a id="l00935" name="l00935"></a><span class="lineno">  935</span><span class="preprocessor">#define LIST_nullList LIST_IMPL(nullList)</span></div>
+<div class="line"><a id="l00936" name="l00936"></a><span class="lineno">  936</span><span class="preprocessor">#define LIST_isEmpty LIST_IMPL(isEmpty)</span></div>
+<div class="line"><a id="l00937" name="l00937"></a><span class="lineno">  937</span><span class="preprocessor">#define LIST_head LIST_IMPL(head)</span></div>
+<div class="line"><a id="l00938" name="l00938"></a><span class="lineno">  938</span><span class="preprocessor">#define LIST_tail LIST_IMPL(tail)</span></div>
+<div class="line"><a id="l00939" name="l00939"></a><span class="lineno">  939</span><span class="preprocessor">#define LIST_cons_gl LIST_IMPL(cons_gl)</span></div>
+<div class="line"><a id="l00940" name="l00940"></a><span class="lineno">  940</span><span class="preprocessor">#define LIST_cons_kls LIST_IMPL(cons_kls)</span></div>
+<div class="line"><a id="l00941" name="l00941"></a><span class="lineno">  941</span><span class="preprocessor">#define LIST_free_gl LIST_IMPL(free_gl)</span></div>
+<div class="line"><a id="l00942" name="l00942"></a><span class="lineno">  942</span><span class="preprocessor">#define LIST_member LIST_IMPL(member)</span></div>
+<div class="line"><a id="l00943" name="l00943"></a><span class="lineno">  943</span><span class="preprocessor">#define LIST_length LIST_IMPL(length)</span></div>
+<div class="line"><a id="l00944" name="l00944"></a><span class="lineno">  944</span><span class="preprocessor">#define LIST_append_gl LIST_IMPL(append_gl)</span></div>
+<div class="line"><a id="l00945" name="l00945"></a><span class="lineno">  945</span><span class="preprocessor">#define LIST_append_kls LIST_IMPL(append_kls)</span></div>
+<div class="line"><a id="l00946" name="l00946"></a><span class="lineno">  946</span><span class="preprocessor">#define LIST_reverse_gl LIST_IMPL(reverse_gl)</span></div>
+<div class="line"><a id="l00947" name="l00947"></a><span class="lineno">  947</span><span class="preprocessor">#define LIST_reverse_kls LIST_IMPL(reverse_kls)</span></div>
+<div class="line"><a id="l00948" name="l00948"></a><span class="lineno">  948</span><span class="preprocessor">#define LIST_copy_gl LIST_IMPL(copy_gl)</span></div>
+<div class="line"><a id="l00949" name="l00949"></a><span class="lineno">  949</span><span class="preprocessor">#define LIST_copy_kls LIST_IMPL(copy_kls)</span></div>
+<div class="line"><a id="l00950" name="l00950"></a><span class="lineno">  950</span><span class="preprocessor">#define LIST_remove_gl LIST_IMPL(remove_gl)</span></div>
+<div class="line"><a id="l00951" name="l00951"></a><span class="lineno">  951</span><span class="preprocessor">#define LIST_remove_kls LIST_IMPL(remove_kls)</span></div>
+<div class="line"><a id="l00952" name="l00952"></a><span class="lineno">  952</span><span class="preprocessor">#define LIST_intersect_gl LIST_IMPL(intersect_gl)</span></div>
+<div class="line"><a id="l00953" name="l00953"></a><span class="lineno">  953</span><span class="preprocessor">#define LIST_intersect_kls LIST_IMPL(intersect_kls)</span></div>
+<div class="line"><a id="l00954" name="l00954"></a><span class="lineno">  954</span><span class="preprocessor">#define LIST_diff_gl LIST_IMPL(diff_gl)</span></div>
+<div class="line"><a id="l00955" name="l00955"></a><span class="lineno">  955</span><span class="preprocessor">#define LIST_diff_kls LIST_IMPL(diff_kls)</span></div>
+<div class="line"><a id="l00956" name="l00956"></a><span class="lineno">  956</span> </div>
+<div class="line"><a id="l00957" name="l00957"></a><span class="lineno">  957</span><span class="preprocessor">#ifdef LIST_DECLS_ONLY</span></div>
+<div class="line"><a id="l00958" name="l00958"></a><span class="lineno">  958</span> </div>
+<div class="line"><a id="l00959" name="l00959"></a><span class="lineno">  959</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00960" name="l00960"></a><span class="lineno">  960</span>LIST_NAME</div>
+<div class="line"><a id="l00961" name="l00961"></a><span class="lineno">  961</span>LIST_nullList(<span class="keywordtype">void</span>);</div>
+<div class="line"><a id="l00962" name="l00962"></a><span class="lineno">  962</span> </div>
+<div class="line"><a id="l00963" name="l00963"></a><span class="lineno">  963</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00964" name="l00964"></a><span class="lineno">  964</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00965" name="l00965"></a><span class="lineno">  965</span>LIST_isEmpty(LIST_NAME list);</div>
+<div class="line"><a id="l00966" name="l00966"></a><span class="lineno">  966</span> </div>
+<div class="line"><a id="l00967" name="l00967"></a><span class="lineno">  967</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00968" name="l00968"></a><span class="lineno">  968</span>LIST_T*</div>
+<div class="line"><a id="l00969" name="l00969"></a><span class="lineno">  969</span>LIST_head(LIST_NAME list);</div>
+<div class="line"><a id="l00970" name="l00970"></a><span class="lineno">  970</span> </div>
+<div class="line"><a id="l00971" name="l00971"></a><span class="lineno">  971</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00972" name="l00972"></a><span class="lineno">  972</span>LIST_NAME</div>
+<div class="line"><a id="l00973" name="l00973"></a><span class="lineno">  973</span>LIST_tail(LIST_NAME list);</div>
+<div class="line"><a id="l00974" name="l00974"></a><span class="lineno">  974</span> </div>
+<div class="line"><a id="l00975" name="l00975"></a><span class="lineno">  975</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00976" name="l00976"></a><span class="lineno">  976</span>LIST_NAME</div>
+<div class="line"><a id="l00977" name="l00977"></a><span class="lineno">  977</span>LIST_cons_gl(LIST_T* element, LIST_NAME list);</div>
+<div class="line"><a id="l00978" name="l00978"></a><span class="lineno">  978</span> </div>
+<div class="line"><a id="l00979" name="l00979"></a><span class="lineno">  979</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00980" name="l00980"></a><span class="lineno">  980</span>LIST_NAME</div>
+<div class="line"><a id="l00981" name="l00981"></a><span class="lineno">  981</span>LIST_cons_kls(Koliseo* kls, LIST_T* element, LIST_NAME list);</div>
+<div class="line"><a id="l00982" name="l00982"></a><span class="lineno">  982</span> </div>
+<div class="line"><a id="l00983" name="l00983"></a><span class="lineno">  983</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00984" name="l00984"></a><span class="lineno">  984</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l00985" name="l00985"></a><span class="lineno">  985</span>LIST_free_gl(LIST_NAME list);</div>
+<div class="line"><a id="l00986" name="l00986"></a><span class="lineno">  986</span> </div>
+<div class="line"><a id="l00987" name="l00987"></a><span class="lineno">  987</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00988" name="l00988"></a><span class="lineno">  988</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l00989" name="l00989"></a><span class="lineno">  989</span>LIST_member(LIST_T* element, LIST_NAME list);</div>
+<div class="line"><a id="l00990" name="l00990"></a><span class="lineno">  990</span> </div>
+<div class="line"><a id="l00991" name="l00991"></a><span class="lineno">  991</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00992" name="l00992"></a><span class="lineno">  992</span><span class="keywordtype">int</span></div>
+<div class="line"><a id="l00993" name="l00993"></a><span class="lineno">  993</span>LIST_length(LIST_NAME list);</div>
+<div class="line"><a id="l00994" name="l00994"></a><span class="lineno">  994</span> </div>
+<div class="line"><a id="l00995" name="l00995"></a><span class="lineno">  995</span>LIST_LINKAGE</div>
+<div class="line"><a id="l00996" name="l00996"></a><span class="lineno">  996</span>LIST_NAME</div>
+<div class="line"><a id="l00997" name="l00997"></a><span class="lineno">  997</span>LIST_append_gl(LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l00998" name="l00998"></a><span class="lineno">  998</span> </div>
+<div class="line"><a id="l00999" name="l00999"></a><span class="lineno">  999</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01000" name="l01000"></a><span class="lineno"> 1000</span>LIST_NAME</div>
+<div class="line"><a id="l01001" name="l01001"></a><span class="lineno"> 1001</span>LIST_append_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l01002" name="l01002"></a><span class="lineno"> 1002</span> </div>
+<div class="line"><a id="l01003" name="l01003"></a><span class="lineno"> 1003</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01004" name="l01004"></a><span class="lineno"> 1004</span>LIST_NAME</div>
+<div class="line"><a id="l01005" name="l01005"></a><span class="lineno"> 1005</span>LIST_reverse_gl(LIST_NAME list);</div>
+<div class="line"><a id="l01006" name="l01006"></a><span class="lineno"> 1006</span> </div>
+<div class="line"><a id="l01007" name="l01007"></a><span class="lineno"> 1007</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01008" name="l01008"></a><span class="lineno"> 1008</span>LIST_NAME</div>
+<div class="line"><a id="l01009" name="l01009"></a><span class="lineno"> 1009</span>LIST_reverse_kls(Koliseo* kls, LIST_NAME list);</div>
+<div class="line"><a id="l01010" name="l01010"></a><span class="lineno"> 1010</span> </div>
+<div class="line"><a id="l01011" name="l01011"></a><span class="lineno"> 1011</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01012" name="l01012"></a><span class="lineno"> 1012</span>LIST_NAME</div>
+<div class="line"><a id="l01013" name="l01013"></a><span class="lineno"> 1013</span>LIST_copy_gl(LIST_NAME list);</div>
+<div class="line"><a id="l01014" name="l01014"></a><span class="lineno"> 1014</span> </div>
+<div class="line"><a id="l01015" name="l01015"></a><span class="lineno"> 1015</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01016" name="l01016"></a><span class="lineno"> 1016</span>LIST_NAME</div>
+<div class="line"><a id="l01017" name="l01017"></a><span class="lineno"> 1017</span>LIST_copy_kls(Koliseo* kls, LIST_NAME list);</div>
+<div class="line"><a id="l01018" name="l01018"></a><span class="lineno"> 1018</span> </div>
+<div class="line"><a id="l01019" name="l01019"></a><span class="lineno"> 1019</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01020" name="l01020"></a><span class="lineno"> 1020</span>LIST_NAME</div>
+<div class="line"><a id="l01021" name="l01021"></a><span class="lineno"> 1021</span>LIST_remove_gl(LIST_T* element, LIST_NAME list);</div>
+<div class="line"><a id="l01022" name="l01022"></a><span class="lineno"> 1022</span> </div>
+<div class="line"><a id="l01023" name="l01023"></a><span class="lineno"> 1023</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01024" name="l01024"></a><span class="lineno"> 1024</span>LIST_NAME</div>
+<div class="line"><a id="l01025" name="l01025"></a><span class="lineno"> 1025</span>LIST_remove_kls(Koliseo* kls, LIST_T* element, LIST_NAME list);</div>
+<div class="line"><a id="l01026" name="l01026"></a><span class="lineno"> 1026</span> </div>
+<div class="line"><a id="l01027" name="l01027"></a><span class="lineno"> 1027</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01028" name="l01028"></a><span class="lineno"> 1028</span>LIST_NAME</div>
+<div class="line"><a id="l01029" name="l01029"></a><span class="lineno"> 1029</span>LIST_intersect_gl(LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l01030" name="l01030"></a><span class="lineno"> 1030</span> </div>
+<div class="line"><a id="l01031" name="l01031"></a><span class="lineno"> 1031</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01032" name="l01032"></a><span class="lineno"> 1032</span>LIST_NAME</div>
+<div class="line"><a id="l01033" name="l01033"></a><span class="lineno"> 1033</span>LIST_intersect_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l01034" name="l01034"></a><span class="lineno"> 1034</span> </div>
+<div class="line"><a id="l01035" name="l01035"></a><span class="lineno"> 1035</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01036" name="l01036"></a><span class="lineno"> 1036</span>LIST_NAME</div>
+<div class="line"><a id="l01037" name="l01037"></a><span class="lineno"> 1037</span>LIST_diff_gl(LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l01038" name="l01038"></a><span class="lineno"> 1038</span> </div>
+<div class="line"><a id="l01039" name="l01039"></a><span class="lineno"> 1039</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01040" name="l01040"></a><span class="lineno"> 1040</span>LIST_NAME</div>
+<div class="line"><a id="l01041" name="l01041"></a><span class="lineno"> 1041</span>LIST_diff_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2);</div>
+<div class="line"><a id="l01042" name="l01042"></a><span class="lineno"> 1042</span><span class="preprocessor">#else</span></div>
+<div class="line"><a id="l01043" name="l01043"></a><span class="lineno"> 1043</span> </div>
+<div class="line"><a id="l01044" name="l01044"></a><span class="lineno"> 1044</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01045" name="l01045"></a><span class="lineno"> 1045</span>LIST_NAME</div>
+<div class="line"><a id="l01046" name="l01046"></a><span class="lineno"> 1046</span>LIST_nullList(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l01047" name="l01047"></a><span class="lineno"> 1047</span>{</div>
+<div class="line"><a id="l01048" name="l01048"></a><span class="lineno"> 1048</span>    <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01049" name="l01049"></a><span class="lineno"> 1049</span>}</div>
+<div class="line"><a id="l01050" name="l01050"></a><span class="lineno"> 1050</span> </div>
+<div class="line"><a id="l01051" name="l01051"></a><span class="lineno"> 1051</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01052" name="l01052"></a><span class="lineno"> 1052</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01053" name="l01053"></a><span class="lineno"> 1053</span>LIST_isEmpty(LIST_NAME list)</div>
+<div class="line"><a id="l01054" name="l01054"></a><span class="lineno"> 1054</span>{</div>
+<div class="line"><a id="l01055" name="l01055"></a><span class="lineno"> 1055</span>    <span class="keywordflow">if</span> (list == NULL) {</div>
+<div class="line"><a id="l01056" name="l01056"></a><span class="lineno"> 1056</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01057" name="l01057"></a><span class="lineno"> 1057</span>    };</div>
+<div class="line"><a id="l01058" name="l01058"></a><span class="lineno"> 1058</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01059" name="l01059"></a><span class="lineno"> 1059</span>}</div>
+<div class="line"><a id="l01060" name="l01060"></a><span class="lineno"> 1060</span> </div>
+<div class="line"><a id="l01061" name="l01061"></a><span class="lineno"> 1061</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01062" name="l01062"></a><span class="lineno"> 1062</span>LIST_T*</div>
+<div class="line"><a id="l01063" name="l01063"></a><span class="lineno"> 1063</span>LIST_head(LIST_NAME list)</div>
+<div class="line"><a id="l01064" name="l01064"></a><span class="lineno"> 1064</span>{</div>
+<div class="line"><a id="l01065" name="l01065"></a><span class="lineno"> 1065</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01066" name="l01066"></a><span class="lineno"> 1066</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): List is empty.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01067" name="l01067"></a><span class="lineno"> 1067</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01068" name="l01068"></a><span class="lineno"> 1068</span>    }</div>
+<div class="line"><a id="l01069" name="l01069"></a><span class="lineno"> 1069</span>    <span class="keywordflow">return</span> list-&gt;value;</div>
+<div class="line"><a id="l01070" name="l01070"></a><span class="lineno"> 1070</span>}</div>
+<div class="line"><a id="l01071" name="l01071"></a><span class="lineno"> 1071</span> </div>
+<div class="line"><a id="l01072" name="l01072"></a><span class="lineno"> 1072</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01073" name="l01073"></a><span class="lineno"> 1073</span>LIST_NAME</div>
+<div class="line"><a id="l01074" name="l01074"></a><span class="lineno"> 1074</span>LIST_tail(LIST_NAME list)</div>
+<div class="line"><a id="l01075" name="l01075"></a><span class="lineno"> 1075</span>{</div>
+<div class="line"><a id="l01076" name="l01076"></a><span class="lineno"> 1076</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01077" name="l01077"></a><span class="lineno"> 1077</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): List is empty.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01078" name="l01078"></a><span class="lineno"> 1078</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01079" name="l01079"></a><span class="lineno"> 1079</span>    }</div>
+<div class="line"><a id="l01080" name="l01080"></a><span class="lineno"> 1080</span>    <span class="keywordflow">return</span> list-&gt;next;</div>
+<div class="line"><a id="l01081" name="l01081"></a><span class="lineno"> 1081</span>}</div>
+<div class="line"><a id="l01082" name="l01082"></a><span class="lineno"> 1082</span> </div>
+<div class="line"><a id="l01083" name="l01083"></a><span class="lineno"> 1083</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01084" name="l01084"></a><span class="lineno"> 1084</span>LIST_NAME</div>
+<div class="line"><a id="l01085" name="l01085"></a><span class="lineno"> 1085</span>LIST_cons_gl(LIST_T* element, LIST_NAME list)</div>
+<div class="line"><a id="l01086" name="l01086"></a><span class="lineno"> 1086</span>{</div>
+<div class="line"><a id="l01087" name="l01087"></a><span class="lineno"> 1087</span>    LIST_NAME t;</div>
+<div class="line"><a id="l01088" name="l01088"></a><span class="lineno"> 1088</span>    t = (LIST_NAME) malloc(<span class="keyword">sizeof</span>(LIST_ITEM_NAME));</div>
+<div class="line"><a id="l01089" name="l01089"></a><span class="lineno"> 1089</span>    t-&gt;value = element;</div>
+<div class="line"><a id="l01090" name="l01090"></a><span class="lineno"> 1090</span>    t-&gt;next = list;</div>
+<div class="line"><a id="l01091" name="l01091"></a><span class="lineno"> 1091</span>    <span class="keywordflow">return</span> t;</div>
+<div class="line"><a id="l01092" name="l01092"></a><span class="lineno"> 1092</span>}</div>
+<div class="line"><a id="l01093" name="l01093"></a><span class="lineno"> 1093</span> </div>
+<div class="line"><a id="l01094" name="l01094"></a><span class="lineno"> 1094</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01095" name="l01095"></a><span class="lineno"> 1095</span>LIST_NAME</div>
+<div class="line"><a id="l01096" name="l01096"></a><span class="lineno"> 1096</span>LIST_cons_kls(Koliseo* kls, LIST_T* element, LIST_NAME list)</div>
+<div class="line"><a id="l01097" name="l01097"></a><span class="lineno"> 1097</span>{</div>
+<div class="line"><a id="l01098" name="l01098"></a><span class="lineno"> 1098</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01099" name="l01099"></a><span class="lineno"> 1099</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01100" name="l01100"></a><span class="lineno"> 1100</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01101" name="l01101"></a><span class="lineno"> 1101</span>    }</div>
+<div class="line"><a id="l01102" name="l01102"></a><span class="lineno"> 1102</span>    LIST_NAME t;</div>
+<div class="line"><a id="l01103" name="l01103"></a><span class="lineno"> 1103</span>    t = (LIST_NAME) KLS_PUSH_EX(kls, LIST_ITEM_NAME, <span class="stringliteral">&quot;List node&quot;</span>);</div>
+<div class="line"><a id="l01104" name="l01104"></a><span class="lineno"> 1104</span>    <span class="keywordflow">if</span> (t == NULL ) {</div>
+<div class="line"><a id="l01105" name="l01105"></a><span class="lineno"> 1105</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Failed KLS_PUSH_EX() call.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01106" name="l01106"></a><span class="lineno"> 1106</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01107" name="l01107"></a><span class="lineno"> 1107</span>    }</div>
+<div class="line"><a id="l01108" name="l01108"></a><span class="lineno"> 1108</span>    t-&gt;value = element;</div>
+<div class="line"><a id="l01109" name="l01109"></a><span class="lineno"> 1109</span>    t-&gt;next = list;</div>
+<div class="line"><a id="l01110" name="l01110"></a><span class="lineno"> 1110</span>    <span class="keywordflow">return</span> t;</div>
+<div class="line"><a id="l01111" name="l01111"></a><span class="lineno"> 1111</span>}</div>
+<div class="line"><a id="l01112" name="l01112"></a><span class="lineno"> 1112</span> </div>
+<div class="line"><a id="l01113" name="l01113"></a><span class="lineno"> 1113</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01114" name="l01114"></a><span class="lineno"> 1114</span><span class="keywordtype">void</span></div>
+<div class="line"><a id="l01115" name="l01115"></a><span class="lineno"> 1115</span>LIST_free_gl(LIST_NAME list)</div>
+<div class="line"><a id="l01116" name="l01116"></a><span class="lineno"> 1116</span>{</div>
+<div class="line"><a id="l01117" name="l01117"></a><span class="lineno"> 1117</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01118" name="l01118"></a><span class="lineno"> 1118</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01119" name="l01119"></a><span class="lineno"> 1119</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01120" name="l01120"></a><span class="lineno"> 1120</span>        LIST_free_gl(LIST_tail(list));</div>
+<div class="line"><a id="l01121" name="l01121"></a><span class="lineno"> 1121</span>        free(list);</div>
+<div class="line"><a id="l01122" name="l01122"></a><span class="lineno"> 1122</span>    }</div>
+<div class="line"><a id="l01123" name="l01123"></a><span class="lineno"> 1123</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l01124" name="l01124"></a><span class="lineno"> 1124</span>}</div>
+<div class="line"><a id="l01125" name="l01125"></a><span class="lineno"> 1125</span> </div>
+<div class="line"><a id="l01126" name="l01126"></a><span class="lineno"> 1126</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01127" name="l01127"></a><span class="lineno"> 1127</span><span class="keywordtype">bool</span></div>
+<div class="line"><a id="l01128" name="l01128"></a><span class="lineno"> 1128</span>LIST_member(LIST_T* element, LIST_NAME list)</div>
+<div class="line"><a id="l01129" name="l01129"></a><span class="lineno"> 1129</span>{</div>
+<div class="line"><a id="l01130" name="l01130"></a><span class="lineno"> 1130</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01131" name="l01131"></a><span class="lineno"> 1131</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l01132" name="l01132"></a><span class="lineno"> 1132</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01133" name="l01133"></a><span class="lineno"> 1133</span>        <span class="keywordflow">if</span> (element == LIST_head(list)) {</div>
+<div class="line"><a id="l01134" name="l01134"></a><span class="lineno"> 1134</span>            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l01135" name="l01135"></a><span class="lineno"> 1135</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01136" name="l01136"></a><span class="lineno"> 1136</span>            <span class="keywordflow">return</span> LIST_member(element, LIST_tail(list));</div>
+<div class="line"><a id="l01137" name="l01137"></a><span class="lineno"> 1137</span>        }</div>
+<div class="line"><a id="l01138" name="l01138"></a><span class="lineno"> 1138</span>    }</div>
+<div class="line"><a id="l01139" name="l01139"></a><span class="lineno"> 1139</span>}</div>
+<div class="line"><a id="l01140" name="l01140"></a><span class="lineno"> 1140</span> </div>
+<div class="line"><a id="l01141" name="l01141"></a><span class="lineno"> 1141</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01142" name="l01142"></a><span class="lineno"> 1142</span><span class="keywordtype">int</span></div>
+<div class="line"><a id="l01143" name="l01143"></a><span class="lineno"> 1143</span>LIST_length(LIST_NAME list)</div>
+<div class="line"><a id="l01144" name="l01144"></a><span class="lineno"> 1144</span>{</div>
+<div class="line"><a id="l01145" name="l01145"></a><span class="lineno"> 1145</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01146" name="l01146"></a><span class="lineno"> 1146</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l01147" name="l01147"></a><span class="lineno"> 1147</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01148" name="l01148"></a><span class="lineno"> 1148</span>        <span class="keywordflow">return</span> 1 + LIST_length(LIST_tail(list));</div>
+<div class="line"><a id="l01149" name="l01149"></a><span class="lineno"> 1149</span>    }</div>
+<div class="line"><a id="l01150" name="l01150"></a><span class="lineno"> 1150</span>}</div>
+<div class="line"><a id="l01151" name="l01151"></a><span class="lineno"> 1151</span> </div>
+<div class="line"><a id="l01152" name="l01152"></a><span class="lineno"> 1152</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01153" name="l01153"></a><span class="lineno"> 1153</span>LIST_NAME</div>
+<div class="line"><a id="l01154" name="l01154"></a><span class="lineno"> 1154</span>LIST_append_gl(LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01155" name="l01155"></a><span class="lineno"> 1155</span>{</div>
+<div class="line"><a id="l01156" name="l01156"></a><span class="lineno"> 1156</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1)) {</div>
+<div class="line"><a id="l01157" name="l01157"></a><span class="lineno"> 1157</span>        <span class="keywordflow">return</span> l2;</div>
+<div class="line"><a id="l01158" name="l01158"></a><span class="lineno"> 1158</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01159" name="l01159"></a><span class="lineno"> 1159</span>        <span class="keywordflow">return</span> LIST_cons_gl(LIST_head(l1), LIST_append_gl(LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01160" name="l01160"></a><span class="lineno"> 1160</span>    }</div>
+<div class="line"><a id="l01161" name="l01161"></a><span class="lineno"> 1161</span>}</div>
+<div class="line"><a id="l01162" name="l01162"></a><span class="lineno"> 1162</span> </div>
+<div class="line"><a id="l01163" name="l01163"></a><span class="lineno"> 1163</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01164" name="l01164"></a><span class="lineno"> 1164</span>LIST_NAME</div>
+<div class="line"><a id="l01165" name="l01165"></a><span class="lineno"> 1165</span>LIST_append_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01166" name="l01166"></a><span class="lineno"> 1166</span>{</div>
+<div class="line"><a id="l01167" name="l01167"></a><span class="lineno"> 1167</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01168" name="l01168"></a><span class="lineno"> 1168</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01169" name="l01169"></a><span class="lineno"> 1169</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01170" name="l01170"></a><span class="lineno"> 1170</span>    }</div>
+<div class="line"><a id="l01171" name="l01171"></a><span class="lineno"> 1171</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1)) {</div>
+<div class="line"><a id="l01172" name="l01172"></a><span class="lineno"> 1172</span>        <span class="keywordflow">return</span> l2;</div>
+<div class="line"><a id="l01173" name="l01173"></a><span class="lineno"> 1173</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01174" name="l01174"></a><span class="lineno"> 1174</span>        <span class="keywordflow">return</span> LIST_cons_kls(kls, LIST_head(l1), LIST_append_kls(kls, LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01175" name="l01175"></a><span class="lineno"> 1175</span>    }</div>
+<div class="line"><a id="l01176" name="l01176"></a><span class="lineno"> 1176</span>}</div>
+<div class="line"><a id="l01177" name="l01177"></a><span class="lineno"> 1177</span> </div>
+<div class="line"><a id="l01178" name="l01178"></a><span class="lineno"> 1178</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01179" name="l01179"></a><span class="lineno"> 1179</span>LIST_NAME</div>
+<div class="line"><a id="l01180" name="l01180"></a><span class="lineno"> 1180</span>LIST_reverse_gl(LIST_NAME list)</div>
+<div class="line"><a id="l01181" name="l01181"></a><span class="lineno"> 1181</span>{</div>
+<div class="line"><a id="l01182" name="l01182"></a><span class="lineno"> 1182</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01183" name="l01183"></a><span class="lineno"> 1183</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01184" name="l01184"></a><span class="lineno"> 1184</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01185" name="l01185"></a><span class="lineno"> 1185</span>        <span class="keywordflow">return</span> LIST_append_gl(LIST_reverse_gl(LIST_tail(list)), LIST_cons_gl(LIST_head(list), LIST_nullList()));</div>
+<div class="line"><a id="l01186" name="l01186"></a><span class="lineno"> 1186</span>    }</div>
+<div class="line"><a id="l01187" name="l01187"></a><span class="lineno"> 1187</span>}</div>
+<div class="line"><a id="l01188" name="l01188"></a><span class="lineno"> 1188</span> </div>
+<div class="line"><a id="l01189" name="l01189"></a><span class="lineno"> 1189</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01190" name="l01190"></a><span class="lineno"> 1190</span>LIST_NAME</div>
+<div class="line"><a id="l01191" name="l01191"></a><span class="lineno"> 1191</span>LIST_reverse_kls(Koliseo* kls, LIST_NAME list)</div>
+<div class="line"><a id="l01192" name="l01192"></a><span class="lineno"> 1192</span>{</div>
+<div class="line"><a id="l01193" name="l01193"></a><span class="lineno"> 1193</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01194" name="l01194"></a><span class="lineno"> 1194</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01195" name="l01195"></a><span class="lineno"> 1195</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01196" name="l01196"></a><span class="lineno"> 1196</span>    }</div>
+<div class="line"><a id="l01197" name="l01197"></a><span class="lineno"> 1197</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01198" name="l01198"></a><span class="lineno"> 1198</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01199" name="l01199"></a><span class="lineno"> 1199</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01200" name="l01200"></a><span class="lineno"> 1200</span>        <span class="keywordflow">return</span> LIST_append_kls(kls, LIST_reverse_kls(kls, LIST_tail(list)), LIST_cons_kls(kls, LIST_head(list), LIST_nullList()));</div>
+<div class="line"><a id="l01201" name="l01201"></a><span class="lineno"> 1201</span>    }</div>
+<div class="line"><a id="l01202" name="l01202"></a><span class="lineno"> 1202</span>}</div>
+<div class="line"><a id="l01203" name="l01203"></a><span class="lineno"> 1203</span> </div>
+<div class="line"><a id="l01204" name="l01204"></a><span class="lineno"> 1204</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01205" name="l01205"></a><span class="lineno"> 1205</span>LIST_NAME</div>
+<div class="line"><a id="l01206" name="l01206"></a><span class="lineno"> 1206</span>LIST_copy_gl(LIST_NAME list)</div>
+<div class="line"><a id="l01207" name="l01207"></a><span class="lineno"> 1207</span>{</div>
+<div class="line"><a id="l01208" name="l01208"></a><span class="lineno"> 1208</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01209" name="l01209"></a><span class="lineno"> 1209</span>        <span class="keywordflow">return</span> list;</div>
+<div class="line"><a id="l01210" name="l01210"></a><span class="lineno"> 1210</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01211" name="l01211"></a><span class="lineno"> 1211</span>        <span class="keywordflow">return</span> LIST_cons_gl(LIST_head(list), LIST_copy_gl(LIST_tail(list)));</div>
+<div class="line"><a id="l01212" name="l01212"></a><span class="lineno"> 1212</span>    }</div>
+<div class="line"><a id="l01213" name="l01213"></a><span class="lineno"> 1213</span>}</div>
+<div class="line"><a id="l01214" name="l01214"></a><span class="lineno"> 1214</span> </div>
+<div class="line"><a id="l01215" name="l01215"></a><span class="lineno"> 1215</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01216" name="l01216"></a><span class="lineno"> 1216</span>LIST_NAME</div>
+<div class="line"><a id="l01217" name="l01217"></a><span class="lineno"> 1217</span>LIST_copy_kls(Koliseo* kls, LIST_NAME list)</div>
+<div class="line"><a id="l01218" name="l01218"></a><span class="lineno"> 1218</span>{</div>
+<div class="line"><a id="l01219" name="l01219"></a><span class="lineno"> 1219</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01220" name="l01220"></a><span class="lineno"> 1220</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01221" name="l01221"></a><span class="lineno"> 1221</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01222" name="l01222"></a><span class="lineno"> 1222</span>    }</div>
+<div class="line"><a id="l01223" name="l01223"></a><span class="lineno"> 1223</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01224" name="l01224"></a><span class="lineno"> 1224</span>        <span class="keywordflow">return</span> list;</div>
+<div class="line"><a id="l01225" name="l01225"></a><span class="lineno"> 1225</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01226" name="l01226"></a><span class="lineno"> 1226</span>        <span class="keywordflow">return</span> LIST_cons_kls(kls, LIST_head(list), LIST_copy_kls(kls, LIST_tail(list)));</div>
+<div class="line"><a id="l01227" name="l01227"></a><span class="lineno"> 1227</span>    }</div>
+<div class="line"><a id="l01228" name="l01228"></a><span class="lineno"> 1228</span> </div>
+<div class="line"><a id="l01229" name="l01229"></a><span class="lineno"> 1229</span>}</div>
+<div class="line"><a id="l01230" name="l01230"></a><span class="lineno"> 1230</span> </div>
+<div class="line"><a id="l01231" name="l01231"></a><span class="lineno"> 1231</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01232" name="l01232"></a><span class="lineno"> 1232</span>LIST_NAME</div>
+<div class="line"><a id="l01233" name="l01233"></a><span class="lineno"> 1233</span>LIST_remove_gl(LIST_T* element, LIST_NAME list)</div>
+<div class="line"><a id="l01234" name="l01234"></a><span class="lineno"> 1234</span>{</div>
+<div class="line"><a id="l01235" name="l01235"></a><span class="lineno"> 1235</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01236" name="l01236"></a><span class="lineno"> 1236</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01237" name="l01237"></a><span class="lineno"> 1237</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01238" name="l01238"></a><span class="lineno"> 1238</span>        <span class="keywordflow">if</span> (element == LIST_head(list)) {</div>
+<div class="line"><a id="l01239" name="l01239"></a><span class="lineno"> 1239</span>            <span class="keywordflow">return</span> LIST_tail(list);</div>
+<div class="line"><a id="l01240" name="l01240"></a><span class="lineno"> 1240</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01241" name="l01241"></a><span class="lineno"> 1241</span>            <span class="keywordflow">return</span> LIST_cons_gl(LIST_head(list), LIST_remove_gl(element, LIST_tail(list)));</div>
+<div class="line"><a id="l01242" name="l01242"></a><span class="lineno"> 1242</span>        }</div>
+<div class="line"><a id="l01243" name="l01243"></a><span class="lineno"> 1243</span>    }</div>
+<div class="line"><a id="l01244" name="l01244"></a><span class="lineno"> 1244</span>}</div>
+<div class="line"><a id="l01245" name="l01245"></a><span class="lineno"> 1245</span> </div>
+<div class="line"><a id="l01246" name="l01246"></a><span class="lineno"> 1246</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01247" name="l01247"></a><span class="lineno"> 1247</span>LIST_NAME</div>
+<div class="line"><a id="l01248" name="l01248"></a><span class="lineno"> 1248</span>LIST_remove_kls(Koliseo* kls, LIST_T* element, LIST_NAME list)</div>
+<div class="line"><a id="l01249" name="l01249"></a><span class="lineno"> 1249</span>{</div>
+<div class="line"><a id="l01250" name="l01250"></a><span class="lineno"> 1250</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01251" name="l01251"></a><span class="lineno"> 1251</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01252" name="l01252"></a><span class="lineno"> 1252</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01253" name="l01253"></a><span class="lineno"> 1253</span>    }</div>
+<div class="line"><a id="l01254" name="l01254"></a><span class="lineno"> 1254</span>    <span class="keywordflow">if</span> (LIST_isEmpty(list)) {</div>
+<div class="line"><a id="l01255" name="l01255"></a><span class="lineno"> 1255</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01256" name="l01256"></a><span class="lineno"> 1256</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01257" name="l01257"></a><span class="lineno"> 1257</span>        <span class="keywordflow">if</span> (element == LIST_head(list)) {</div>
+<div class="line"><a id="l01258" name="l01258"></a><span class="lineno"> 1258</span>            <span class="keywordflow">return</span> LIST_tail(list);</div>
+<div class="line"><a id="l01259" name="l01259"></a><span class="lineno"> 1259</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01260" name="l01260"></a><span class="lineno"> 1260</span>            <span class="keywordflow">return</span> LIST_cons_kls(kls, LIST_head(list), LIST_remove_kls(kls, element, LIST_tail(list)));</div>
+<div class="line"><a id="l01261" name="l01261"></a><span class="lineno"> 1261</span>        }</div>
+<div class="line"><a id="l01262" name="l01262"></a><span class="lineno"> 1262</span>    }</div>
+<div class="line"><a id="l01263" name="l01263"></a><span class="lineno"> 1263</span>}</div>
+<div class="line"><a id="l01264" name="l01264"></a><span class="lineno"> 1264</span> </div>
+<div class="line"><a id="l01265" name="l01265"></a><span class="lineno"> 1265</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01266" name="l01266"></a><span class="lineno"> 1266</span>LIST_NAME</div>
+<div class="line"><a id="l01267" name="l01267"></a><span class="lineno"> 1267</span>LIST_intersect_gl(LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01268" name="l01268"></a><span class="lineno"> 1268</span>{</div>
+<div class="line"><a id="l01269" name="l01269"></a><span class="lineno"> 1269</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1) || LIST_isEmpty(l2)) {</div>
+<div class="line"><a id="l01270" name="l01270"></a><span class="lineno"> 1270</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01271" name="l01271"></a><span class="lineno"> 1271</span>    }</div>
+<div class="line"><a id="l01272" name="l01272"></a><span class="lineno"> 1272</span>    <span class="keywordflow">if</span> (LIST_member(LIST_head(l1), l2) &amp;&amp; !(LIST_member(LIST_head(l1), LIST_tail(l2)))) {</div>
+<div class="line"><a id="l01273" name="l01273"></a><span class="lineno"> 1273</span>        <span class="keywordflow">return</span> LIST_cons_gl(LIST_head(l1), LIST_intersect_gl(LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01274" name="l01274"></a><span class="lineno"> 1274</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01275" name="l01275"></a><span class="lineno"> 1275</span>        <span class="keywordflow">return</span> LIST_intersect_gl(LIST_tail(l1), l2);</div>
+<div class="line"><a id="l01276" name="l01276"></a><span class="lineno"> 1276</span>    }</div>
+<div class="line"><a id="l01277" name="l01277"></a><span class="lineno"> 1277</span>}</div>
+<div class="line"><a id="l01278" name="l01278"></a><span class="lineno"> 1278</span> </div>
+<div class="line"><a id="l01279" name="l01279"></a><span class="lineno"> 1279</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01280" name="l01280"></a><span class="lineno"> 1280</span>LIST_NAME</div>
+<div class="line"><a id="l01281" name="l01281"></a><span class="lineno"> 1281</span>LIST_intersect_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01282" name="l01282"></a><span class="lineno"> 1282</span>{</div>
+<div class="line"><a id="l01283" name="l01283"></a><span class="lineno"> 1283</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01284" name="l01284"></a><span class="lineno"> 1284</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01285" name="l01285"></a><span class="lineno"> 1285</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01286" name="l01286"></a><span class="lineno"> 1286</span>    }</div>
+<div class="line"><a id="l01287" name="l01287"></a><span class="lineno"> 1287</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1) || LIST_isEmpty(l2)) {</div>
+<div class="line"><a id="l01288" name="l01288"></a><span class="lineno"> 1288</span>        <span class="keywordflow">return</span> LIST_nullList();</div>
+<div class="line"><a id="l01289" name="l01289"></a><span class="lineno"> 1289</span>    }</div>
+<div class="line"><a id="l01290" name="l01290"></a><span class="lineno"> 1290</span>    <span class="keywordflow">if</span> (LIST_member(LIST_head(l1), l2) &amp;&amp; !(LIST_member(LIST_head(l1), LIST_tail(l2)))) {</div>
+<div class="line"><a id="l01291" name="l01291"></a><span class="lineno"> 1291</span>        <span class="keywordflow">return</span> LIST_cons_kls(kls, LIST_head(l1), LIST_intersect_kls(kls, LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01292" name="l01292"></a><span class="lineno"> 1292</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01293" name="l01293"></a><span class="lineno"> 1293</span>        <span class="keywordflow">return</span> LIST_intersect_kls(kls, LIST_tail(l1), l2);</div>
+<div class="line"><a id="l01294" name="l01294"></a><span class="lineno"> 1294</span>    }</div>
+<div class="line"><a id="l01295" name="l01295"></a><span class="lineno"> 1295</span>}</div>
+<div class="line"><a id="l01296" name="l01296"></a><span class="lineno"> 1296</span> </div>
+<div class="line"><a id="l01297" name="l01297"></a><span class="lineno"> 1297</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01298" name="l01298"></a><span class="lineno"> 1298</span>LIST_NAME</div>
+<div class="line"><a id="l01299" name="l01299"></a><span class="lineno"> 1299</span>LIST_diff_gl(LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01300" name="l01300"></a><span class="lineno"> 1300</span>{</div>
+<div class="line"><a id="l01301" name="l01301"></a><span class="lineno"> 1301</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1) || LIST_isEmpty(l2)) {</div>
+<div class="line"><a id="l01302" name="l01302"></a><span class="lineno"> 1302</span>        <span class="keywordflow">return</span> l1;</div>
+<div class="line"><a id="l01303" name="l01303"></a><span class="lineno"> 1303</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01304" name="l01304"></a><span class="lineno"> 1304</span>        <span class="keywordflow">if</span> (!LIST_member(LIST_head(l1), l2) &amp;&amp; !LIST_member(LIST_head(l1), LIST_tail(l1))) {</div>
+<div class="line"><a id="l01305" name="l01305"></a><span class="lineno"> 1305</span>            <span class="keywordflow">return</span> LIST_cons_gl(LIST_head(l1), LIST_diff_gl(LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01306" name="l01306"></a><span class="lineno"> 1306</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01307" name="l01307"></a><span class="lineno"> 1307</span>            <span class="keywordflow">return</span> LIST_diff_gl(LIST_tail(l1), l2);</div>
+<div class="line"><a id="l01308" name="l01308"></a><span class="lineno"> 1308</span>        }</div>
+<div class="line"><a id="l01309" name="l01309"></a><span class="lineno"> 1309</span>    }</div>
+<div class="line"><a id="l01310" name="l01310"></a><span class="lineno"> 1310</span>}</div>
+<div class="line"><a id="l01311" name="l01311"></a><span class="lineno"> 1311</span> </div>
+<div class="line"><a id="l01312" name="l01312"></a><span class="lineno"> 1312</span>LIST_LINKAGE</div>
+<div class="line"><a id="l01313" name="l01313"></a><span class="lineno"> 1313</span>LIST_NAME</div>
+<div class="line"><a id="l01314" name="l01314"></a><span class="lineno"> 1314</span>LIST_diff_kls(Koliseo* kls, LIST_NAME l1, LIST_NAME l2)</div>
+<div class="line"><a id="l01315" name="l01315"></a><span class="lineno"> 1315</span>{</div>
+<div class="line"><a id="l01316" name="l01316"></a><span class="lineno"> 1316</span>    <span class="keywordflow">if</span> (kls == NULL) {</div>
+<div class="line"><a id="l01317" name="l01317"></a><span class="lineno"> 1317</span>        fprintf(stderr, <span class="stringliteral">&quot;%s at %i: %s(): Koliseo is NULL.\n&quot;</span>, __FILE__, __LINE__, __func__);</div>
+<div class="line"><a id="l01318" name="l01318"></a><span class="lineno"> 1318</span>        <span class="keywordflow">return</span> NULL;</div>
+<div class="line"><a id="l01319" name="l01319"></a><span class="lineno"> 1319</span>    }</div>
+<div class="line"><a id="l01320" name="l01320"></a><span class="lineno"> 1320</span>    <span class="keywordflow">if</span> (LIST_isEmpty(l1) || LIST_isEmpty(l2)) {</div>
+<div class="line"><a id="l01321" name="l01321"></a><span class="lineno"> 1321</span>        <span class="keywordflow">return</span> l1;</div>
+<div class="line"><a id="l01322" name="l01322"></a><span class="lineno"> 1322</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01323" name="l01323"></a><span class="lineno"> 1323</span>        <span class="keywordflow">if</span> (!LIST_member(LIST_head(l1), l2) &amp;&amp; !LIST_member(LIST_head(l1), LIST_tail(l1))) {</div>
+<div class="line"><a id="l01324" name="l01324"></a><span class="lineno"> 1324</span>            <span class="keywordflow">return</span> LIST_cons_kls(kls, LIST_head(l1), LIST_diff_kls(kls, LIST_tail(l1), l2));</div>
+<div class="line"><a id="l01325" name="l01325"></a><span class="lineno"> 1325</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l01326" name="l01326"></a><span class="lineno"> 1326</span>            <span class="keywordflow">return</span> LIST_diff_kls(kls, LIST_tail(l1), l2);</div>
+<div class="line"><a id="l01327" name="l01327"></a><span class="lineno"> 1327</span>        }</div>
+<div class="line"><a id="l01328" name="l01328"></a><span class="lineno"> 1328</span>    }</div>
+<div class="line"><a id="l01329" name="l01329"></a><span class="lineno"> 1329</span>}</div>
+<div class="line"><a id="l01330" name="l01330"></a><span class="lineno"> 1330</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l01331" name="l01331"></a><span class="lineno"> 1331</span> </div>
+<div class="line"><a id="l01332" name="l01332"></a><span class="lineno"> 1332</span><span class="comment">// Cleanup</span></div>
+<div class="line"><a id="l01333" name="l01333"></a><span class="lineno"> 1333</span><span class="comment">// These need to be undef&#39;ed so they can be redefined the</span></div>
+<div class="line"><a id="l01334" name="l01334"></a><span class="lineno"> 1334</span><span class="comment">// next time you need to instantiate this template.</span></div>
+<div class="line"><a id="l01335" name="l01335"></a><span class="lineno"> 1335</span><span class="preprocessor">#undef LIST_T</span></div>
+<div class="line"><a id="l01336" name="l01336"></a><span class="lineno"> 1336</span><span class="preprocessor">#undef LIST_PREFIX</span></div>
+<div class="line"><a id="l01337" name="l01337"></a><span class="lineno"> 1337</span><span class="preprocessor">#undef LIST_NAME</span></div>
+<div class="line"><a id="l01338" name="l01338"></a><span class="lineno"> 1338</span><span class="preprocessor">#undef LIST_LINKAGE</span></div>
+<div class="line"><a id="l01339" name="l01339"></a><span class="lineno"> 1339</span><span class="preprocessor">#undef LIST_I_SUFFIX</span></div>
+<div class="line"><a id="l01340" name="l01340"></a><span class="lineno"> 1340</span><span class="preprocessor">#undef LIST_ITEM_NAME</span></div>
+<div class="line"><a id="l01341" name="l01341"></a><span class="lineno"> 1341</span><span class="preprocessor">#undef LIST_nullList</span></div>
+<div class="line"><a id="l01342" name="l01342"></a><span class="lineno"> 1342</span><span class="preprocessor">#undef LIST_isEmpty</span></div>
+<div class="line"><a id="l01343" name="l01343"></a><span class="lineno"> 1343</span><span class="preprocessor">#undef LIST_head</span></div>
+<div class="line"><a id="l01344" name="l01344"></a><span class="lineno"> 1344</span><span class="preprocessor">#undef LIST_tail</span></div>
+<div class="line"><a id="l01345" name="l01345"></a><span class="lineno"> 1345</span><span class="preprocessor">#undef LIST_cons_gl</span></div>
+<div class="line"><a id="l01346" name="l01346"></a><span class="lineno"> 1346</span><span class="preprocessor">#undef LIST_cons_kls</span></div>
+<div class="line"><a id="l01347" name="l01347"></a><span class="lineno"> 1347</span><span class="preprocessor">#undef LIST_free_gl</span></div>
+<div class="line"><a id="l01348" name="l01348"></a><span class="lineno"> 1348</span><span class="preprocessor">#undef LIST_member</span></div>
+<div class="line"><a id="l01349" name="l01349"></a><span class="lineno"> 1349</span><span class="preprocessor">#undef LIST_length</span></div>
+<div class="line"><a id="l01350" name="l01350"></a><span class="lineno"> 1350</span><span class="preprocessor">#undef LIST_append_gl</span></div>
+<div class="line"><a id="l01351" name="l01351"></a><span class="lineno"> 1351</span><span class="preprocessor">#undef LIST_append_kls</span></div>
+<div class="line"><a id="l01352" name="l01352"></a><span class="lineno"> 1352</span><span class="preprocessor">#undef LIST_reverse_gl</span></div>
+<div class="line"><a id="l01353" name="l01353"></a><span class="lineno"> 1353</span><span class="preprocessor">#undef LIST_reverse_kls</span></div>
+<div class="line"><a id="l01354" name="l01354"></a><span class="lineno"> 1354</span><span class="preprocessor">#undef LIST_copy_gl</span></div>
+<div class="line"><a id="l01355" name="l01355"></a><span class="lineno"> 1355</span><span class="preprocessor">#undef LIST_copy_kls</span></div>
+<div class="line"><a id="l01356" name="l01356"></a><span class="lineno"> 1356</span><span class="preprocessor">#undef LIST_remove_gl</span></div>
+<div class="line"><a id="l01357" name="l01357"></a><span class="lineno"> 1357</span><span class="preprocessor">#undef LIST_remove_kls</span></div>
+<div class="line"><a id="l01358" name="l01358"></a><span class="lineno"> 1358</span><span class="preprocessor">#undef LIST_intersect_gl</span></div>
+<div class="line"><a id="l01359" name="l01359"></a><span class="lineno"> 1359</span><span class="preprocessor">#undef LIST_intersect_kls</span></div>
+<div class="line"><a id="l01360" name="l01360"></a><span class="lineno"> 1360</span><span class="preprocessor">#undef LIST_diff_gl</span></div>
+<div class="line"><a id="l01361" name="l01361"></a><span class="lineno"> 1361</span><span class="preprocessor">#undef LIST_diff_kls</span></div>
+<div class="line"><a id="l01362" name="l01362"></a><span class="lineno"> 1362</span><span class="preprocessor">#ifdef LIST_DECLS_ONLY</span></div>
+<div class="line"><a id="l01363" name="l01363"></a><span class="lineno"> 1363</span><span class="preprocessor">#undef LIST_DECLS_ONLY</span></div>
+<div class="line"><a id="l01364" name="l01364"></a><span class="lineno"> 1364</span><span class="preprocessor">#endif </span><span class="comment">// LIST_DECLS_ONLY</span></div>
+<div class="line"><a id="l01365" name="l01365"></a><span class="lineno"> 1365</span><span class="preprocessor">#endif </span><span class="comment">// LIST_T</span></div>
+<div class="ttc" id="akoliseo_8c_html_a019f9844759b44e4ccc9cd0f72bcff5a"><div class="ttname"><a href="koliseo_8c.html#a019f9844759b44e4ccc9cd0f72bcff5a">kls_rl_t_cons</a></div><div class="ttdeci">KLS_Region_List kls_rl_t_cons(Koliseo_Temp *t_kls, KLS_list_element e, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2856</div></div>
 <div class="ttc" id="akoliseo_8c_html_a02d4c742a6b77483ca6356a5eee66268"><div class="ttname"><a href="koliseo_8c.html#a02d4c742a6b77483ca6356a5eee66268">kls_push_zero_AR</a></div><div class="ttdeci">void * kls_push_zero_AR(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:929</div></div>
 <div class="ttc" id="akoliseo_8c_html_a05526fe7dad13e0df60912eccab8bfa4"><div class="ttname"><a href="koliseo_8c.html#a05526fe7dad13e0df60912eccab8bfa4">print_temp_kls_2file</a></div><div class="ttdeci">void print_temp_kls_2file(FILE *fp, Koliseo_Temp *t_kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo_Temp pointer, to the passed FILE pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:1983</div></div>
 <div class="ttc" id="akoliseo_8c_html_a0afb32158ce0344bbbae349e19f7fa0b"><div class="ttname"><a href="koliseo_8c.html#a0afb32158ce0344bbbae349e19f7fa0b">print_kls_2file</a></div><div class="ttdeci">void print_kls_2file(FILE *fp, Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to the passed FILE pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:1920</div></div>
-<div class="ttc" id="akoliseo_8c_html_a0c7bf1c05a78b24a3c0607c14891536f"><div class="ttname"><a href="koliseo_8c.html#a0c7bf1c05a78b24a3c0607c14891536f">kls_showList</a></div><div class="ttdeci">void kls_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3005</div></div>
-<div class="ttc" id="akoliseo_8c_html_a0d8f4ac2878c91195d978816702745a7"><div class="ttname"><a href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a></div><div class="ttdeci">char * kls_strdup(Koliseo *kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:4192</div></div>
-<div class="ttc" id="akoliseo_8c_html_a0ec8cf1d381a4701ccb0a9fa4034158b"><div class="ttname"><a href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a></div><div class="ttdeci">void * kls_temp_pop(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4075</div></div>
+<div class="ttc" id="akoliseo_8c_html_a0d8f4ac2878c91195d978816702745a7"><div class="ttname"><a href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a></div><div class="ttdeci">char * kls_strdup(Koliseo *kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:4197</div></div>
+<div class="ttc" id="akoliseo_8c_html_a0ec8cf1d381a4701ccb0a9fa4034158b"><div class="ttname"><a href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a></div><div class="ttdeci">void * kls_temp_pop(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4080</div></div>
 <div class="ttc" id="akoliseo_8c_html_a0f917da26d318e5702dbdc550c01fa1c"><div class="ttname"><a href="koliseo_8c.html#a0f917da26d318e5702dbdc550c01fa1c">kls_temp_start</a></div><div class="ttdeci">Koliseo_Temp * kls_temp_start(Koliseo *kls)</div><div class="ttdoc">Starts a new savestate for the passed Koliseo pointer, by initialising its Koliseo_Temp pointer and r...</div><div class="ttdef"><b>Definition</b> koliseo.c:2517</div></div>
+<div class="ttc" id="akoliseo_8c_html_a0f9cb51b4ab8e2b629c4a2684cb75eb9"><div class="ttname"><a href="koliseo_8c.html#a0f9cb51b4ab8e2b629c4a2684cb75eb9">kls_rl_cons</a></div><div class="ttdeci">KLS_Region_List kls_rl_cons(Koliseo *kls, KLS_list_element e, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2755</div></div>
 <div class="ttc" id="akoliseo_8c_html_a1417bde55c29a1ba0c8944570cd7420d"><div class="ttname"><a href="koliseo_8c.html#a1417bde55c29a1ba0c8944570cd7420d">kls_print_title</a></div><div class="ttdeci">void kls_print_title(void)</div><div class="ttdoc">Prints the title banner to stdout.</div><div class="ttdef"><b>Definition</b> koliseo.c:131</div></div>
-<div class="ttc" id="akoliseo_8c_html_a1815212657b3f565350a22f1d688ad48"><div class="ttname"><a href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a></div><div class="ttdeci">char * kls_t_strdup(Koliseo_Temp *t_kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo_Temp, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:4221</div></div>
+<div class="ttc" id="akoliseo_8c_html_a175e2f674e5a5ed75f05d150c2744ce2"><div class="ttname"><a href="koliseo_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3112</div></div>
+<div class="ttc" id="akoliseo_8c_html_a1815212657b3f565350a22f1d688ad48"><div class="ttname"><a href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a></div><div class="ttdeci">char * kls_t_strdup(Koliseo_Temp *t_kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo_Temp, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:4226</div></div>
 <div class="ttc" id="akoliseo_8c_html_a1b09427cd37560eadb290ef898d3ea9e"><div class="ttname"><a href="koliseo_8c.html#a1b09427cd37560eadb290ef898d3ea9e">kls_get_maxRegions_KLS_BASIC</a></div><div class="ttdeci">int kls_get_maxRegions_KLS_BASIC(Koliseo *kls)</div><div class="ttdoc">Calcs the max number of possible KLS_PUSH ops when using KLS_BASIC reglist alloc backend.</div><div class="ttdef"><b>Definition</b> koliseo.c:252</div></div>
 <div class="ttc" id="akoliseo_8c_html_a1c53c3bf4e68e080f4e9dceef56139f2"><div class="ttname"><a href="koliseo_8c.html#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1969</div></div>
-<div class="ttc" id="akoliseo_8c_html_a1f83d151c2715a8ab37d46520bf7bf10"><div class="ttname"><a href="koliseo_8c.html#a1f83d151c2715a8ab37d46520bf7bf10">kls_isLess</a></div><div class="ttdeci">bool kls_isLess(KLS_Region *r1, KLS_Region *r2)</div><div class="ttdoc">Compares two regions and returns true if the first one has a smaller size.</div><div class="ttdef"><b>Definition</b> koliseo.c:3247</div></div>
-<div class="ttc" id="akoliseo_8c_html_a24e5720700fe1070f586a637e0d950d7"><div class="ttname"><a href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a></div><div class="ttdeci">const char * string_from_Gulp_Res(Gulp_Res g)</div><div class="ttdoc">Return a constant string for the passed Gulp_Res.</div><div class="ttdef"><b>Definition</b> koliseo.c:3425</div></div>
+<div class="ttc" id="akoliseo_8c_html_a24e5720700fe1070f586a637e0d950d7"><div class="ttname"><a href="koliseo_8c.html#a24e5720700fe1070f586a637e0d950d7">string_from_Gulp_Res</a></div><div class="ttdeci">const char * string_from_Gulp_Res(Gulp_Res g)</div><div class="ttdoc">Return a constant string for the passed Gulp_Res.</div><div class="ttdef"><b>Definition</b> koliseo.c:3430</div></div>
 <div class="ttc" id="akoliseo_8c_html_a28ad19f817536f9181e6bab6ef13a657"><div class="ttname"><a href="koliseo_8c.html#a28ad19f817536f9181e6bab6ef13a657">KLS_STATS_DEFAULT</a></div><div class="ttdeci">KLS_Stats KLS_STATS_DEFAULT</div><div class="ttdef"><b>Definition</b> koliseo.c:46</div></div>
 <div class="ttc" id="akoliseo_8c_html_a2a456ee57d68b9333e6385559370911d"><div class="ttname"><a href="koliseo_8c.html#a2a456ee57d68b9333e6385559370911d">kls_log</a></div><div class="ttdeci">void kls_log(Koliseo *kls, const char *tag, const char *format,...)</div><div class="ttdoc">Logs a message to the log_fp FILE field of the passed Koliseo pointer, if its conf....</div><div class="ttdef"><b>Definition</b> koliseo.c:325</div></div>
-<div class="ttc" id="akoliseo_8c_html_a2b06f80d832f2122fd22267d2ccb269b"><div class="ttname"><a href="koliseo_8c.html#a2b06f80d832f2122fd22267d2ccb269b">kls_gulp_file_sized_to_kstr</a></div><div class="ttdeci">Kstr * kls_gulp_file_sized_to_kstr(Koliseo *kls, const char *filepath, Gulp_Res *err, size_t max_size, bool allow_nullchar)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3903</div></div>
-<div class="ttc" id="akoliseo_8c_html_a2cf7922b308d4ccaf0a434ffc0b3de3f"><div class="ttname"><a href="koliseo_8c.html#a2cf7922b308d4ccaf0a434ffc0b3de3f">kls_head</a></div><div class="ttdeci">KLS_list_element kls_head(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2737</div></div>
+<div class="ttc" id="akoliseo_8c_html_a2b06f80d832f2122fd22267d2ccb269b"><div class="ttname"><a href="koliseo_8c.html#a2b06f80d832f2122fd22267d2ccb269b">kls_gulp_file_sized_to_kstr</a></div><div class="ttdeci">Kstr * kls_gulp_file_sized_to_kstr(Koliseo *kls, const char *filepath, Gulp_Res *err, size_t max_size, bool allow_nullchar)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3908</div></div>
+<div class="ttc" id="akoliseo_8c_html_a2ff10e13d78e8e9a5336f1c6c708c99e"><div class="ttname"><a href="koliseo_8c.html#a2ff10e13d78e8e9a5336f1c6c708c99e">kls_rl_head</a></div><div class="ttdeci">KLS_list_element kls_rl_head(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2737</div></div>
 <div class="ttc" id="akoliseo_8c_html_a31a283d140f92661f3d826186e6a7cdd"><div class="ttname"><a href="koliseo_8c.html#a31a283d140f92661f3d826186e6a7cdd">kls_temp_end</a></div><div class="ttdeci">void kls_temp_end(Koliseo_Temp *tmp_kls)</div><div class="ttdoc">Ends passed Koliseo_Temp pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:2666</div></div>
-<div class="ttc" id="akoliseo_8c_html_a36076454ce5983cfb9a6419bff42d893"><div class="ttname"><a href="koliseo_8c.html#a36076454ce5983cfb9a6419bff42d893">kls_cons</a></div><div class="ttdeci">KLS_Region_List kls_cons(Koliseo *kls, KLS_list_element e, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2755</div></div>
+<div class="ttc" id="akoliseo_8c_html_a33d65f4baaaa762b0dd73bce06b53b1f"><div class="ttname"><a href="koliseo_8c.html#a33d65f4baaaa762b0dd73bce06b53b1f">kls_rl_member</a></div><div class="ttdeci">bool kls_rl_member(KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3015</div></div>
 <div class="ttc" id="akoliseo_8c_html_a366d819f41bc7fded6e931bc0c5405ca"><div class="ttname"><a href="koliseo_8c.html#a366d819f41bc7fded6e931bc0c5405ca">kls_dbg_features</a></div><div class="ttdeci">void kls_dbg_features(void)</div><div class="ttdoc">Prints enabled Koliseo features to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:203</div></div>
-<div class="ttc" id="akoliseo_8c_html_a368af43c624af78ca2f139ca19bbca5e"><div class="ttname"><a href="koliseo_8c.html#a368af43c624af78ca2f139ca19bbca5e">kls_append</a></div><div class="ttdeci">KLS_Region_List kls_append(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3032</div></div>
-<div class="ttc" id="akoliseo_8c_html_a3793b52bdc9cbb531589bfde3ef79417"><div class="ttname"><a href="koliseo_8c.html#a3793b52bdc9cbb531589bfde3ef79417">kls_strdup_arr</a></div><div class="ttdeci">char ** kls_strdup_arr(Koliseo *kls, size_t count, char **source)</div><div class="ttdoc">Function to dupe a C string array to a Koliseo, and return a pointer to the allocated array.</div><div class="ttdef"><b>Definition</b> koliseo.c:4205</div></div>
-<div class="ttc" id="akoliseo_8c_html_a3c9323dd3154ef59ec9493bfbee05a55"><div class="ttname"><a href="koliseo_8c.html#a3c9323dd3154ef59ec9493bfbee05a55">kstr_try_token</a></div><div class="ttdeci">bool kstr_try_token(Kstr *k, char delim, Kstr *part)</div><div class="ttdoc">Scans the first passed Kstr and if the passed char is present, the old Kstr is set to second pointer ...</div><div class="ttdef"><b>Definition</b> koliseo.c:3616</div></div>
+<div class="ttc" id="akoliseo_8c_html_a3793b52bdc9cbb531589bfde3ef79417"><div class="ttname"><a href="koliseo_8c.html#a3793b52bdc9cbb531589bfde3ef79417">kls_strdup_arr</a></div><div class="ttdeci">char ** kls_strdup_arr(Koliseo *kls, size_t count, char **source)</div><div class="ttdoc">Function to dupe a C string array to a Koliseo, and return a pointer to the allocated array.</div><div class="ttdef"><b>Definition</b> koliseo.c:4210</div></div>
+<div class="ttc" id="akoliseo_8c_html_a385090d903ca931a35ffc4984429658c"><div class="ttname"><a href="koliseo_8c.html#a385090d903ca931a35ffc4984429658c">kls_rl_isLess</a></div><div class="ttdeci">bool kls_rl_isLess(KLS_Region *r1, KLS_Region *r2)</div><div class="ttdoc">Compares two regions and returns true if the first one has a smaller size.</div><div class="ttdef"><b>Definition</b> koliseo.c:3252</div></div>
+<div class="ttc" id="akoliseo_8c_html_a3c9323dd3154ef59ec9493bfbee05a55"><div class="ttname"><a href="koliseo_8c.html#a3c9323dd3154ef59ec9493bfbee05a55">kstr_try_token</a></div><div class="ttdeci">bool kstr_try_token(Kstr *k, char delim, Kstr *part)</div><div class="ttdoc">Scans the first passed Kstr and if the passed char is present, the old Kstr is set to second pointer ...</div><div class="ttdef"><b>Definition</b> koliseo.c:3621</div></div>
 <div class="ttc" id="akoliseo_8c_html_a3e2a527e3824a8cc0538803937801e58"><div class="ttname"><a href="koliseo_8c.html#a3e2a527e3824a8cc0538803937801e58">string_koliseo_version</a></div><div class="ttdeci">const char * string_koliseo_version(void)</div><div class="ttdoc">Returns the constant string representing current version for Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:142</div></div>
-<div class="ttc" id="akoliseo_8c_html_a3f87e56b1b69a3e24815361fffe5b7a1"><div class="ttname"><a href="koliseo_8c.html#a3f87e56b1b69a3e24815361fffe5b7a1">kstr_trim_left</a></div><div class="ttdeci">Kstr kstr_trim_left(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing heading spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3545</div></div>
+<div class="ttc" id="akoliseo_8c_html_a3f87e56b1b69a3e24815361fffe5b7a1"><div class="ttname"><a href="koliseo_8c.html#a3f87e56b1b69a3e24815361fffe5b7a1">kstr_trim_left</a></div><div class="ttdeci">Kstr kstr_trim_left(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing heading spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3550</div></div>
+<div class="ttc" id="akoliseo_8c_html_a41c0a83764c4936bc38d84bc90068f52"><div class="ttname"><a href="koliseo_8c.html#a41c0a83764c4936bc38d84bc90068f52">kls_rl_empty</a></div><div class="ttdeci">bool kls_rl_empty(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2728</div></div>
 <div class="ttc" id="akoliseo_8c_html_a43c7ec4f890f11ff855e0b31249d192b"><div class="ttname"><a href="koliseo_8c.html#a43c7ec4f890f11ff855e0b31249d192b">kls_new_dbg_alloc</a></div><div class="ttdeci">Koliseo * kls_new_dbg_alloc(ptrdiff_t size, kls_alloc_func alloc_func)</div><div class="ttdoc">Takes a ptrdiff_t size and an allocation function pointer, and returns a pointer to the prepared Koli...</div><div class="ttdef"><b>Definition</b> koliseo.c:519</div></div>
-<div class="ttc" id="akoliseo_8c_html_a45b06662991ceb95d49807b5fd3a4256"><div class="ttname"><a href="koliseo_8c.html#a45b06662991ceb95d49807b5fd3a4256">kstr_eq_ignorecase</a></div><div class="ttdeci">bool kstr_eq_ignorecase(Kstr left, Kstr right)</div><div class="ttdoc">Checks if the two passed Kstr have equal data, ignoring case.</div><div class="ttdef"><b>Definition</b> koliseo.c:3483</div></div>
-<div class="ttc" id="akoliseo_8c_html_a473984a6aa9831f15a1969bc524fc3b4"><div class="ttname"><a href="koliseo_8c.html#a473984a6aa9831f15a1969bc524fc3b4">kls_isEqual</a></div><div class="ttdeci">bool kls_isEqual(KLS_Region *r1, KLS_Region *r2)</div><div class="ttdoc">Compares two regions and returns true if their size is equal.</div><div class="ttdef"><b>Definition</b> koliseo.c:3261</div></div>
-<div class="ttc" id="akoliseo_8c_html_a479a99fb7176087e1dd82dee92cfbcf3"><div class="ttname"><a href="koliseo_8c.html#a479a99fb7176087e1dd82dee92cfbcf3">kls_gulp_file_sized</a></div><div class="ttdeci">char * kls_gulp_file_sized(Koliseo *kls, const char *filepath, Gulp_Res *err, size_t max_size)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3763</div></div>
-<div class="ttc" id="akoliseo_8c_html_a4afabc2738f61fd3e733cfb2f6bf2153"><div class="ttname"><a href="koliseo_8c.html#a4afabc2738f61fd3e733cfb2f6bf2153">kls_temp_pop_AR</a></div><div class="ttdeci">void * kls_temp_pop_AR(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4121</div></div>
-<div class="ttc" id="akoliseo_8c_html_a4d24b942c47cdc2bbf36806de9a479c7"><div class="ttname"><a href="koliseo_8c.html#a4d24b942c47cdc2bbf36806de9a479c7">kls_pop_AR</a></div><div class="ttdeci">void * kls_pop_AR(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4007</div></div>
-<div class="ttc" id="akoliseo_8c_html_a4feb8cbdebde6a83692071c5f44cb278"><div class="ttname"><a href="koliseo_8c.html#a4feb8cbdebde6a83692071c5f44cb278">kstr_trim_right</a></div><div class="ttdeci">Kstr kstr_trim_right(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing trailing spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3560</div></div>
+<div class="ttc" id="akoliseo_8c_html_a45b06662991ceb95d49807b5fd3a4256"><div class="ttname"><a href="koliseo_8c.html#a45b06662991ceb95d49807b5fd3a4256">kstr_eq_ignorecase</a></div><div class="ttdeci">bool kstr_eq_ignorecase(Kstr left, Kstr right)</div><div class="ttdoc">Checks if the two passed Kstr have equal data, ignoring case.</div><div class="ttdef"><b>Definition</b> koliseo.c:3488</div></div>
+<div class="ttc" id="akoliseo_8c_html_a479a99fb7176087e1dd82dee92cfbcf3"><div class="ttname"><a href="koliseo_8c.html#a479a99fb7176087e1dd82dee92cfbcf3">kls_gulp_file_sized</a></div><div class="ttdeci">char * kls_gulp_file_sized(Koliseo *kls, const char *filepath, Gulp_Res *err, size_t max_size)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3768</div></div>
+<div class="ttc" id="akoliseo_8c_html_a4afabc2738f61fd3e733cfb2f6bf2153"><div class="ttname"><a href="koliseo_8c.html#a4afabc2738f61fd3e733cfb2f6bf2153">kls_temp_pop_AR</a></div><div class="ttdeci">void * kls_temp_pop_AR(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4126</div></div>
+<div class="ttc" id="akoliseo_8c_html_a4d24b942c47cdc2bbf36806de9a479c7"><div class="ttname"><a href="koliseo_8c.html#a4d24b942c47cdc2bbf36806de9a479c7">kls_pop_AR</a></div><div class="ttdeci">void * kls_pop_AR(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:4012</div></div>
+<div class="ttc" id="akoliseo_8c_html_a4feb8cbdebde6a83692071c5f44cb278"><div class="ttname"><a href="koliseo_8c.html#a4feb8cbdebde6a83692071c5f44cb278">kstr_trim_right</a></div><div class="ttdeci">Kstr kstr_trim_right(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing trailing spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3565</div></div>
 <div class="ttc" id="akoliseo_8c_html_a51334f59082f4d26978e70ec7288eef8"><div class="ttname"><a href="koliseo_8c.html#a51334f59082f4d26978e70ec7288eef8">kls_temp_get_maxRegions_KLS_BASIC</a></div><div class="ttdeci">int kls_temp_get_maxRegions_KLS_BASIC(Koliseo_Temp *t_kls)</div><div class="ttdoc">Calcs the max number of possible KLS_PUSH_T ops when using KLS_BASIC reglist alloc backend.</div><div class="ttdef"><b>Definition</b> koliseo.c:287</div></div>
-<div class="ttc" id="akoliseo_8c_html_a514ca7b57a5ccb88a62559e8dedee184"><div class="ttname"><a href="koliseo_8c.html#a514ca7b57a5ccb88a62559e8dedee184">try_kls_gulp_file_to_kstr</a></div><div class="ttdeci">Kstr * try_kls_gulp_file_to_kstr(Koliseo *kls, const char *filepath, size_t max_size, bool allow_nullchar)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3945</div></div>
-<div class="ttc" id="akoliseo_8c_html_a541127eb786413201b4fcaeb7f406e78"><div class="ttname"><a href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a></div><div class="ttdeci">char * try_kls_gulp_file(Koliseo *kls, const char *filepath, size_t max_size)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3804</div></div>
+<div class="ttc" id="akoliseo_8c_html_a514ca7b57a5ccb88a62559e8dedee184"><div class="ttname"><a href="koliseo_8c.html#a514ca7b57a5ccb88a62559e8dedee184">try_kls_gulp_file_to_kstr</a></div><div class="ttdeci">Kstr * try_kls_gulp_file_to_kstr(Koliseo *kls, const char *filepath, size_t max_size, bool allow_nullchar)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3950</div></div>
+<div class="ttc" id="akoliseo_8c_html_a541127eb786413201b4fcaeb7f406e78"><div class="ttname"><a href="koliseo_8c.html#a541127eb786413201b4fcaeb7f406e78">try_kls_gulp_file</a></div><div class="ttdeci">char * try_kls_gulp_file(Koliseo *kls, const char *filepath, size_t max_size)</div><div class="ttdoc">Tries mapping the passed file on the Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3809</div></div>
 <div class="ttc" id="akoliseo_8c_html_a57b9f1b1e65d059d805d591db93f8d5d"><div class="ttname"><a href="koliseo_8c.html#a57b9f1b1e65d059d805d591db93f8d5d">kls_new_conf_alloc</a></div><div class="ttdeci">Koliseo * kls_new_conf_alloc(ptrdiff_t size, KLS_Conf conf, kls_alloc_func alloc_func)</div><div class="ttdoc">Takes a ptrdiff_t size, a KLS_Conf to configure the new Koliseo, and an allocation function pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:470</div></div>
+<div class="ttc" id="akoliseo_8c_html_a590ca5c695e8f9abf5176312f2de0550"><div class="ttname"><a href="koliseo_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a></div><div class="ttdeci">KLS_Region_List kls_rl_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3226</div></div>
 <div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2460</div></div>
-<div class="ttc" id="akoliseo_8c_html_a5e4fa85ec7f72d086f43ef01c0fea928"><div class="ttname"><a href="koliseo_8c.html#a5e4fa85ec7f72d086f43ef01c0fea928">kls_diff</a></div><div class="ttdeci">KLS_Region_List kls_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3221</div></div>
+<div class="ttc" id="akoliseo_8c_html_a5c4d07f9b21e430becf65d4b0863260f"><div class="ttname"><a href="koliseo_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3094</div></div>
+<div class="ttc" id="akoliseo_8c_html_a5fd23a36c7091fe21fee25c31f2b8dbc"><div class="ttname"><a href="koliseo_8c.html#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a></div><div class="ttdeci">KLS_Region_List kls_rl_emptyList(void)</div><div class="ttdef"><b>Definition</b> koliseo.c:2723</div></div>
 <div class="ttc" id="akoliseo_8c_html_a6241fb4afaeb038b638c79d42b1740f3"><div class="ttname"><a href="koliseo_8c.html#a6241fb4afaeb038b638c79d42b1740f3">kls_show_toWin</a></div><div class="ttdeci">void kls_show_toWin(Koliseo *kls, WINDOW *win)</div><div class="ttdoc">Prints fields and eventually KLS_Region_List from the passed Koliseo pointer, to the passed WINDOW po...</div><div class="ttdef"><b>Definition</b> koliseo.c:2074</div></div>
-<div class="ttc" id="akoliseo_8c_html_a6598f8ffe493aefa8e7a1f68bcf94700"><div class="ttname"><a href="koliseo_8c.html#a6598f8ffe493aefa8e7a1f68bcf94700">kstr_cut_r</a></div><div class="ttdeci">Kstr kstr_cut_r(Kstr *k, size_t n)</div><div class="ttdoc">Cuts the passed Kstr by up to n chars, from the right.</div><div class="ttdef"><b>Definition</b> koliseo.c:3528</div></div>
-<div class="ttc" id="akoliseo_8c_html_a6738b2d02bfa82f3efdbf5e1222294df"><div class="ttname"><a href="koliseo_8c.html#a6738b2d02bfa82f3efdbf5e1222294df">kls_length</a></div><div class="ttdeci">int kls_length(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3023</div></div>
-<div class="ttc" id="akoliseo_8c_html_a6efc4c9e0fd57fe6aeef21e0ec46c89b"><div class="ttname"><a href="koliseo_8c.html#a6efc4c9e0fd57fe6aeef21e0ec46c89b">kstr_from_c_lit</a></div><div class="ttdeci">Kstr kstr_from_c_lit(const char *c_lit)</div><div class="ttdoc">Returns a new Kstr from the passed null-terminated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:3452</div></div>
-<div class="ttc" id="akoliseo_8c_html_a6f29f975b823e5a4592316df909d236c"><div class="ttname"><a href="koliseo_8c.html#a6f29f975b823e5a4592316df909d236c">kls_member</a></div><div class="ttdeci">bool kls_member(KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3010</div></div>
-<div class="ttc" id="akoliseo_8c_html_a76a4c4b8a0c3fa0ca394cd5184ad15ad"><div class="ttname"><a href="koliseo_8c.html#a76a4c4b8a0c3fa0ca394cd5184ad15ad">kls_showList_toFile</a></div><div class="ttdeci">void kls_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> koliseo.c:2966</div></div>
+<div class="ttc" id="akoliseo_8c_html_a6598f8ffe493aefa8e7a1f68bcf94700"><div class="ttname"><a href="koliseo_8c.html#a6598f8ffe493aefa8e7a1f68bcf94700">kstr_cut_r</a></div><div class="ttdeci">Kstr kstr_cut_r(Kstr *k, size_t n)</div><div class="ttdoc">Cuts the passed Kstr by up to n chars, from the right.</div><div class="ttdef"><b>Definition</b> koliseo.c:3533</div></div>
+<div class="ttc" id="akoliseo_8c_html_a67e7977c00c479e4cfaef8a0656e8a1b"><div class="ttname"><a href="koliseo_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a></div><div class="ttdeci">void kls_rl_freeList(KLS_Region_List l)</div><div class="ttdoc">Frees all values and nodes for passed Region list.</div><div class="ttdef"><b>Definition</b> koliseo.c:2952</div></div>
+<div class="ttc" id="akoliseo_8c_html_a6efc4c9e0fd57fe6aeef21e0ec46c89b"><div class="ttname"><a href="koliseo_8c.html#a6efc4c9e0fd57fe6aeef21e0ec46c89b">kstr_from_c_lit</a></div><div class="ttdeci">Kstr kstr_from_c_lit(const char *c_lit)</div><div class="ttdoc">Returns a new Kstr from the passed null-terminated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:3457</div></div>
 <div class="ttc" id="akoliseo_8c_html_a795eadff56ab76d05fc09f6bdcdcb0d5"><div class="ttname"><a href="koliseo_8c.html#a795eadff56ab76d05fc09f6bdcdcb0d5">kls_new_traced_alloc</a></div><div class="ttdeci">Koliseo * kls_new_traced_alloc(ptrdiff_t size, const char *output_path, kls_alloc_func alloc_func)</div><div class="ttdoc">Takes a ptrdiff_t size, a filepath for the trace output file, and an allocation function pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:495</div></div>
-<div class="ttc" id="akoliseo_8c_html_a808a13ec7b75f9ebfda2a15547139639"><div class="ttname"><a href="koliseo_8c.html#a808a13ec7b75f9ebfda2a15547139639">kls_t_strdup_arr</a></div><div class="ttdeci">char ** kls_t_strdup_arr(Koliseo_Temp *t_kls, size_t count, char **source)</div><div class="ttdoc">Function to dupe a C string array to a Koliseo_Temp, and return a pointer to the allocated array.</div><div class="ttdef"><b>Definition</b> koliseo.c:4234</div></div>
+<div class="ttc" id="akoliseo_8c_html_a808a13ec7b75f9ebfda2a15547139639"><div class="ttname"><a href="koliseo_8c.html#a808a13ec7b75f9ebfda2a15547139639">kls_t_strdup_arr</a></div><div class="ttdeci">char ** kls_t_strdup_arr(Koliseo_Temp *t_kls, size_t count, char **source)</div><div class="ttdoc">Function to dupe a C string array to a Koliseo_Temp, and return a pointer to the allocated array.</div><div class="ttdef"><b>Definition</b> koliseo.c:4239</div></div>
 <div class="ttc" id="akoliseo_8c_html_a80da35d5b6b68fcdc5ee8caa7b256df1"><div class="ttname"><a href="koliseo_8c.html#a80da35d5b6b68fcdc5ee8caa7b256df1">kls_temp_push_zero_AR</a></div><div class="ttdeci">void * kls_temp_push_zero_AR(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:1089</div></div>
-<div class="ttc" id="akoliseo_8c_html_a856591504e70b81f6b1162482fe0a613"><div class="ttname"><a href="koliseo_8c.html#a856591504e70b81f6b1162482fe0a613">kls_regionSize</a></div><div class="ttdeci">ptrdiff_t kls_regionSize(KLS_Region *r)</div><div class="ttdoc">Return size of a passed KLS_Region.</div><div class="ttdef"><b>Definition</b> koliseo.c:3295</div></div>
+<div class="ttc" id="akoliseo_8c_html_a856591504e70b81f6b1162482fe0a613"><div class="ttname"><a href="koliseo_8c.html#a856591504e70b81f6b1162482fe0a613">kls_regionSize</a></div><div class="ttdeci">ptrdiff_t kls_regionSize(KLS_Region *r)</div><div class="ttdoc">Return size of a passed KLS_Region.</div><div class="ttdef"><b>Definition</b> koliseo.c:3300</div></div>
 <div class="ttc" id="akoliseo_8c_html_a8a56a095544ba23506c3c4a7695fa499"><div class="ttname"><a href="koliseo_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a></div><div class="ttdeci">void * kls_push_zero_named(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:1263</div></div>
+<div class="ttc" id="akoliseo_8c_html_a8b82a7cf4fedeb6c14d2683bec8d0aa9"><div class="ttname"><a href="koliseo_8c.html#a8b82a7cf4fedeb6c14d2683bec8d0aa9">kls_rl_length</a></div><div class="ttdeci">int kls_rl_length(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3028</div></div>
 <div class="ttc" id="akoliseo_8c_html_a8de4ec4f3a2d7b84f85493005c530c44"><div class="ttname"><a href="koliseo_8c.html#a8de4ec4f3a2d7b84f85493005c530c44">print_dbg_temp_kls</a></div><div class="ttdeci">void print_dbg_temp_kls(Koliseo_Temp *t_kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo_Temp pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:2039</div></div>
-<div class="ttc" id="akoliseo_8c_html_a8ee4951b01430e9335b774137a271285"><div class="ttname"><a href="koliseo_8c.html#a8ee4951b01430e9335b774137a271285">kls_t_cons</a></div><div class="ttdeci">KLS_Region_List kls_t_cons(Koliseo_Temp *t_kls, KLS_list_element e, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2856</div></div>
-<div class="ttc" id="akoliseo_8c_html_a929874fb0ad49f77f42fda08101f3eb7"><div class="ttname"><a href="koliseo_8c.html#a929874fb0ad49f77f42fda08101f3eb7">kstr_cut_l</a></div><div class="ttdeci">Kstr kstr_cut_l(Kstr *k, size_t n)</div><div class="ttdoc">Cuts the passed Kstr by up to n chars, from the left.</div><div class="ttdef"><b>Definition</b> koliseo.c:3509</div></div>
+<div class="ttc" id="akoliseo_8c_html_a929874fb0ad49f77f42fda08101f3eb7"><div class="ttname"><a href="koliseo_8c.html#a929874fb0ad49f77f42fda08101f3eb7">kstr_cut_l</a></div><div class="ttdeci">Kstr kstr_cut_l(Kstr *k, size_t n)</div><div class="ttdoc">Cuts the passed Kstr by up to n chars, from the left.</div><div class="ttdef"><b>Definition</b> koliseo.c:3514</div></div>
 <div class="ttc" id="akoliseo_8c_html_a93db67ec1375feecaec2ee2bcdfde0c1"><div class="ttname"><a href="koliseo_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a></div><div class="ttdeci">void * kls_temp_push_zero_named(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:1423</div></div>
-<div class="ttc" id="akoliseo_8c_html_a97b2a46868a9874e6d67b59a556ee22a"><div class="ttname"><a href="koliseo_8c.html#a97b2a46868a9874e6d67b59a556ee22a">kls_usageReport_toFile</a></div><div class="ttdeci">void kls_usageReport_toFile(Koliseo *kls, FILE *fp)</div><div class="ttdoc">Prints an usage report for the passed Koliseo to the passed file.</div><div class="ttdef"><b>Definition</b> koliseo.c:3338</div></div>
+<div class="ttc" id="akoliseo_8c_html_a97b2a46868a9874e6d67b59a556ee22a"><div class="ttname"><a href="koliseo_8c.html#a97b2a46868a9874e6d67b59a556ee22a">kls_usageReport_toFile</a></div><div class="ttdeci">void kls_usageReport_toFile(Koliseo *kls, FILE *fp)</div><div class="ttdoc">Prints an usage report for the passed Koliseo to the passed file.</div><div class="ttdef"><b>Definition</b> koliseo.c:3343</div></div>
+<div class="ttc" id="akoliseo_8c_html_a97c2f39163b8712000a7675344669af9"><div class="ttname"><a href="koliseo_8c.html#a97c2f39163b8712000a7675344669af9">kls_rl_copy</a></div><div class="ttdeci">KLS_Region_List kls_rl_copy(Koliseo *kls, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3064</div></div>
+<div class="ttc" id="akoliseo_8c_html_a984b6947109dcfaa73961e8718ed8edd"><div class="ttname"><a href="koliseo_8c.html#a984b6947109dcfaa73961e8718ed8edd">kls_rl_reverse</a></div><div class="ttdeci">KLS_Region_List kls_rl_reverse(Koliseo *kls, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3050</div></div>
 <div class="ttc" id="akoliseo_8c_html_a9aa2dbbbfede5de76cfb577a600b9a4c"><div class="ttname"><a href="koliseo_8c.html#a9aa2dbbbfede5de76cfb577a600b9a4c">kls_get_pos</a></div><div class="ttdeci">ptrdiff_t kls_get_pos(Koliseo *kls)</div><div class="ttdoc">Returns the current offset (position of pointer bumper) for the passed Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:242</div></div>
-<div class="ttc" id="akoliseo_8c_html_a9dbd4a76b3ed5a53afe94a14ebf14e12"><div class="ttname"><a href="koliseo_8c.html#a9dbd4a76b3ed5a53afe94a14ebf14e12">kls_copy</a></div><div class="ttdeci">KLS_Region_List kls_copy(Koliseo *kls, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3059</div></div>
 <div class="ttc" id="akoliseo_8c_html_a9e1e7f645145c0d4bd6af97f60e87234"><div class="ttname"><a href="koliseo_8c.html#a9e1e7f645145c0d4bd6af97f60e87234">kls_push_zero</a></div><div class="ttdeci">void * kls_push_zero(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:830</div></div>
 <div class="ttc" id="akoliseo_8c_html_a9eeb3d2e01af58d985f9b7adb1790ff5"><div class="ttname"><a href="koliseo_8c.html#a9eeb3d2e01af58d985f9b7adb1790ff5">int_koliseo_version</a></div><div class="ttdeci">const int int_koliseo_version(void)</div><div class="ttdoc">Returns the constant int representing current version for Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:151</div></div>
-<div class="ttc" id="akoliseo_8c_html_aa14183c538e1836764b875c3cbd28f45"><div class="ttname"><a href="koliseo_8c.html#aa14183c538e1836764b875c3cbd28f45">kls_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3107</div></div>
-<div class="ttc" id="akoliseo_8c_html_aa24534efae8c57574b6f2a435de9d282"><div class="ttname"><a href="koliseo_8c.html#aa24534efae8c57574b6f2a435de9d282">kls_reverse</a></div><div class="ttdeci">KLS_Region_List kls_reverse(Koliseo *kls, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3045</div></div>
-<div class="ttc" id="akoliseo_8c_html_aa653a27ea40938dbbeb7936cf26c089b"><div class="ttname"><a href="koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b">kls_avg_regionSize</a></div><div class="ttdeci">ptrdiff_t kls_avg_regionSize(Koliseo *kls)</div><div class="ttdoc">Return average region size in usage for the passed Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3305</div></div>
+<div class="ttc" id="akoliseo_8c_html_aa653a27ea40938dbbeb7936cf26c089b"><div class="ttname"><a href="koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b">kls_avg_regionSize</a></div><div class="ttdeci">ptrdiff_t kls_avg_regionSize(Koliseo *kls)</div><div class="ttdoc">Return average region size in usage for the passed Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:3310</div></div>
+<div class="ttc" id="akoliseo_8c_html_aadf0cfebeef7cae605ef30d41d37aed1"><div class="ttname"><a href="koliseo_8c.html#aadf0cfebeef7cae605ef30d41d37aed1">kls_rl_delete</a></div><div class="ttdeci">KLS_Region_List kls_rl_delete(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3077</div></div>
+<div class="ttc" id="akoliseo_8c_html_aaea0e443817878224b6c539d2b96ec2d"><div class="ttname"><a href="koliseo_8c.html#aaea0e443817878224b6c539d2b96ec2d">kls_rl_isEqual</a></div><div class="ttdeci">bool kls_rl_isEqual(KLS_Region *r1, KLS_Region *r2)</div><div class="ttdoc">Compares two regions and returns true if their size is equal.</div><div class="ttdef"><b>Definition</b> koliseo.c:3266</div></div>
 <div class="ttc" id="akoliseo_8c_html_aaf2f7555efaaa31b04a22270c40e2221"><div class="ttname"><a href="koliseo_8c.html#aaf2f7555efaaa31b04a22270c40e2221">kls_temp_show_toWin</a></div><div class="ttdeci">void kls_temp_show_toWin(Koliseo_Temp *t_kls, WINDOW *win)</div><div class="ttdoc">Takes a Koliseo_Temp pointer and prints fields and eventually KLS_Region_List from the referred Kolis...</div><div class="ttdef"><b>Definition</b> koliseo.c:2155</div></div>
-<div class="ttc" id="akoliseo_8c_html_aaf98c70d7601028ef7bb2ab3defef996"><div class="ttname"><a href="koliseo_8c.html#aaf98c70d7601028ef7bb2ab3defef996">kls_delete</a></div><div class="ttdeci">KLS_Region_List kls_delete(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3072</div></div>
-<div class="ttc" id="akoliseo_8c_html_ab106be0da82fb996a22ca9cb6d4e049f"><div class="ttname"><a href="koliseo_8c.html#ab106be0da82fb996a22ca9cb6d4e049f">kstr_token</a></div><div class="ttdeci">Kstr kstr_token(Kstr *k, char delim)</div><div class="ttdoc">Scans the passed Kstr and cuts it up to the first occurrence of passed char, even if it is not presen...</div><div class="ttdef"><b>Definition</b> koliseo.c:3644</div></div>
-<div class="ttc" id="akoliseo_8c_html_ab7955d51598f7c9d927cd52a80ebc33a"><div class="ttname"><a href="koliseo_8c.html#ab7955d51598f7c9d927cd52a80ebc33a">kls_insord</a></div><div class="ttdeci">KLS_Region_List kls_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3089</div></div>
+<div class="ttc" id="akoliseo_8c_html_ab106be0da82fb996a22ca9cb6d4e049f"><div class="ttname"><a href="koliseo_8c.html#ab106be0da82fb996a22ca9cb6d4e049f">kstr_token</a></div><div class="ttdeci">Kstr kstr_token(Kstr *k, char delim)</div><div class="ttdoc">Scans the passed Kstr and cuts it up to the first occurrence of passed char, even if it is not presen...</div><div class="ttdef"><b>Definition</b> koliseo.c:3649</div></div>
 <div class="ttc" id="akoliseo_8c_html_ab7af46fb58c36c423398eb23ea4a0a7e"><div class="ttname"><a href="koliseo_8c.html#ab7af46fb58c36c423398eb23ea4a0a7e">kls_new_alloc</a></div><div class="ttdeci">Koliseo * kls_new_alloc(ptrdiff_t size, kls_alloc_func alloc_func)</div><div class="ttdoc">Takes a ptrdiff_t size and a function pointer to the allocation function.</div><div class="ttdef"><b>Definition</b> koliseo.c:367</div></div>
-<div class="ttc" id="akoliseo_8c_html_ab7beccb4693b87eb36ee98d2067e8267"><div class="ttname"><a href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a></div><div class="ttdeci">void * kls_pop(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:3970</div></div>
-<div class="ttc" id="akoliseo_8c_html_abb64f7d5a213d02a6ace43fd8dff9820"><div class="ttname"><a href="koliseo_8c.html#abb64f7d5a213d02a6ace43fd8dff9820">kls_empty</a></div><div class="ttdeci">bool kls_empty(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2728</div></div>
-<div class="ttc" id="akoliseo_8c_html_abcb094a3e0731106aeb5c658cb8a0e81"><div class="ttname"><a href="koliseo_8c.html#abcb094a3e0731106aeb5c658cb8a0e81">kls_tail</a></div><div class="ttdeci">KLS_Region_List kls_tail(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2746</div></div>
+<div class="ttc" id="akoliseo_8c_html_ab7beccb4693b87eb36ee98d2067e8267"><div class="ttname"><a href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a></div><div class="ttdeci">void * kls_pop(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:3975</div></div>
 <div class="ttc" id="akoliseo_8c_html_abe62ac2d9084e7e56dd495d65a128465"><div class="ttname"><a href="koliseo_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a></div><div class="ttdeci">void * kls_temp_push_zero_typed(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:1755</div></div>
+<div class="ttc" id="akoliseo_8c_html_ac1a3188af539376f66992219a02d80a6"><div class="ttname"><a href="koliseo_8c.html#ac1a3188af539376f66992219a02d80a6">kls_rl_tail</a></div><div class="ttdeci">KLS_Region_List kls_rl_tail(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2746</div></div>
+<div class="ttc" id="akoliseo_8c_html_ac1f2c485bbc68e064fad6cbbd65b2b5b"><div class="ttname"><a href="koliseo_8c.html#ac1f2c485bbc68e064fad6cbbd65b2b5b">kls_rl_append</a></div><div class="ttdeci">KLS_Region_List kls_rl_append(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3037</div></div>
+<div class="ttc" id="akoliseo_8c_html_ac281a3be8e8ff88ca5295935384afb06"><div class="ttname"><a href="koliseo_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a></div><div class="ttdeci">void kls_rl_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> koliseo.c:2971</div></div>
 <div class="ttc" id="akoliseo_8c_html_ac393b3f5c144d78f0b63a71a6f8d14a4"><div class="ttname"><a href="koliseo_8c.html#ac393b3f5c144d78f0b63a71a6f8d14a4">KLS_DEFAULT_CONF</a></div><div class="ttdeci">KLS_Conf KLS_DEFAULT_CONF</div><div class="ttdef"><b>Definition</b> koliseo.c:33</div></div>
 <div class="ttc" id="akoliseo_8c_html_ac3c071581c775dec1d2bcb290b5567d7"><div class="ttname"><a href="koliseo_8c.html#ac3c071581c775dec1d2bcb290b5567d7">kls_reglist_backend_strings</a></div><div class="ttdeci">const char * kls_reglist_backend_strings[KLS_REGLIST_TOTAL_BACKENDS]</div><div class="ttdef"><b>Definition</b> koliseo.c:62</div></div>
 <div class="ttc" id="akoliseo_8c_html_ac5701f8b35b78544dab77ab7a3b464fc"><div class="ttname"><a href="koliseo_8c.html#ac5701f8b35b78544dab77ab7a3b464fc">kls_print_title_2file</a></div><div class="ttdeci">void kls_print_title_2file(FILE *fp)</div><div class="ttdoc">Prints the title banner to the passed FILE pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:115</div></div>
-<div class="ttc" id="akoliseo_8c_html_ac798fbfd687c962fa1fbe4a69e136b7e"><div class="ttname"><a href="koliseo_8c.html#ac798fbfd687c962fa1fbe4a69e136b7e">kls_list_pop</a></div><div class="ttdeci">KLS_region_list_item * kls_list_pop(Koliseo *kls)</div><div class="ttdef"><b>Definition</b> koliseo.c:2808</div></div>
-<div class="ttc" id="akoliseo_8c_html_ad5597e5527897ae9895bd6df60befc12"><div class="ttname"><a href="koliseo_8c.html#ad5597e5527897ae9895bd6df60befc12">kstr_trim</a></div><div class="ttdeci">Kstr kstr_trim(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing heading and trailing spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3577</div></div>
-<div class="ttc" id="akoliseo_8c_html_ad7fdc11860b92d5c573c4e62b5b948a2"><div class="ttname"><a href="koliseo_8c.html#ad7fdc11860b92d5c573c4e62b5b948a2">kls_t_list_pop</a></div><div class="ttdeci">KLS_region_list_item * kls_t_list_pop(Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> koliseo.c:2899</div></div>
-<div class="ttc" id="akoliseo_8c_html_ada4540ede2edda81d2b1ef56acb92319"><div class="ttname"><a href="koliseo_8c.html#ada4540ede2edda81d2b1ef56acb92319">kls_usageShare</a></div><div class="ttdeci">double kls_usageShare(KLS_Region *r, Koliseo *kls)</div><div class="ttdoc">Returns the ratio of memory used by the passed KLS_Region relative to the passed Koliseo as a double.</div><div class="ttdef"><b>Definition</b> koliseo.c:3275</div></div>
+<div class="ttc" id="akoliseo_8c_html_acd2de978c4d886ae3e336206ca93b83a"><div class="ttname"><a href="koliseo_8c.html#acd2de978c4d886ae3e336206ca93b83a">kls_rl_mergeList</a></div><div class="ttdeci">KLS_Region_List kls_rl_mergeList(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3175</div></div>
+<div class="ttc" id="akoliseo_8c_html_ad5597e5527897ae9895bd6df60befc12"><div class="ttname"><a href="koliseo_8c.html#ad5597e5527897ae9895bd6df60befc12">kstr_trim</a></div><div class="ttdeci">Kstr kstr_trim(Kstr kstr)</div><div class="ttdoc">Returns a new Kstr after removing heading and trailing spaces from the passed one.</div><div class="ttdef"><b>Definition</b> koliseo.c:3582</div></div>
+<div class="ttc" id="akoliseo_8c_html_ad5da77ca10acaed3fb6d9f60a0e0464f"><div class="ttname"><a href="koliseo_8c.html#ad5da77ca10acaed3fb6d9f60a0e0464f">kls_rl_intersect</a></div><div class="ttdeci">KLS_Region_List kls_rl_intersect(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3205</div></div>
+<div class="ttc" id="akoliseo_8c_html_ad9bcff249909d4261e87882aafc80713"><div class="ttname"><a href="koliseo_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a></div><div class="ttdeci">void kls_rl_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:3010</div></div>
+<div class="ttc" id="akoliseo_8c_html_ada4540ede2edda81d2b1ef56acb92319"><div class="ttname"><a href="koliseo_8c.html#ada4540ede2edda81d2b1ef56acb92319">kls_usageShare</a></div><div class="ttdeci">double kls_usageShare(KLS_Region *r, Koliseo *kls)</div><div class="ttdoc">Returns the ratio of memory used by the passed KLS_Region relative to the passed Koliseo as a double.</div><div class="ttdef"><b>Definition</b> koliseo.c:3280</div></div>
 <div class="ttc" id="akoliseo_8c_html_adea11280906a1ff9060cef74625a619a"><div class="ttname"><a href="koliseo_8c.html#adea11280906a1ff9060cef74625a619a">kls_temp_showList_toWin</a></div><div class="ttdeci">void kls_temp_showList_toWin(Koliseo_Temp *t_kls, WINDOW *win)</div><div class="ttdoc">Displays a slideshow of KLS_Region_List from passed Koliseo_Temp, to the passed WINDOW pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:2344</div></div>
 <div class="ttc" id="akoliseo_8c_html_adffdab1397952e80a18505e5dc437b5c"><div class="ttname"><a href="koliseo_8c.html#adffdab1397952e80a18505e5dc437b5c">kls_showList_toWin</a></div><div class="ttdeci">void kls_showList_toWin(Koliseo *kls, WINDOW *win)</div><div class="ttdoc">Displays a slideshow of KLS_Region_List from passed Koliseo, to the passed WINDOW pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:2257</div></div>
-<div class="ttc" id="akoliseo_8c_html_ae09cbd15b9f4e1567e7cce8d5e6ebd4b"><div class="ttname"><a href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">kls_type_usage</a></div><div class="ttdeci">ptrdiff_t kls_type_usage(int type, Koliseo *kls)</div><div class="ttdoc">Calc memory used by the specific type of KLS_list_element.</div><div class="ttdef"><b>Definition</b> koliseo.c:3380</div></div>
-<div class="ttc" id="akoliseo_8c_html_ae13fd9686702bbce52ee6499aa3d2e80"><div class="ttname"><a href="koliseo_8c.html#ae13fd9686702bbce52ee6499aa3d2e80">kstr_token_kstr</a></div><div class="ttdeci">Kstr kstr_token_kstr(Kstr *k, Kstr delim)</div><div class="ttdef"><b>Definition</b> koliseo.c:3664</div></div>
+<div class="ttc" id="akoliseo_8c_html_ae09cbd15b9f4e1567e7cce8d5e6ebd4b"><div class="ttname"><a href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">kls_type_usage</a></div><div class="ttdeci">ptrdiff_t kls_type_usage(int type, Koliseo *kls)</div><div class="ttdoc">Calc memory used by the specific type of KLS_list_element.</div><div class="ttdef"><b>Definition</b> koliseo.c:3385</div></div>
+<div class="ttc" id="akoliseo_8c_html_ae13fd9686702bbce52ee6499aa3d2e80"><div class="ttname"><a href="koliseo_8c.html#ae13fd9686702bbce52ee6499aa3d2e80">kstr_token_kstr</a></div><div class="ttdeci">Kstr kstr_token_kstr(Kstr *k, Kstr delim)</div><div class="ttdef"><b>Definition</b> koliseo.c:3669</div></div>
 <div class="ttc" id="akoliseo_8c_html_ae718fd87ca62fc00519336fd224ba54c"><div class="ttname"><a href="koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c">kls_clear</a></div><div class="ttdeci">void kls_clear(Koliseo *kls)</div><div class="ttdoc">Resets the offset field for the passed Koliseo pointer.</div><div class="ttdef"><b>Definition</b> koliseo.c:2440</div></div>
 <div class="ttc" id="akoliseo_8c_html_aea38a511968453180dcc1b7922734081"><div class="ttname"><a href="koliseo_8c.html#aea38a511968453180dcc1b7922734081">kls_reglist_backend_string</a></div><div class="ttdeci">const char * kls_reglist_backend_string(KLS_RegList_Alloc_Backend kls_be)</div><div class="ttdef"><b>Definition</b> koliseo.c:157</div></div>
 <div class="ttc" id="akoliseo_8c_html_aec0812afbedb793df988ed5ea3a19c22"><div class="ttname"><a href="koliseo_8c.html#aec0812afbedb793df988ed5ea3a19c22">kls_new_traced_AR_KLS_alloc</a></div><div class="ttdeci">Koliseo * kls_new_traced_AR_KLS_alloc(ptrdiff_t size, const char *output_path, ptrdiff_t reglist_kls_size, kls_alloc_func alloc_func)</div><div class="ttdoc">Takes a ptrdiff_t size and a filepath for the trace output file, and the needed parameters for a succ...</div><div class="ttdef"><b>Definition</b> koliseo.c:546</div></div>
 <div class="ttc" id="akoliseo_8c_html_aec5986274ac99c5864a0f4e061d07fa9"><div class="ttname"><a href="koliseo_8c.html#aec5986274ac99c5864a0f4e061d07fa9">kls_title</a></div><div class="ttdeci">char * kls_title[KLS_TITLEROWS+1]</div><div class="ttdoc">Defines title banner.</div><div class="ttdef"><b>Definition</b> koliseo.c:74</div></div>
 <div class="ttc" id="akoliseo_8c_html_aecac99c9a817c069a1430e1b5078e0e0"><div class="ttname"><a href="koliseo_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a></div><div class="ttdeci">void * kls_push_zero_typed(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:1596</div></div>
 <div class="ttc" id="akoliseo_8c_html_aeeb31d4d6d367fbfe49a4099edb03742"><div class="ttname"><a href="koliseo_8c.html#aeeb31d4d6d367fbfe49a4099edb03742">kls_formatSize</a></div><div class="ttdeci">void kls_formatSize(ptrdiff_t size, char *outputBuffer, size_t bufferSize)</div><div class="ttdoc">Converts a ptrdiff_t size to human-readable SI units (modulo 1000).</div><div class="ttdef"><b>Definition</b> koliseo.c:2051</div></div>
-<div class="ttc" id="akoliseo_8c_html_af2798ce44c4ab84e0b2975b9a37f2758"><div class="ttname"><a href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">kls_usageReport</a></div><div class="ttdeci">void kls_usageReport(Koliseo *kls)</div><div class="ttdoc">Print usage report for passed Koliseo to stdout.</div><div class="ttdef"><b>Definition</b> koliseo.c:3368</div></div>
-<div class="ttc" id="akoliseo_8c_html_af2b5dd7f79fd5b55b70319ea6b1239f5"><div class="ttname"><a href="koliseo_8c.html#af2b5dd7f79fd5b55b70319ea6b1239f5">kls_freeList</a></div><div class="ttdeci">void kls_freeList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> koliseo.c:2947</div></div>
-<div class="ttc" id="akoliseo_8c_html_af3e5424e5b3ea8ac242a9753edbb2c1c"><div class="ttname"><a href="koliseo_8c.html#af3e5424e5b3ea8ac242a9753edbb2c1c">kls_emptyList</a></div><div class="ttdeci">KLS_Region_List kls_emptyList(void)</div><div class="ttdef"><b>Definition</b> koliseo.c:2723</div></div>
-<div class="ttc" id="akoliseo_8c_html_af9663a58619f894053f11d95446f0fd0"><div class="ttname"><a href="koliseo_8c.html#af9663a58619f894053f11d95446f0fd0">kstr_indexof</a></div><div class="ttdeci">bool kstr_indexof(Kstr k, char c, int *idx)</div><div class="ttdoc">Checks if passed Kstr contains the passed char, and if so, sets the value pointed by idx to the first...</div><div class="ttdef"><b>Definition</b> koliseo.c:3590</div></div>
-<div class="ttc" id="akoliseo_8c_html_af97405810de9feb36124dc62fb00c4ad"><div class="ttname"><a href="koliseo_8c.html#af97405810de9feb36124dc62fb00c4ad">kls_mergeList</a></div><div class="ttdeci">KLS_Region_List kls_mergeList(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3170</div></div>
-<div class="ttc" id="akoliseo_8c_html_af9b765015c795e8d487098f1429fb8c2"><div class="ttname"><a href="koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2">gulp_res_names</a></div><div class="ttdeci">const char * gulp_res_names[TOT_GULP_RES+1]</div><div class="ttdoc">Contains the constant string representation of Gulp_Res values.</div><div class="ttdef"><b>Definition</b> koliseo.c:3408</div></div>
-<div class="ttc" id="akoliseo_8c_html_afb2e4bd37a00fb1f581ef98db5d22ed3"><div class="ttname"><a href="koliseo_8c.html#afb2e4bd37a00fb1f581ef98db5d22ed3">kstr_eq</a></div><div class="ttdeci">bool kstr_eq(Kstr left, Kstr right)</div><div class="ttdoc">Checks if the two passed Kstr have exactly equal data.</div><div class="ttdef"><b>Definition</b> koliseo.c:3464</div></div>
-<div class="ttc" id="akoliseo_8c_html_afe4889a17d9aefb70d5f045eb82360d8"><div class="ttname"><a href="koliseo_8c.html#afe4889a17d9aefb70d5f045eb82360d8">kls_intersect</a></div><div class="ttdeci">KLS_Region_List kls_intersect(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> koliseo.c:3200</div></div>
+<div class="ttc" id="akoliseo_8c_html_af2798ce44c4ab84e0b2975b9a37f2758"><div class="ttname"><a href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">kls_usageReport</a></div><div class="ttdeci">void kls_usageReport(Koliseo *kls)</div><div class="ttdoc">Print usage report for passed Koliseo to stdout.</div><div class="ttdef"><b>Definition</b> koliseo.c:3373</div></div>
+<div class="ttc" id="akoliseo_8c_html_af9663a58619f894053f11d95446f0fd0"><div class="ttname"><a href="koliseo_8c.html#af9663a58619f894053f11d95446f0fd0">kstr_indexof</a></div><div class="ttdeci">bool kstr_indexof(Kstr k, char c, int *idx)</div><div class="ttdoc">Checks if passed Kstr contains the passed char, and if so, sets the value pointed by idx to the first...</div><div class="ttdef"><b>Definition</b> koliseo.c:3595</div></div>
+<div class="ttc" id="akoliseo_8c_html_af9b765015c795e8d487098f1429fb8c2"><div class="ttname"><a href="koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2">gulp_res_names</a></div><div class="ttdeci">const char * gulp_res_names[TOT_GULP_RES+1]</div><div class="ttdoc">Contains the constant string representation of Gulp_Res values.</div><div class="ttdef"><b>Definition</b> koliseo.c:3413</div></div>
+<div class="ttc" id="akoliseo_8c_html_afb2e4bd37a00fb1f581ef98db5d22ed3"><div class="ttname"><a href="koliseo_8c.html#afb2e4bd37a00fb1f581ef98db5d22ed3">kstr_eq</a></div><div class="ttdeci">bool kstr_eq(Kstr left, Kstr right)</div><div class="ttdoc">Checks if the two passed Kstr have exactly equal data.</div><div class="ttdef"><b>Definition</b> koliseo.c:3469</div></div>
 <div class="ttc" id="akoliseo_8c_html_afebc0a682980a68fc508d96ba8a408c0"><div class="ttname"><a href="koliseo_8c.html#afebc0a682980a68fc508d96ba8a408c0">kls_conf_init</a></div><div class="ttdeci">KLS_Conf kls_conf_init(int autoset_regions, int alloc_backend, ptrdiff_t reglist_kls_size, int autoset_temp_regions, int collect_stats, int verbose_lvl, FILE *log_fp, const char *log_filepath)</div><div class="ttdoc">Used to prepare a KLS_Conf without caring about KOLISEO_HAS_REGIONS.</div><div class="ttdef"><b>Definition</b> koliseo.c:178</div></div>
-<div class="ttc" id="akoliseo_8c_html_afee4e3065b54ccfe5f427b4d034fd8fc"><div class="ttname"><a href="koliseo_8c.html#afee4e3065b54ccfe5f427b4d034fd8fc">kstr_new</a></div><div class="ttdeci">Kstr kstr_new(const char *data, size_t len)</div><div class="ttdoc">Returns a new Kstr with the passed args set.</div><div class="ttdef"><b>Definition</b> koliseo.c:3438</div></div>
+<div class="ttc" id="akoliseo_8c_html_afee4e3065b54ccfe5f427b4d034fd8fc"><div class="ttname"><a href="koliseo_8c.html#afee4e3065b54ccfe5f427b4d034fd8fc">kstr_new</a></div><div class="ttdeci">Kstr kstr_new(const char *data, size_t len)</div><div class="ttdoc">Returns a new Kstr with the passed args set.</div><div class="ttdef"><b>Definition</b> koliseo.c:3443</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

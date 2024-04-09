@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.1</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.2</span>
    </div>
   </td>
  </tr>
@@ -107,6 +107,7 @@ Table of Contents</h1>
 <li>Curses</li>
 <li>Debug</li>
 <li>Gulp</li>
+<li>List template</li>
 <li>Title banner</li>
 <li>Experimental</li>
 <li>How to use extras</li>
@@ -199,13 +200,35 @@ Gulp <a class="anchor" id="extra_gulp"></a></h2>
 <li>Also includes a minimal string-view API, in case you want to work on the file contents differently.</li>
 </ul>
 <h2><a class="anchor" id="autotoc_md10"></a>
+List template <a class="anchor" id="list_template"></a></h2>
+<p>Any time <code>LIST_T</code> is defined before including <code><a class="el" href="koliseo_8h.html">koliseo.h</a></code>, a basic linked-list implementation supporting <code>Koliseo</code> allocation will be declared for the passed type.</p><ul>
+<li>It can be done also after building a static object for the library.</li>
+</ul>
+<p>The <code>LIST_T</code> macro and the <code><a class="el" href="koliseo_8h.html">koliseo.h</a></code> should be repeatable without issues, allowing definition of more than one list interface.</p>
+<p>This is implemented using some code-generating macros, which could rended build time slower if overused.</p>
+<p>Defining the <code>LIST_NAME</code>, <code>LIST_PREFIX</code> and <code>LIST_LINKAGE</code> can allow customisation for each list implementation:</p><ul>
+<li><code>LIST_NAME</code>: The name of the data type to be generated.<ul>
+<li>If not given, will expand to something like <code>list_int</code> for an <code>int</code>.</li>
+</ul>
+</li>
+<li><code>LIST_PREFIX</code>: Prefix for generated functions.<ul>
+<li>If not given, will expand to something <code>LIST_NAME</code> + <code>_</code>. (eg. <code>list_int_</code>)</li>
+</ul>
+</li>
+<li><code>LIST_LINKAGE</code>: Customize the linkage of the function.<ul>
+<li>If not given, will expand to <code>static inline</code>.</li>
+</ul>
+</li>
+</ul>
+<p>This is inspired by the dynamic array example by David Priver.</p>
+<h2><a class="anchor" id="autotoc_md11"></a>
 Title banner <a class="anchor" id="extra_title"></a></h2>
 <p>Include an ASCII art string to be printed as a title banner.</p>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Experimental <a class="anchor" id="extra_exper"></a></h2>
 <p>Include some experimental (NOT WELL TESTED. USE WITH CAUTION) functions.</p>
 <p>In particular, enables the dreaded <code>pop</code> operation and its functions.</p>
-<h2><a class="anchor" id="autotoc_md12"></a>
+<h2><a class="anchor" id="autotoc_md13"></a>
 How to enable extra features<a class="anchor" id="extra_howto"></a></h2>
 <p>To aid in building with extra features, see this section.</p>
 <p>The preprocessor macros to enable them manually are:</p>
@@ -217,12 +240,12 @@ How to enable extra features<a class="anchor" id="extra_howto"></a></h2>
 <li>Title banner: <code>KOLISEO_HAS_TITLE</code></li>
 <li>Experimental: <code>KOLISEO_HAS_EXPER</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md13"></a>
+<h1><a class="anchor" id="autotoc_md14"></a>
 Documentation <a class="anchor" id="docs"></a></h1>
 <p>HTML docs are available at <a href="https://jgabaut.github.io/koliseo-docs/index.html">this Github Pages link</a>.</p>
 <p>You can also get the ready pdf version of the docs from the latest release.</p>
 <p>If you have <code>doxygen</code> you can generate the HTML yourself, or even the pdf if you have <code>doxygen-latex</code> or equivalents.</p>
-<h1><a class="anchor" id="autotoc_md14"></a>
+<h1><a class="anchor" id="autotoc_md15"></a>
 Prerequisites <a class="anchor" id="prerequisites"></a></h1>
 <p>To build the <code>demo</code> binary, you need:</p><ul>
 <li><code>automake</code> and <code>autoconf</code> to generate the needed <code>Makefile</code></li>
@@ -234,7 +257,7 @@ Prerequisites <a class="anchor" id="prerequisites"></a></h1>
 <li><code>bash &gt;4.x, gawk</code> if you want to use <code>amboso</code></li>
 <li><code>rustc</code> if you want to use <code>invil</code></li>
 </ul>
-<h1><a class="anchor" id="autotoc_md15"></a>
+<h1><a class="anchor" id="autotoc_md16"></a>
 Configuration <a class="anchor" id="config"></a></h1>
 <p>To prepare the files needed by <code>autotools</code>, run:</p>
 <div class="fragment"><div class="line">aclocal</div>
@@ -255,13 +278,13 @@ Configuration <a class="anchor" id="config"></a></h1>
 <li>Run <code>./configure --enable-title</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_TITLE</code> flag.</li>
 <li>Run <code>./configure --enable-exper</code> to setup the <code>Makefile</code> appropriately and build with <code>-DKOLISEO_HAS_EXPER</code> flag.</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md16"></a>
+<h1><a class="anchor" id="autotoc_md17"></a>
 Building <a class="anchor" id="building"></a></h1>
 <p>To build both the <code>libkoliseo.so</code> lib and <code>demo</code> binary, run:</p><ul>
 <li><code>./configure</code>, which should generate the <code>Makefile</code>. See Configuration section.</li>
 <li><code>make</code>, to build all target</li>
 </ul>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md18"></a>
 Supported platforms <a class="anchor" id="support"></a></h1>
 <p>ATM the code should build for:</p><ul>
 <li><code>x86_64-Linux</code></li>
@@ -271,12 +294,13 @@ Supported platforms <a class="anchor" id="support"></a></h1>
 </ul>
 </li>
 </ul>
-<h1><a class="anchor" id="autotoc_md18"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 Credits <a class="anchor" id="credits"></a></h1>
 <p>Thanks to <a href="https://www.reddit.com/user/skeeto/">skeeto</a> for showing me the original base implementation.</p>
 <p>Thanks to <a href="https://www.instagram.com/mako_x_tattoo/">Mako</a> for the repo banner.</p>
 <p>Thanks to <a href="https://github.com/tsoding">Tsoding</a> for its creative string view library (<a href="https://github.com/tsoding/sv">repo</a>), which indeed does things so simply you mostly can't do anything different.</p>
-<h1><a class="anchor" id="autotoc_md19"></a>
+<p>Thanks to <a href="https://www.davidpriver.com/ctemplates.html#template-headers.">David Priver</a> for its dynamic array template example.</p>
+<h1><a class="anchor" id="autotoc_md20"></a>
 Todo <a class="anchor" id="todo"></a></h1>
 <ul>
 <li>Break up internal extensions to the core functionality<ul>
