@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.3</span>
    </div>
   </td>
  </tr>
@@ -110,9 +110,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a3e2a527e3824a8cc0538803937801e58" id="r_a3e2a527e3824a8cc0538803937801e58"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2a527e3824a8cc0538803937801e58">string_koliseo_version</a> (void)</td></tr>
 <tr class="memdesc:a3e2a527e3824a8cc0538803937801e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constant string representing current version for Koliseo.  <br /></td></tr>
 <tr class="separator:a3e2a527e3824a8cc0538803937801e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9eeb3d2e01af58d985f9b7adb1790ff5" id="r_a9eeb3d2e01af58d985f9b7adb1790ff5"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9eeb3d2e01af58d985f9b7adb1790ff5">int_koliseo_version</a> (void)</td></tr>
-<tr class="memdesc:a9eeb3d2e01af58d985f9b7adb1790ff5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constant int representing current version for Koliseo.  <br /></td></tr>
-<tr class="separator:a9eeb3d2e01af58d985f9b7adb1790ff5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8e6f60b7c222713a12158182c3c6eae" id="r_af8e6f60b7c222713a12158182c3c6eae"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af8e6f60b7c222713a12158182c3c6eae">int_koliseo_version</a> (void)</td></tr>
+<tr class="memdesc:af8e6f60b7c222713a12158182c3c6eae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the constant int representing current version for Koliseo.  <br /></td></tr>
+<tr class="separator:af8e6f60b7c222713a12158182c3c6eae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea38a511968453180dcc1b7922734081" id="r_aea38a511968453180dcc1b7922734081"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea38a511968453180dcc1b7922734081">kls_reglist_backend_string</a> (KLS_RegList_Alloc_Backend kls_be)</td></tr>
 <tr class="separator:aea38a511968453180dcc1b7922734081"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afebc0a682980a68fc508d96ba8a408c0" id="r_afebc0a682980a68fc508d96ba8a408c0"><td class="memItemLeft" align="right" valign="top">KLS_Conf&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afebc0a682980a68fc508d96ba8a408c0">kls_conf_init</a> (int autoset_regions, int alloc_backend, ptrdiff_t reglist_kls_size, int autoset_temp_regions, int collect_stats, int verbose_lvl, FILE *log_fp, const char *log_filepath)</td></tr>
@@ -121,9 +121,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a366d819f41bc7fded6e931bc0c5405ca" id="r_a366d819f41bc7fded6e931bc0c5405ca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a366d819f41bc7fded6e931bc0c5405ca">kls_dbg_features</a> (void)</td></tr>
 <tr class="memdesc:a366d819f41bc7fded6e931bc0c5405ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints enabled Koliseo features to stderr.  <br /></td></tr>
 <tr class="separator:a366d819f41bc7fded6e931bc0c5405ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9aa2dbbbfede5de76cfb577a600b9a4c" id="r_a9aa2dbbbfede5de76cfb577a600b9a4c"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9aa2dbbbfede5de76cfb577a600b9a4c">kls_get_pos</a> (Koliseo *kls)</td></tr>
-<tr class="memdesc:a9aa2dbbbfede5de76cfb577a600b9a4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current offset (position of pointer bumper) for the passed Koliseo.  <br /></td></tr>
-<tr class="separator:a9aa2dbbbfede5de76cfb577a600b9a4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a4126159847cfed6aa6f00f1d0bfd7" id="r_a48a4126159847cfed6aa6f00f1d0bfd7"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a4126159847cfed6aa6f00f1d0bfd7">kls_get_pos</a> (const Koliseo *kls)</td></tr>
+<tr class="memdesc:a48a4126159847cfed6aa6f00f1d0bfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current offset (position of pointer bumper) for the passed Koliseo.  <br /></td></tr>
+<tr class="separator:a48a4126159847cfed6aa6f00f1d0bfd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b09427cd37560eadb290ef898d3ea9e" id="r_a1b09427cd37560eadb290ef898d3ea9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b09427cd37560eadb290ef898d3ea9e">kls_get_maxRegions_KLS_BASIC</a> (Koliseo *kls)</td></tr>
 <tr class="memdesc:a1b09427cd37560eadb290ef898d3ea9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcs the max number of possible KLS_PUSH ops when using KLS_BASIC reglist alloc backend.  <br /></td></tr>
 <tr class="separator:a1b09427cd37560eadb290ef898d3ea9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,18 +172,18 @@ Functions</h2></td></tr>
 <tr class="memitem:abe62ac2d9084e7e56dd495d65a128465" id="r_abe62ac2d9084e7e56dd495d65a128465"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a> (Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
 <tr class="memdesc:abe62ac2d9084e7e56dd495d65a128465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="separator:abe62ac2d9084e7e56dd495d65a128465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0afb32158ce0344bbbae349e19f7fa0b" id="r_a0afb32158ce0344bbbae349e19f7fa0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0afb32158ce0344bbbae349e19f7fa0b">print_kls_2file</a> (FILE *fp, Koliseo *kls)</td></tr>
-<tr class="memdesc:a0afb32158ce0344bbbae349e19f7fa0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo pointer, to the passed FILE pointer.  <br /></td></tr>
-<tr class="separator:a0afb32158ce0344bbbae349e19f7fa0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c53c3bf4e68e080f4e9dceef56139f2" id="r_a1c53c3bf4e68e080f4e9dceef56139f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a> (Koliseo *kls)</td></tr>
-<tr class="memdesc:a1c53c3bf4e68e080f4e9dceef56139f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo pointer, to stderr.  <br /></td></tr>
-<tr class="separator:a1c53c3bf4e68e080f4e9dceef56139f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05526fe7dad13e0df60912eccab8bfa4" id="r_a05526fe7dad13e0df60912eccab8bfa4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a05526fe7dad13e0df60912eccab8bfa4">print_temp_kls_2file</a> (FILE *fp, Koliseo_Temp *t_kls)</td></tr>
-<tr class="memdesc:a05526fe7dad13e0df60912eccab8bfa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo_Temp pointer, to the passed FILE pointer.  <br /></td></tr>
-<tr class="separator:a05526fe7dad13e0df60912eccab8bfa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8de4ec4f3a2d7b84f85493005c530c44" id="r_a8de4ec4f3a2d7b84f85493005c530c44"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8de4ec4f3a2d7b84f85493005c530c44">print_dbg_temp_kls</a> (Koliseo_Temp *t_kls)</td></tr>
-<tr class="memdesc:a8de4ec4f3a2d7b84f85493005c530c44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo_Temp pointer, to stderr.  <br /></td></tr>
-<tr class="separator:a8de4ec4f3a2d7b84f85493005c530c44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6c1afa0e4a30031133b77ee30d3e408" id="r_ad6c1afa0e4a30031133b77ee30d3e408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c1afa0e4a30031133b77ee30d3e408">print_kls_2file</a> (FILE *fp, const Koliseo *kls)</td></tr>
+<tr class="memdesc:ad6c1afa0e4a30031133b77ee30d3e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo pointer, to the passed FILE pointer.  <br /></td></tr>
+<tr class="separator:ad6c1afa0e4a30031133b77ee30d3e408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b09ff36eeed12b9e4d5ddfc3d810d71" id="r_a3b09ff36eeed12b9e4d5ddfc3d810d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a> (const Koliseo *kls)</td></tr>
+<tr class="memdesc:a3b09ff36eeed12b9e4d5ddfc3d810d71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo pointer, to stderr.  <br /></td></tr>
+<tr class="separator:a3b09ff36eeed12b9e4d5ddfc3d810d71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a168e1f76b352233614100ce57bb06dbe" id="r_a168e1f76b352233614100ce57bb06dbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a168e1f76b352233614100ce57bb06dbe">print_temp_kls_2file</a> (FILE *fp, const Koliseo_Temp *t_kls)</td></tr>
+<tr class="memdesc:a168e1f76b352233614100ce57bb06dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo_Temp pointer, to the passed FILE pointer.  <br /></td></tr>
+<tr class="separator:a168e1f76b352233614100ce57bb06dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1457edb67789ee4dcb6be6e191b77592" id="r_a1457edb67789ee4dcb6be6e191b77592"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1457edb67789ee4dcb6be6e191b77592">print_dbg_temp_kls</a> (const Koliseo_Temp *t_kls)</td></tr>
+<tr class="memdesc:a1457edb67789ee4dcb6be6e191b77592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed Koliseo_Temp pointer, to stderr.  <br /></td></tr>
+<tr class="separator:a1457edb67789ee4dcb6be6e191b77592"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeeb31d4d6d367fbfe49a4099edb03742" id="r_aeeb31d4d6d367fbfe49a4099edb03742"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aeeb31d4d6d367fbfe49a4099edb03742">kls_formatSize</a> (ptrdiff_t size, char *outputBuffer, size_t bufferSize)</td></tr>
 <tr class="memdesc:aeeb31d4d6d367fbfe49a4099edb03742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a ptrdiff_t size to human-readable SI units (modulo 1000).  <br /></td></tr>
 <tr class="separator:aeeb31d4d6d367fbfe49a4099edb03742"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -377,14 +377,14 @@ Variables</h2></td></tr>
 <tr class="separator:af9b765015c795e8d487098f1429fb8c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a9eeb3d2e01af58d985f9b7adb1790ff5" name="a9eeb3d2e01af58d985f9b7adb1790ff5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9eeb3d2e01af58d985f9b7adb1790ff5">&#9670;&#160;</a></span>int_koliseo_version()</h2>
+<a id="af8e6f60b7c222713a12158182c3c6eae" name="af8e6f60b7c222713a12158182c3c6eae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8e6f60b7c222713a12158182c3c6eae">&#9670;&#160;</a></span>int_koliseo_version()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">const int int_koliseo_version </td>
+          <td class="memname">int int_koliseo_version </td>
           <td>(</td>
           <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
@@ -603,8 +603,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="a9aa2dbbbfede5de76cfb577a600b9a4c" name="a9aa2dbbbfede5de76cfb577a600b9a4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9aa2dbbbfede5de76cfb577a600b9a4c">&#9670;&#160;</a></span>kls_get_pos()</h2>
+<a id="a48a4126159847cfed6aa6f00f1d0bfd7" name="a48a4126159847cfed6aa6f00f1d0bfd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a4126159847cfed6aa6f00f1d0bfd7">&#9670;&#160;</a></span>kls_get_pos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -612,7 +612,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">ptrdiff_t kls_get_pos </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype">const Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3040,8 +3040,8 @@ kstr_trim_r() </dd></dl>
 
 </div>
 </div>
-<a id="a1c53c3bf4e68e080f4e9dceef56139f2" name="a1c53c3bf4e68e080f4e9dceef56139f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1c53c3bf4e68e080f4e9dceef56139f2">&#9670;&#160;</a></span>print_dbg_kls()</h2>
+<a id="a3b09ff36eeed12b9e4d5ddfc3d810d71" name="a3b09ff36eeed12b9e4d5ddfc3d810d71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b09ff36eeed12b9e4d5ddfc3d810d71">&#9670;&#160;</a></span>print_dbg_kls()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3049,7 +3049,7 @@ kstr_trim_r() </dd></dl>
         <tr>
           <td class="memname">void print_dbg_kls </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype">const Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3065,8 +3065,8 @@ kstr_trim_r() </dd></dl>
 
 </div>
 </div>
-<a id="a8de4ec4f3a2d7b84f85493005c530c44" name="a8de4ec4f3a2d7b84f85493005c530c44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8de4ec4f3a2d7b84f85493005c530c44">&#9670;&#160;</a></span>print_dbg_temp_kls()</h2>
+<a id="a1457edb67789ee4dcb6be6e191b77592" name="a1457edb67789ee4dcb6be6e191b77592"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1457edb67789ee4dcb6be6e191b77592">&#9670;&#160;</a></span>print_dbg_temp_kls()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3074,7 +3074,7 @@ kstr_trim_r() </dd></dl>
         <tr>
           <td class="memname">void print_dbg_temp_kls </td>
           <td>(</td>
-          <td class="paramtype">Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
+          <td class="paramtype">const Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -3090,8 +3090,8 @@ kstr_trim_r() </dd></dl>
 
 </div>
 </div>
-<a id="a0afb32158ce0344bbbae349e19f7fa0b" name="a0afb32158ce0344bbbae349e19f7fa0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0afb32158ce0344bbbae349e19f7fa0b">&#9670;&#160;</a></span>print_kls_2file()</h2>
+<a id="ad6c1afa0e4a30031133b77ee30d3e408" name="ad6c1afa0e4a30031133b77ee30d3e408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6c1afa0e4a30031133b77ee30d3e408">&#9670;&#160;</a></span>print_kls_2file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3104,7 +3104,7 @@ kstr_trim_r() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>&#160;)</td>
+          <td class="paramtype">const Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3120,8 +3120,8 @@ kstr_trim_r() </dd></dl>
 
 </div>
 </div>
-<a id="a05526fe7dad13e0df60912eccab8bfa4" name="a05526fe7dad13e0df60912eccab8bfa4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05526fe7dad13e0df60912eccab8bfa4">&#9670;&#160;</a></span>print_temp_kls_2file()</h2>
+<a id="a168e1f76b352233614100ce57bb06dbe" name="a168e1f76b352233614100ce57bb06dbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a168e1f76b352233614100ce57bb06dbe">&#9670;&#160;</a></span>print_temp_kls_2file()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -3134,7 +3134,7 @@ kstr_trim_r() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>&#160;)</td>
+          <td class="paramtype">const Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

@@ -7,7 +7,7 @@ var searchData=
   ['kls_5fformatsize_4',['kls_formatSize',['../koliseo_8c.html#aeeb31d4d6d367fbfe49a4099edb03742',1,'koliseo.c']]],
   ['kls_5ffree_5',['kls_free',['../koliseo_8c.html#a5988953140e4680e13441eb99900cba4',1,'koliseo.c']]],
   ['kls_5fget_5fmaxregions_5fkls_5fbasic_6',['kls_get_maxRegions_KLS_BASIC',['../koliseo_8c.html#a1b09427cd37560eadb290ef898d3ea9e',1,'koliseo.c']]],
-  ['kls_5fget_5fpos_7',['kls_get_pos',['../koliseo_8c.html#a9aa2dbbbfede5de76cfb577a600b9a4c',1,'koliseo.c']]],
+  ['kls_5fget_5fpos_7',['kls_get_pos',['../koliseo_8c.html#a48a4126159847cfed6aa6f00f1d0bfd7',1,'koliseo.c']]],
   ['kls_5fgulp_5ffile_5fsized_8',['kls_gulp_file_sized',['../koliseo_8c.html#a479a99fb7176087e1dd82dee92cfbcf3',1,'koliseo.c']]],
   ['kls_5fgulp_5ffile_5fsized_5fto_5fkstr_9',['kls_gulp_file_sized_to_kstr',['../koliseo_8c.html#a2b06f80d832f2122fd22267d2ccb269b',1,'koliseo.c']]],
   ['kls_5flist_5fpop_10',['kls_list_pop',['../koliseo_8c.html#ac798fbfd687c962fa1fbe4a69e136b7e',1,'koliseo.c']]],

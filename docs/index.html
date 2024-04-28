@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.2</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.3</span>
    </div>
   </td>
  </tr>
@@ -148,14 +148,14 @@ Basic example <a class="anchor" id="basic_example"></a></h1>
 <div class="line">    e-&gt;val = 42;</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Show contents to stdout</span></div>
-<div class="line">    <a class="code hl_function" href="koliseo_8c.html#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a>(kls);</div>
+<div class="line">    <a class="code hl_function" href="koliseo_8c.html#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a>(kls);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">//Free the arena</span></div>
 <div class="line">    <a class="code hl_function" href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a>(kls);</div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="akoliseo_8c_html_a1c53c3bf4e68e080f4e9dceef56139f2"><div class="ttname"><a href="koliseo_8c.html#a1c53c3bf4e68e080f4e9dceef56139f2">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1969</div></div>
-<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2460</div></div>
+<div class="ttc" id="akoliseo_8c_html_a3b09ff36eeed12b9e4d5ddfc3d810d71"><div class="ttname"><a href="koliseo_8c.html#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(const Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1930</div></div>
+<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2404</div></div>
 </div><!-- fragment --><p>After including the <code><a class="el" href="koliseo_8h.html">koliseo.h</a></code> header:</p>
 <ul>
 <li>To initialise a default arena: <div class="fragment"><div class="line">Koliseo* kls_new(<span class="keywordtype">size_t</span>)</div>
