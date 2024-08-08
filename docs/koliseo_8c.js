@@ -3,7 +3,7 @@ var koliseo_8c =
     [ "int_koliseo_version", "koliseo_8c.html#af8e6f60b7c222713a12158182c3c6eae", null ],
     [ "kls_avg_regionSize", "koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b", null ],
     [ "kls_clear", "koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c", null ],
-    [ "kls_conf_init", "koliseo_8c.html#afebc0a682980a68fc508d96ba8a408c0", null ],
+    [ "kls_conf_init", "koliseo_8c.html#ad6c436ea842ad8f2c82d33f078c318c4", null ],
     [ "kls_dbg_features", "koliseo_8c.html#a366d819f41bc7fded6e931bc0c5405ca", null ],
     [ "kls_formatSize", "koliseo_8c.html#aeeb31d4d6d367fbfe49a4099edb03742", null ],
     [ "kls_free", "koliseo_8c.html#a5988953140e4680e13441eb99900cba4", null ],
