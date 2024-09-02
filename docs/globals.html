@@ -27,7 +27,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.5</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.6</span>
    </div>
   </td>
  </tr>
@@ -112,6 +112,7 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 <li>kls_avg_regionSize()&#160;:&#160;<a class="el" href="koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b">koliseo.c</a></li>
 <li>kls_clear()&#160;:&#160;<a class="el" href="koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c">koliseo.c</a></li>
 <li>kls_conf_init()&#160;:&#160;<a class="el" href="koliseo_8c.html#ad6c436ea842ad8f2c82d33f078c318c4">koliseo.c</a></li>
+<li>kls_conf_init_handled()&#160;:&#160;<a class="el" href="koliseo_8c.html#a3fab512ae985b9842978663e05c724b2">koliseo.c</a></li>
 <li>kls_dbg_features()&#160;:&#160;<a class="el" href="koliseo_8c.html#a366d819f41bc7fded6e931bc0c5405ca">koliseo.c</a></li>
 <li>KLS_DEFAULT_CONF&#160;:&#160;<a class="el" href="koliseo_8c.html#ac393b3f5c144d78f0b63a71a6f8d14a4">koliseo.c</a></li>
 <li>kls_formatSize()&#160;:&#160;<a class="el" href="koliseo_8c.html#aeeb31d4d6d367fbfe49a4099edb03742">koliseo.c</a></li>
@@ -125,12 +126,15 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 <li>kls_new_alloc()&#160;:&#160;<a class="el" href="koliseo_8c.html#ab7af46fb58c36c423398eb23ea4a0a7e">koliseo.c</a></li>
 <li>kls_new_conf_alloc()&#160;:&#160;<a class="el" href="koliseo_8c.html#a57b9f1b1e65d059d805d591db93f8d5d">koliseo.c</a></li>
 <li>kls_new_dbg_alloc()&#160;:&#160;<a class="el" href="koliseo_8c.html#a43c7ec4f890f11ff855e0b31249d192b">koliseo.c</a></li>
+<li>kls_new_dbg_alloc_handled()&#160;:&#160;<a class="el" href="koliseo_8c.html#a89b213d8b113db061ac25544eef2e0d3">koliseo.c</a></li>
 <li>kls_new_traced_alloc()&#160;:&#160;<a class="el" href="koliseo_8c.html#a795eadff56ab76d05fc09f6bdcdcb0d5">koliseo.c</a></li>
+<li>kls_new_traced_alloc_handled()&#160;:&#160;<a class="el" href="koliseo_8c.html#acc26fdca1cd283777bd6ec51382a0952">koliseo.c</a></li>
 <li>kls_new_traced_AR_KLS_alloc()&#160;:&#160;<a class="el" href="koliseo_8c.html#aec0812afbedb793df988ed5ea3a19c22">koliseo.c</a></li>
+<li>kls_new_traced_AR_KLS_alloc_handled()&#160;:&#160;<a class="el" href="koliseo_8c.html#ab2fe8b356c07b92da7de4e44dbee864b">koliseo.c</a></li>
+<li>KLS_OOM_default_handler__()&#160;:&#160;<a class="el" href="koliseo_8c.html#aefc10928ac67644e6748753c7107b3f5">koliseo.c</a></li>
 <li>kls_pop()&#160;:&#160;<a class="el" href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">koliseo.c</a></li>
 <li>kls_pop_AR()&#160;:&#160;<a class="el" href="koliseo_8c.html#a4d24b942c47cdc2bbf36806de9a479c7">koliseo.c</a></li>
-<li>kls_print_title()&#160;:&#160;<a class="el" href="koliseo_8c.html#a1417bde55c29a1ba0c8944570cd7420d">koliseo.c</a></li>
-<li>kls_print_title_2file()&#160;:&#160;<a class="el" href="koliseo_8c.html#ac5701f8b35b78544dab77ab7a3b464fc">koliseo.c</a></li>
+<li>KLS_PTRDIFF_MAX_default_handler__()&#160;:&#160;<a class="el" href="koliseo_8c.html#abd110b186f68f52a15384cd4b10b0adc">koliseo.c</a></li>
 <li>kls_push()&#160;:&#160;<a class="el" href="koliseo_8c.html#a8449dffe3bccd15c4c7c448051d38034">koliseo.c</a></li>
 <li>kls_push_zero()&#160;:&#160;<a class="el" href="koliseo_8c.html#a9e1e7f645145c0d4bd6af97f60e87234">koliseo.c</a></li>
 <li>kls_push_zero_AR()&#160;:&#160;<a class="el" href="koliseo_8c.html#a02d4c742a6b77483ca6356a5eee66268">koliseo.c</a></li>
@@ -161,8 +165,6 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 <li>kls_rl_showList_toFile()&#160;:&#160;<a class="el" href="koliseo_8c.html#ac281a3be8e8ff88ca5295935384afb06">koliseo.c</a></li>
 <li>kls_rl_t_cons()&#160;:&#160;<a class="el" href="koliseo_8c.html#a019f9844759b44e4ccc9cd0f72bcff5a">koliseo.c</a></li>
 <li>kls_rl_tail()&#160;:&#160;<a class="el" href="koliseo_8c.html#ac1a3188af539376f66992219a02d80a6">koliseo.c</a></li>
-<li>kls_show_toWin()&#160;:&#160;<a class="el" href="koliseo_8c.html#a6241fb4afaeb038b638c79d42b1740f3">koliseo.c</a></li>
-<li>kls_showList_toWin()&#160;:&#160;<a class="el" href="koliseo_8c.html#adffdab1397952e80a18505e5dc437b5c">koliseo.c</a></li>
 <li>KLS_STATS_DEFAULT&#160;:&#160;<a class="el" href="koliseo_8c.html#a28ad19f817536f9181e6bab6ef13a657">koliseo.c</a></li>
 <li>kls_strdup()&#160;:&#160;<a class="el" href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">koliseo.c</a></li>
 <li>kls_strdup_arr()&#160;:&#160;<a class="el" href="koliseo_8c.html#a3793b52bdc9cbb531589bfde3ef79417">koliseo.c</a></li>
@@ -177,10 +179,7 @@ $(function(){initNavTree('globals.html',''); initResizable(true); });
 <li>kls_temp_push_zero_named()&#160;:&#160;<a class="el" href="koliseo_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">koliseo.c</a></li>
 <li>kls_temp_push_zero_typed()&#160;:&#160;<a class="el" href="koliseo_8c.html#abe62ac2d9084e7e56dd495d65a128465">koliseo.c</a></li>
 <li>kls_temp_set_conf()&#160;:&#160;<a class="el" href="koliseo_8c.html#a92f2bf5afb96a2aaf46aef96ad3a2162">koliseo.c</a></li>
-<li>kls_temp_show_toWin()&#160;:&#160;<a class="el" href="koliseo_8c.html#aaf2f7555efaaa31b04a22270c40e2221">koliseo.c</a></li>
-<li>kls_temp_showList_toWin()&#160;:&#160;<a class="el" href="koliseo_8c.html#adea11280906a1ff9060cef74625a619a">koliseo.c</a></li>
 <li>kls_temp_start()&#160;:&#160;<a class="el" href="koliseo_8c.html#a0f917da26d318e5702dbdc550c01fa1c">koliseo.c</a></li>
-<li>kls_title&#160;:&#160;<a class="el" href="koliseo_8c.html#aec5986274ac99c5864a0f4e061d07fa9">koliseo.c</a></li>
 <li>kls_type_usage()&#160;:&#160;<a class="el" href="koliseo_8c.html#ae09cbd15b9f4e1567e7cce8d5e6ebd4b">koliseo.c</a></li>
 <li>kls_usageReport()&#160;:&#160;<a class="el" href="koliseo_8c.html#af2798ce44c4ab84e0b2975b9a37f2758">koliseo.c</a></li>
 <li>kls_usageReport_toFile()&#160;:&#160;<a class="el" href="koliseo_8c.html#a97b2a46868a9874e6d67b59a556ee22a">koliseo.c</a></li>

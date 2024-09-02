@@ -31,21 +31,19 @@ var NAVTREE =
     [ "Basic example", "index.html#autotoc_md4", null ],
     [ "Extra features", "index.html#autotoc_md5", [
       [ "Region", "index.html#autotoc_md6", null ],
-      [ "Curses", "index.html#autotoc_md7", null ],
-      [ "Core debug", "index.html#autotoc_md8", null ],
-      [ "Gulp", "index.html#autotoc_md9", null ],
-      [ "List template", "index.html#autotoc_md10", null ],
-      [ "Title banner", "index.html#autotoc_md11", null ],
-      [ "Experimental", "index.html#autotoc_md12", null ],
-      [ "How to enable extra features", "index.html#autotoc_md13", null ]
+      [ "Core debug", "index.html#autotoc_md7", null ],
+      [ "Gulp", "index.html#autotoc_md8", null ],
+      [ "List template", "index.html#autotoc_md9", null ],
+      [ "Experimental", "index.html#autotoc_md10", null ],
+      [ "How to enable extra features", "index.html#autotoc_md11", null ]
     ] ],
-    [ "Documentation", "index.html#autotoc_md14", null ],
-    [ "Prerequisites", "index.html#autotoc_md15", null ],
-    [ "Configuration", "index.html#autotoc_md16", null ],
-    [ "Building", "index.html#autotoc_md17", null ],
-    [ "Supported platforms", "index.html#autotoc_md18", null ],
-    [ "Credits", "index.html#autotoc_md19", null ],
-    [ "Todo", "index.html#autotoc_md20", null ],
+    [ "Documentation", "index.html#autotoc_md12", null ],
+    [ "Prerequisites", "index.html#autotoc_md13", null ],
+    [ "Configuration", "index.html#autotoc_md14", null ],
+    [ "Building", "index.html#autotoc_md15", null ],
+    [ "Supported platforms", "index.html#autotoc_md16", null ],
+    [ "Credits", "index.html#autotoc_md17", null ],
+    [ "Todo", "index.html#autotoc_md18", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
