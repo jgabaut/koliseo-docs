@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['end_5foffset_0',['end_offset',['../structKLS__Region.html#a1ec72dcd261b3baf2a3ef1364775e5f9',1,'KLS_Region']]]
+  ['gulp_5fres_5fnames_0',['gulp_res_names',['../kls__gulp_8h.html#af9b765015c795e8d487098f1429fb8c2',1,'gulp_res_names:&#160;koliseo.c'],['../koliseo_8c.html#af9b765015c795e8d487098f1429fb8c2',1,'gulp_res_names:&#160;koliseo.c']]]
 ];

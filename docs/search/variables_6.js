@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['has_5ftemp_0',['has_temp',['../structKoliseo.html#abd536361b9980957d1a3e64fd56dc85c',1,'Koliseo']]]
+  ['len_0',['len',['../structKstr.html#a39c96704abc1ba4252cc57596d47272e',1,'Kstr']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['len_0',['len',['../structKstr.html#a39c96704abc1ba4252cc57596d47272e',1,'Kstr']]]
+  ['end_5foffset_0',['end_offset',['../structKLS__Region.html#a1ec72dcd261b3baf2a3ef1364775e5f9',1,'KLS_Region']]]
 ];

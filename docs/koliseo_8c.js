@@ -1,7 +1,7 @@
 var koliseo_8c =
 [
-    [ "kls__check_available", "koliseo_8c.html#ac81730b1fa90a58101543d231ce563ed", null ],
     [ "int_koliseo_version", "koliseo_8c.html#af8e6f60b7c222713a12158182c3c6eae", null ],
+    [ "kls__check_available_failable", "koliseo_8c.html#aaa1f2c3bd53dc2d8ecd936adefd3a8fc", null ],
     [ "kls_avg_regionSize", "koliseo_8c.html#aa653a27ea40938dbbeb7936cf26c089b", null ],
     [ "kls_clear", "koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c", null ],
     [ "kls_conf_init", "koliseo_8c.html#ad22670117476595199dc7ba6526eeb77", null ],
@@ -16,7 +16,9 @@ var koliseo_8c =
     [ "kls_list_pop", "koliseo_8c.html#ac798fbfd687c962fa1fbe4a69e136b7e", null ],
     [ "kls_log", "koliseo_8c.html#a2a456ee57d68b9333e6385559370911d", null ],
     [ "kls_new_alloc", "koliseo_8c.html#ab7af46fb58c36c423398eb23ea4a0a7e", null ],
+    [ "kls_new_alloc_ext", "koliseo_8c.html#ae6caaf986965b06f8aef0501386454fd", null ],
     [ "kls_new_conf_alloc", "koliseo_8c.html#a57b9f1b1e65d059d805d591db93f8d5d", null ],
+    [ "kls_new_conf_alloc_ext", "koliseo_8c.html#ac98374338b84461932d2686bc071acf3", null ],
     [ "kls_new_dbg_alloc", "koliseo_8c.html#a43c7ec4f890f11ff855e0b31249d192b", null ],
     [ "kls_new_dbg_alloc_handled", "koliseo_8c.html#a89b213d8b113db061ac25544eef2e0d3", null ],
     [ "kls_new_traced_alloc", "koliseo_8c.html#a795eadff56ab76d05fc09f6bdcdcb0d5", null ],
