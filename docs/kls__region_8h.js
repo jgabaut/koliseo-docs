@@ -4,6 +4,7 @@ var kls__region_8h =
     [ "KLS_list_region", "structKLS__list__region.html", "structKLS__list__region" ],
     [ "KLS_Autoregion_Extension_Conf", "structKLS__Autoregion__Extension__Conf.html", "structKLS__Autoregion__Extension__Conf" ],
     [ "KLS_Autoregion_Extension_Data", "structKLS__Autoregion__Extension__Data.html", "structKLS__Autoregion__Extension__Data" ],
+    [ "_POSIX_C_SOURCE", "kls__region_8h.html#a3024ccd4a9af5109d24e6c57565d74a1", null ],
     [ "KLS_AUTOREGION_ALLOC_DEFAULT", "kls__region_8h.html#aef1f6fdd918fb4acb2d71b898f827e81", null ],
     [ "KLS_AUTOREGION_ALLOC_TEMP_DEFAULT", "kls__region_8h.html#aa40790538ed6bfa99b4d8e5b7c5ad36e", null ],
     [ "KLS_AUTOREGION_AUTOSET_TEMP_DEFAULT", "kls__region_8h.html#a9cd7b68f630ac82583c2d1e16c816339", null ],

@@ -30,20 +30,21 @@ var NAVTREE =
     [ "What is this thing?", "index.html#autotoc_md3", null ],
     [ "Basic example", "index.html#autotoc_md4", null ],
     [ "Extra features", "index.html#autotoc_md5", [
-      [ "Region", "index.html#autotoc_md6", null ],
-      [ "Core debug", "index.html#autotoc_md7", null ],
-      [ "Gulp", "index.html#autotoc_md8", null ],
-      [ "List template", "index.html#autotoc_md9", null ],
-      [ "Experimental", "index.html#autotoc_md10", null ],
-      [ "How to enable extra features", "index.html#autotoc_md11", null ]
+      [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in t...", "index.html#autotoc_md6", null ],
+      [ "Region", "index.html#autotoc_md7", null ],
+      [ "Core debug", "index.html#autotoc_md8", null ],
+      [ "Gulp", "index.html#autotoc_md9", null ],
+      [ "List template", "index.html#autotoc_md10", null ],
+      [ "Experimental", "index.html#autotoc_md11", null ],
+      [ "How to enable extra features", "index.html#autotoc_md12", null ]
     ] ],
-    [ "Documentation", "index.html#autotoc_md12", null ],
-    [ "Prerequisites", "index.html#autotoc_md13", null ],
-    [ "Configuration", "index.html#autotoc_md14", null ],
-    [ "Building", "index.html#autotoc_md15", null ],
-    [ "Supported platforms", "index.html#autotoc_md16", null ],
-    [ "Credits", "index.html#autotoc_md17", null ],
-    [ "Todo", "index.html#autotoc_md18", null ],
+    [ "Documentation", "index.html#autotoc_md13", null ],
+    [ "Prerequisites", "index.html#autotoc_md14", null ],
+    [ "Configuration", "index.html#autotoc_md15", null ],
+    [ "Building", "index.html#autotoc_md16", null ],
+    [ "Supported platforms", "index.html#autotoc_md17", null ],
+    [ "Credits", "index.html#autotoc_md18", null ],
+    [ "Todo", "index.html#autotoc_md19", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -70,7 +71,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b"
+"koliseo_8c.html#aefc10928ac67644e6748753c7107b3f5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
