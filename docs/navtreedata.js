@@ -27,24 +27,24 @@ var NAVTREE =
   [ "koliseo", "index.html", [
     [ "A C library for a simple arena allocator.", "index.html#autotoc_md1", null ],
     [ "Table of Contents", "index.html#autotoc_md2", null ],
-    [ "What is this thing?", "index.html#autotoc_md3", null ],
-    [ "Basic example", "index.html#autotoc_md4", null ],
-    [ "Extra features", "index.html#autotoc_md5", [
-      [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in t...", "index.html#autotoc_md6", null ],
-      [ "Region", "index.html#autotoc_md7", null ],
-      [ "Core debug", "index.html#autotoc_md8", null ],
-      [ "Gulp", "index.html#autotoc_md9", null ],
-      [ "List template", "index.html#autotoc_md10", null ],
-      [ "Experimental", "index.html#autotoc_md11", null ],
-      [ "How to enable extra features", "index.html#autotoc_md12", null ]
+    [ "What is this thing? <a class=\"anchor\" id=\"witt\"></a>", "index.html#autotoc_md3", null ],
+    [ "Basic example <a class=\"anchor\" id=\"basic_example\"></a>", "index.html#autotoc_md4", null ],
+    [ "Extra features <a class=\"anchor\" id=\"extra_features\"></a>", "index.html#autotoc_md5", [
+      [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:", "index.html#autotoc_md6", null ],
+      [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md7", null ],
+      [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md8", null ],
+      [ "Gulp <a class=\"anchor\" id=\"extra_gulp\"></a>", "index.html#autotoc_md9", null ],
+      [ "List template <a class=\"anchor\" id=\"list_template\"></a>", "index.html#autotoc_md10", null ],
+      [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md11", null ],
+      [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md12", null ]
     ] ],
-    [ "Documentation", "index.html#autotoc_md13", null ],
-    [ "Prerequisites", "index.html#autotoc_md14", null ],
-    [ "Configuration", "index.html#autotoc_md15", null ],
-    [ "Building", "index.html#autotoc_md16", null ],
-    [ "Supported platforms", "index.html#autotoc_md17", null ],
-    [ "Credits", "index.html#autotoc_md18", null ],
-    [ "Todo", "index.html#autotoc_md19", null ],
+    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md13", null ],
+    [ "Prerequisites <a class=\"anchor\" id=\"prerequisites\"></a>", "index.html#autotoc_md14", null ],
+    [ "Configuration <a class=\"anchor\" id=\"config\"></a>", "index.html#autotoc_md15", null ],
+    [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md16", null ],
+    [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md17", null ],
+    [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md18", null ],
+    [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md19", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -76,3 +76,4 @@ var NAVTREEINDEX =
 
 var SYNCONMSG = 'click to disable panel synchronization';
 var SYNCOFFMSG = 'click to enable panel synchronization';
+var LISTOFALLMEMBERS = 'List of all members';
