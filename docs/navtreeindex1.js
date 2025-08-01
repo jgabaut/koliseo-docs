@@ -1,7 +1,12 @@
 var NAVTREEINDEX1 =
 {
-"koliseo_8c.html#aefc10928ac67644e6748753c7107b3f5":[13,0,0,3,18],
+"koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c":[13,0,0,3,2],
+"koliseo_8c.html#ae75ede9ad596acf100979c42db0cde68":[13,0,0,3,28],
+"koliseo_8c.html#aeeb31d4d6d367fbfe49a4099edb03742":[13,0,0,3,6],
+"koliseo_8c.html#aefc10928ac67644e6748753c7107b3f5":[13,0,0,3,22],
+"koliseo_8c.html#af1ec6e2e396dbd521ac73b14ca7bdd78":[13,0,0,3,12],
 "koliseo_8c.html#af8e6f60b7c222713a12158182c3c6eae":[13,0,0,3,0],
+"koliseo_8c.html#af94cad84028c7ee23b812a77f8c756d5":[13,0,0,3,21],
 "koliseo_8c_source.html":[13,0,0,3],
 "koliseo_8h.html":[13,0,0,4],
 "koliseo_8h_source.html":[13,0,0,4],

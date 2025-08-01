@@ -43,6 +43,7 @@ var kls__region_8h =
     [ "KLS_RegList_Alloc_Backend", "kls__region_8h.html#a79c0b39a7a2d9a530f9f08208c5de36e", [
       [ "KLS_REGLIST_ALLOC_LIBC", "kls__region_8h.html#a79c0b39a7a2d9a530f9f08208c5de36eace6ee98a368686900815368cb1094273", null ],
       [ "KLS_REGLIST_ALLOC_KLS_BASIC", "kls__region_8h.html#a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9", null ],
+      [ "KLS_REGLIST_ALLOC_KLS", "kls__region_8h.html#a79c0b39a7a2d9a530f9f08208c5de36ea2f4ad2ea98226e7d7a89c5db7d5227d4", null ],
       [ "KLS_REGLIST_TOTAL_BACKENDS", "kls__region_8h.html#a79c0b39a7a2d9a530f9f08208c5de36ea095acb1de68d2a2dab1c89a9b8de7c38", null ]
     ] ],
     [ "KLS_autoregion_on_free", "kls__region_8h.html#a5cdee1ca472b917121ad736e37f86b16", null ],

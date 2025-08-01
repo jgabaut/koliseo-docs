@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.4.9</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.2</span>
    </div>
   </td>
  </tr>
@@ -156,6 +156,7 @@ Typedefs</h2></td></tr>
 Enumerations</h2></td></tr>
 <tr class="memitem:a79c0b39a7a2d9a530f9f08208c5de36e" id="r_a79c0b39a7a2d9a530f9f08208c5de36e"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36e">KLS_RegList_Alloc_Backend</a> { <a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36eace6ee98a368686900815368cb1094273">KLS_REGLIST_ALLOC_LIBC</a> = 0
 , <a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9">KLS_REGLIST_ALLOC_KLS_BASIC</a>
+, <a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36ea2f4ad2ea98226e7d7a89c5db7d5227d4">KLS_REGLIST_ALLOC_KLS</a>
 , <a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36ea095acb1de68d2a2dab1c89a9b8de7c38">KLS_REGLIST_TOTAL_BACKENDS</a>
  }</td></tr>
 <tr class="memdesc:a79c0b39a7a2d9a530f9f08208c5de36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines allocation backend for <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> items.  <a href="#a79c0b39a7a2d9a530f9f08208c5de36e">More...</a><br /></td></tr>
@@ -328,12 +329,12 @@ Variables</h2></td></tr>
 <div class="line">        .on_temp_free_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a>, \</div>
 <div class="line">        .on_temp_push_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a>, \</div>
 <div class="line">    }</div>
-<div class="ttc" id="akls__region_8c_html_a5cdee1ca472b917121ad736e37f86b16"><div class="ttname"><a href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a></div><div class="ttdeci">void KLS_autoregion_on_free(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1416</div></div>
-<div class="ttc" id="akls__region_8c_html_a83131a2760c2bf9012b693d20379c8c1"><div class="ttname"><a href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a></div><div class="ttdeci">void KLS_autoregion_on_new(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1337</div></div>
-<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1553</div></div>
-<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1520</div></div>
-<div class="ttc" id="akls__region_8c_html_add906f0f523f1c9ace820c7a20c7a220"><div class="ttname"><a href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a></div><div class="ttdeci">void KLS_autoregion_on_push(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1434</div></div>
-<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1455</div></div>
+<div class="ttc" id="akls__region_8c_html_a5cdee1ca472b917121ad736e37f86b16"><div class="ttname"><a href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a></div><div class="ttdeci">void KLS_autoregion_on_free(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1440</div></div>
+<div class="ttc" id="akls__region_8c_html_a83131a2760c2bf9012b693d20379c8c1"><div class="ttname"><a href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a></div><div class="ttdeci">void KLS_autoregion_on_new(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1352</div></div>
+<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1586</div></div>
+<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1552</div></div>
+<div class="ttc" id="akls__region_8c_html_add906f0f523f1c9ace820c7a20c7a220"><div class="ttname"><a href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a></div><div class="ttdeci">void KLS_autoregion_on_push(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1457</div></div>
+<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1478</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -371,7 +372,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a>((kls), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_a8a56a095544ba23506c3c4a7695fa499"><div class="ttname"><a href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a></div><div class="ttdeci">void * kls_push_zero_named(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:960</div></div>
+<div class="ttc" id="akls__region_8c_html_a8a56a095544ba23506c3c4a7695fa499"><div class="ttname"><a href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a></div><div class="ttdeci">void * kls_push_zero_named(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:975</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -409,7 +410,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a>((kls_temp), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_a93db67ec1375feecaec2ee2bcdfde0c1"><div class="ttname"><a href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a></div><div class="ttdeci">void * kls_temp_push_zero_named(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1058</div></div>
+<div class="ttc" id="akls__region_8c_html_a93db67ec1375feecaec2ee2bcdfde0c1"><div class="ttname"><a href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a></div><div class="ttdeci">void * kls_temp_push_zero_named(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1073</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -452,7 +453,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a>((kls_temp), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_abe62ac2d9084e7e56dd495d65a128465"><div class="ttname"><a href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a></div><div class="ttdeci">void * kls_temp_push_zero_typed(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1254</div></div>
+<div class="ttc" id="akls__region_8c_html_abe62ac2d9084e7e56dd495d65a128465"><div class="ttname"><a href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a></div><div class="ttdeci">void * kls_temp_push_zero_typed(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1269</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -495,7 +496,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a>((kls), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_aecac99c9a817c069a1430e1b5078e0e0"><div class="ttname"><a href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a></div><div class="ttdeci">void * kls_push_zero_typed(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1157</div></div>
+<div class="ttc" id="akls__region_8c_html_aecac99c9a817c069a1430e1b5078e0e0"><div class="ttname"><a href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a></div><div class="ttdeci">void * kls_push_zero_typed(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1172</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -574,7 +575,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a>(kls,kls_list1,kls_list2)</div>
-<div class="ttc" id="akls__region_8c_html_a590ca5c695e8f9abf5176312f2de0550"><div class="ttname"><a href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a></div><div class="ttdeci">KLS_Region_List kls_rl_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> kls_region.c:547</div></div>
+<div class="ttc" id="akls__region_8c_html_a590ca5c695e8f9abf5176312f2de0550"><div class="ttname"><a href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a></div><div class="ttdeci">KLS_Region_List kls_rl_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> kls_region.c:554</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -593,7 +594,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a>(kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_ad9bcff249909d4261e87882aafc80713"><div class="ttname"><a href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a></div><div class="ttdeci">void kls_rl_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:302</div></div>
+<div class="ttc" id="akls__region_8c_html_ad9bcff249909d4261e87882aafc80713"><div class="ttname"><a href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a></div><div class="ttdeci">void kls_rl_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:308</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -612,7 +613,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a>(kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a67e7977c00c479e4cfaef8a0656e8a1b"><div class="ttname"><a href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a></div><div class="ttdeci">void kls_rl_freeList(KLS_Region_List l)</div><div class="ttdoc">Frees all values and nodes for passed Region list.</div><div class="ttdef"><b>Definition</b> kls_region.c:244</div></div>
+<div class="ttc" id="akls__region_8c_html_a67e7977c00c479e4cfaef8a0656e8a1b"><div class="ttname"><a href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a></div><div class="ttdeci">void kls_rl_freeList(KLS_Region_List l)</div><div class="ttdoc">Frees all values and nodes for passed Region list.</div><div class="ttdef"><b>Definition</b> kls_region.c:250</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -631,7 +632,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a>()</div>
-<div class="ttc" id="akls__region_8c_html_a5fd23a36c7091fe21fee25c31f2b8dbc"><div class="ttname"><a href="kls__region_8c.html#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a></div><div class="ttdeci">KLS_Region_List kls_rl_emptyList(void)</div><div class="ttdef"><b>Definition</b> kls_region.c:62</div></div>
+<div class="ttc" id="akls__region_8c_html_a5fd23a36c7091fe21fee25c31f2b8dbc"><div class="ttname"><a href="kls__region_8c.html#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a></div><div class="ttdeci">KLS_Region_List kls_rl_emptyList(void)</div><div class="ttdef"><b>Definition</b> kls_region.c:65</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -654,7 +655,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a>(kls_list,file)</div>
-<div class="ttc" id="akls__region_8c_html_ac281a3be8e8ff88ca5295935384afb06"><div class="ttname"><a href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a></div><div class="ttdeci">void kls_rl_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> kls_region.c:263</div></div>
+<div class="ttc" id="akls__region_8c_html_ac281a3be8e8ff88ca5295935384afb06"><div class="ttname"><a href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a></div><div class="ttdeci">void kls_rl_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> kls_region.c:269</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -682,7 +683,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a>(kls,reg,kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a5c4d07f9b21e430becf65d4b0863260f"><div class="ttname"><a href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:386</div></div>
+<div class="ttc" id="akls__region_8c_html_a5c4d07f9b21e430becf65d4b0863260f"><div class="ttname"><a href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:392</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -710,7 +711,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a>(kls,reg,kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a175e2f674e5a5ed75f05d150c2744ce2"><div class="ttname"><a href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:404</div></div>
+<div class="ttc" id="akls__region_8c_html_a175e2f674e5a5ed75f05d150c2744ce2"><div class="ttname"><a href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:410</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -927,6 +928,7 @@ kls_new_traced_AR_KLS() </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a79c0b39a7a2d9a530f9f08208c5de36eace6ee98a368686900815368cb1094273" name="a79c0b39a7a2d9a530f9f08208c5de36eace6ee98a368686900815368cb1094273"></a>KLS_REGLIST_ALLOC_LIBC&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9" name="a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9"></a>KLS_REGLIST_ALLOC_KLS_BASIC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a79c0b39a7a2d9a530f9f08208c5de36ea2f4ad2ea98226e7d7a89c5db7d5227d4" name="a79c0b39a7a2d9a530f9f08208c5de36ea2f4ad2ea98226e7d7a89c5db7d5227d4"></a>KLS_REGLIST_ALLOC_KLS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a79c0b39a7a2d9a530f9f08208c5de36ea095acb1de68d2a2dab1c89a9b8de7c38" name="a79c0b39a7a2d9a530f9f08208c5de36ea095acb1de68d2a2dab1c89a9b8de7c38"></a>KLS_REGLIST_TOTAL_BACKENDS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
