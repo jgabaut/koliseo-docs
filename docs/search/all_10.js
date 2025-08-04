@@ -1,6 +1,6 @@
 var searchData=
 [
   ['name_0',['name',['../structKLS__Region.html#a421e60a3f6ebcde2969b60a2c96e03fc',1,'KLS_Region']]],
-  ['next_1',['next',['../structKLS__list__region.html#a2525d563654c904d48847408048b66fb',1,'KLS_list_region']]],
+  ['next_1',['next',['../structKLS__list__region.html#a2525d563654c904d48847408048b66fb',1,'KLS_list_region::next'],['../structKoliseo.html#a9d3008d4c87e7310ec04fb5974317da8',1,'Koliseo::next']]],
   ['no_20longer_20bundled_20in_20the_20main_20koliseo_20c_20file_20after_20being_20moved_20to_20their_20own_20files_20read_20below_20for_20more_20info_20_3aconstruction_3a_2',[':construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:',['../index.html#autotoc_md6',1,'']]]
 ];

@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.2</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.4</span>
    </div>
   </td>
  </tr>
@@ -101,7 +101,7 @@ $(function(){initNavTree('kls__region_8h.html','',''); });
 <tr class="heading"><td colspan="2"><h2 id="header-nested-classes" class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:KLS_5FRegion" id="r_KLS_5FRegion"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKLS__Region.html">KLS_Region</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an allocated memory region in a Koliseo.  <a href="structKLS__Region.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an allocated memory region in a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <a href="structKLS__Region.html#details">More...</a><br /></td></tr>
 <tr class="memitem:KLS_5Flist_5Fregion" id="r_KLS_5Flist_5Fregion"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKLS__list__region.html">KLS_list_region</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the node for a <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>.  <a href="structKLS__list__region.html#details">More...</a><br /></td></tr>
 <tr class="memitem:KLS_5FAutoregion_5FExtension_5FConf" id="r_KLS_5FAutoregion_5FExtension_5FConf"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structKLS__Autoregion__Extension__Conf.html">KLS_Autoregion_Extension_Conf</a></td></tr>
@@ -111,17 +111,19 @@ Data Structures</h2></td></tr>
 Macros</h2></td></tr>
 <tr class="memitem:a3024ccd4a9af5109d24e6c57565d74a1" id="r_a3024ccd4a9af5109d24e6c57565d74a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3024ccd4a9af5109d24e6c57565d74a1">_POSIX_C_SOURCE</a>&#160;&#160;&#160;200809L</td></tr>
 <tr class="memitem:aef1f6fdd918fb4acb2d71b898f827e81" id="r_aef1f6fdd918fb4acb2d71b898f827e81"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aef1f6fdd918fb4acb2d71b898f827e81">KLS_AUTOREGION_ALLOC_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9">KLS_REGLIST_ALLOC_KLS_BASIC</a></td></tr>
-<tr class="memitem:a0b12374755ff954dc86da3c3b8b95d54" id="r_a0b12374755ff954dc86da3c3b8b95d54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b12374755ff954dc86da3c3b8b95d54">KLS_AUTOREGION_REGLIST_SIZE_DEFAULT</a>&#160;&#160;&#160;KLS_DEFAULT_SIZE</td></tr>
+<tr class="memitem:a0b12374755ff954dc86da3c3b8b95d54" id="r_a0b12374755ff954dc86da3c3b8b95d54"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0b12374755ff954dc86da3c3b8b95d54">KLS_AUTOREGION_REGLIST_SIZE_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a8884f0e03be042b23baf65a9f75d3e6e">KLS_DEFAULT_SIZE</a></td></tr>
 <tr class="memitem:a9cd7b68f630ac82583c2d1e16c816339" id="r_a9cd7b68f630ac82583c2d1e16c816339"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9cd7b68f630ac82583c2d1e16c816339">KLS_AUTOREGION_AUTOSET_TEMP_DEFAULT</a>&#160;&#160;&#160;1</td></tr>
 <tr class="memitem:aa40790538ed6bfa99b4d8e5b7c5ad36e" id="r_aa40790538ed6bfa99b4d8e5b7c5ad36e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa40790538ed6bfa99b4d8e5b7c5ad36e">KLS_AUTOREGION_ALLOC_TEMP_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36ea00a7217ed6f684cb551c548be7c17fe9">KLS_REGLIST_ALLOC_KLS_BASIC</a></td></tr>
-<tr class="memitem:aa1a748c50d3c71f2a276d78053f2a8a1" id="r_aa1a748c50d3c71f2a276d78053f2a8a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a748c50d3c71f2a276d78053f2a8a1">KLS_AUTOREGION_REGLIST_TEMP_SIZE_DEFAULT</a>&#160;&#160;&#160;KLS_DEFAULT_SIZE</td></tr>
+<tr class="memitem:aa1a748c50d3c71f2a276d78053f2a8a1" id="r_aa1a748c50d3c71f2a276d78053f2a8a1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa1a748c50d3c71f2a276d78053f2a8a1">KLS_AUTOREGION_REGLIST_TEMP_SIZE_DEFAULT</a>&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a8884f0e03be042b23baf65a9f75d3e6e">KLS_DEFAULT_SIZE</a></td></tr>
 <tr class="memitem:a15fdda5e6f3ef1e781ad7c019ab250f5" id="r_a15fdda5e6f3ef1e781ad7c019ab250f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15fdda5e6f3ef1e781ad7c019ab250f5">KLS_REGIONTYPE_MAX</a>&#160;&#160;&#160;<a class="el" href="#aac5013719d2f05aa932ccf924db41e89aa0312224acbd8e431db04095a613a515">KLS_Header</a></td></tr>
-<tr class="memdesc:a15fdda5e6f3ef1e781ad7c019ab250f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines max index for Koliseo's own Region_Type values.  <br /></td></tr>
+<tr class="memdesc:a15fdda5e6f3ef1e781ad7c019ab250f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines max index for <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>'s own Region_Type values.  <br /></td></tr>
 <tr class="memitem:a2a240f9ca4f7f10219f24ad2b7966802" id="r_a2a240f9ca4f7f10219f24ad2b7966802"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a240f9ca4f7f10219f24ad2b7966802">KLS_REGION_MAX_NAME_SIZE</a>&#160;&#160;&#160;15</td></tr>
 <tr class="memdesc:a2a240f9ca4f7f10219f24ad2b7966802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines max size for <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a>'s name field.  <br /></td></tr>
 <tr class="memitem:aec33f3f68112a42dab2406e0f001a432" id="r_aec33f3f68112a42dab2406e0f001a432"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aec33f3f68112a42dab2406e0f001a432">KLS_REGION_MAX_DESC_SIZE</a>&#160;&#160;&#160;20</td></tr>
 <tr class="memdesc:aec33f3f68112a42dab2406e0f001a432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines max size for <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a>'s desc field.  <br /></td></tr>
 <tr class="memitem:a079eb2ec80f3bfd49d063642905b2e20" id="r_a079eb2ec80f3bfd49d063642905b2e20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a079eb2ec80f3bfd49d063642905b2e20">KLS_DEFAULT_HOOKS</a></td></tr>
+<tr class="memitem:af02147a60174feef7e584c68ea62c2e3" id="r_af02147a60174feef7e584c68ea62c2e3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af02147a60174feef7e584c68ea62c2e3">KLS_DEFAULT_EXTENSIONS_LEN</a>&#160;&#160;&#160;1</td></tr>
+<tr class="memitem:a1ef916ff9e943dd80347bd433f86956e" id="r_a1ef916ff9e943dd80347bd433f86956e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ef916ff9e943dd80347bd433f86956e">KLS_AUTOREGION_EXT_SLOT</a>&#160;&#160;&#160;0</td></tr>
 <tr class="memitem:a5c1b24294af461daee75801ee06a5180" id="r_a5c1b24294af461daee75801ee06a5180"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5c1b24294af461daee75801ee06a5180">KLS_PUSH_ARR_NAMED</a>(kls,  type,  count,  name,  desc)</td></tr>
 <tr class="memitem:ab304c61a64f19eef58873354aa40ea93" id="r_ab304c61a64f19eef58873354aa40ea93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab304c61a64f19eef58873354aa40ea93">KLS_PUSH_ARR_TYPED</a>(kls,  type,  count,  region_type,  name,  desc)</td></tr>
 <tr class="memitem:a3281b59062c69e91f3eb896bde3f326c" id="r_a3281b59062c69e91f3eb896bde3f326c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3281b59062c69e91f3eb896bde3f326c">KLS_PUSH_ARR_T_NAMED</a>(kls_temp,  type,  count,  name,  desc)</td></tr>
@@ -143,7 +145,7 @@ Typedefs</h2></td></tr>
 <tr class="memitem:a15c5f69c175a34e872d3848b740b8f68" id="r_a15c5f69c175a34e872d3848b740b8f68"><td class="memItemLeft" align="right" valign="top">typedef enum <a class="el" href="#aac5013719d2f05aa932ccf924db41e89">KLS_Region_Type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a15c5f69c175a34e872d3848b740b8f68">KLS_Region_Type</a></td></tr>
 <tr class="memdesc:a15c5f69c175a34e872d3848b740b8f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a type index for Regions.  <br /></td></tr>
 <tr class="memitem:a87f7a7d0aed433f6e7278f8533d777f1" id="r_a87f7a7d0aed433f6e7278f8533d777f1"><td class="memItemLeft" align="right" valign="top">typedef struct KLS_Region&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a87f7a7d0aed433f6e7278f8533d777f1">KLS_Region</a></td></tr>
-<tr class="memdesc:a87f7a7d0aed433f6e7278f8533d777f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an allocated memory region in a Koliseo.  <br /></td></tr>
+<tr class="memdesc:a87f7a7d0aed433f6e7278f8533d777f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents an allocated memory region in a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
 <tr class="memitem:a3bf82630d52ef52738eda2084af71c7f" id="r_a3bf82630d52ef52738eda2084af71c7f"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="structKLS__Region.html">KLS_Region</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a></td></tr>
 <tr class="memdesc:a3bf82630d52ef52738eda2084af71c7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Redundant typedef to better denote the actual value field of a <a class="el" href="#acdf12b585df68cf186538d49e80c25c1" title="Defines the node for a KLS_Region_List.">KLS_region_list_item</a>.  <br /></td></tr>
 <tr class="memitem:acdf12b585df68cf186538d49e80c25c1" id="r_acdf12b585df68cf186538d49e80c25c1"><td class="memItemLeft" align="right" valign="top">typedef struct <a class="el" href="structKLS__list__region.html">KLS_list_region</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acdf12b585df68cf186538d49e80c25c1">KLS_region_list_item</a></td></tr>
@@ -170,55 +172,57 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aea38a511968453180dcc1b7922734081" id="r_aea38a511968453180dcc1b7922734081"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aea38a511968453180dcc1b7922734081">kls_reglist_backend_string</a> (<a class="el" href="#a79c0b39a7a2d9a530f9f08208c5de36e">KLS_RegList_Alloc_Backend</a> kls_be)</td></tr>
 <tr class="memdesc:aea38a511968453180dcc1b7922734081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the string corresponding to passed kls_be.  <br /></td></tr>
-<tr class="memitem:a83131a2760c2bf9012b693d20379c8c1" id="r_a83131a2760c2bf9012b693d20379c8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a> (struct Koliseo *kls)</td></tr>
-<tr class="memitem:a5cdee1ca472b917121ad736e37f86b16" id="r_a5cdee1ca472b917121ad736e37f86b16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a> (struct Koliseo *kls)</td></tr>
-<tr class="memitem:add906f0f523f1c9ace820c7a20c7a220" id="r_add906f0f523f1c9ace820c7a20c7a220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a> (struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
-<tr class="memitem:adecc22ba04dc3810275595d79ad8c437" id="r_adecc22ba04dc3810275595d79ad8c437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a> (struct Koliseo_Temp *t_kls)</td></tr>
-<tr class="memitem:accdf861c7d16ef125e739fe43b36d0d6" id="r_accdf861c7d16ef125e739fe43b36d0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a> (struct Koliseo_Temp *t_kls)</td></tr>
-<tr class="memitem:a8a3a06ae4335144c46a4932880ed91b9" id="r_a8a3a06ae4335144c46a4932880ed91b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a> (struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
-<tr class="memitem:a8a56a095544ba23506c3c4a7695fa499" id="r_a8a56a095544ba23506c3c4a7695fa499"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a> (Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</td></tr>
-<tr class="memdesc:a8a56a095544ba23506c3c4a7695fa499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
-<tr class="memitem:aecac99c9a817c069a1430e1b5078e0e0" id="r_aecac99c9a817c069a1430e1b5078e0e0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a> (Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
-<tr class="memdesc:aecac99c9a817c069a1430e1b5078e0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Koliseo pointer, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count.  <br /></td></tr>
-<tr class="memitem:a93db67ec1375feecaec2ee2bcdfde0c1" id="r_a93db67ec1375feecaec2ee2bcdfde0c1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a> (Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</td></tr>
-<tr class="memdesc:a93db67ec1375feecaec2ee2bcdfde0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.  <br /></td></tr>
-<tr class="memitem:abe62ac2d9084e7e56dd495d65a128465" id="r_abe62ac2d9084e7e56dd495d65a128465"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a> (Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
-<tr class="memdesc:abe62ac2d9084e7e56dd495d65a128465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Koliseo_Temp, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:a83131a2760c2bf9012b693d20379c8c1" id="r_a83131a2760c2bf9012b693d20379c8c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
+<tr class="memitem:a5cdee1ca472b917121ad736e37f86b16" id="r_a5cdee1ca472b917121ad736e37f86b16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
+<tr class="memitem:add906f0f523f1c9ace820c7a20c7a220" id="r_add906f0f523f1c9ace820c7a20c7a220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memitem:adecc22ba04dc3810275595d79ad8c437" id="r_adecc22ba04dc3810275595d79ad8c437"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
+<tr class="memitem:accdf861c7d16ef125e739fe43b36d0d6" id="r_accdf861c7d16ef125e739fe43b36d0d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
+<tr class="memitem:a8a3a06ae4335144c46a4932880ed91b9" id="r_a8a3a06ae4335144c46a4932880ed91b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memitem:a8a56a095544ba23506c3c4a7695fa499" id="r_a8a56a095544ba23506c3c4a7695fa499"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</td></tr>
+<tr class="memdesc:a8a56a095544ba23506c3c4a7695fa499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:aecac99c9a817c069a1430e1b5078e0e0" id="r_aecac99c9a817c069a1430e1b5078e0e0"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
+<tr class="memdesc:aecac99c9a817c069a1430e1b5078e0e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:a93db67ec1375feecaec2ee2bcdfde0c1" id="r_a93db67ec1375feecaec2ee2bcdfde0c1"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</td></tr>
+<tr class="memdesc:a93db67ec1375feecaec2ee2bcdfde0c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:abe62ac2d9084e7e56dd495d65a128465" id="r_abe62ac2d9084e7e56dd495d65a128465"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
+<tr class="memdesc:abe62ac2d9084e7e56dd495d65a128465"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:a5fd23a36c7091fe21fee25c31f2b8dbc" id="r_a5fd23a36c7091fe21fee25c31f2b8dbc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fd23a36c7091fe21fee25c31f2b8dbc">kls_rl_emptyList</a> (void)</td></tr>
 <tr class="memitem:a7f4fc3c12aafbfbc87eb8f9df0c4e898" id="r_a7f4fc3c12aafbfbc87eb8f9df0c4e898"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7f4fc3c12aafbfbc87eb8f9df0c4e898">kls_rl_empty</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:a8a78e54d575eceddcaad1180f5b27457" id="r_a8a78e54d575eceddcaad1180f5b27457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8a78e54d575eceddcaad1180f5b27457">kls_rl_head</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:acba738155f08c894614eee972e5d4e24" id="r_acba738155f08c894614eee972e5d4e24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acba738155f08c894614eee972e5d4e24">kls_rl_tail</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a0366023496a2cd8b8077e47553ae99b1" id="r_a0366023496a2cd8b8077e47553ae99b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0366023496a2cd8b8077e47553ae99b1">kls_rl_cons</a> (Koliseo *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a7c9364697bbea20ae6f1496771046671" id="r_a7c9364697bbea20ae6f1496771046671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c9364697bbea20ae6f1496771046671">kls_rl_t_cons</a> (Koliseo_Temp *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a0366023496a2cd8b8077e47553ae99b1" id="r_a0366023496a2cd8b8077e47553ae99b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0366023496a2cd8b8077e47553ae99b1">kls_rl_cons</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a7c9364697bbea20ae6f1496771046671" id="r_a7c9364697bbea20ae6f1496771046671"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7c9364697bbea20ae6f1496771046671">kls_rl_t_cons</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:aa830a6b1aa3e59f82412a28a1d707662" id="r_aa830a6b1aa3e59f82412a28a1d707662"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa830a6b1aa3e59f82412a28a1d707662">kls_rl_freeList</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memdesc:aa830a6b1aa3e59f82412a28a1d707662"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frees all values and nodes for passed Region list.  <br /></td></tr>
 <tr class="memitem:a47c7554e9a23fa94f6b34db2585911af" id="r_a47c7554e9a23fa94f6b34db2585911af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47c7554e9a23fa94f6b34db2585911af">kls_rl_showList</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:aaeb5f3a03862851378e02bd4d8455667" id="r_aaeb5f3a03862851378e02bd4d8455667"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaeb5f3a03862851378e02bd4d8455667">kls_rl_showList_toFile</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, FILE *fp)</td></tr>
 <tr class="memitem:ae3fcd9d13bc8c2e498b3452193259376" id="r_ae3fcd9d13bc8c2e498b3452193259376"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae3fcd9d13bc8c2e498b3452193259376">kls_rl_member</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:a8921ddaabf6d2ed32aa4ea1aecd08ef1" id="r_a8921ddaabf6d2ed32aa4ea1aecd08ef1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8921ddaabf6d2ed32aa4ea1aecd08ef1">kls_rl_length</a> (<a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a112317813ef55b4361f731d556f3e7b7" id="r_a112317813ef55b4361f731d556f3e7b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112317813ef55b4361f731d556f3e7b7">kls_rl_append</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a0f1a77c1ac61c13641640aaf65806636" id="r_a0f1a77c1ac61c13641640aaf65806636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1a77c1ac61c13641640aaf65806636">kls_rl_reverse</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:ab0567084cfaea25019395d4cad5a83b8" id="r_ab0567084cfaea25019395d4cad5a83b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0567084cfaea25019395d4cad5a83b8">kls_rl_copy</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a174ac9fea814ad4c24a3ccf3090d85e6" id="r_a174ac9fea814ad4c24a3ccf3090d85e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174ac9fea814ad4c24a3ccf3090d85e6">kls_rl_delete</a> (Koliseo *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a368ac47cc08c3fba4a7007370ec0a232" id="r_a368ac47cc08c3fba4a7007370ec0a232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a368ac47cc08c3fba4a7007370ec0a232">kls_rl_insord</a> (Koliseo *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a0324266c7abc4aabde3a36e62d2e57be" id="r_a0324266c7abc4aabde3a36e62d2e57be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0324266c7abc4aabde3a36e62d2e57be">kls_rl_insord_p</a> (Koliseo *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a112317813ef55b4361f731d556f3e7b7" id="r_a112317813ef55b4361f731d556f3e7b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a112317813ef55b4361f731d556f3e7b7">kls_rl_append</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a0f1a77c1ac61c13641640aaf65806636" id="r_a0f1a77c1ac61c13641640aaf65806636"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0f1a77c1ac61c13641640aaf65806636">kls_rl_reverse</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:ab0567084cfaea25019395d4cad5a83b8" id="r_ab0567084cfaea25019395d4cad5a83b8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab0567084cfaea25019395d4cad5a83b8">kls_rl_copy</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a174ac9fea814ad4c24a3ccf3090d85e6" id="r_a174ac9fea814ad4c24a3ccf3090d85e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a174ac9fea814ad4c24a3ccf3090d85e6">kls_rl_delete</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a368ac47cc08c3fba4a7007370ec0a232" id="r_a368ac47cc08c3fba4a7007370ec0a232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a368ac47cc08c3fba4a7007370ec0a232">kls_rl_insord</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a0324266c7abc4aabde3a36e62d2e57be" id="r_a0324266c7abc4aabde3a36e62d2e57be"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0324266c7abc4aabde3a36e62d2e57be">kls_rl_insord_p</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
 <tr class="memitem:a0a33b58cf9de58b8272a0c615116c348" id="r_a0a33b58cf9de58b8272a0c615116c348"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0a33b58cf9de58b8272a0c615116c348">kls_rl_isLess</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>)</td></tr>
 <tr class="memitem:acc3142f1dbb952b1eb0a2772f6fb4b0d" id="r_acc3142f1dbb952b1eb0a2772f6fb4b0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acc3142f1dbb952b1eb0a2772f6fb4b0d">kls_rl_isEqual</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>)</td></tr>
-<tr class="memitem:a8596f371e529fd17eb34dd45d2c2cbff" id="r_a8596f371e529fd17eb34dd45d2c2cbff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8596f371e529fd17eb34dd45d2c2cbff">kls_rl_mergeList</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a007932b62242e4d07061d4b41bf7e4a7" id="r_a007932b62242e4d07061d4b41bf7e4a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a007932b62242e4d07061d4b41bf7e4a7">kls_rl_intersect</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:a240e1c1cf7c068f6a87ab25d7fefc43d" id="r_a240e1c1cf7c068f6a87ab25d7fefc43d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a240e1c1cf7c068f6a87ab25d7fefc43d">kls_rl_diff</a> (Koliseo *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
-<tr class="memitem:ad42d1e8b2e8707e48b7451d7da1b1353" id="r_ad42d1e8b2e8707e48b7451d7da1b1353"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42d1e8b2e8707e48b7451d7da1b1353">kls_usageShare</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, Koliseo *)</td></tr>
+<tr class="memitem:a8596f371e529fd17eb34dd45d2c2cbff" id="r_a8596f371e529fd17eb34dd45d2c2cbff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8596f371e529fd17eb34dd45d2c2cbff">kls_rl_mergeList</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a007932b62242e4d07061d4b41bf7e4a7" id="r_a007932b62242e4d07061d4b41bf7e4a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a007932b62242e4d07061d4b41bf7e4a7">kls_rl_intersect</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:a240e1c1cf7c068f6a87ab25d7fefc43d" id="r_a240e1c1cf7c068f6a87ab25d7fefc43d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a240e1c1cf7c068f6a87ab25d7fefc43d">kls_rl_diff</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>, <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>)</td></tr>
+<tr class="memitem:ad42d1e8b2e8707e48b7451d7da1b1353" id="r_ad42d1e8b2e8707e48b7451d7da1b1353"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad42d1e8b2e8707e48b7451d7da1b1353">kls_usageShare</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>, <a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
 <tr class="memitem:a5f8ab1ba605beb06da83c81093d730ab" id="r_a5f8ab1ba605beb06da83c81093d730ab"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5f8ab1ba605beb06da83c81093d730ab">kls_regionSize</a> (<a class="el" href="#a3bf82630d52ef52738eda2084af71c7f">KLS_list_element</a>)</td></tr>
-<tr class="memitem:ae1fc67f99c762af6cbf6927ac2957397" id="r_ae1fc67f99c762af6cbf6927ac2957397"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1fc67f99c762af6cbf6927ac2957397">kls_avg_regionSize</a> (Koliseo *)</td></tr>
-<tr class="memdesc:ae1fc67f99c762af6cbf6927ac2957397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return average region size in usage for the passed Koliseo.  <br /></td></tr>
-<tr class="memitem:a6f0d0e9d3129403cd69d5360a529496c" id="r_a6f0d0e9d3129403cd69d5360a529496c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0d0e9d3129403cd69d5360a529496c">kls_usageReport_toFile</a> (Koliseo *, FILE *)</td></tr>
-<tr class="memdesc:a6f0d0e9d3129403cd69d5360a529496c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints an usage report for the passed Koliseo to the passed file.  <br /></td></tr>
-<tr class="memitem:a18b5cdba9caadaa2d6637dc75dbfa17d" id="r_a18b5cdba9caadaa2d6637dc75dbfa17d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b5cdba9caadaa2d6637dc75dbfa17d">kls_usageReport</a> (Koliseo *)</td></tr>
-<tr class="memdesc:a18b5cdba9caadaa2d6637dc75dbfa17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print usage report for passed Koliseo to stdout.  <br /></td></tr>
-<tr class="memitem:a5603f62fd7d2c0ad8efc100370b76271" id="r_a5603f62fd7d2c0ad8efc100370b76271"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5603f62fd7d2c0ad8efc100370b76271">kls_type_usage</a> (int, Koliseo *)</td></tr>
+<tr class="memitem:ae1fc67f99c762af6cbf6927ac2957397" id="r_ae1fc67f99c762af6cbf6927ac2957397"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae1fc67f99c762af6cbf6927ac2957397">kls_avg_regionSize</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
+<tr class="memdesc:ae1fc67f99c762af6cbf6927ac2957397"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return average region size in usage for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
+<tr class="memitem:a6f0d0e9d3129403cd69d5360a529496c" id="r_a6f0d0e9d3129403cd69d5360a529496c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6f0d0e9d3129403cd69d5360a529496c">kls_usageReport_toFile</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *, FILE *)</td></tr>
+<tr class="memdesc:a6f0d0e9d3129403cd69d5360a529496c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints an usage report for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to the passed file.  <br /></td></tr>
+<tr class="memitem:a18b5cdba9caadaa2d6637dc75dbfa17d" id="r_a18b5cdba9caadaa2d6637dc75dbfa17d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a18b5cdba9caadaa2d6637dc75dbfa17d">kls_usageReport</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
+<tr class="memdesc:a18b5cdba9caadaa2d6637dc75dbfa17d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print usage report for passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to stdout.  <br /></td></tr>
+<tr class="memitem:a5603f62fd7d2c0ad8efc100370b76271" id="r_a5603f62fd7d2c0ad8efc100370b76271"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5603f62fd7d2c0ad8efc100370b76271">kls_type_usage</a> (int, <a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
 <tr class="memdesc:a5603f62fd7d2c0ad8efc100370b76271"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calc memory used by the specific type of <a class="el" href="#a3bf82630d52ef52738eda2084af71c7f" title="Redundant typedef to better denote the actual value field of a KLS_region_list_item.">KLS_list_element</a>.  <br /></td></tr>
-<tr class="memitem:af572875c05ffb1c6587a9dae0cd2b8b6" id="r_af572875c05ffb1c6587a9dae0cd2b8b6"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af572875c05ffb1c6587a9dae0cd2b8b6">kls_total_padding</a> (Koliseo *)</td></tr>
-<tr class="memdesc:af572875c05ffb1c6587a9dae0cd2b8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calc memory used as padding for the passed Koliseo.  <br /></td></tr>
+<tr class="memitem:af572875c05ffb1c6587a9dae0cd2b8b6" id="r_af572875c05ffb1c6587a9dae0cd2b8b6"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af572875c05ffb1c6587a9dae0cd2b8b6">kls_total_padding</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *)</td></tr>
+<tr class="memdesc:af572875c05ffb1c6587a9dae0cd2b8b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calc memory used as padding for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
+<tr class="memitem:a1b09427cd37560eadb290ef898d3ea9e" id="r_a1b09427cd37560eadb290ef898d3ea9e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b09427cd37560eadb290ef898d3ea9e">kls_get_maxRegions_KLS_BASIC</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
+<tr class="memdesc:a1b09427cd37560eadb290ef898d3ea9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calcs the max number of possible KLS_PUSH ops when using KLS_BASIC reglist alloc backend.  <br /></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-var-members" class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
@@ -282,6 +286,20 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a1ef916ff9e943dd80347bd433f86956e" name="a1ef916ff9e943dd80347bd433f86956e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ef916ff9e943dd80347bd433f86956e">&#9670;&#160;</a></span>KLS_AUTOREGION_EXT_SLOT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KLS_AUTOREGION_EXT_SLOT&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a0b12374755ff954dc86da3c3b8b95d54" name="a0b12374755ff954dc86da3c3b8b95d54"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0b12374755ff954dc86da3c3b8b95d54">&#9670;&#160;</a></span>KLS_AUTOREGION_REGLIST_SIZE_DEFAULT</h2>
 
@@ -289,7 +307,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KLS_AUTOREGION_REGLIST_SIZE_DEFAULT&#160;&#160;&#160;KLS_DEFAULT_SIZE</td>
+          <td class="memname">#define KLS_AUTOREGION_REGLIST_SIZE_DEFAULT&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a8884f0e03be042b23baf65a9f75d3e6e">KLS_DEFAULT_SIZE</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -303,7 +321,21 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KLS_AUTOREGION_REGLIST_TEMP_SIZE_DEFAULT&#160;&#160;&#160;KLS_DEFAULT_SIZE</td>
+          <td class="memname">#define KLS_AUTOREGION_REGLIST_TEMP_SIZE_DEFAULT&#160;&#160;&#160;<a class="el" href="koliseo_8h.html#a8884f0e03be042b23baf65a9f75d3e6e">KLS_DEFAULT_SIZE</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af02147a60174feef7e584c68ea62c2e3" name="af02147a60174feef7e584c68ea62c2e3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af02147a60174feef7e584c68ea62c2e3">&#9670;&#160;</a></span>KLS_DEFAULT_EXTENSIONS_LEN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KLS_DEFAULT_EXTENSIONS_LEN&#160;&#160;&#160;1</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -321,7 +353,7 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line">        (KLS_Hooks) { \</div>
+<b>Value:</b><div class="fragment"><div class="line">        &amp;(<a class="code hl_struct" href="structKLS__Hooks.html">KLS_Hooks</a>) { \</div>
 <div class="line">        .on_new_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a>, \</div>
 <div class="line">        .on_free_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a>, \</div>
 <div class="line">        .on_push_handler =  &amp;<a class="code hl_function" href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a>, \</div>
@@ -329,12 +361,13 @@ Variables</h2></td></tr>
 <div class="line">        .on_temp_free_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a>, \</div>
 <div class="line">        .on_temp_push_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a>, \</div>
 <div class="line">    }</div>
-<div class="ttc" id="akls__region_8c_html_a5cdee1ca472b917121ad736e37f86b16"><div class="ttname"><a href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a></div><div class="ttdeci">void KLS_autoregion_on_free(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1440</div></div>
-<div class="ttc" id="akls__region_8c_html_a83131a2760c2bf9012b693d20379c8c1"><div class="ttname"><a href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a></div><div class="ttdeci">void KLS_autoregion_on_new(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1352</div></div>
-<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1586</div></div>
-<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1552</div></div>
-<div class="ttc" id="akls__region_8c_html_add906f0f523f1c9ace820c7a20c7a220"><div class="ttname"><a href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a></div><div class="ttdeci">void KLS_autoregion_on_push(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1457</div></div>
-<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1478</div></div>
+<div class="ttc" id="akls__region_8c_html_a5cdee1ca472b917121ad736e37f86b16"><div class="ttname"><a href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a></div><div class="ttdeci">void KLS_autoregion_on_free(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1441</div></div>
+<div class="ttc" id="akls__region_8c_html_a83131a2760c2bf9012b693d20379c8c1"><div class="ttname"><a href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a></div><div class="ttdeci">void KLS_autoregion_on_new(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1353</div></div>
+<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1587</div></div>
+<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1553</div></div>
+<div class="ttc" id="akls__region_8c_html_add906f0f523f1c9ace820c7a20c7a220"><div class="ttname"><a href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a></div><div class="ttdeci">void KLS_autoregion_on_push(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1458</div></div>
+<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1479</div></div>
+<div class="ttc" id="astructKLS__Hooks_html"><div class="ttname"><a href="structKLS__Hooks.html">KLS_Hooks</a></div><div class="ttdef"><b>Definition</b> koliseo.h:186</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -372,7 +405,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a>((kls), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_a8a56a095544ba23506c3c4a7695fa499"><div class="ttname"><a href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a></div><div class="ttdeci">void * kls_push_zero_named(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:975</div></div>
+<div class="ttc" id="akls__region_8c_html_a8a56a095544ba23506c3c4a7695fa499"><div class="ttname"><a href="kls__region_8c.html#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a></div><div class="ttdeci">void * kls_push_zero_named(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:976</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -410,7 +443,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a>((kls_temp), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_a93db67ec1375feecaec2ee2bcdfde0c1"><div class="ttname"><a href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a></div><div class="ttdeci">void * kls_temp_push_zero_named(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1073</div></div>
+<div class="ttc" id="akls__region_8c_html_a93db67ec1375feecaec2ee2bcdfde0c1"><div class="ttname"><a href="kls__region_8c.html#a93db67ec1375feecaec2ee2bcdfde0c1">kls_temp_push_zero_named</a></div><div class="ttdeci">void * kls_temp_push_zero_named(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1074</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -453,7 +486,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a>((kls_temp), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_abe62ac2d9084e7e56dd495d65a128465"><div class="ttname"><a href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a></div><div class="ttdeci">void * kls_temp_push_zero_typed(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1269</div></div>
+<div class="ttc" id="akls__region_8c_html_abe62ac2d9084e7e56dd495d65a128465"><div class="ttname"><a href="kls__region_8c.html#abe62ac2d9084e7e56dd495d65a128465">kls_temp_push_zero_typed</a></div><div class="ttdeci">void * kls_temp_push_zero_typed(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo_Temp, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1270</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -496,7 +529,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a>((kls), <span class="keyword">sizeof</span>(type), _Alignof(type), (count), (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8c_html_aecac99c9a817c069a1430e1b5078e0e0"><div class="ttname"><a href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a></div><div class="ttdeci">void * kls_push_zero_typed(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1172</div></div>
+<div class="ttc" id="akls__region_8c_html_aecac99c9a817c069a1430e1b5078e0e0"><div class="ttname"><a href="kls__region_8c.html#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a></div><div class="ttdeci">void * kls_push_zero_typed(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</div><div class="ttdoc">Takes a Koliseo pointer, a KLS_Region_Type index, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> kls_region.c:1173</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -546,7 +579,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Defines max index for Koliseo's own Region_Type values. </p>
+<p>Defines max index for <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>'s own Region_Type values. </p>
 <dl class="section see"><dt>See also</dt><dd>Region_Type </dd></dl>
 
 </div>
@@ -575,7 +608,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a>(kls,kls_list1,kls_list2)</div>
-<div class="ttc" id="akls__region_8c_html_a590ca5c695e8f9abf5176312f2de0550"><div class="ttname"><a href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a></div><div class="ttdeci">KLS_Region_List kls_rl_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> kls_region.c:554</div></div>
+<div class="ttc" id="akls__region_8c_html_a590ca5c695e8f9abf5176312f2de0550"><div class="ttname"><a href="kls__region_8c.html#a590ca5c695e8f9abf5176312f2de0550">kls_rl_diff</a></div><div class="ttdeci">KLS_Region_List kls_rl_diff(Koliseo *kls, KLS_Region_List l1, KLS_Region_List l2)</div><div class="ttdef"><b>Definition</b> kls_region.c:555</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -594,7 +627,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a>(kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_ad9bcff249909d4261e87882aafc80713"><div class="ttname"><a href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a></div><div class="ttdeci">void kls_rl_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:308</div></div>
+<div class="ttc" id="akls__region_8c_html_ad9bcff249909d4261e87882aafc80713"><div class="ttname"><a href="kls__region_8c.html#ad9bcff249909d4261e87882aafc80713">kls_rl_showList</a></div><div class="ttdeci">void kls_rl_showList(KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:309</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -613,7 +646,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a>(kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a67e7977c00c479e4cfaef8a0656e8a1b"><div class="ttname"><a href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a></div><div class="ttdeci">void kls_rl_freeList(KLS_Region_List l)</div><div class="ttdoc">Frees all values and nodes for passed Region list.</div><div class="ttdef"><b>Definition</b> kls_region.c:250</div></div>
+<div class="ttc" id="akls__region_8c_html_a67e7977c00c479e4cfaef8a0656e8a1b"><div class="ttname"><a href="kls__region_8c.html#a67e7977c00c479e4cfaef8a0656e8a1b">kls_rl_freeList</a></div><div class="ttdeci">void kls_rl_freeList(KLS_Region_List l)</div><div class="ttdoc">Frees all values and nodes for passed Region list.</div><div class="ttdef"><b>Definition</b> kls_region.c:251</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -655,7 +688,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a>(kls_list,file)</div>
-<div class="ttc" id="akls__region_8c_html_ac281a3be8e8ff88ca5295935384afb06"><div class="ttname"><a href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a></div><div class="ttdeci">void kls_rl_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> kls_region.c:269</div></div>
+<div class="ttc" id="akls__region_8c_html_ac281a3be8e8ff88ca5295935384afb06"><div class="ttname"><a href="kls__region_8c.html#ac281a3be8e8ff88ca5295935384afb06">kls_rl_showList_toFile</a></div><div class="ttdeci">void kls_rl_showList_toFile(KLS_Region_List l, FILE *fp)</div><div class="ttdef"><b>Definition</b> kls_region.c:270</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -683,7 +716,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a>(kls,reg,kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a5c4d07f9b21e430becf65d4b0863260f"><div class="ttname"><a href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:392</div></div>
+<div class="ttc" id="akls__region_8c_html_a5c4d07f9b21e430becf65d4b0863260f"><div class="ttname"><a href="kls__region_8c.html#a5c4d07f9b21e430becf65d4b0863260f">kls_rl_insord</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:393</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -711,7 +744,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a>(kls,reg,kls_list)</div>
-<div class="ttc" id="akls__region_8c_html_a175e2f674e5a5ed75f05d150c2744ce2"><div class="ttname"><a href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:410</div></div>
+<div class="ttc" id="akls__region_8c_html_a175e2f674e5a5ed75f05d150c2744ce2"><div class="ttname"><a href="kls__region_8c.html#a175e2f674e5a5ed75f05d150c2744ce2">kls_rl_insord_p</a></div><div class="ttdeci">KLS_Region_List kls_rl_insord_p(Koliseo *kls, KLS_list_element el, KLS_Region_List l)</div><div class="ttdef"><b>Definition</b> kls_region.c:411</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -812,10 +845,10 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Represents an allocated memory region in a Koliseo. </p>
-<dl class="section see"><dt>See also</dt><dd>KLS_PUSH() </dd>
+<p>Represents an allocated memory region in a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="koliseo_8h.html#a7d7ef25499c96648f9a594e1b8b560d5" title="Macro used to request memory from a Koliseo.">KLS_PUSH()</a> </dd>
 <dd>
-KLS_PUSH_NAMED() </dd></dl>
+<a class="el" href="koliseo_8h.html#afe8f12674e407aad221452c8a4e67e01" title="Macro used to request memory from a Koliseo, and assign a name and a description to the region item.">KLS_PUSH_NAMED()</a> </dd></dl>
 
 </div>
 </div>
@@ -863,7 +896,7 @@ KLS_PUSH_NAMED() </dd></dl>
 </div><div class="memdoc">
 
 <p>Represents a type index for Regions. </p>
-<dl class="section see"><dt>See also</dt><dd>KLS_PUSH_TYPED() </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="koliseo_8h.html#a69227e6815ac3956aa97ffc0da97bc22" title="Macro used to request memory from a Koliseo, and assign a a type, a name and a description to the reg...">KLS_PUSH_TYPED()</a> </dd></dl>
 
 </div>
 </div>
@@ -880,7 +913,7 @@ KLS_PUSH_NAMED() </dd></dl>
 </div><div class="memdoc">
 
 <p>Defines allocation backend for <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> items. </p>
-<dl class="section see"><dt>See also</dt><dd>Koliseo </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> </dd>
 <dd>
 kls_new_traced_AR_KLS() </dd></dl>
 
@@ -900,7 +933,7 @@ kls_new_traced_AR_KLS() </dd></dl>
 </div><div class="memdoc">
 
 <p>Represents a type index for Regions. </p>
-<dl class="section see"><dt>See also</dt><dd>KLS_PUSH_TYPED() </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="koliseo_8h.html#a69227e6815ac3956aa97ffc0da97bc22" title="Macro used to request memory from a Koliseo, and assign a a type, a name and a description to the reg...">KLS_PUSH_TYPED()</a> </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aac5013719d2f05aa932ccf924db41e89ac6ded6efcde763f38aab6e48ffd168cd" name="aac5013719d2f05aa932ccf924db41e89ac6ded6efcde763f38aab6e48ffd168cd"></a>KLS_None&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="aac5013719d2f05aa932ccf924db41e89acac3304e9c6edd4fbeca71563b309d92" name="aac5013719d2f05aa932ccf924db41e89acac3304e9c6edd4fbeca71563b309d92"></a>Temp_KLS_Header&#160;</td><td class="fielddoc"></td></tr>
@@ -922,7 +955,7 @@ kls_new_traced_AR_KLS() </dd></dl>
 </div><div class="memdoc">
 
 <p>Defines allocation backend for <a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> items. </p>
-<dl class="section see"><dt>See also</dt><dd>Koliseo </dd>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> </dd>
 <dd>
 kls_new_traced_AR_KLS() </dd></dl>
 <table class="fieldtable">
@@ -944,7 +977,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_free </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -961,7 +994,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_new </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -978,7 +1011,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_push </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1009,7 +1042,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_temp_free </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1026,7 +1059,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_temp_push </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1057,7 +1090,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void KLS_autoregion_on_temp_start </td>
           <td>(</td>
-          <td class="paramtype">struct Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -1074,20 +1107,40 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">ptrdiff_t kls_avg_regionSize </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return average region size in usage for the passed Koliseo. </p>
+<p>Return average region size in usage for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo to check usage for. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to check usage for. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Average region size as ptrdiff_t. </dd></dl>
+
+</div>
+</div>
+<a id="a1b09427cd37560eadb290ef898d3ea9e" name="a1b09427cd37560eadb290ef898d3ea9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b09427cd37560eadb290ef898d3ea9e">&#9670;&#160;</a></span>kls_get_maxRegions_KLS_BASIC()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int kls_get_maxRegions_KLS_BASIC </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calcs the max number of possible KLS_PUSH ops when using KLS_BASIC reglist alloc backend. </p>
+<dl class="section return"><dt>Returns</dt><dd>The max number of push ops possible, or -1 in case of error. </dd></dl>
 
 </div>
 </div>
@@ -1100,7 +1153,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void * kls_push_zero_named </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1130,10 +1183,10 @@ kls_new_traced_AR_KLS() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a Koliseo pointer, and ptrdiff_t values for size, align and count. </p>
-<p>Tries pushing the specified amount of memory to the Koliseo data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo at hand. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
     <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
     <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
     <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
@@ -1142,7 +1195,7 @@ kls_new_traced_AR_KLS() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the Koliseo. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
 
 </div>
 </div>
@@ -1155,7 +1208,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void * kls_push_zero_typed </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1190,10 +1243,10 @@ kls_new_traced_AR_KLS() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a Koliseo pointer, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count. </p>
-<p>Tries pushing the specified amount of memory to the Koliseo data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo at hand. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
     <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
     <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
     <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
@@ -1203,7 +1256,7 @@ kls_new_traced_AR_KLS() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the Koliseo. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
 
 </div>
 </div>
@@ -1255,7 +1308,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_append </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1281,7 +1334,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_cons </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1307,7 +1360,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_copy </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1328,7 +1381,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_delete </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1354,7 +1407,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_diff </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1456,7 +1509,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_insord </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1482,7 +1535,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_insord_p </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1508,7 +1561,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_intersect </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1614,7 +1667,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_mergeList </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1640,7 +1693,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_reverse </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1699,7 +1752,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname"><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> kls_rl_t_cons </td>
           <td>(</td>
-          <td class="paramtype">Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1742,7 +1795,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void * kls_temp_push_zero_named </td>
           <td>(</td>
-          <td class="paramtype">Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1772,10 +1825,10 @@ kls_new_traced_AR_KLS() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count. </p>
-<p>Tries pushing the specified amount of memory to the referred Koliseo data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_kls</td><td>The Koliseo_Temp at hand. </td></tr>
+    <tr><td class="paramname">t_kls</td><td>The <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> at hand. </td></tr>
     <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
     <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
     <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
@@ -1784,7 +1837,7 @@ kls_new_traced_AR_KLS() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the Koliseo. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
 
 </div>
 </div>
@@ -1797,7 +1850,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void * kls_temp_push_zero_typed </td>
           <td>(</td>
-          <td class="paramtype">Koliseo_Temp *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1832,10 +1885,10 @@ kls_new_traced_AR_KLS() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Takes a Koliseo_Temp, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count. </p>
-<p>Tries pushing the specified amount of memory to the referred Koliseo data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+<p>Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, a <a class="el" href="#aac5013719d2f05aa932ccf924db41e89" title="Represents a type index for Regions.">KLS_Region_Type</a> index, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. Uses the passed name and desc fields to initialise the allocated <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> fields. Notably, it zeroes the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t_kls</td><td>The Koliseo_Temp at hand. </td></tr>
+    <tr><td class="paramname">t_kls</td><td>The <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> at hand. </td></tr>
     <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
     <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
     <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
@@ -1845,7 +1898,7 @@ kls_new_traced_AR_KLS() </dd></dl>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the referred Koliseo. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
 
 </div>
 </div>
@@ -1858,17 +1911,17 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">ptrdiff_t kls_total_padding </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Calc memory used as padding for the passed Koliseo. </p>
+<p>Calc memory used as padding for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo to check total padding for. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to check total padding for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1890,7 +1943,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1900,7 +1953,7 @@ kls_new_traced_AR_KLS() </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">type</td><td>The integer corresponding to element-&gt;type </td></tr>
-    <tr><td class="paramname">kls</td><td>The Koliseo to check usage for. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to check usage for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1917,17 +1970,17 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void kls_usageReport </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Print usage report for passed Koliseo to stdout. </p>
+<p>Print usage report for passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to stdout. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="kls__region_8c.html#a97b2a46868a9874e6d67b59a556ee22a" title="Prints an usage report for the passed Koliseo to the passed file.">kls_usageReport_toFile()</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo to print info for. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to print info for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1943,7 +1996,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="memname">void kls_usageReport_toFile </td>
           <td>(</td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1953,11 +2006,11 @@ kls_new_traced_AR_KLS() </dd></dl>
       </table>
 </div><div class="memdoc">
 
-<p>Prints an usage report for the passed Koliseo to the passed file. </p>
+<p>Prints an usage report for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to the passed file. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="kls__region_8c.html#ada4540ede2edda81d2b1ef56acb92319" title="Returns the ratio of memory used by the passed KLS_Region relative to the passed Koliseo as a double.">kls_usageShare()</a> </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">kls</td><td>The Koliseo to check. </td></tr>
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> to check. </td></tr>
     <tr><td class="paramname">fp</td><td>The file pointer to print to. </td></tr>
   </table>
   </dd>
@@ -1979,7 +2032,7 @@ kls_new_traced_AR_KLS() </dd></dl>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Koliseo *</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em></em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">

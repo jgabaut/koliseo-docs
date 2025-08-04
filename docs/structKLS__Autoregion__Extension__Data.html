@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.2</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.4</span>
    </div>
   </td>
  </tr>
@@ -98,13 +98,13 @@ $(function(){initNavTree('structKLS__Autoregion__Extension__Data.html','',''); }
 Data Fields</h2></td></tr>
 <tr class="memitem:a94c79fc4b5b49451f93bc0f45930aebc" id="r_a94c79fc4b5b49451f93bc0f45930aebc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kls__region_8h.html#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a94c79fc4b5b49451f93bc0f45930aebc">regs</a></td></tr>
 <tr class="memdesc:a94c79fc4b5b49451f93bc0f45930aebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of allocated Regions.  <br /></td></tr>
-<tr class="memitem:a5fa8a62ea53ecaeea7f85e858763c439" id="r_a5fa8a62ea53ecaeea7f85e858763c439"><td class="memItemLeft" align="right" valign="top">struct Koliseo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa8a62ea53ecaeea7f85e858763c439">reglist_kls</a></td></tr>
+<tr class="memitem:a5fa8a62ea53ecaeea7f85e858763c439" id="r_a5fa8a62ea53ecaeea7f85e858763c439"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a5fa8a62ea53ecaeea7f85e858763c439">reglist_kls</a></td></tr>
 <tr class="memdesc:a5fa8a62ea53ecaeea7f85e858763c439"><td class="mdescLeft">&#160;</td><td class="mdescRight">When conf.kls_reglist_alloc_backend is KLS_REGLIST_ALLOC_KLS_BASIC, points to the backing kls for regs list.  <br /></td></tr>
 <tr class="memitem:a6e3af8add791778319db0541c56c1877" id="r_a6e3af8add791778319db0541c56c1877"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6e3af8add791778319db0541c56c1877">max_regions_kls_alloc_basic</a></td></tr>
 <tr class="memdesc:a6e3af8add791778319db0541c56c1877"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains maximum number of allocatable <a class="el" href="structKLS__Region.html" title="Represents an allocated memory region in a Koliseo.">KLS_Region</a> when using KLS_REGLIST_ALLOC_KLS_BASIC.  <br /></td></tr>
 <tr class="memitem:af36294975140cdc193b08ac09f0d5b2f" id="r_af36294975140cdc193b08ac09f0d5b2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="kls__region_8h.html#a5a909e4a4d61575576353e6c55f14ad4">KLS_Region_List</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af36294975140cdc193b08ac09f0d5b2f">t_regs</a></td></tr>
-<tr class="memdesc:af36294975140cdc193b08ac09f0d5b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of allocated Regions for a Koliseo_Temp instance.  <br /></td></tr>
-<tr class="memitem:a88334f35663f054994730ebb857894a6" id="r_a88334f35663f054994730ebb857894a6"><td class="memItemLeft" align="right" valign="top">struct Koliseo *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88334f35663f054994730ebb857894a6">t_reglist_kls</a></td></tr>
+<tr class="memdesc:af36294975140cdc193b08ac09f0d5b2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of allocated Regions for a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> instance.  <br /></td></tr>
+<tr class="memitem:a88334f35663f054994730ebb857894a6" id="r_a88334f35663f054994730ebb857894a6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a88334f35663f054994730ebb857894a6">t_reglist_kls</a></td></tr>
 <tr class="memdesc:a88334f35663f054994730ebb857894a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">When conf.kls_reglist_alloc_backend is KLS_REGLIST_ALLOC_KLS_BASIC, points to the backing kls for t_regs list.  <br /></td></tr>
 <tr class="memitem:af951277247e10202888152070621201d" id="r_af951277247e10202888152070621201d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKLS__Autoregion__Extension__Conf.html">KLS_Autoregion_Extension_Conf</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af951277247e10202888152070621201d">conf</a></td></tr>
 <tr class="memdesc:af951277247e10202888152070621201d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains config for autoregion extension.  <br /></td></tr>
@@ -149,7 +149,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct Koliseo* KLS_Autoregion_Extension_Data::reglist_kls</td>
+          <td class="memname">struct <a class="el" href="structKoliseo.html">Koliseo</a>* KLS_Autoregion_Extension_Data::reglist_kls</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -181,7 +181,7 @@ Data Fields</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">struct Koliseo* KLS_Autoregion_Extension_Data::t_reglist_kls</td>
+          <td class="memname">struct <a class="el" href="structKoliseo.html">Koliseo</a>* KLS_Autoregion_Extension_Data::t_reglist_kls</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -202,7 +202,7 @@ Data Fields</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>List of allocated Regions for a Koliseo_Temp instance. </p>
+<p>List of allocated Regions for a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> instance. </p>
 
 </div>
 </div>

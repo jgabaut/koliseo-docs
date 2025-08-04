@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['t_5freglist_5fkls_0',['t_reglist_kls',['../structKLS__Autoregion__Extension__Data.html#a88334f35663f054994730ebb857894a6',1,'KLS_Autoregion_Extension_Data']]],
-  ['t_5fregs_1',['t_regs',['../structKLS__Autoregion__Extension__Data.html#af36294975140cdc193b08ac09f0d5b2f',1,'KLS_Autoregion_Extension_Data']]],
-  ['tkls_5freglist_5falloc_5fbackend_2',['tkls_reglist_alloc_backend',['../structKLS__Autoregion__Extension__Conf.html#a6de2a5cb387d9704e943fe832db9cef6',1,'KLS_Autoregion_Extension_Conf']]],
-  ['tkls_5freglist_5fkls_5fsize_3',['tkls_reglist_kls_size',['../structKLS__Autoregion__Extension__Conf.html#a292f3ae979d9083a885401e73064a799',1,'KLS_Autoregion_Extension_Conf']]],
-  ['type_4',['type',['../structKLS__Region.html#a020f05886982eb1d8d3a6636b6968bb3',1,'KLS_Region']]]
+  ['padding_0',['padding',['../structKLS__Region.html#a9241799b6d5628dbec959750ab387611',1,'KLS_Region']]],
+  ['prev_5foffset_1',['prev_offset',['../structKoliseo.html#a377494ae503e003889b007600ab191ae',1,'Koliseo::prev_offset'],['../structKoliseo__Temp.html#a6949364745f10e27554841a156fa0292',1,'Koliseo_Temp::prev_offset']]],
+  ['ptrdiff_5fmax_5fhandler_2',['PTRDIFF_MAX_handler',['../structKLS__Err__Handlers.html#aff895d1611a55f42c3211a27180c49a8',1,'KLS_Err_Handlers']]]
 ];

@@ -38,13 +38,14 @@ var NAVTREE =
       [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md11", null ],
       [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md12", null ]
     ] ],
-    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md13", null ],
-    [ "Prerequisites <a class=\"anchor\" id=\"prerequisites\"></a>", "index.html#autotoc_md14", null ],
-    [ "Configuration <a class=\"anchor\" id=\"config\"></a>", "index.html#autotoc_md15", null ],
-    [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md16", null ],
-    [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md17", null ],
-    [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md18", null ],
-    [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md19", null ],
+    [ "Extensions <a class=\"anchor\" id=\"extensions\"></a>", "index.html#autotoc_md13", null ],
+    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md14", null ],
+    [ "Prerequisites <a class=\"anchor\" id=\"prerequisites\"></a>", "index.html#autotoc_md15", null ],
+    [ "Configuration <a class=\"anchor\" id=\"config\"></a>", "index.html#autotoc_md16", null ],
+    [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md17", null ],
+    [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md18", null ],
+    [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md19", null ],
+    [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md20", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -57,7 +58,7 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "Globals", "globals.html", [
         [ "All", "globals.html", "globals_dup" ],
-        [ "Functions", "globals_func.html", null ],
+        [ "Functions", "globals_func.html", "globals_func" ],
         [ "Variables", "globals_vars.html", null ],
         [ "Typedefs", "globals_type.html", null ],
         [ "Enumerations", "globals_enum.html", null ],
@@ -71,7 +72,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c"
+"koliseo_8c.html#aa5d48e2f5fc5787cf604bf2d59f44b71"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
