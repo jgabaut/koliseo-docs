@@ -34,7 +34,7 @@ var NAVTREE =
       [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md7", null ],
       [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md8", null ],
       [ "Gulp <a class=\"anchor\" id=\"extra_gulp\"></a>", "index.html#autotoc_md9", null ],
-      [ "List template <a class=\"anchor\" id=\"list_template\"></a>", "index.html#autotoc_md10", null ],
+      [ "List templates <a class=\"anchor\" id=\"list_template\"></a>", "index.html#autotoc_md10", null ],
       [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md11", null ],
       [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md12", null ]
     ] ],
@@ -72,7 +72,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#aa5d48e2f5fc5787cf604bf2d59f44b71"
+"koliseo_8c.html#aa4214a88b11d2901431c8c03bcbcb588"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

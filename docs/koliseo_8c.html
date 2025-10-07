@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.4</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.6</span>
    </div>
   </td>
  </tr>
@@ -165,6 +165,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:ae75ede9ad596acf100979c42db0cde68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:a386c94200e9eed4f235c2bc41eb273fc" id="r_a386c94200e9eed4f235c2bc41eb273fc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386c94200e9eed4f235c2bc41eb273fc">kls_temp_push_zero_ext</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</td></tr>
 <tr class="memdesc:a386c94200e9eed4f235c2bc41eb273fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:a414c57f93eb649754d6fd334358adaba" id="r_a414c57f93eb649754d6fd334358adaba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414c57f93eb649754d6fd334358adaba">kls_repush</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</td></tr>
 <tr class="memitem:ad6c1afa0e4a30031133b77ee30d3e408" id="r_ad6c1afa0e4a30031133b77ee30d3e408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad6c1afa0e4a30031133b77ee30d3e408">print_kls_2file</a> (FILE *fp, const <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memdesc:ad6c1afa0e4a30031133b77ee30d3e408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, to the passed FILE pointer.  <br /></td></tr>
 <tr class="memitem:a3b09ff36eeed12b9e4d5ddfc3d810d71" id="r_a3b09ff36eeed12b9e4d5ddfc3d810d71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a> (const <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
@@ -1764,6 +1765,47 @@ kls_set_conf() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, or NULL for errors. </dd></dl>
+
+</div>
+</div>
+<a id="a414c57f93eb649754d6fd334358adaba" name="a414c57f93eb649754d6fd334358adaba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a414c57f93eb649754d6fd334358adaba">&#9670;&#160;</a></span>kls_repush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * kls_repush </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>old</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>align</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>old_count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>new_count</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
