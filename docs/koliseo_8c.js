@@ -45,6 +45,7 @@ var koliseo_8c =
     [ "kls_temp_pop", "koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b", null ],
     [ "kls_temp_pop_AR", "koliseo_8c.html#a4afabc2738f61fd3e733cfb2f6bf2153", null ],
     [ "kls_temp_push_zero_ext", "koliseo_8c.html#a386c94200e9eed4f235c2bc41eb273fc", null ],
+    [ "kls_temp_repush", "koliseo_8c.html#a15c5622c8e9a2d54791068eea144725e", null ],
     [ "kls_temp_start", "koliseo_8c.html#a0f917da26d318e5702dbdc550c01fa1c", null ],
     [ "KLS_ZEROCOUNT_default_handler__", "koliseo_8c.html#ac7012c8f14d43c3ca4de2c09a4ca37ea", null ],
     [ "print_dbg_kls", "koliseo_8c.html#a3b09ff36eeed12b9e4d5ddfc3d810d71", null ],
