@@ -72,7 +72,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#a9e1e7f645145c0d4bd6af97f60e87234"
+"koliseo_8c.html#a881ba1e5467ac805338ba44f0652bd73"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';
