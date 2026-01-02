@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.8</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.9</span>
    </div>
   </td>
  </tr>
@@ -163,10 +163,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:a9e1e7f645145c0d4bd6af97f60e87234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:ae75ede9ad596acf100979c42db0cde68" id="r_ae75ede9ad596acf100979c42db0cde68"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae75ede9ad596acf100979c42db0cde68">kls_push_zero_ext</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</td></tr>
 <tr class="memdesc:ae75ede9ad596acf100979c42db0cde68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:a30ad3b8b9e5303d02af5df80a59cd859" id="r_a30ad3b8b9e5303d02af5df80a59cd859"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a30ad3b8b9e5303d02af5df80a59cd859">kls_vsprintf</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, const char *fmt, va_list args)</td></tr>
 <tr class="memitem:aae51d966cc4fdb9a75c6f8db6d7b21d7" id="r_aae51d966cc4fdb9a75c6f8db6d7b21d7"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aae51d966cc4fdb9a75c6f8db6d7b21d7">kls_sprintf</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, const char *fmt,...)</td></tr>
 <tr class="memdesc:aae51d966cc4fdb9a75c6f8db6d7b21d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and a format cstring, plus varargs.  <br /></td></tr>
 <tr class="memitem:a386c94200e9eed4f235c2bc41eb273fc" id="r_a386c94200e9eed4f235c2bc41eb273fc"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a386c94200e9eed4f235c2bc41eb273fc">kls_temp_push_zero_ext</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</td></tr>
 <tr class="memdesc:a386c94200e9eed4f235c2bc41eb273fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:a47c919ad679eb52ac3e8f2b59ec7b84a" id="r_a47c919ad679eb52ac3e8f2b59ec7b84a"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a47c919ad679eb52ac3e8f2b59ec7b84a">kls_temp_vsprintf</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *kls_t, const char *fmt, va_list args)</td></tr>
 <tr class="memitem:a7b85f25c8872c261f66559b24c7de557" id="r_a7b85f25c8872c261f66559b24c7de557"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b85f25c8872c261f66559b24c7de557">kls_temp_sprintf</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *kls_t, const char *fmt,...)</td></tr>
 <tr class="memdesc:a7b85f25c8872c261f66559b24c7de557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer, and a format cstring, plus varargs.  <br /></td></tr>
 <tr class="memitem:a414c57f93eb649754d6fd334358adaba" id="r_a414c57f93eb649754d6fd334358adaba"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a414c57f93eb649754d6fd334358adaba">kls_repush</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</td></tr>
@@ -2249,6 +2251,58 @@ kls_set_conf() </dd></dl>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> struct. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> </dd></dl>
+
+</div>
+</div>
+<a id="a47c919ad679eb52ac3e8f2b59ec7b84a" name="a47c919ad679eb52ac3e8f2b59ec7b84a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47c919ad679eb52ac3e8f2b59ec7b84a">&#9670;&#160;</a></span>kls_temp_vsprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * kls_temp_vsprintf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>kls_t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a30ad3b8b9e5303d02af5df80a59cd859" name="a30ad3b8b9e5303d02af5df80a59cd859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30ad3b8b9e5303d02af5df80a59cd859">&#9670;&#160;</a></span>kls_vsprintf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char * kls_vsprintf </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>fmt</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">va_list</td>          <td class="paramname"><span class="paramname"><em>args</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

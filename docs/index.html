@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.8</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.9</span>
    </div>
   </td>
  </tr>
@@ -150,11 +150,11 @@ Basic example <a class="anchor" id="basic_example"></a></h1>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
 <div class="ttc" id="akoliseo_8c_html_a096fe71a94eba899ef11a62c92270f55"><div class="ttname"><a href="koliseo_8c.html#a096fe71a94eba899ef11a62c92270f55">kls_new</a></div><div class="ttdeci">Koliseo * kls_new(ptrdiff_t size)</div><div class="ttdoc">Takes a ptrdiff_t size.</div><div class="ttdef"><b>Definition</b> koliseo.c:455</div></div>
-<div class="ttc" id="akoliseo_8c_html_a3b09ff36eeed12b9e4d5ddfc3d810d71"><div class="ttname"><a href="koliseo_8c.html#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(const Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1874</div></div>
-<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:1981</div></div>
-<div class="ttc" id="akoliseo_8h_html_a7d7ef25499c96648f9a594e1b8b560d5"><div class="ttname"><a href="koliseo_8h.html#a7d7ef25499c96648f9a594e1b8b560d5">KLS_PUSH</a></div><div class="ttdeci">#define KLS_PUSH(kls, type)</div><div class="ttdoc">Macro used to request memory from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:546</div></div>
+<div class="ttc" id="akoliseo_8c_html_a3b09ff36eeed12b9e4d5ddfc3d810d71"><div class="ttname"><a href="koliseo_8c.html#a3b09ff36eeed12b9e4d5ddfc3d810d71">print_dbg_kls</a></div><div class="ttdeci">void print_dbg_kls(const Koliseo *kls)</div><div class="ttdoc">Prints header fields from the passed Koliseo pointer, to stderr.</div><div class="ttdef"><b>Definition</b> koliseo.c:1903</div></div>
+<div class="ttc" id="akoliseo_8c_html_a5988953140e4680e13441eb99900cba4"><div class="ttname"><a href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a></div><div class="ttdeci">void kls_free(Koliseo *kls)</div><div class="ttdoc">Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.c:2010</div></div>
+<div class="ttc" id="akoliseo_8h_html_a7d7ef25499c96648f9a594e1b8b560d5"><div class="ttname"><a href="koliseo_8h.html#a7d7ef25499c96648f9a594e1b8b560d5">KLS_PUSH</a></div><div class="ttdeci">#define KLS_PUSH(kls, type)</div><div class="ttdoc">Macro used to request memory from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:555</div></div>
 <div class="ttc" id="akoliseo_8h_html_a8884f0e03be042b23baf65a9f75d3e6e"><div class="ttname"><a href="koliseo_8h.html#a8884f0e03be042b23baf65a9f75d3e6e">KLS_DEFAULT_SIZE</a></div><div class="ttdeci">#define KLS_DEFAULT_SIZE</div><div class="ttdoc">Represents a simple default size for demo purposes.</div><div class="ttdef"><b>Definition</b> koliseo.h:124</div></div>
-<div class="ttc" id="astructKoliseo_html"><div class="ttname"><a href="structKoliseo.html">Koliseo</a></div><div class="ttdoc">Represents the initialised arena allocator struct.</div><div class="ttdef"><b>Definition</b> koliseo.h:338</div></div>
+<div class="ttc" id="astructKoliseo_html"><div class="ttname"><a href="structKoliseo.html">Koliseo</a></div><div class="ttdoc">Represents the initialised arena allocator struct.</div><div class="ttdef"><b>Definition</b> koliseo.h:340</div></div>
 </div><!-- fragment --><p>After including the <span class="tt"><a class="el" href="koliseo_8h.html">koliseo.h</a></span> header:</p>
 <ul>
 <li>To initialise a default arena: <div class="fragment"><div class="line"><a class="code hl_struct" href="structKoliseo.html">Koliseo</a>* <a class="code hl_function" href="koliseo_8c.html#a096fe71a94eba899ef11a62c92270f55">kls_new</a>(<span class="keywordtype">size_t</span>)</div>
@@ -162,10 +162,10 @@ Basic example <a class="anchor" id="basic_example"></a></h1>
 <li>To request memory for a specific type: <div class="fragment"><div class="line">Type* <a class="code hl_define" href="koliseo_8h.html#a7d7ef25499c96648f9a594e1b8b560d5">KLS_PUSH</a>(<a class="code hl_struct" href="structKoliseo.html">Koliseo</a>* kls, Type)</div>
 </div><!-- fragment --></li>
 <li>For C strings, you can use: <div class="fragment"><div class="line"><span class="keywordtype">char</span>* <a class="code hl_define" href="koliseo_8h.html#a354ee0b96ec29940ab18b98482b25ac9">KLS_PUSH_STR</a>(<a class="code hl_struct" href="structKoliseo.html">Koliseo</a>* kls, <span class="keywordtype">char</span>* cstring)</div>
-<div class="ttc" id="akoliseo_8h_html_a354ee0b96ec29940ab18b98482b25ac9"><div class="ttname"><a href="koliseo_8h.html#a354ee0b96ec29940ab18b98482b25ac9">KLS_PUSH_STR</a></div><div class="ttdeci">#define KLS_PUSH_STR(kls, cstr)</div><div class="ttdoc">Macro to request memory for a C string from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:511</div></div>
+<div class="ttc" id="akoliseo_8h_html_a354ee0b96ec29940ab18b98482b25ac9"><div class="ttname"><a href="koliseo_8h.html#a354ee0b96ec29940ab18b98482b25ac9">KLS_PUSH_STR</a></div><div class="ttdeci">#define KLS_PUSH_STR(kls, cstr)</div><div class="ttdoc">Macro to request memory for a C string from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:520</div></div>
 </div><!-- fragment --></li>
 <li>Also, a couple unsafe utility macros (not recommended to use, for now): <div class="fragment"><div class="line"><span class="keywordtype">char</span>* <a class="code hl_define" href="koliseo_8h.html#abcd62400e8e9bd2a8fdea1298b820936">KLS_STRDUP</a>(<a class="code hl_struct" href="structKoliseo.html">Koliseo</a>* kls, <span class="keywordtype">char</span>* source, <span class="keywordtype">char</span>* dest)</div>
-<div class="ttc" id="akoliseo_8h_html_abcd62400e8e9bd2a8fdea1298b820936"><div class="ttname"><a href="koliseo_8h.html#abcd62400e8e9bd2a8fdea1298b820936">KLS_STRDUP</a></div><div class="ttdeci">#define KLS_STRDUP(kls, source)</div><div class="ttdef"><b>Definition</b> koliseo.h:731</div></div>
+<div class="ttc" id="akoliseo_8h_html_abcd62400e8e9bd2a8fdea1298b820936"><div class="ttname"><a href="koliseo_8h.html#abcd62400e8e9bd2a8fdea1298b820936">KLS_STRDUP</a></div><div class="ttdeci">#define KLS_STRDUP(kls, source)</div><div class="ttdef"><b>Definition</b> koliseo.h:747</div></div>
 </div><!-- fragment --></li>
 <li>To free the arena: <div class="fragment"><div class="line"><span class="keywordtype">void</span> <a class="code hl_function" href="koliseo_8c.html#a5988953140e4680e13441eb99900cba4">kls_free</a>(<a class="code hl_struct" href="structKoliseo.html">Koliseo</a>* kls)</div>
 </div><!-- fragment --></li>

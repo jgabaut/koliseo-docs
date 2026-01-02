@@ -131,6 +131,8 @@ var koliseo_8h =
     [ "kls_temp_repush", "koliseo_8h.html#a15c5622c8e9a2d54791068eea144725e", null ],
     [ "kls_temp_sprintf", "koliseo_8h.html#a7b85f25c8872c261f66559b24c7de557", null ],
     [ "kls_temp_start", "koliseo_8h.html#a0f917da26d318e5702dbdc550c01fa1c", null ],
+    [ "kls_temp_vsprintf", "koliseo_8h.html#a47c919ad679eb52ac3e8f2b59ec7b84a", null ],
+    [ "kls_vsprintf", "koliseo_8h.html#a30ad3b8b9e5303d02af5df80a59cd859", null ],
     [ "KLS_ZEROCOUNT_default_handler__", "koliseo_8h.html#a86f211fbaf77b0d96047dae1cbcb687f", null ],
     [ "print_dbg_kls", "koliseo_8h.html#a3b09ff36eeed12b9e4d5ddfc3d810d71", null ],
     [ "print_dbg_temp_kls", "koliseo_8h.html#a1457edb67789ee4dcb6be6e191b77592", null ],
