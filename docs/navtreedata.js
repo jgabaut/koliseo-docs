@@ -29,20 +29,20 @@ var NAVTREE =
     [ "Table of Contents", "index.html#autotoc_md2", null ],
     [ "What is this thing? <a class=\"anchor\" id=\"witt\"></a>", "index.html#autotoc_md3", null ],
     [ "Basic example <a class=\"anchor\" id=\"basic_example\"></a>", "index.html#autotoc_md4", null ],
-    [ "Extra features <a class=\"anchor\" id=\"extra_features\"></a>", "index.html#autotoc_md5", [
-      [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:", "index.html#autotoc_md6", null ],
-      [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md7", null ],
-      [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md8", null ],
-      [ "Gulp <a class=\"anchor\" id=\"extra_gulp\"></a>", "index.html#autotoc_md9", null ],
-      [ "List templates <a class=\"anchor\" id=\"list_template\"></a>", "index.html#autotoc_md10", null ],
-      [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md11", null ],
-      [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md12", null ]
+    [ "Prerequisites <a class=\"anchor\" id=\"prerequisites\"></a>", "index.html#autotoc_md5", null ],
+    [ "Configuration <a class=\"anchor\" id=\"config\"></a>", "index.html#autotoc_md6", null ],
+    [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md7", null ],
+    [ "Extra features <a class=\"anchor\" id=\"extra_features\"></a>", "index.html#autotoc_md8", [
+      [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:", "index.html#autotoc_md9", null ],
+      [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md10", null ],
+      [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md11", null ],
+      [ "Gulp <a class=\"anchor\" id=\"extra_gulp\"></a>", "index.html#autotoc_md12", null ],
+      [ "Templates <a class=\"anchor\" id=\"templates\"></a>", "index.html#autotoc_md13", null ],
+      [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md14", null ],
+      [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md15", null ]
     ] ],
-    [ "Extensions <a class=\"anchor\" id=\"extensions\"></a>", "index.html#autotoc_md13", null ],
-    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md14", null ],
-    [ "Prerequisites <a class=\"anchor\" id=\"prerequisites\"></a>", "index.html#autotoc_md15", null ],
-    [ "Configuration <a class=\"anchor\" id=\"config\"></a>", "index.html#autotoc_md16", null ],
-    [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md17", null ],
+    [ "Extensions <a class=\"anchor\" id=\"extensions\"></a>", "index.html#autotoc_md16", null ],
+    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md17", null ],
     [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md18", null ],
     [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md19", null ],
     [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md20", null ],
@@ -72,7 +72,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#a808a13ec7b75f9ebfda2a15547139639"
+"koliseo_8c.html#a6f5584944cbee36d9f9e83b868731fa6",
+"structKoliseo.html#a8093bad2ba8a009e8dd1d482dfad1228"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

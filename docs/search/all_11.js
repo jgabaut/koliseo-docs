@@ -10,5 +10,5 @@ var searchData=
   ['on_5ftemp_5fstart_5fhandler_7',['on_temp_start_handler',['../structKLS__Hooks.html#a08188c0fca7f4c695149a3978bf4ec6d',1,'KLS_Hooks']]],
   ['onegb_5fdec_5fint_8',['ONEGB_DEC_INT',['../kls__gulp_8h.html#a1c2710c7271de297b1d89e1ae230dba2',1,'kls_gulp.h']]],
   ['oom_5fhandler_9',['OOM_handler',['../structKLS__Err__Handlers.html#a1b05250e67790deb0a77516f8a308c05',1,'KLS_Err_Handlers']]],
-  ['own_20files_20read_20below_20for_20more_20info_20_3aconstruction_3a_10',[':construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:',['../index.html#autotoc_md6',1,'']]]
+  ['own_20files_20read_20below_20for_20more_20info_20_3aconstruction_3a_10',[':construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:',['../index.html#autotoc_md9',1,'']]]
 ];

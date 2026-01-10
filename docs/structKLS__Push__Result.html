@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.15.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>koliseo: KLS_Err_Handlers Struct Reference</title>
+<title>koliseo: KLS_Push_Result Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -62,7 +62,7 @@ $(function() {
   </div>
 </div>
 <script type="text/javascript">
-$(function(){initNavTree('structKLS__Err__Handlers.html','',''); });
+$(function(){initNavTree('structKLS__Push__Result.html','',''); });
 </script>
 <div id="container">
 <div id="doc-content">
@@ -88,73 +88,51 @@ $(function(){initNavTree('structKLS__Err__Handlers.html','',''); });
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">KLS_Err_Handlers Struct Reference</div></div>
+  <div class="headertitle"><div class="title">KLS_Push_Result Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Defines the handlers used for errors in push calls.  
+<p>Defines the result for <a class="el" href="koliseo_8c.html#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance()</a> and <a class="el" href="koliseo_8c.html#af5fe2bf91aca7a7ad2af2ec4eb7fbde6" title="Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.">kls__temp_advance()</a>.  
  <a href="#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="koliseo_8h_source.html">koliseo.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-attribs" class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Data Fields</h2></td></tr>
-<tr class="memitem:a1b05250e67790deb0a77516f8a308c05" id="r_a1b05250e67790deb0a77516f8a308c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="koliseo_8h.html#a25f11ad851555e8f7c871a31b194e4e2">KLS_OOM_Handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1b05250e67790deb0a77516f8a308c05">OOM_handler</a></td></tr>
-<tr class="memdesc:a1b05250e67790deb0a77516f8a308c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to handler for Out-Of-Memory errors in push calls.  <br /></td></tr>
-<tr class="memitem:aff895d1611a55f42c3211a27180c49a8" id="r_aff895d1611a55f42c3211a27180c49a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="koliseo_8h.html#ae655d14e3cd101e0c655ae1f28a80b14">KLS_PTRDIFF_MAX_Handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff895d1611a55f42c3211a27180c49a8">PTRDIFF_MAX_handler</a></td></tr>
-<tr class="memdesc:aff895d1611a55f42c3211a27180c49a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to handler for count &gt; (PTRDIFF_MAX / size) errors in push calls.  <br /></td></tr>
-<tr class="memitem:a231a3afc78403ad8f3928b1a271bfe0a" id="r_a231a3afc78403ad8f3928b1a271bfe0a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="koliseo_8h.html#a524a5affdd7a3eacec65599f7b03aec7">KLS_ZEROCOUNT_Handler</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a231a3afc78403ad8f3928b1a271bfe0a">ZEROCOUNT_handler</a></td></tr>
-<tr class="memdesc:a231a3afc78403ad8f3928b1a271bfe0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to handler for zero-count errors in push calls.  <br /></td></tr>
+<tr class="memitem:aff201bcb6ed5ac2b9fd64782d84cf6bb" id="r_aff201bcb6ed5ac2b9fd64782d84cf6bb"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aff201bcb6ed5ac2b9fd64782d84cf6bb">p</a></td></tr>
+<tr class="memitem:ac5ebab6e7907ea7d730b7fdc2404b2e5" id="r_ac5ebab6e7907ea7d730b7fdc2404b2e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="koliseo_8h.html#ac20af99725d098782ef15ed168c6ccae">KLS_Push_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac5ebab6e7907ea7d730b7fdc2404b2e5">error</a></td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Defines the handlers used for errors in push calls. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="structKLS__Conf.html" title="Defines flags for Koliseo.">KLS_Conf</a> </dd></dl>
+<div class="textblock"><p>Defines the result for <a class="el" href="koliseo_8c.html#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance()</a> and <a class="el" href="koliseo_8c.html#af5fe2bf91aca7a7ad2af2ec4eb7fbde6" title="Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.">kls__temp_advance()</a>. </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="koliseo_8c.html#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance</a> </dd>
+<dd>
+<a class="el" href="koliseo_8c.html#af5fe2bf91aca7a7ad2af2ec4eb7fbde6" title="Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.">kls__temp_advance</a> </dd></dl>
 </div><a name="doc-variable-members" id="doc-variable-members"></a><h2 id="header-doc-variable-members" class="groupheader">Field Documentation</h2>
-<a id="a1b05250e67790deb0a77516f8a308c05" name="a1b05250e67790deb0a77516f8a308c05"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b05250e67790deb0a77516f8a308c05">&#9670;&#160;</a></span>OOM_handler</h2>
+<a id="ac5ebab6e7907ea7d730b7fdc2404b2e5" name="ac5ebab6e7907ea7d730b7fdc2404b2e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5ebab6e7907ea7d730b7fdc2404b2e5">&#9670;&#160;</a></span>error</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="koliseo_8h.html#a25f11ad851555e8f7c871a31b194e4e2">KLS_OOM_Handler</a>* KLS_Err_Handlers::OOM_handler</td>
+          <td class="memname"><a class="el" href="koliseo_8h.html#ac20af99725d098782ef15ed168c6ccae">KLS_Push_Error</a> KLS_Push_Result::error</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Pointer to handler for Out-Of-Memory errors in push calls. </p>
-
 </div>
 </div>
-<a id="aff895d1611a55f42c3211a27180c49a8" name="aff895d1611a55f42c3211a27180c49a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff895d1611a55f42c3211a27180c49a8">&#9670;&#160;</a></span>PTRDIFF_MAX_handler</h2>
+<a id="aff201bcb6ed5ac2b9fd64782d84cf6bb" name="aff201bcb6ed5ac2b9fd64782d84cf6bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff201bcb6ed5ac2b9fd64782d84cf6bb">&#9670;&#160;</a></span>p</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="koliseo_8h.html#ae655d14e3cd101e0c655ae1f28a80b14">KLS_PTRDIFF_MAX_Handler</a>* KLS_Err_Handlers::PTRDIFF_MAX_handler</td>
+          <td class="memname">void* KLS_Push_Result::p</td>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>Pointer to handler for count &gt; (PTRDIFF_MAX / size) errors in push calls. </p>
-
-</div>
-</div>
-<a id="a231a3afc78403ad8f3928b1a271bfe0a" name="a231a3afc78403ad8f3928b1a271bfe0a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231a3afc78403ad8f3928b1a271bfe0a">&#9670;&#160;</a></span>ZEROCOUNT_handler</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="koliseo_8h.html#a524a5affdd7a3eacec65599f7b03aec7">KLS_ZEROCOUNT_Handler</a>* KLS_Err_Handlers::ZEROCOUNT_handler</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Pointer to handler for zero-count errors in push calls. </p>
 
 </div>
 </div>
@@ -174,7 +152,7 @@ Data Fields</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a href="structKLS__Err__Handlers.html">KLS_Err_Handlers</a></li>
+    <li class="navelem"><a href="structKLS__Push__Result.html">KLS_Push_Result</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.15.0 </li>
   </ul>
 </div>

@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.9</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.5.10</span>
    </div>
   </td>
  </tr>
@@ -95,6 +95,11 @@ $(function(){initNavTree('koliseo_8c.html','',''); });
 </div>
 <p><a href="koliseo_8c_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a975f74db62a78e96d2b06ffd04e37ff4" id="r_a975f74db62a78e96d2b06ffd04e37ff4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a975f74db62a78e96d2b06ffd04e37ff4">KLS_ASAN_POISON</a>(addr,  size)</td></tr>
+<tr class="memitem:a4cede351026a63d222c5255a7737c90b" id="r_a4cede351026a63d222c5255a7737c90b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4cede351026a63d222c5255a7737c90b">KLS_ASAN_UNPOISON</a>(addr,  size)</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a3e2a527e3824a8cc0538803937801e58" id="r_a3e2a527e3824a8cc0538803937801e58"><td class="memItemLeft" align="right" valign="top">const char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3e2a527e3824a8cc0538803937801e58">string_koliseo_version</a> (void)</td></tr>
@@ -115,6 +120,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:a366d819f41bc7fded6e931bc0c5405ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints enabled <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> features to stderr.  <br /></td></tr>
 <tr class="memitem:a48a4126159847cfed6aa6f00f1d0bfd7" id="r_a48a4126159847cfed6aa6f00f1d0bfd7"><td class="memItemLeft" align="right" valign="top">ptrdiff_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a48a4126159847cfed6aa6f00f1d0bfd7">kls_get_pos</a> (const <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memdesc:a48a4126159847cfed6aa6f00f1d0bfd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current offset (position of pointer bumper) for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
+<tr class="memitem:ac91e7950953601a13c71edb804ec0ad5" id="r_ac91e7950953601a13c71edb804ec0ad5"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac91e7950953601a13c71edb804ec0ad5">kls__handle_push_result</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, <a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a> r, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, ptrdiff_t padding, const char *caller_name)</td></tr>
 <tr class="memitem:a2a456ee57d68b9333e6385559370911d" id="r_a2a456ee57d68b9333e6385559370911d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2a456ee57d68b9333e6385559370911d">kls_log</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, const char *tag, const char *format,...)</td></tr>
 <tr class="memdesc:a2a456ee57d68b9333e6385559370911d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a message to the log_fp FILE field of the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, if its conf.kls_verbose_lvl is &gt;0.  <br /></td></tr>
 <tr class="memitem:ad36fc1f486b49edca693d2106d953123" id="r_ad36fc1f486b49edca693d2106d953123"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad36fc1f486b49edca693d2106d953123">kls_new_alloc_ext</a> (ptrdiff_t size, <a class="el" href="koliseo_8h.html#a9d2b4c211a17acf0572f9df955920c86">kls_alloc_func</a> alloc_func, <a class="el" href="koliseo_8h.html#a02a615938deb89587683c953efa82073">kls_free_func</a> free_func, <a class="el" href="structKLS__Hooks.html">KLS_Hooks</a> *ext_handlers, void **user, size_t ext_len)</td></tr>
@@ -155,8 +161,12 @@ Functions</h2></td></tr>
 <tr class="memdesc:aa5d48e2f5fc5787cf604bf2d59f44b71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a ptrdiff_t size and returns a pointer to the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
 <tr class="memitem:adf171307a95e1e0d0209f14d4e916347" id="r_adf171307a95e1e0d0209f14d4e916347"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKoliseo.html">Koliseo</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adf171307a95e1e0d0209f14d4e916347">kls_new_dbg_handled</a> (ptrdiff_t size, <a class="el" href="structKLS__Err__Handlers.html">KLS_Err_Handlers</a> err_handlers)</td></tr>
 <tr class="memdesc:adf171307a95e1e0d0209f14d4e916347"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a ptrdiff_t size and returns a pointer to the prepared <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
-<tr class="memitem:aaa1f2c3bd53dc2d8ecd936adefd3a8fc" id="r_aaa1f2c3bd53dc2d8ecd936adefd3a8fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaa1f2c3bd53dc2d8ecd936adefd3a8fc">kls__check_available_failable</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, const char *caller_name)</td></tr>
-<tr class="memdesc:aaa1f2c3bd53dc2d8ecd936adefd3a8fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, a ptrdiff_t size, align and count, and a caller name.  <br /></td></tr>
+<tr class="memitem:a474f85352749b0edaa7e180872786010" id="r_a474f85352749b0edaa7e180872786010"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a474f85352749b0edaa7e180872786010">kls__advance</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, ptrdiff_t *padding, const char *caller_name)</td></tr>
+<tr class="memdesc:a474f85352749b0edaa7e180872786010"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
+<tr class="memitem:ac71d2a234233063781d327f712da8677" id="r_ac71d2a234233063781d327f712da8677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="koliseo_8h.html#ac20af99725d098782ef15ed168c6ccae">KLS_Push_Error</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac71d2a234233063781d327f712da8677">kls__check_available_failable</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, const char *caller_name)</td></tr>
+<tr class="memdesc:ac71d2a234233063781d327f712da8677"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, a ptrdiff_t size, align and count, and a caller name.  <br /></td></tr>
+<tr class="memitem:af5fe2bf91aca7a7ad2af2ec4eb7fbde6" id="r_af5fe2bf91aca7a7ad2af2ec4eb7fbde6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af5fe2bf91aca7a7ad2af2ec4eb7fbde6">kls__temp_advance</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *kls_t, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, ptrdiff_t *padding, const char *caller_name)</td></tr>
+<tr class="memdesc:af5fe2bf91aca7a7ad2af2ec4eb7fbde6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:a8449dffe3bccd15c4c7c448051d38034" id="r_a8449dffe3bccd15c4c7c448051d38034"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8449dffe3bccd15c4c7c448051d38034">kls_push</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</td></tr>
 <tr class="memdesc:a8449dffe3bccd15c4c7c448051d38034"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:a9e1e7f645145c0d4bd6af97f60e87234" id="r_a9e1e7f645145c0d4bd6af97f60e87234"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9e1e7f645145c0d4bd6af97f60e87234">kls_push_zero</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</td></tr>
@@ -217,6 +227,51 @@ Variables</h2></td></tr>
 <tr class="memitem:a28ad19f817536f9181e6bab6ef13a657" id="r_a28ad19f817536f9181e6bab6ef13a657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structKLS__Stats.html">KLS_Stats</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a28ad19f817536f9181e6bab6ef13a657">KLS_STATS_DEFAULT</a></td></tr>
 <tr class="memdesc:a28ad19f817536f9181e6bab6ef13a657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="structKLS__Stats.html" title="Defines a stat struct for Koliseo.">KLS_Stats</a> values, used by <a class="el" href="koliseo_8h.html#a096fe71a94eba899ef11a62c92270f55" title="Takes a ptrdiff_t size.">kls_new()</a>.  <br /></td></tr>
 </table>
+<a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a975f74db62a78e96d2b06ffd04e37ff4" name="a975f74db62a78e96d2b06ffd04e37ff4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a975f74db62a78e96d2b06ffd04e37ff4">&#9670;&#160;</a></span>KLS_ASAN_POISON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KLS_ASAN_POISON</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>addr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">((void)0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a4cede351026a63d222c5255a7737c90b" name="a4cede351026a63d222c5255a7737c90b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cede351026a63d222c5255a7737c90b">&#9670;&#160;</a></span>KLS_ASAN_UNPOISON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define KLS_ASAN_UNPOISON</td>
+          <td>(</td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>addr</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"></td>          <td class="paramname"><span class="paramname"><em>size</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">((void)0)</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Function Documentation</h2>
 <a id="af8e6f60b7c222713a12158182c3c6eae" name="af8e6f60b7c222713a12158182c3c6eae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af8e6f60b7c222713a12158182c3c6eae">&#9670;&#160;</a></span>int_koliseo_version()</h2>
@@ -239,14 +294,68 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aaa1f2c3bd53dc2d8ecd936adefd3a8fc" name="aaa1f2c3bd53dc2d8ecd936adefd3a8fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa1f2c3bd53dc2d8ecd936adefd3a8fc">&#9670;&#160;</a></span>kls__check_available_failable()</h2>
+<a id="a474f85352749b0edaa7e180872786010" name="a474f85352749b0edaa7e180872786010"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a474f85352749b0edaa7e180872786010">&#9670;&#160;</a></span>kls__advance()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int kls__check_available_failable </td>
+          <td class="memname"><a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a> kls__advance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>align</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t *</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>caller_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. It sets the passed padding pointer to the amount of padding used in the advancement. Notably, it does NOT zero the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
+    <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
+    <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
+    <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
+    <tr><td class="paramname">padding</td><td>The pointer used to store amount of padding used in the advancement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, or NULL for errors. </dd></dl>
+
+</div>
+</div>
+<a id="ac71d2a234233063781d327f712da8677" name="ac71d2a234233063781d327f712da8677"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac71d2a234233063781d327f712da8677">&#9670;&#160;</a></span>kls__check_available_failable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="koliseo_8h.html#ac20af99725d098782ef15ed168c6ccae">KLS_Push_Error</a> kls__check_available_failable </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
         </tr>
@@ -286,6 +395,106 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>0 for success, other values for errors. May exit of some errors without a custom handler. </dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac91e7950953601a13c71edb804ec0ad5" name="ac91e7950953601a13c71edb804ec0ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac91e7950953601a13c71edb804ec0ad5">&#9670;&#160;</a></span>kls__handle_push_result()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void * kls__handle_push_result </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a></td>          <td class="paramname"><span class="paramname"><em>r</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>align</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>caller_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af5fe2bf91aca7a7ad2af2ec4eb7fbde6" name="af5fe2bf91aca7a7ad2af2ec4eb7fbde6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5fe2bf91aca7a7ad2af2ec4eb7fbde6">&#9670;&#160;</a></span>kls__temp_advance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structKLS__Push__Result.html">KLS_Push_Result</a> kls__temp_advance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>kls_t</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>align</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>count</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t *</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>caller_name</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and ptrdiff_t values for size, align and count. </p>
+<p>Tries pushing the specified amount of memory to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> data field, or goes to exit() if the operation fails. It sets the passed padding pointer to the amount of padding used in the advancement. Notably, it does NOT zero the memory region. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">t_kls</td><td>The <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> at hand. </td></tr>
+    <tr><td class="paramname">size</td><td>The size for data to push. </td></tr>
+    <tr><td class="paramname">align</td><td>The alignment for data to push. </td></tr>
+    <tr><td class="paramname">count</td><td>The multiplicative quantity to scale data size to push for. </td></tr>
+    <tr><td class="paramname">padding</td><td>The pointer used to store amount of padding used in the advancement. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
 
 </div>
 </div>
@@ -1688,6 +1897,7 @@ kls_set_conf() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, or NULL for errors. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance</a> </dd></dl>
 
 </div>
 </div>
@@ -1731,6 +1941,7 @@ kls_set_conf() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, or NULL for errors. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance</a> </dd></dl>
 
 </div>
 </div>
@@ -1774,6 +1985,9 @@ kls_set_conf() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, or NULL for errors. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#a474f85352749b0edaa7e180872786010" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls__advance</a> </dd>
+<dd>
+<a class="el" href="structKLS__Hooks.html">KLS_Hooks</a> </dd></dl>
 
 </div>
 </div>
@@ -2133,6 +2347,7 @@ kls_set_conf() </dd></dl>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A void pointer to the start of memory just pushed to the referred <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="#af5fe2bf91aca7a7ad2af2ec4eb7fbde6" title="Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.">kls__temp_advance</a> </dd></dl>
 
 </div>
 </div>
@@ -2513,9 +2728,9 @@ kls_set_conf() </dd></dl>
 <div class="line"> </div>
 <div class="line">    },</div>
 <div class="line">}</div>
-<div class="ttc" id="akoliseo_8c_html_abd110b186f68f52a15384cd4b10b0adc"><div class="ttname"><a href="#abd110b186f68f52a15384cd4b10b0adc">KLS_PTRDIFF_MAX_default_handler__</a></div><div class="ttdeci">void KLS_PTRDIFF_MAX_default_handler__(struct Koliseo *kls, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used by default when no handler is passed.</div><div class="ttdef"><b>Definition</b> koliseo.c:103</div></div>
-<div class="ttc" id="akoliseo_8c_html_ac7012c8f14d43c3ca4de2c09a4ca37ea"><div class="ttname"><a href="#ac7012c8f14d43c3ca4de2c09a4ca37ea">KLS_ZEROCOUNT_default_handler__</a></div><div class="ttdeci">void KLS_ZEROCOUNT_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size)</div><div class="ttdoc">Used internally for handling zero-count in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:145</div></div>
-<div class="ttc" id="akoliseo_8c_html_aefc10928ac67644e6748753c7107b3f5"><div class="ttname"><a href="#aefc10928ac67644e6748753c7107b3f5">KLS_OOM_default_handler__</a></div><div class="ttdeci">void KLS_OOM_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used internally for handling Out-Of-Memory in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:83</div></div>
+<div class="ttc" id="akoliseo_8c_html_abd110b186f68f52a15384cd4b10b0adc"><div class="ttname"><a href="#abd110b186f68f52a15384cd4b10b0adc">KLS_PTRDIFF_MAX_default_handler__</a></div><div class="ttdeci">void KLS_PTRDIFF_MAX_default_handler__(struct Koliseo *kls, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used by default when no handler is passed.</div><div class="ttdef"><b>Definition</b> koliseo.c:112</div></div>
+<div class="ttc" id="akoliseo_8c_html_ac7012c8f14d43c3ca4de2c09a4ca37ea"><div class="ttname"><a href="#ac7012c8f14d43c3ca4de2c09a4ca37ea">KLS_ZEROCOUNT_default_handler__</a></div><div class="ttdeci">void KLS_ZEROCOUNT_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size)</div><div class="ttdoc">Used internally for handling zero-count in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:154</div></div>
+<div class="ttc" id="akoliseo_8c_html_aefc10928ac67644e6748753c7107b3f5"><div class="ttname"><a href="#aefc10928ac67644e6748753c7107b3f5">KLS_OOM_default_handler__</a></div><div class="ttdeci">void KLS_OOM_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used internally for handling Out-Of-Memory in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:92</div></div>
 </div><!-- fragment -->
 <p>Config used by any new <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> by default. </p>
 <p>Default <a class="el" href="structKLS__Conf.html" title="Defines flags for Koliseo.">KLS_Conf</a> used by <a class="el" href="koliseo_8h.html#a096fe71a94eba899ef11a62c92270f55" title="Takes a ptrdiff_t size.">kls_new()</a>. </p>

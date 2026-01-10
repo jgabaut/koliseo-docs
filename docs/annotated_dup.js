@@ -6,6 +6,7 @@ var annotated_dup =
     [ "KLS_Err_Handlers", "structKLS__Err__Handlers.html", "structKLS__Err__Handlers" ],
     [ "KLS_Hooks", "structKLS__Hooks.html", "structKLS__Hooks" ],
     [ "KLS_list_region", "structKLS__list__region.html", "structKLS__list__region" ],
+    [ "KLS_Push_Result", "structKLS__Push__Result.html", "structKLS__Push__Result" ],
     [ "KLS_Region", "structKLS__Region.html", "structKLS__Region" ],
     [ "KLS_Stats", "structKLS__Stats.html", "structKLS__Stats" ],
     [ "Koliseo", "structKoliseo.html", "structKoliseo" ],

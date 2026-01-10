@@ -1,7 +1,12 @@
 var koliseo_8c =
 [
+    [ "KLS_ASAN_POISON", "koliseo_8c.html#a975f74db62a78e96d2b06ffd04e37ff4", null ],
+    [ "KLS_ASAN_UNPOISON", "koliseo_8c.html#a4cede351026a63d222c5255a7737c90b", null ],
     [ "int_koliseo_version", "koliseo_8c.html#af8e6f60b7c222713a12158182c3c6eae", null ],
-    [ "kls__check_available_failable", "koliseo_8c.html#aaa1f2c3bd53dc2d8ecd936adefd3a8fc", null ],
+    [ "kls__advance", "koliseo_8c.html#a474f85352749b0edaa7e180872786010", null ],
+    [ "kls__check_available_failable", "koliseo_8c.html#ac71d2a234233063781d327f712da8677", null ],
+    [ "kls__handle_push_result", "koliseo_8c.html#ac91e7950953601a13c71edb804ec0ad5", null ],
+    [ "kls__temp_advance", "koliseo_8c.html#af5fe2bf91aca7a7ad2af2ec4eb7fbde6", null ],
     [ "kls_clear", "koliseo_8c.html#ae718fd87ca62fc00519336fd224ba54c", null ],
     [ "kls_conf_init", "koliseo_8c.html#ac6c6a83f70ee123b8b723bd502976f49", null ],
     [ "kls_conf_init_handled", "koliseo_8c.html#a5afa7fa7a82f1eeadd8e524ebcd5ef66", null ],
