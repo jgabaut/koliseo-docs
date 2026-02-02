@@ -34,18 +34,19 @@ var NAVTREE =
     [ "Building <a class=\"anchor\" id=\"building\"></a>", "index.html#autotoc_md7", null ],
     [ "Extra features <a class=\"anchor\" id=\"extra_features\"></a>", "index.html#autotoc_md8", [
       [ ":construction: Disclaimer: after version 0.5, the Region and Gulp features are no longer bundled in the main koliseo.c file, after being moved to their own files. Read below for more info. :construction:", "index.html#autotoc_md9", null ],
-      [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md10", null ],
-      [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md11", null ],
+      [ "Core debug <a class=\"anchor\" id=\"extra_debug\"></a>", "index.html#autotoc_md10", null ],
+      [ "Locate <a class=\"anchor\" id=\"extra_locate\"></a>", "index.html#autotoc_md11", null ],
       [ "Gulp <a class=\"anchor\" id=\"extra_gulp\"></a>", "index.html#autotoc_md12", null ],
-      [ "Templates <a class=\"anchor\" id=\"templates\"></a>", "index.html#autotoc_md13", null ],
-      [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md14", null ],
-      [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md15", null ]
+      [ "Region <a class=\"anchor\" id=\"extra_region\"></a>", "index.html#autotoc_md13", null ],
+      [ "Templates <a class=\"anchor\" id=\"templates\"></a>", "index.html#autotoc_md14", null ],
+      [ "Experimental <a class=\"anchor\" id=\"extra_exper\"></a>", "index.html#autotoc_md15", null ],
+      [ "How to enable extra features<a class=\"anchor\" id=\"extra_howto\"></a>", "index.html#autotoc_md16", null ]
     ] ],
-    [ "Extensions <a class=\"anchor\" id=\"extensions\"></a>", "index.html#autotoc_md16", null ],
-    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md17", null ],
-    [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md18", null ],
-    [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md19", null ],
-    [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md20", null ],
+    [ "Extensions <a class=\"anchor\" id=\"extensions\"></a>", "index.html#autotoc_md17", null ],
+    [ "Documentation <a class=\"anchor\" id=\"docs\"></a>", "index.html#autotoc_md18", null ],
+    [ "Supported platforms <a class=\"anchor\" id=\"support\"></a>", "index.html#autotoc_md19", null ],
+    [ "Credits <a class=\"anchor\" id=\"credits\"></a>", "index.html#autotoc_md20", null ],
+    [ "Todo <a class=\"anchor\" id=\"todo\"></a>", "index.html#autotoc_md21", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -72,8 +73,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#a6f5584944cbee36d9f9e83b868731fa6",
-"structKoliseo.html#a8093bad2ba8a009e8dd1d482dfad1228"
+"koliseo_8c.html#a8449dffe3bccd15c4c7c448051d38034",
+"structKoliseo__Temp.html#a5ed0ef238df306e902087dc656d71c03"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

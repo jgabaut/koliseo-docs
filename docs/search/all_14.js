@@ -7,5 +7,5 @@ var searchData=
   ['string_5fkoliseo_5fversion_4',['string_koliseo_version',['../koliseo_8c.html#a3e2a527e3824a8cc0538803937801e58',1,'string_koliseo_version(void):&#160;koliseo.c'],['../koliseo_8h.html#a3e2a527e3824a8cc0538803937801e58',1,'string_koliseo_version(void):&#160;koliseo.c']]],
   ['stringify_5',['STRINGIFY',['../koliseo_8h.html#a6df1d22fb5f09eccc23b9f399670cfd7',1,'koliseo.h']]],
   ['stringify_5f2_6',['STRINGIFY_2',['../koliseo_8h.html#a54fd25750378dd8dc1f6b921d1c83bd1',1,'koliseo.h']]],
-  ['supported_20platforms_7',['Supported platforms &lt;a class=&quot;anchor&quot; id=&quot;support&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md18',1,'']]]
+  ['supported_20platforms_7',['Supported platforms &lt;a class=&quot;anchor&quot; id=&quot;support&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md19',1,'']]]
 ];

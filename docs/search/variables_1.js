@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['conf_0',['conf',['../structKLS__Autoregion__Extension__Data.html#af951277247e10202888152070621201d',1,'KLS_Autoregion_Extension_Data::conf'],['../structKoliseo.html#a3faee4ade8fd28c06f21c4085cb863d1',1,'Koliseo::conf']]]
+  ['begin_5foffset_0',['begin_offset',['../structKLS__Region.html#a409e3a0a7e0c47f2a593c6f108a3eef1',1,'KLS_Region']]],
+  ['block_5fwhile_5fhas_5ftemp_1',['block_while_has_temp',['../structKLS__Conf.html#ac02f725bbc60614d0a3146e90ff46e6e',1,'KLS_Conf']]]
 ];

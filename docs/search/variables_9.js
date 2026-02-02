@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['max_5fregions_5fkls_5falloc_5fbasic_0',['max_regions_kls_alloc_basic',['../structKLS__Autoregion__Extension__Data.html#a6e3af8add791778319db0541c56c1877',1,'KLS_Autoregion_Extension_Data']]]
+  ['len_0',['len',['../structKstr.html#a39c96704abc1ba4252cc57596d47272e',1,'Kstr']]],
+  ['log_5ffilepath_1',['log_filepath',['../structKLS__Conf.html#a1b1b34e7103201c39daa033b70b6673a',1,'KLS_Conf']]],
+  ['log_5ffp_2',['log_fp',['../structKLS__Conf.html#a5f65b5a09ace253c494a192a450c3c61',1,'KLS_Conf']]]
 ];

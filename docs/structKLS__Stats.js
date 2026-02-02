@@ -1,6 +1,5 @@
 var structKLS__Stats =
 [
-    [ "tot_hiccups", "structKLS__Stats.html#a990192e77102769dd19133b9052e8fbb", null ],
     [ "tot_logcalls", "structKLS__Stats.html#aaa2d0a97928ac377dbb7213f21e7e589", null ],
     [ "tot_pops", "structKLS__Stats.html#a0b861a053abf40240e4a52624bacd6fe", null ],
     [ "tot_pushes", "structKLS__Stats.html#a818fc0fd2d862657353e3d2824d26fbe", null ],

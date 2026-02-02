@@ -4,6 +4,6 @@ var searchData=
   ['c_20library_20for_20a_20simple_20arena_20allocator_1',['A C library for a simple arena allocator.',['../index.html#autotoc_md1',1,'']]],
   ['configuration_2',['Configuration &lt;a class=&quot;anchor&quot; id=&quot;config&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md6',1,'']]],
   ['contents_3',['Table of Contents',['../index.html#autotoc_md2',1,'']]],
-  ['core_20debug_4',['Core debug &lt;a class=&quot;anchor&quot; id=&quot;extra_debug&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md11',1,'']]],
-  ['credits_5',['Credits &lt;a class=&quot;anchor&quot; id=&quot;credits&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md19',1,'']]]
+  ['core_20debug_4',['Core debug &lt;a class=&quot;anchor&quot; id=&quot;extra_debug&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md10',1,'']]],
+  ['credits_5',['Credits &lt;a class=&quot;anchor&quot; id=&quot;credits&quot;&gt;&lt;/a&gt;',['../index.html#autotoc_md20',1,'']]]
 ];
