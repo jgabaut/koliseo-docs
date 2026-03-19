@@ -7,7 +7,6 @@ var koliseo_8h =
     [ "Koliseo", "structKoliseo.html", "structKoliseo" ],
     [ "Koliseo_Temp", "structKoliseo__Temp.html", "structKoliseo__Temp" ],
     [ "KLS_Push_Result", "structKLS__Push__Result.html", "structKLS__Push__Result" ],
-    [ "_POSIX_C_SOURCE", "koliseo_8h.html#a3024ccd4a9af5109d24e6c57565d74a1", null ],
     [ "KLS__STRCPY", "koliseo_8h.html#a854a16091db3c1f8fe7c9ab678dc4741", null ],
     [ "KLS_ALIGNOF", "koliseo_8h.html#a8bcdcc4306a5aad791aba040e3c1b217", null ],
     [ "KLS_Arg", "koliseo_8h.html#a9c69e1b8d6a5ee1ef3c616628da08999", null ],

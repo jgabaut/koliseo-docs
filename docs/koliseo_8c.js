@@ -1,5 +1,6 @@
 var koliseo_8c =
 [
+    [ "_POSIX_C_SOURCE", "koliseo_8c.html#a3024ccd4a9af5109d24e6c57565d74a1", null ],
     [ "KLS_ASAN_POISON", "koliseo_8c.html#a975f74db62a78e96d2b06ffd04e37ff4", null ],
     [ "KLS_ASAN_UNPOISON", "koliseo_8c.html#a4cede351026a63d222c5255a7737c90b", null ],
     [ "int_koliseo_version", "koliseo_8c.html#af8e6f60b7c222713a12158182c3c6eae", null ],

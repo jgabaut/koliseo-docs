@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.0</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.1</span>
    </div>
   </td>
  </tr>
@@ -97,6 +97,7 @@ $(function(){initNavTree('koliseo_8c.html','',''); });
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-define-members" class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a3024ccd4a9af5109d24e6c57565d74a1" id="r_a3024ccd4a9af5109d24e6c57565d74a1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a3024ccd4a9af5109d24e6c57565d74a1">_POSIX_C_SOURCE</a>&#160;&#160;&#160;200809L</td></tr>
 <tr class="memitem:a975f74db62a78e96d2b06ffd04e37ff4" id="r_a975f74db62a78e96d2b06ffd04e37ff4"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a975f74db62a78e96d2b06ffd04e37ff4">KLS_ASAN_POISON</a>(addr,  size)</td></tr>
 <tr class="memitem:a4cede351026a63d222c5255a7737c90b" id="r_a4cede351026a63d222c5255a7737c90b"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a4cede351026a63d222c5255a7737c90b">KLS_ASAN_UNPOISON</a>(addr,  size)</td></tr>
 </table><table class="memberdecls">
@@ -225,6 +226,20 @@ Variables</h2></td></tr>
 <tr class="memdesc:a28ad19f817536f9181e6bab6ef13a657"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default <a class="el" href="structKLS__Stats.html" title="Defines a stat struct for Koliseo.">KLS_Stats</a> values, used by <a class="el" href="koliseo_8h.html#a096fe71a94eba899ef11a62c92270f55" title="Takes a ptrdiff_t size.">kls_new()</a>.  <br /></td></tr>
 </table>
 <a name="doc-define-members" id="doc-define-members"></a><h2 id="header-doc-define-members" class="groupheader">Macro Definition Documentation</h2>
+<a id="a3024ccd4a9af5109d24e6c57565d74a1" name="a3024ccd4a9af5109d24e6c57565d74a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3024ccd4a9af5109d24e6c57565d74a1">&#9670;&#160;</a></span>_POSIX_C_SOURCE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _POSIX_C_SOURCE&#160;&#160;&#160;200809L</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a975f74db62a78e96d2b06ffd04e37ff4" name="a975f74db62a78e96d2b06ffd04e37ff4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a975f74db62a78e96d2b06ffd04e37ff4">&#9670;&#160;</a></span>KLS_ASAN_POISON</h2>
 
@@ -2619,9 +2634,9 @@ kls_set_conf() </dd></dl>
 <div class="line"> </div>
 <div class="line">    },</div>
 <div class="line">}</div>
-<div class="ttc" id="akoliseo_8c_html_abd110b186f68f52a15384cd4b10b0adc"><div class="ttname"><a href="#abd110b186f68f52a15384cd4b10b0adc">KLS_PTRDIFF_MAX_default_handler__</a></div><div class="ttdeci">void KLS_PTRDIFF_MAX_default_handler__(struct Koliseo *kls, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used by default when no handler is passed.</div><div class="ttdef"><b>Definition</b> koliseo.c:111</div></div>
-<div class="ttc" id="akoliseo_8c_html_ac7012c8f14d43c3ca4de2c09a4ca37ea"><div class="ttname"><a href="#ac7012c8f14d43c3ca4de2c09a4ca37ea">KLS_ZEROCOUNT_default_handler__</a></div><div class="ttdeci">void KLS_ZEROCOUNT_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size)</div><div class="ttdoc">Used internally for handling zero-count in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:153</div></div>
-<div class="ttc" id="akoliseo_8c_html_aefc10928ac67644e6748753c7107b3f5"><div class="ttname"><a href="#aefc10928ac67644e6748753c7107b3f5">KLS_OOM_default_handler__</a></div><div class="ttdeci">void KLS_OOM_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used internally for handling Out-Of-Memory in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:91</div></div>
+<div class="ttc" id="akoliseo_8c_html_abd110b186f68f52a15384cd4b10b0adc"><div class="ttname"><a href="#abd110b186f68f52a15384cd4b10b0adc">KLS_PTRDIFF_MAX_default_handler__</a></div><div class="ttdeci">void KLS_PTRDIFF_MAX_default_handler__(struct Koliseo *kls, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used by default when no handler is passed.</div><div class="ttdef"><b>Definition</b> koliseo.c:116</div></div>
+<div class="ttc" id="akoliseo_8c_html_ac7012c8f14d43c3ca4de2c09a4ca37ea"><div class="ttname"><a href="#ac7012c8f14d43c3ca4de2c09a4ca37ea">KLS_ZEROCOUNT_default_handler__</a></div><div class="ttdeci">void KLS_ZEROCOUNT_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size)</div><div class="ttdoc">Used internally for handling zero-count in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:158</div></div>
+<div class="ttc" id="akoliseo_8c_html_aefc10928ac67644e6748753c7107b3f5"><div class="ttname"><a href="#aefc10928ac67644e6748753c7107b3f5">KLS_OOM_default_handler__</a></div><div class="ttdeci">void KLS_OOM_default_handler__(Koliseo *kls, ptrdiff_t available, ptrdiff_t padding, ptrdiff_t size, ptrdiff_t count)</div><div class="ttdoc">Used internally for handling Out-Of-Memory in push calls when no user handler is provided.</div><div class="ttdef"><b>Definition</b> koliseo.c:96</div></div>
 </div><!-- fragment -->
 <p>Config used by any new <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> by default. </p>
 <p>Default <a class="el" href="structKLS__Conf.html" title="Defines flags for Koliseo.">KLS_Conf</a> used by <a class="el" href="koliseo_8h.html#a096fe71a94eba899ef11a62c92270f55" title="Takes a ptrdiff_t size.">kls_new()</a>. </p>
