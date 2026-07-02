@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.1</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.3</span>
    </div>
   </td>
  </tr>
@@ -183,6 +183,8 @@ Functions</h2></td></tr>
 <tr class="memitem:a47c919ad679eb52ac3e8f2b59ec7b84a" id="r_a47c919ad679eb52ac3e8f2b59ec7b84a"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#a47c919ad679eb52ac3e8f2b59ec7b84a">kls_temp_vsprintf</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *kls_t, const char *fmt, va_list args)</td></tr>
 <tr class="memitem:a7b85f25c8872c261f66559b24c7de557" id="r_a7b85f25c8872c261f66559b24c7de557"><td class="memItemLeft">char *&#160;</td><td class="memItemRight"><a class="el" href="#a7b85f25c8872c261f66559b24c7de557">kls_temp_sprintf</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *kls_t, const char *fmt,...)</td></tr>
 <tr class="memdesc:a7b85f25c8872c261f66559b24c7de557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer, and a format cstring, plus varargs.  <br /></td></tr>
+<tr class="memitem:a63b0c61151701d3b7e69ec5642b2fafd" id="r_a63b0c61151701d3b7e69ec5642b2fafd"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#a63b0c61151701d3b7e69ec5642b2fafd">kls_contains_pointer</a> (const <a class="el" href="structKoliseo.html">Koliseo</a> *kls, const void *ptr)</td></tr>
+<tr class="memdesc:a63b0c61151701d3b7e69ec5642b2fafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and a void pointer to a memory region.  <br /></td></tr>
 <tr class="memitem:a414c57f93eb649754d6fd334358adaba" id="r_a414c57f93eb649754d6fd334358adaba"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a414c57f93eb649754d6fd334358adaba">kls_repush</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</td></tr>
 <tr class="memdesc:a414c57f93eb649754d6fd334358adaba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and a void pointer to the old allocation, ptrdiff_t values for size, align and old and new count.  <br /></td></tr>
 <tr class="memitem:a15c5622c8e9a2d54791068eea144725e" id="r_a15c5622c8e9a2d54791068eea144725e"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a15c5622c8e9a2d54791068eea144725e">kls_temp_repush</a> (<a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</td></tr>
@@ -195,8 +197,8 @@ Functions</h2></td></tr>
 <tr class="memdesc:a168e1f76b352233614100ce57bb06dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer, to the passed FILE pointer.  <br /></td></tr>
 <tr class="memitem:a1457edb67789ee4dcb6be6e191b77592" id="r_a1457edb67789ee4dcb6be6e191b77592"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1457edb67789ee4dcb6be6e191b77592">print_dbg_temp_kls</a> (const <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
 <tr class="memdesc:a1457edb67789ee4dcb6be6e191b77592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints header fields from the passed <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> pointer, to stderr.  <br /></td></tr>
-<tr class="memitem:aeeb31d4d6d367fbfe49a4099edb03742" id="r_aeeb31d4d6d367fbfe49a4099edb03742"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#aeeb31d4d6d367fbfe49a4099edb03742">kls_formatSize</a> (ptrdiff_t size, char *outputBuffer, size_t bufferSize)</td></tr>
-<tr class="memdesc:aeeb31d4d6d367fbfe49a4099edb03742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a ptrdiff_t size to human-readable SI units (modulo 1000).  <br /></td></tr>
+<tr class="memitem:a1a82190cde75f580dabc55b11a5e30d8" id="r_a1a82190cde75f580dabc55b11a5e30d8"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a1a82190cde75f580dabc55b11a5e30d8">kls_formatSize</a> (size_t size, char *outputBuffer, size_t bufferSize)</td></tr>
+<tr class="memdesc:a1a82190cde75f580dabc55b11a5e30d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts a ptrdiff_t size to human-readable SI units (modulo 1000).  <br /></td></tr>
 <tr class="memitem:ae718fd87ca62fc00519336fd224ba54c" id="r_ae718fd87ca62fc00519336fd224ba54c"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#ae718fd87ca62fc00519336fd224ba54c">kls_clear</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memdesc:ae718fd87ca62fc00519336fd224ba54c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the offset field for the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer.  <br /></td></tr>
 <tr class="memitem:a5988953140e4680e13441eb99900cba4" id="r_a5988953140e4680e13441eb99900cba4"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5988953140e4680e13441eb99900cba4">kls_free</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
@@ -653,6 +655,36 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="a63b0c61151701d3b7e69ec5642b2fafd" name="a63b0c61151701d3b7e69ec5642b2fafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63b0c61151701d3b7e69ec5642b2fafd">&#9670;&#160;</a></span>kls_contains_pointer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool kls_contains_pointer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const void *</td>          <td class="paramname"><span class="paramname"><em>ptr</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and a void pointer to a memory region. </p>
+<p>Checks if the passed <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> contains the passed address. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">kls</td><td>The <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> at hand. </td></tr>
+    <tr><td class="paramname">ptr</td><td>The pointer to check. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a366d819f41bc7fded6e931bc0c5405ca" name="a366d819f41bc7fded6e931bc0c5405ca"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a366d819f41bc7fded6e931bc0c5405ca">&#9670;&#160;</a></span>kls_dbg_features()</h2>
 
@@ -672,8 +704,8 @@ Variables</h2></td></tr>
 
 </div>
 </div>
-<a id="aeeb31d4d6d367fbfe49a4099edb03742" name="aeeb31d4d6d367fbfe49a4099edb03742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeeb31d4d6d367fbfe49a4099edb03742">&#9670;&#160;</a></span>kls_formatSize()</h2>
+<a id="a1a82190cde75f580dabc55b11a5e30d8" name="a1a82190cde75f580dabc55b11a5e30d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a82190cde75f580dabc55b11a5e30d8">&#9670;&#160;</a></span>kls_formatSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -681,7 +713,7 @@ Variables</h2></td></tr>
         <tr>
           <td class="memname">void kls_formatSize </td>
           <td>(</td>
-          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
+          <td class="paramtype">size_t</td>          <td class="paramname"><span class="paramname"><em>size</em></span>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
