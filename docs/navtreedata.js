@@ -73,8 +73,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"koliseo_8c.html#a72c3bb3dbfcecc44f3db7872d5efb7ad",
-"structKoliseo.html#ae41d4c8059f94d7f8135f3d365e55d19"
+"koliseo_8c.html#a4cede351026a63d222c5255a7737c90b",
+"structKoliseo.html#a8093bad2ba8a009e8dd1d482dfad1228"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

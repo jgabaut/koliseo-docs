@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.3</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.4</span>
    </div>
   </td>
  </tr>
@@ -127,7 +127,7 @@ Macros</h2></td></tr>
 <tr class="memdesc:af846566d119af5c4277d693d912ba144"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents current major release.  <br /></td></tr>
 <tr class="memitem:a7306f6e877ce909708f2b6da45d70b8e" id="r_a7306f6e877ce909708f2b6da45d70b8e"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a7306f6e877ce909708f2b6da45d70b8e">KLS_MINOR</a>&#160;&#160;&#160;6</td></tr>
 <tr class="memdesc:a7306f6e877ce909708f2b6da45d70b8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents current minor release.  <br /></td></tr>
-<tr class="memitem:a94251b77d2508a62fe545dec1c370b00" id="r_a94251b77d2508a62fe545dec1c370b00"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a94251b77d2508a62fe545dec1c370b00">KLS_PATCH</a>&#160;&#160;&#160;3</td></tr>
+<tr class="memitem:a94251b77d2508a62fe545dec1c370b00" id="r_a94251b77d2508a62fe545dec1c370b00"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a94251b77d2508a62fe545dec1c370b00">KLS_PATCH</a>&#160;&#160;&#160;4</td></tr>
 <tr class="memdesc:a94251b77d2508a62fe545dec1c370b00"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents current patch release.  <br /></td></tr>
 <tr class="memitem:a54fd25750378dd8dc1f6b921d1c83bd1" id="r_a54fd25750378dd8dc1f6b921d1c83bd1"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a54fd25750378dd8dc1f6b921d1c83bd1">STRINGIFY_2</a>(x)</td></tr>
 <tr class="memitem:a6df1d22fb5f09eccc23b9f399670cfd7" id="r_a6df1d22fb5f09eccc23b9f399670cfd7"><td class="memItemLeft">#define&#160;</td><td class="memItemRight"><a class="el" href="#a6df1d22fb5f09eccc23b9f399670cfd7">STRINGIFY</a>(x)</td></tr>
@@ -246,12 +246,16 @@ Typedefs</h2></td></tr>
 <tr class="memdesc:aa5daa4c59990445c3ccfc96fde4232e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="#a5988953140e4680e13441eb99900cba4" title="Calls kls_clear() on the passed Koliseo pointer and the frees the actual Koliseo.">kls_free()</a>.  <br /></td></tr>
 <tr class="memitem:abd31c9f70365014b5be65a6445f28dbb" id="r_abd31c9f70365014b5be65a6445f28dbb"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#abd31c9f70365014b5be65a6445f28dbb">KLS_hook_on_push</a>(struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
 <tr class="memdesc:abd31c9f70365014b5be65a6445f28dbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="koliseo_8c.html#a8449dffe3bccd15c4c7c448051d38034" title="Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.">kls_push()</a>.  <br /></td></tr>
+<tr class="memitem:ab7fbd907cca5e7f3ca62c3457c357a09" id="r_ab7fbd907cca5e7f3ca62c3457c357a09"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#ab7fbd907cca5e7f3ca62c3457c357a09">KLS_hook_on_repush_last</a>(struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memdesc:ab7fbd907cca5e7f3ca62c3457c357a09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="#a414c57f93eb649754d6fd334358adaba" title="Takes a Koliseo pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...">kls_repush()</a> when extending the last allocation (otherwise, the on_push handler fires).  <br /></td></tr>
 <tr class="memitem:a2f5857819d77f07ca9eb38925a3447da" id="r_a2f5857819d77f07ca9eb38925a3447da"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#a2f5857819d77f07ca9eb38925a3447da">KLS_hook_on_temp_start</a>(struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
 <tr class="memdesc:a2f5857819d77f07ca9eb38925a3447da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="#a0f917da26d318e5702dbdc550c01fa1c" title="Starts a new savestate for the passed Koliseo pointer, by initialising its Koliseo_Temp pointer and r...">kls_temp_start()</a>.  <br /></td></tr>
 <tr class="memitem:abc395dc62f40c18f532fd041922bfecb" id="r_abc395dc62f40c18f532fd041922bfecb"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#abc395dc62f40c18f532fd041922bfecb">KLS_hook_on_temp_free</a>(struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
 <tr class="memdesc:abc395dc62f40c18f532fd041922bfecb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="#a31a283d140f92661f3d826186e6a7cdd" title="Ends passed Koliseo_Temp pointer.">kls_temp_end()</a>.  <br /></td></tr>
 <tr class="memitem:ab26e38485f62b8d426d63dd7b9ec92be" id="r_ab26e38485f62b8d426d63dd7b9ec92be"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#ab26e38485f62b8d426d63dd7b9ec92be">KLS_hook_on_temp_push</a>(struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
 <tr class="memdesc:ab26e38485f62b8d426d63dd7b9ec92be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for kls_temp_push().  <br /></td></tr>
+<tr class="memitem:ab12eb25cd94d76498af93966b6d00cd0" id="r_ab12eb25cd94d76498af93966b6d00cd0"><td class="memItemLeft">typedef void&#160;</td><td class="memItemRight"><a class="el" href="#ab12eb25cd94d76498af93966b6d00cd0">KLS_hook_on_temp_repush_last</a>(struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memdesc:ab12eb25cd94d76498af93966b6d00cd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Used to pass an extension handler for <a class="el" href="#a15c5622c8e9a2d54791068eea144725e" title="Takes a Koliseo_Temp pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...">kls_temp_repush()</a> when extending the last allocation (otherwise, the on_temp_push handler fires).  <br /></td></tr>
 <tr class="memitem:aacb9c04f2c81087bbab837c82090ff11" id="r_aacb9c04f2c81087bbab837c82090ff11"><td class="memItemLeft">typedef struct KLS_Hooks&#160;</td><td class="memItemRight"><a class="el" href="#aacb9c04f2c81087bbab837c82090ff11">KLS_Hooks</a></td></tr>
 <tr class="memitem:adea41df5978a7b15e9629100aba9c208" id="r_adea41df5978a7b15e9629100aba9c208"><td class="memItemLeft">typedef struct KLS_Conf&#160;</td><td class="memItemRight"><a class="el" href="#adea41df5978a7b15e9629100aba9c208">KLS_Conf</a></td></tr>
 <tr class="memdesc:adea41df5978a7b15e9629100aba9c208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines flags for <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>.  <br /></td></tr>
@@ -687,7 +691,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define KLS_PATCH&#160;&#160;&#160;3</td>
+          <td class="memname">#define KLS_PATCH&#160;&#160;&#160;4</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -715,7 +719,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a52fafc79234d2a2c7cd2f7fab7dcf5c3">KLS_POP_ARR</a>((kls), type, 1)</div>
-<div class="ttc" id="akoliseo_8h_html_a52fafc79234d2a2c7cd2f7fab7dcf5c3"><div class="ttname"><a href="#a52fafc79234d2a2c7cd2f7fab7dcf5c3">KLS_POP_ARR</a></div><div class="ttdeci">#define KLS_POP_ARR(kls, type, count)</div><div class="ttdoc">Macro used to &quot;remove&quot; memory as an array from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:708</div></div>
+<div class="ttc" id="akoliseo_8h_html_a52fafc79234d2a2c7cd2f7fab7dcf5c3"><div class="ttname"><a href="#a52fafc79234d2a2c7cd2f7fab7dcf5c3">KLS_POP_ARR</a></div><div class="ttdeci">#define KLS_POP_ARR(kls, type, count)</div><div class="ttdoc">Macro used to &quot;remove&quot; memory as an array from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:714</div></div>
 </div><!-- fragment -->
 <p>Macro used to "remove" memory from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
 <p>Rewinds the pointer by the requested type and returns a pointer to that memory before updating the <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> index. It's up to you to copy your item somewhere else before calling any PUSH operation again, as that memory should be overwritten. </p>
@@ -746,7 +750,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a>((kls), <span class="keyword">sizeof</span>(type), <a class="code hl_define" href="#a8bcdcc4306a5aad791aba040e3c1b217">KLS_ALIGNOF</a>(type), (count))</div>
-<div class="ttc" id="akoliseo_8c_html_ab7beccb4693b87eb36ee98d2067e8267"><div class="ttname"><a href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a></div><div class="ttdeci">void * kls_pop(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:2310</div></div>
+<div class="ttc" id="akoliseo_8c_html_ab7beccb4693b87eb36ee98d2067e8267"><div class="ttname"><a href="koliseo_8c.html#ab7beccb4693b87eb36ee98d2067e8267">kls_pop</a></div><div class="ttdeci">void * kls_pop(Koliseo *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo pointer, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:2316</div></div>
 <div class="ttc" id="akoliseo_8h_html_a8bcdcc4306a5aad791aba040e3c1b217"><div class="ttname"><a href="#a8bcdcc4306a5aad791aba040e3c1b217">KLS_ALIGNOF</a></div><div class="ttdeci">#define KLS_ALIGNOF</div><div class="ttdef"><b>Definition</b> koliseo.h:24</div></div>
 </div><!-- fragment -->
 <p>Macro used to "remove" memory as an array from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
@@ -778,7 +782,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a>((kls_temp), <span class="keyword">sizeof</span>(type), <a class="code hl_define" href="#a8bcdcc4306a5aad791aba040e3c1b217">KLS_ALIGNOF</a>(type), (count))</div>
-<div class="ttc" id="akoliseo_8c_html_a0ec8cf1d381a4701ccb0a9fa4034158b"><div class="ttname"><a href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a></div><div class="ttdeci">void * kls_temp_pop(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:2344</div></div>
+<div class="ttc" id="akoliseo_8c_html_a0ec8cf1d381a4701ccb0a9fa4034158b"><div class="ttname"><a href="koliseo_8c.html#a0ec8cf1d381a4701ccb0a9fa4034158b">kls_temp_pop</a></div><div class="ttdeci">void * kls_temp_pop(Koliseo_Temp *t_kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count)</div><div class="ttdoc">Takes a Koliseo_Temp, and ptrdiff_t values for size, align and count.</div><div class="ttdef"><b>Definition</b> koliseo.c:2350</div></div>
 </div><!-- fragment -->
 <p>Macro used to "remove" memory as an array from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>. </p>
 <p>Rewinds the pointer by the requested type and returns a pointer to that memory before updating the <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> index. It's up to you to copy your item somewhere else before calling any PUSH operation again, as that memory should be overwritten. </p>
@@ -829,7 +833,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a7edd501370b8e6b9d16260f00795a47d">KLS_POP_ARR_T</a>((kls_temp), <span class="keywordtype">char</span>, strlen((cstr)))</div>
-<div class="ttc" id="akoliseo_8h_html_a7edd501370b8e6b9d16260f00795a47d"><div class="ttname"><a href="#a7edd501370b8e6b9d16260f00795a47d">KLS_POP_ARR_T</a></div><div class="ttdeci">#define KLS_POP_ARR_T(kls_temp, type, count)</div><div class="ttdoc">Macro used to &quot;remove&quot; memory as an array from a Koliseo_Temp.</div><div class="ttdef"><b>Definition</b> koliseo.h:729</div></div>
+<div class="ttc" id="akoliseo_8h_html_a7edd501370b8e6b9d16260f00795a47d"><div class="ttname"><a href="#a7edd501370b8e6b9d16260f00795a47d">KLS_POP_ARR_T</a></div><div class="ttdeci">#define KLS_POP_ARR_T(kls_temp, type, count)</div><div class="ttdoc">Macro used to &quot;remove&quot; memory as an array from a Koliseo_Temp.</div><div class="ttdef"><b>Definition</b> koliseo.h:735</div></div>
 </div><!-- fragment -->
 <p>Macro to "remove" the memory for a C string from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>. </p>
 <p>Rewinds the pointer by the string's memory and returns a pointer to that memory before updating the <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a> index. It's up to you to copy your string somewhere else before calling any PUSH operation again, as that memory should be overwritten. </p>
@@ -880,7 +884,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#afee30439e5beffcd0bed2656547e841f">KLS_PUSH_ARR</a>((kls), type, 1)</div>
-<div class="ttc" id="akoliseo_8h_html_afee30439e5beffcd0bed2656547e841f"><div class="ttname"><a href="#afee30439e5beffcd0bed2656547e841f">KLS_PUSH_ARR</a></div><div class="ttdeci">#define KLS_PUSH_ARR(kls, type, count)</div><div class="ttdoc">Macro used to request memory for an array of type values from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:520</div></div>
+<div class="ttc" id="akoliseo_8h_html_afee30439e5beffcd0bed2656547e841f"><div class="ttname"><a href="#afee30439e5beffcd0bed2656547e841f">KLS_PUSH_ARR</a></div><div class="ttdeci">#define KLS_PUSH_ARR(kls, type, count)</div><div class="ttdoc">Macro used to request memory for an array of type values from a Koliseo.</div><div class="ttdef"><b>Definition</b> koliseo.h:526</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>. </p>
 
@@ -1019,7 +1023,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#ae451983cf8348c6fe2e4f81268fa8e8c">KLS_PUSH_ARR_T</a>((kls_temp),type,(count))</div>
-<div class="ttc" id="akoliseo_8h_html_ae451983cf8348c6fe2e4f81268fa8e8c"><div class="ttname"><a href="#ae451983cf8348c6fe2e4f81268fa8e8c">KLS_PUSH_ARR_T</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T(kls_temp, type, count)</div><div class="ttdoc">Macro used to request memory for an array of type values from a Koliseo_Temp.</div><div class="ttdef"><b>Definition</b> koliseo.h:637</div></div>
+<div class="ttc" id="akoliseo_8h_html_ae451983cf8348c6fe2e4f81268fa8e8c"><div class="ttname"><a href="#ae451983cf8348c6fe2e4f81268fa8e8c">KLS_PUSH_ARR_T</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T(kls_temp, type, count)</div><div class="ttdoc">Macro used to request memory for an array of type values from a Koliseo_Temp.</div><div class="ttdef"><b>Definition</b> koliseo.h:643</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory for an array of type values from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and assign a name and a description to the region item. </p>
 
@@ -1138,7 +1142,7 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#afe8f12674e407aad221452c8a4e67e01">KLS_PUSH_NAMED</a>((kls), type, (name), <a class="code hl_define" href="#a6df1d22fb5f09eccc23b9f399670cfd7">STRINGIFY</a>(type))</div>
 <div class="ttc" id="akoliseo_8h_html_a6df1d22fb5f09eccc23b9f399670cfd7"><div class="ttname"><a href="#a6df1d22fb5f09eccc23b9f399670cfd7">STRINGIFY</a></div><div class="ttdeci">#define STRINGIFY(x)</div><div class="ttdef"><b>Definition</b> koliseo.h:96</div></div>
-<div class="ttc" id="akoliseo_8h_html_afe8f12674e407aad221452c8a4e67e01"><div class="ttname"><a href="#afe8f12674e407aad221452c8a4e67e01">KLS_PUSH_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_NAMED(kls, type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo, and assign a name and a description to the region item.</div><div class="ttdef"><b>Definition</b> koliseo.h:574</div></div>
+<div class="ttc" id="akoliseo_8h_html_afe8f12674e407aad221452c8a4e67e01"><div class="ttname"><a href="#afe8f12674e407aad221452c8a4e67e01">KLS_PUSH_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_NAMED(kls, type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo, and assign a name and a description to the region item.</div><div class="ttdef"><b>Definition</b> koliseo.h:580</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, and assign a name to the region item. </p>
 <p>The description field is automatically filled with the stringized passed type. </p>
@@ -1174,7 +1178,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="kls__region_8h.html#a5c1b24294af461daee75801ee06a5180">KLS_PUSH_ARR_NAMED</a>((kls), type, 1, (name), (desc))</div>
-<div class="ttc" id="akls__region_8h_html_a5c1b24294af461daee75801ee06a5180"><div class="ttname"><a href="kls__region_8h.html#a5c1b24294af461daee75801ee06a5180">KLS_PUSH_ARR_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_NAMED(kls, type, count, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:215</div></div>
+<div class="ttc" id="akls__region_8h_html_a5c1b24294af461daee75801ee06a5180"><div class="ttname"><a href="kls__region_8h.html#a5c1b24294af461daee75801ee06a5180">KLS_PUSH_ARR_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_NAMED(kls, type, count, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:219</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, and assign a name and a description to the region item. </p>
 
@@ -1294,7 +1298,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="kls__region_8h.html#a3281b59062c69e91f3eb896bde3f326c">KLS_PUSH_ARR_T_NAMED</a>((kls_temp), <span class="keywordtype">char</span>, strlen((cstr))+1, (name), (desc))</div>
-<div class="ttc" id="akls__region_8h_html_a3281b59062c69e91f3eb896bde3f326c"><div class="ttname"><a href="kls__region_8h.html#a3281b59062c69e91f3eb896bde3f326c">KLS_PUSH_ARR_T_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T_NAMED(kls_temp, type, count, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:221</div></div>
+<div class="ttc" id="akls__region_8h_html_a3281b59062c69e91f3eb896bde3f326c"><div class="ttname"><a href="kls__region_8h.html#a3281b59062c69e91f3eb896bde3f326c">KLS_PUSH_ARR_T_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T_NAMED(kls_temp, type, count, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:225</div></div>
 </div><!-- fragment -->
 <p>Macro to request memory for a C string from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and assign a name and a description to the region item. </p>
 <p>Notably, you still need to memcpy() the wanted data to the returned pointer. </p>
@@ -1335,7 +1339,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="kls__region_8h.html#a2ff7f9174966948623a97cdfb5342448">KLS_PUSH_ARR_T_TYPED</a>((kls_temp), <span class="keywordtype">char</span>, strlen((cstr))+1, (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8h_html_a2ff7f9174966948623a97cdfb5342448"><div class="ttname"><a href="kls__region_8h.html#a2ff7f9174966948623a97cdfb5342448">KLS_PUSH_ARR_T_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T_TYPED(kls_temp, type, count, region_type, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:224</div></div>
+<div class="ttc" id="akls__region_8h_html_a2ff7f9174966948623a97cdfb5342448"><div class="ttname"><a href="kls__region_8h.html#a2ff7f9174966948623a97cdfb5342448">KLS_PUSH_ARR_T_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_T_TYPED(kls_temp, type, count, region_type, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:228</div></div>
 </div><!-- fragment -->
 <p>Macro to request memory for a C string from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and assign a type, a name and a description to the region item. </p>
 <p>Notably, you still need to memcpy() the wanted data to the returned pointer. </p>
@@ -1376,7 +1380,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="kls__region_8h.html#ab304c61a64f19eef58873354aa40ea93">KLS_PUSH_ARR_TYPED</a>((kls), <span class="keywordtype">char</span>, strlen((cstr))+1, (region_type), (name), (desc))</div>
-<div class="ttc" id="akls__region_8h_html_ab304c61a64f19eef58873354aa40ea93"><div class="ttname"><a href="kls__region_8h.html#ab304c61a64f19eef58873354aa40ea93">KLS_PUSH_ARR_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_TYPED(kls, type, count, region_type, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:218</div></div>
+<div class="ttc" id="akls__region_8h_html_ab304c61a64f19eef58873354aa40ea93"><div class="ttname"><a href="kls__region_8h.html#ab304c61a64f19eef58873354aa40ea93">KLS_PUSH_ARR_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_ARR_TYPED(kls, type, count, region_type, name, desc)</div><div class="ttdef"><b>Definition</b> kls_region.h:222</div></div>
 </div><!-- fragment -->
 <p>Macro to request memory for a C string from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, and assign a type, a name and a description to the region item. </p>
 <p>Notably, you still need to memcpy() the wanted data to the returned pointer. </p>
@@ -1431,7 +1435,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#af7cfdd9b9188487c547233183a65eb33">KLS_PUSH_T_NAMED</a>((kls_temp), type, (name), <a class="code hl_define" href="#a6df1d22fb5f09eccc23b9f399670cfd7">STRINGIFY</a>(type))</div>
-<div class="ttc" id="akoliseo_8h_html_af7cfdd9b9188487c547233183a65eb33"><div class="ttname"><a href="#af7cfdd9b9188487c547233183a65eb33">KLS_PUSH_T_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_T_NAMED(kls_temp, type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo_Temp, and assign a name and a description to the region i...</div><div class="ttdef"><b>Definition</b> koliseo.h:681</div></div>
+<div class="ttc" id="akoliseo_8h_html_af7cfdd9b9188487c547233183a65eb33"><div class="ttname"><a href="#af7cfdd9b9188487c547233183a65eb33">KLS_PUSH_T_NAMED</a></div><div class="ttdeci">#define KLS_PUSH_T_NAMED(kls_temp, type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo_Temp, and assign a name and a description to the region i...</div><div class="ttdef"><b>Definition</b> koliseo.h:687</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and assign a name to the region item. </p>
 <p>The description field is automatically filled with the stringized passed type. </p>
@@ -1540,7 +1544,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a4826a8c22dfa70cf2b033c6b7a938d25">KLS_PUSH_T_TYPED</a>((kls_temp), type, (region_type), (name), STRINFIGY(type))</div>
-<div class="ttc" id="akoliseo_8h_html_a4826a8c22dfa70cf2b033c6b7a938d25"><div class="ttname"><a href="#a4826a8c22dfa70cf2b033c6b7a938d25">KLS_PUSH_T_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_T_TYPED(kls_temp, type, region_type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo_Temp, and assign a type, a name and a description to the ...</div><div class="ttdef"><b>Definition</b> koliseo.h:692</div></div>
+<div class="ttc" id="akoliseo_8h_html_a4826a8c22dfa70cf2b033c6b7a938d25"><div class="ttname"><a href="#a4826a8c22dfa70cf2b033c6b7a938d25">KLS_PUSH_T_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_T_TYPED(kls_temp, type, region_type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo_Temp, and assign a type, a name and a description to the ...</div><div class="ttdef"><b>Definition</b> koliseo.h:698</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>, and assign a type and a name to the region item. </p>
 <p>The description field is automatically filled with the stringized passed type. </p>
@@ -1615,7 +1619,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_define" href="#a69227e6815ac3956aa97ffc0da97bc22">KLS_PUSH_TYPED</a>((kls), type, (region_type), (name), <a class="code hl_define" href="#a6df1d22fb5f09eccc23b9f399670cfd7">STRINGIFY</a>(type))</div>
-<div class="ttc" id="akoliseo_8h_html_a69227e6815ac3956aa97ffc0da97bc22"><div class="ttname"><a href="#a69227e6815ac3956aa97ffc0da97bc22">KLS_PUSH_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_TYPED(kls, type, region_type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo, and assign a a type, a name and a description to the reg...</div><div class="ttdef"><b>Definition</b> koliseo.h:585</div></div>
+<div class="ttc" id="akoliseo_8h_html_a69227e6815ac3956aa97ffc0da97bc22"><div class="ttname"><a href="#a69227e6815ac3956aa97ffc0da97bc22">KLS_PUSH_TYPED</a></div><div class="ttdeci">#define KLS_PUSH_TYPED(kls, type, region_type, name, desc)</div><div class="ttdoc">Macro used to request memory from a Koliseo, and assign a a type, a name and a description to the reg...</div><div class="ttdef"><b>Definition</b> koliseo.h:591</div></div>
 </div><!-- fragment -->
 <p>Macro used to request memory from a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a>, and assign a type and a name to the region item. </p>
 <p>The description field is automatically filled with the stringized passed type. </p>
@@ -1696,7 +1700,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">(type*)<a class="code hl_function" href="koliseo_8c.html#a15c5622c8e9a2d54791068eea144725e">kls_temp_repush</a>((t_kls), (old), <span class="keyword">sizeof</span>(type), <a class="code hl_define" href="#a8bcdcc4306a5aad791aba040e3c1b217">KLS_ALIGNOF</a>(type), (old_count), (new_count))</div>
-<div class="ttc" id="akoliseo_8c_html_a15c5622c8e9a2d54791068eea144725e"><div class="ttname"><a href="koliseo_8c.html#a15c5622c8e9a2d54791068eea144725e">kls_temp_repush</a></div><div class="ttdeci">void * kls_temp_repush(Koliseo_Temp *t_kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</div><div class="ttdoc">Takes a Koliseo_Temp pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...</div><div class="ttdef"><b>Definition</b> koliseo.c:1811</div></div>
+<div class="ttc" id="akoliseo_8c_html_a15c5622c8e9a2d54791068eea144725e"><div class="ttname"><a href="koliseo_8c.html#a15c5622c8e9a2d54791068eea144725e">kls_temp_repush</a></div><div class="ttdeci">void * kls_temp_repush(Koliseo_Temp *t_kls, void *old, ptrdiff_t size, ptrdiff_t align, ptrdiff_t old_count, ptrdiff_t new_count)</div><div class="ttdoc">Takes a Koliseo_Temp pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...</div><div class="ttdef"><b>Definition</b> koliseo.c:1814</div></div>
 </div><!-- fragment -->
 <p>Macro used to repush memory for dinamic arrays from a <a class="el" href="structKoliseo__Temp.html" title="Represents a savestate for a Koliseo.">Koliseo_Temp</a>. </p>
 
@@ -1819,7 +1823,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a>((kls), (source))</div>
-<div class="ttc" id="akoliseo_8c_html_a0d8f4ac2878c91195d978816702745a7"><div class="ttname"><a href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a></div><div class="ttdeci">char * kls_strdup(Koliseo *kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:2383</div></div>
+<div class="ttc" id="akoliseo_8c_html_a0d8f4ac2878c91195d978816702745a7"><div class="ttname"><a href="koliseo_8c.html#a0d8f4ac2878c91195d978816702745a7">kls_strdup</a></div><div class="ttdeci">char * kls_strdup(Koliseo *kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:2389</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1842,7 +1846,7 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line"><a class="code hl_function" href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a>((t_kls), (source))</div>
-<div class="ttc" id="akoliseo_8c_html_a1815212657b3f565350a22f1d688ad48"><div class="ttname"><a href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a></div><div class="ttdeci">char * kls_t_strdup(Koliseo_Temp *t_kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo_Temp, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:2412</div></div>
+<div class="ttc" id="akoliseo_8c_html_a1815212657b3f565350a22f1d688ad48"><div class="ttname"><a href="koliseo_8c.html#a1815212657b3f565350a22f1d688ad48">kls_t_strdup</a></div><div class="ttdeci">char * kls_t_strdup(Koliseo_Temp *t_kls, char *source)</div><div class="ttdoc">Function to dupe a C string to a Koliseo_Temp, and return a pointer to the allocated string.</div><div class="ttdef"><b>Definition</b> koliseo.c:2418</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -2029,6 +2033,22 @@ Variables</h2></td></tr>
 
 </div>
 </div>
+<a id="ab7fbd907cca5e7f3ca62c3457c357a09" name="ab7fbd907cca5e7f3ca62c3457c357a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7fbd907cca5e7f3ca62c3457c357a09">&#9670;&#160;</a></span>KLS_hook_on_repush_last</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void KLS_hook_on_repush_last(struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to pass an extension handler for <a class="el" href="#a414c57f93eb649754d6fd334358adaba" title="Takes a Koliseo pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...">kls_repush()</a> when extending the last allocation (otherwise, the on_push handler fires). </p>
+
+</div>
+</div>
 <a id="abc395dc62f40c18f532fd041922bfecb" name="abc395dc62f40c18f532fd041922bfecb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abc395dc62f40c18f532fd041922bfecb">&#9670;&#160;</a></span>KLS_hook_on_temp_free</h2>
 
@@ -2058,6 +2078,22 @@ Variables</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Used to pass an extension handler for kls_temp_push(). </p>
+
+</div>
+</div>
+<a id="ab12eb25cd94d76498af93966b6d00cd0" name="ab12eb25cd94d76498af93966b6d00cd0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab12eb25cd94d76498af93966b6d00cd0">&#9670;&#160;</a></span>KLS_hook_on_temp_repush_last</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">typedef void KLS_hook_on_temp_repush_last(struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Used to pass an extension handler for <a class="el" href="#a15c5622c8e9a2d54791068eea144725e" title="Takes a Koliseo_Temp pointer, and a void pointer to the old allocation, ptrdiff_t values for size,...">kls_temp_repush()</a> when extending the last allocation (otherwise, the on_temp_push handler fires). </p>
 
 </div>
 </div>

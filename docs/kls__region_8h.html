@@ -26,7 +26,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.3</span>
+   <div id="projectname">koliseo<span id="projectnumber">&#160;0.6.4</span>
    </div>
   </td>
  </tr>
@@ -173,9 +173,11 @@ Functions</h2></td></tr>
 <tr class="memitem:a83131a2760c2bf9012b693d20379c8c1" id="r_a83131a2760c2bf9012b693d20379c8c1"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memitem:a5cdee1ca472b917121ad736e37f86b16" id="r_a5cdee1ca472b917121ad736e37f86b16"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls)</td></tr>
 <tr class="memitem:add906f0f523f1c9ace820c7a20c7a220" id="r_add906f0f523f1c9ace820c7a20c7a220"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memitem:a07c17db4eac34a07a4f52cbb281ec3a7" id="r_a07c17db4eac34a07a4f52cbb281ec3a7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a07c17db4eac34a07a4f52cbb281ec3a7">KLS_autoregion_on_repush_last</a> (struct <a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
 <tr class="memitem:adecc22ba04dc3810275595d79ad8c437" id="r_adecc22ba04dc3810275595d79ad8c437"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
 <tr class="memitem:accdf861c7d16ef125e739fe43b36d0d6" id="r_accdf861c7d16ef125e739fe43b36d0d6"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls)</td></tr>
 <tr class="memitem:a8a3a06ae4335144c46a4932880ed91b9" id="r_a8a3a06ae4335144c46a4932880ed91b9"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
+<tr class="memitem:a9b91336b15a2ca8a431734ebc51f508f" id="r_a9b91336b15a2ca8a431734ebc51f508f"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9b91336b15a2ca8a431734ebc51f508f">KLS_autoregion_on_temp_repush_last</a> (struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *t_kls, ptrdiff_t padding, const char *caller, void *user)</td></tr>
 <tr class="memitem:a8a56a095544ba23506c3c4a7695fa499" id="r_a8a56a095544ba23506c3c4a7695fa499"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#a8a56a095544ba23506c3c4a7695fa499">kls_push_zero_named</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, char *name, char *desc)</td></tr>
 <tr class="memdesc:a8a56a095544ba23506c3c4a7695fa499"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="structKoliseo.html" title="Represents the initialised arena allocator struct.">Koliseo</a> pointer, and ptrdiff_t values for size, align and count.  <br /></td></tr>
 <tr class="memitem:aecac99c9a817c069a1430e1b5078e0e0" id="r_aecac99c9a817c069a1430e1b5078e0e0"><td class="memItemLeft">void *&#160;</td><td class="memItemRight"><a class="el" href="#aecac99c9a817c069a1430e1b5078e0e0">kls_push_zero_typed</a> (<a class="el" href="structKoliseo.html">Koliseo</a> *kls, ptrdiff_t size, ptrdiff_t align, ptrdiff_t count, int type, char *name, char *desc)</td></tr>
@@ -327,17 +329,21 @@ Variables</h2></td></tr>
 <div class="line">    .on_new_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a>, \</div>
 <div class="line">    .on_free_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a>, \</div>
 <div class="line">    .on_push_handler =  &amp;<a class="code hl_function" href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a>, \</div>
+<div class="line">    .on_repush_last_handler =  &amp;<a class="code hl_function" href="kls__region_8c.html#a07c17db4eac34a07a4f52cbb281ec3a7">KLS_autoregion_on_repush_last</a>, \</div>
 <div class="line">    .on_temp_start_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a>, \</div>
 <div class="line">    .on_temp_free_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a>, \</div>
 <div class="line">    .on_temp_push_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a>, \</div>
+<div class="line">    .on_temp_repush_last_handler = &amp;<a class="code hl_function" href="kls__region_8c.html#a9b91336b15a2ca8a431734ebc51f508f">KLS_autoregion_on_temp_repush_last</a>, \</div>
 <div class="line">}</div>
+<div class="ttc" id="akls__region_8c_html_a07c17db4eac34a07a4f52cbb281ec3a7"><div class="ttname"><a href="kls__region_8c.html#a07c17db4eac34a07a4f52cbb281ec3a7">KLS_autoregion_on_repush_last</a></div><div class="ttdeci">void KLS_autoregion_on_repush_last(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1248</div></div>
 <div class="ttc" id="akls__region_8c_html_a5cdee1ca472b917121ad736e37f86b16"><div class="ttname"><a href="kls__region_8c.html#a5cdee1ca472b917121ad736e37f86b16">KLS_autoregion_on_free</a></div><div class="ttdeci">void KLS_autoregion_on_free(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1209</div></div>
 <div class="ttc" id="akls__region_8c_html_a83131a2760c2bf9012b693d20379c8c1"><div class="ttname"><a href="kls__region_8c.html#a83131a2760c2bf9012b693d20379c8c1">KLS_autoregion_on_new</a></div><div class="ttdeci">void KLS_autoregion_on_new(struct Koliseo *kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1121</div></div>
-<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1356</div></div>
-<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1322</div></div>
+<div class="ttc" id="akls__region_8c_html_a8a3a06ae4335144c46a4932880ed91b9"><div class="ttname"><a href="kls__region_8c.html#a8a3a06ae4335144c46a4932880ed91b9">KLS_autoregion_on_temp_push</a></div><div class="ttdeci">void KLS_autoregion_on_temp_push(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1384</div></div>
+<div class="ttc" id="akls__region_8c_html_a9b91336b15a2ca8a431734ebc51f508f"><div class="ttname"><a href="kls__region_8c.html#a9b91336b15a2ca8a431734ebc51f508f">KLS_autoregion_on_temp_repush_last</a></div><div class="ttdeci">void KLS_autoregion_on_temp_repush_last(struct Koliseo_Temp *t_kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1404</div></div>
+<div class="ttc" id="akls__region_8c_html_accdf861c7d16ef125e739fe43b36d0d6"><div class="ttname"><a href="kls__region_8c.html#accdf861c7d16ef125e739fe43b36d0d6">KLS_autoregion_on_temp_free</a></div><div class="ttdeci">void KLS_autoregion_on_temp_free(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1350</div></div>
 <div class="ttc" id="akls__region_8c_html_add906f0f523f1c9ace820c7a20c7a220"><div class="ttname"><a href="kls__region_8c.html#add906f0f523f1c9ace820c7a20c7a220">KLS_autoregion_on_push</a></div><div class="ttdeci">void KLS_autoregion_on_push(struct Koliseo *kls, ptrdiff_t padding, const char *caller, void *user)</div><div class="ttdef"><b>Definition</b> kls_region.c:1227</div></div>
-<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1248</div></div>
-<div class="ttc" id="astructKLS__Hooks_html"><div class="ttname"><a href="structKLS__Hooks.html">KLS_Hooks</a></div><div class="ttdef"><b>Definition</b> koliseo.h:195</div></div>
+<div class="ttc" id="akls__region_8c_html_adecc22ba04dc3810275595d79ad8c437"><div class="ttname"><a href="kls__region_8c.html#adecc22ba04dc3810275595d79ad8c437">KLS_autoregion_on_temp_start</a></div><div class="ttdeci">void KLS_autoregion_on_temp_start(struct Koliseo_Temp *t_kls)</div><div class="ttdef"><b>Definition</b> kls_region.c:1276</div></div>
+<div class="ttc" id="astructKLS__Hooks_html"><div class="ttname"><a href="structKLS__Hooks.html">KLS_Hooks</a></div><div class="ttdef"><b>Definition</b> koliseo.h:199</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1004,6 +1010,37 @@ kls_new_traced_AR_KLS() </dd></dl>
 
 </div>
 </div>
+<a id="a07c17db4eac34a07a4f52cbb281ec3a7" name="a07c17db4eac34a07a4f52cbb281ec3a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07c17db4eac34a07a4f52cbb281ec3a7">&#9670;&#160;</a></span>KLS_autoregion_on_repush_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLS_autoregion_on_repush_last </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo.html">Koliseo</a> *</td>          <td class="paramname"><span class="paramname"><em>kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>caller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>user</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="accdf861c7d16ef125e739fe43b36d0d6" name="accdf861c7d16ef125e739fe43b36d0d6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#accdf861c7d16ef125e739fe43b36d0d6">&#9670;&#160;</a></span>KLS_autoregion_on_temp_free()</h2>
 
@@ -1029,6 +1066,37 @@ kls_new_traced_AR_KLS() </dd></dl>
       <table class="memname">
         <tr>
           <td class="memname">void KLS_autoregion_on_temp_push </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ptrdiff_t</td>          <td class="paramname"><span class="paramname"><em>padding</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *</td>          <td class="paramname"><span class="paramname"><em>caller</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *</td>          <td class="paramname"><span class="paramname"><em>user</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9b91336b15a2ca8a431734ebc51f508f" name="a9b91336b15a2ca8a431734ebc51f508f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b91336b15a2ca8a431734ebc51f508f">&#9670;&#160;</a></span>KLS_autoregion_on_temp_repush_last()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void KLS_autoregion_on_temp_repush_last </td>
           <td>(</td>
           <td class="paramtype">struct <a class="el" href="structKoliseo__Temp.html">Koliseo_Temp</a> *</td>          <td class="paramname"><span class="paramname"><em>t_kls</em></span>, </td>
         </tr>
